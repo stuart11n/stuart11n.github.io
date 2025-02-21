@@ -25,5 +25,5 @@ Flaps and landing gear HID devices [more...](/projects/flight-controls)
 
 A kitchen sink SimHub plug-in with webhooks and [more...](https://github.com/stuart11n/Hookster)
 
-![](/assets/misc/simhub.png){: .center-image }
+![](/assets/misc/hookster.png){: .center-image }
 
