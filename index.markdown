@@ -3,6 +3,12 @@ layout: post
 title: Projects
 ---
 
+## [Simrig Isolators](/projects/simrig-isolators)
+
+Enhance for simrig by isolating it from the floor [more...](/projects/simrig-isolators)
+
+![](/assets/pedals/IMG_1098.JPG){: .center-image }
+
 ## [Rudder Pedals](/projects/rudder-pedals)
 
 Rudder pedals with toe brakes for dual use rigs [more...](/projects/rudder-pedals)

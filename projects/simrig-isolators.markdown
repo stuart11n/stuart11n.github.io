@@ -25,6 +25,6 @@ For rigs with bass shakers, FFB, buttkickers, transducers. It will isolate the r
 ![](/assets/isolators/4.jpg){: .center-image }
 ![](/assets/isolators/5.jpg){: .center-image }
 
-
+<iframe class="center-image" width="560" height="315" src="https://www.youtube.com/embed/oiSOLjrLcrQ?si=3xlgFTEuJvTTJUB7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Available in my [Etsy Shop](https://www.etsy.com/listing/1844212953/)
