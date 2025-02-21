@@ -14,19 +14,17 @@ I fly and drive in VR only. I have built several button boxes, but eventually de
 
 ![](/assets/fc/fc1.jpg){: .center-image }
 
-Inputs can be mapped in game as a normal HID device.
+Inputs can be mapped in-game as normal HID device buttons.
 
-<iframe width="740" height="416" class="center-image" src="https://www.youtube.com/embed/8ph1lfgThUY?si=7H_nSfAJesfxKCqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+## Variants
 
-There are two variants:
-
-## Modeless
+### Modeless
 
 All the encoders, joystick and buttons are available for binding.
 
-https://youtu.be/8ph1lfgThUY
+<iframe width="740" height="416" class="center-image" src="https://www.youtube.com/embed/8ph1lfgThUY?si=7H_nSfAJesfxKCqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Multi-mode
+### Multi-mode
 
 This variant has 4 modes. The modes are selected with the lower funkyswitch joystick; pressing Up/Down/Left/Right will set the mode 1/2/3/4. In each mode the encoders and encoder push buttons will output different logical buttons. This provides 12 encoders and 8 buttons that can be mapped to whatever functions you wish. 
 
