@@ -22,13 +22,13 @@ There are two variants:
 
 ## Modeless
 
-With this variant, there is no mode. All the encoders, joystick and buttons are available for binding.
+All the encoders, joystick and buttons are available for binding.
 
 https://youtu.be/8ph1lfgThUY
 
 ## Multi-mode
 
-This variant has 4 modes. The modes are selected with the lower funkyswitch joystick; pressing Up/Down/Left/Right will set the mode 1/2/3/4. In each mode the encoders will output different logical buttons providing 12 encoders and 8 buttons that can be mapped to whatever functions you wish.
+This variant has 4 modes. The modes are selected with the lower funkyswitch joystick; pressing Up/Down/Left/Right will set the mode 1/2/3/4. In each mode the encoders and encoder push buttons will output different logical buttons. This provides 12 encoders and 8 buttons that can be mapped to whatever functions you wish. For example you could have a mode with encoders mapped heading, altitude, and barometer (mapped to physical encoders), a mode for speed management with encoders mapped to speed & vertical speed, and a mode for rudder, elevator & aileron trim.
 
 As the joystick is used for mode select, it is not available for binding.
 
@@ -38,7 +38,7 @@ SPAD.next can implement modes in software, and it can use any button as mode cha
 
 One option is to cycle through different modes, e.g. altitude -> heading -> vertical speed -> barometer etc, and have it announce the mode using text to speech. This is great in VR. An example SPAD.next profile is included.
 
-Setting this up is a little time consuming, so if you want basic modes the multi-mode variant is likely the best choice. If you want more flexibility and retain the joystick, modeless is better.
+Setting this up is a little time consuming and requires patience with SPAD.next, so if you just want basic modes then the multi-mode variant is probably for you. If you want more flexibility and retain the joystick function, modeless is better.
 
 Note: aside from SPAD.next, Joystick Gremlin can also accomplish multiple modes and speech, but I have little experience with Joystick Gremlin so can't help with that so much. 
 
