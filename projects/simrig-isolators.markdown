@@ -4,9 +4,9 @@ categories: simrig
 title: Simrig Isolators
 ---
 
-If your rig has bass shakers, buttkickers, transducers, or HPR, isolators are great idea. I designed these isolators to work on my 40-series profile rig, because it was creating quite a lot of vibration in the house (wooden floors), but I wanted the ability to move the rig.
+My rig has 4 BST-1, 2 HPR, and the DD+ wheel base - combined these create a lot of vibration which was transmitted into the building structure through the wooden floor. I designed these isolators to reduce the vibration. I wanted the ability to move the rig so took that into account as well at the hardwood floor.
 
-I got the idea from drummers, you use tennis balls sandwiched betweensheets of plywood to isolate eletronic drum kits in apartment buildings. The the result is great and very cost-effective.
+I got the idea from drummers, they use tennis balls sandwiched between sheets of plywood to isolate eletronic drum kits in apartment buildings. The result is very noticeable, in particular I had to turn down the bass shaker amps and the vibrations became more detailed.
 
 - by decoupling the rig from the floor, FFB and bass shaker effects become more distinct as they are no longer damped by the building, more energy is concentrated into the rig and they don't need to work so hard
 - it's quieter for you're neighbors and family
