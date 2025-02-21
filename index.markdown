@@ -5,7 +5,7 @@ title: Projects
 
 ## [Simrig Isolators](/projects/simrig-isolators)
 
-Enhance for simrig by isolating it from the floor [more...](/projects/simrig-isolators)
+Enhance your simrig by isolating it from the floor [more...](/projects/simrig-isolators)
 
 ![](/assets/pedals/IMG_1098.JPG){: .center-image }
 
