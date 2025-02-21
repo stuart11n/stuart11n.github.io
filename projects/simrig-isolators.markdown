@@ -4,10 +4,11 @@ categories: simrig
 title: Simrig Isolators
 ---
 
-If your rig has bass shakers, buttkickers, transducers, HPR, simrig-isolators it's a good idea to isolate it from the floor.
+If your rig has bass shakers, buttkickers, transducers, or HPR, isolators are great idea.
 
 - by decoupling the rig from the floor, FFB and bass shaker effects become more distinct as they are no longer damped by the building, more energy is concentrated into the rig!
-- these isolators are very good on hardwood/tiled floors as they won't damage the floor and the rig will be quite easy to slide 
+- it's quieter for you're neighbors and family
+- these isolators are very good on hardwood/tiled floors as they won't damage the floor and the rig will be quite easy to slide around 
 - fits 40-series profile
 - includes M8 x 20mm & profile nuts
 - easy to fit
