@@ -4,20 +4,13 @@ categories: simrig
 title: Simrig Isolators
 ---
 
-For rigs with bass shakers, FFB, buttkickers, transducers. It will isolate the rig from building structure.
+If your rig has bass shakers, buttkickers, transducers, HPR, simrig-isolators it's a good idea to isolate it from the floor.
 
-- isolates FFB and shaker vibrations from the rest of the building benefiting your family and neighbors!
-- by decoupling the rig from the floor, FFB and bass shaker effects become more distinct as they are no longer damped by the building, more energy is concentrated on the rig!
-- on hardwood/tiled floors the rig will quite easy to dry around without damaging the surface
-- the kit includes 10 isolators with tennis balls. E.g. 6 at the back, 4 at the front is enough for a loaded rig + 200lbs person
+- by decoupling the rig from the floor, FFB and bass shaker effects become more distinct as they are no longer damped by the building, more energy is concentrated into the rig!
+- the isolators are very good on hardwood/tiled floors as they won't damage the floor and the rig will be quite easy to slide 
 - fits 40-series profile
 - includes M8 x 20mm & profile nuts
 - easy to fit
-
-
-- a 7-way funky switch that appears as a HAT, the encoder is exposes as two buttons
-- a dual encoder with push button, exposed as 5 buttons
-- USB-C
 
 ![](/assets/isolators/1.jpg){: .center-image }
 ![](/assets/isolators/2.jpg){: .center-image }
