@@ -16,7 +16,7 @@ I fly and drive in VR only. I have built several button boxes, but eventually de
 
 Inputs can be mapped in game as a normal HID device.
 
-<iframe width="560" height="315" class="center-image" src="https://www.youtube.com/embed/8ph1lfgThUY?si=7H_nSfAJesfxKCqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="740" height="416" class="center-image" src="https://www.youtube.com/embed/8ph1lfgThUY?si=7H_nSfAJesfxKCqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 For aviation, if you use SPAD.next very cool things are possible. It can map the dual encoder to fast/slow increments on the PFD/MFD e.g. for heading or altitude.
 

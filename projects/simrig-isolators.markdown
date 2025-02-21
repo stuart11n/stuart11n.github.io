@@ -13,7 +13,7 @@ If your rig has bass shakers, buttkickers, transducers, or HPR, isolators are gr
 - includes M8 x 20mm & profile nuts
 - easy to fit
 
-<iframe class="center-image" width="740" src="https://www.youtube.com/embed/oiSOLjrLcrQ?si=3xlgFTEuJvTTJUB7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="center-image" width="740" height="416" src="https://www.youtube.com/embed/oiSOLjrLcrQ?si=3xlgFTEuJvTTJUB7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ![](/assets/isolators/2.png){: .center-image }
 ![](/assets/isolators/3.png){: .center-image }
