@@ -8,7 +8,7 @@ I fly and drive in VR only. I have built several button boxes, but eventually de
 
 ### Features
 
-- a 7-way funky switch that appears as a HAT, the encoder is exposes as two buttons
+- a 7-way funky switch that appears as a HAT, the encoder is exposed as two buttons
 - a dual encoder with push button, exposed as 5 buttons
 - USB-C
 
@@ -18,13 +18,29 @@ Inputs can be mapped in game as a normal HID device.
 
 <iframe width="740" height="416" class="center-image" src="https://www.youtube.com/embed/8ph1lfgThUY?si=7H_nSfAJesfxKCqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-For aviation, if you use SPAD.next very cool things are possible. It can map the dual encoder to fast/slow increments on the PFD/MFD e.g. for heading or altitude.
+There are two variants:
 
-SPAD.next also allows the button to be used for multiple inputs. So for example, by mapping funky down to mode change, it can cycle through different inputs altitude -> heading -> vertical speed -> barometer and it will announce the mode using speech. An example SPAD.next profile is included.
+## Modeless
 
-For VR users, this is really fantastic because you aren't fumbling around, there is just one knob (though you can naturally add more).
+With this variant, there is no mode. All the encoders, joystick and buttons are available for binding.
 
-Any input can be used as mode change; mapping a switch on your flightstick for works well as you have one hand switch modes and the other adjusting. It's very smooth. In addition you can also add modes to the funky switch! Setting up the rules in SPAD.next *is* a little time consuming but it's worth it.
+https://youtu.be/8ph1lfgThUY
+
+## Multi-mode
+
+This variant has 4 modes. The modes are selected with the lower funkyswitch joystick; pressing Up/Down/Left/Right will set the mode 1/2/3/4. In each mode the encoders will output different logical buttons providing 12 encoders and 8 buttons that can be mapped to whatever functions you wish.
+
+As the joystick is used for mode select, it is not available for binding.
+
+## SPAD and Modeless
+
+SPAD.next can implement modes in software, and it can use any button as mode change; so mapping a switch on your flightstick for works well. Switch modes with one hand and the adjust with the other. It's very smooth. 
+
+One option is to cycle through different modes, e.g. altitude -> heading -> vertical speed -> barometer etc, and have it announce the mode using text to speech. This is great in VR. An example SPAD.next profile is included.
+
+Setting this up is a little time consuming, so if you want basic modes the multi-mode variant is likely the best choice. If you want more flexibility and retain the joystick, modeless is better.
+
+Note: aside from SPAD.next, Joystick Gremlin can also accomplish multiple modes and speech, but I have little experience with Joystick Gremlin so can't help with that so much. 
 
 I use the weapon select switch on my flight stick so I can switch modes rapidly. HOTAF: Hand On Throttle And Funky-coder :-)
 
