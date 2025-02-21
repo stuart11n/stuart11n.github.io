@@ -12,11 +12,11 @@ If your rig has bass shakers, buttkickers, transducers, HPR, simrig-isolators it
 - includes M8 x 20mm & profile nuts
 - easy to fit
 
-![](/assets/isolators/1.jpg){: .center-image }
-![](/assets/isolators/2.jpg){: .center-image }
-![](/assets/isolators/3.jpg){: .center-image }
-![](/assets/isolators/4.jpg){: .center-image }
-![](/assets/isolators/5.jpg){: .center-image }
+![](/assets/isolators/1.png){: .center-image }
+![](/assets/isolators/2.png){: .center-image }
+![](/assets/isolators/3.png){: .center-image }
+![](/assets/isolators/4.png){: .center-image }
+![](/assets/isolators/5.png){: .center-image }
 
 <iframe class="center-image" width="560" height="315" src="https://www.youtube.com/embed/oiSOLjrLcrQ?si=3xlgFTEuJvTTJUB7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
