@@ -29,7 +29,7 @@ Flaps and landing gear HID devices [more...](/projects/flight-controls)
 
 ## [Encoder Box](/projects/encoder-box)
 
-Multiple encoders HID devices [more...](/projects/encoder-box)
+Multiple encoders HID device [more...](/projects/encoder-box)
 
 ![](/assets/eb/eb1.jpg){: .center-image }
 
