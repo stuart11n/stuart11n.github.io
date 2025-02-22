@@ -27,6 +27,12 @@ Flaps and landing gear HID devices [more...](/projects/flight-controls)
 
 ![](/assets/fc/fc2.jpg){: .center-image }
 
+## [Encoder Box](/projects/encoder-box)
+
+Multiple encoders HID devices [more...](/projects/encoder-box)
+
+![](/assets/eb/eb1.jpg){: .center-image }
+
 ## [Hookster](https://github.com/stuart11n/Hookster)
 
 A kitchen sink SimHub plug-in with webhooks and [more...](https://github.com/stuart11n/Hookster)
