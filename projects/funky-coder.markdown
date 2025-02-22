@@ -52,8 +52,8 @@ I use the weapon select switch on my flight stick so I can switch modes rapidly.
 
 ### B1
 
-![](/assets/fc/b1-1.jpg){: .center-image }
-![](/assets/fc/b1-2.jpg){: .center-image }
+![](/assets/fc/b1-1.png){: .center-image }
+![](/assets/fc/b1-2.png){: .center-image }
 
 
 The Funky-coder is available in my [Etsy Shop](https://www.etsy.com/listing/1836479954/)
