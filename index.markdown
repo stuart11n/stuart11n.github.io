@@ -7,7 +7,7 @@ title: Projects
 
 Enhance your simrig by isolating it from the floor [more...](/projects/simrig-isolators)
 
-<button>BUY</button>
+<button href="https://www.etsy.com/listing/1844212953/simrig-vibration-isolators">BUY</button>
 
 ![](/assets/isolators/2.png){: .center-image }
 
@@ -20,6 +20,8 @@ Rudder pedals with toe brakes for dual use rigs [more...](/projects/rudder-pedal
 ## [Funky-coder](/projects/funky-coder)
 
 VR focused input device for flight and racing [more...](/projects/funky-coder)
+
+<button href="https://www.etsy.com/listing/1836479954/funky-coder">BUY</button>
 
 ![](/assets/fc/fc1.jpg){: .center-image }
 
