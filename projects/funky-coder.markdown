@@ -8,7 +8,7 @@ I fly and drive in VR only. I have built several button boxes, but eventually de
 
 ### Features
 
-- a 7-way funky switch that appears as a HAT, the encoder is exposed as two buttons
+- a 7-way funky switch that appears as a 4-way POV HAT + push button + encoder 
 - a dual encoder with push button, exposed as 5 buttons
 - USB-C
 
