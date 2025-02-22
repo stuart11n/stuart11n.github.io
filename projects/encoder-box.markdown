@@ -8,7 +8,7 @@ Ultimate encoder button box. I no longer use this because I prefer the simpler i
 
 ### Features
 
-- Two 7-way funky switches that appears as a HATs
+- Two 7-way funky switches that appears as a 4-way POV HAT + push button + encoder 
 - Four dual encoders with push button
 - Three toggles 
 - USB-C

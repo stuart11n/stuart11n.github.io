@@ -7,6 +7,8 @@ title: Projects
 
 Enhance your simrig by isolating it from the floor [more...](/projects/simrig-isolators)
 
+<button>BUY</button>
+
 ![](/assets/isolators/2.png){: .center-image }
 
 ## [Rudder Pedals](/projects/rudder-pedals)
