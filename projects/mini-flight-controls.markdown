@@ -11,7 +11,7 @@ I thought it would be fun to have dedicated landing gear and flaps controls in t
 - flaps has 5 detents
 - landing gear has end detents
 - FAA style knobs
-- all the plus all the features of Funky-coder
+- plus all the features of Funky-coder
 - USB-C
 
 ![](/assets/fc/fc2.jpg){: .center-image }
