@@ -16,5 +16,4 @@ I thought it would be fun to have dedicated landing gear and flaps controls in t
 
 ![](/assets/fc/fc2.jpg){: .center-image }
 
-These use custom designed internal mechanisms using AS5600 magnetic position sensors. The flaps are therefore a full analog axis with detents. The landing gear is also an axis, but it is mapped to button presses as MSFS cannot map an axis to the landing gear.
-
+The flaps and landing gear use a custom designed mechanism using AS5600 magnetic position sensors. The flaps are an axis with detents. By default the landing gear is mapped to button two events as MSFS cannot map an axis to the landing gear. There is an option to keep the landing gear as an axis however.
