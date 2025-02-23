@@ -29,7 +29,7 @@ VR focused input device for flight and racing [more...](/projects/funky-coder)
 
 Flaps and landing gear + a funky-coder all in one [more...](/projects/mini-flight-controls)
 
-<a href="https://www.etsy.com/listing/1844212953/simrig-vibration-isolators"><button>BUY</button></a>
+<a href="https://www.etsy.com/listing/1864699190/mini-flight-controls"><button>BUY</button></a>
 
 ![](/assets/fc/fc2.jpg){: .center-image }
 
