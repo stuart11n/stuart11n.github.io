@@ -4,17 +4,17 @@ categories: flightsim knobster encoder
 title: Funky-coder Plus
 ---
 
-An enhanced Funky-coder, with two dual encoders and a mode switch
+Twin dual encoders and a funky switch with 4 modes (layers). For use with aviation sim and simracing. Great for VR!
 
 ### Features
 
-- a 7-way funky switch that appears as a 4-way POV HAT + push button + encoder 
-- two dual encoder with push button, exposed as 5 buttons
-- 3-way mode switch remaps the above providing 10 dual encoders and 3 funky switches in one
-- USB-C
+- 2 x dual encoders with push button
+- 1 x funkyswitch with encoder, push button and 4-way POV
+- 4-way mode switch remaps the above providing 8 dual encoders and 4 funky switches in one unit
+- Dimensions: Approx. 70mm x 60mm x 32mm
+
+Inputs can be mapped in game as a normal HID device so it's compatible with all games, and tools such as SPAD.next and Axis And Ohs.
 
 ![](/assets/fc/fc-plus.jpg){: .center-image }
 
-Inputs can be mapped in-game as normal HID device buttons. 
-
-The Funky-coder Plus is available in my [Etsy Shop](https://www.etsy.com/listing/1836479954/)
+The Funky-coder Plus is available in my [Etsy Shop](https://www.etsy.com/listing/1880999431/funky-coder-plus)
