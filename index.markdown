@@ -23,13 +23,15 @@ VR focused input device for flight and racing [more...](/projects/funky-coder)
 
 <a href="https://www.etsy.com/listing/1836479954/funky-coder"><button>BUY</button></a>
 
-## [Funky-coder-plus](/projects/funky-coder)
+![](/assets/fc/fc1.jpg){: .center-image }
+
+## [Funky-coder-plus](/projects/funky-coder-plus)
 
 Funky-coder with a mode switch [more...](/projects/funky-coder-plus)
 
-<a href="https://www.etsy.com/listing/1836479954/funky-coder"><button>BUY</button></a>
+![](/assets/fc/fc-plus.jpg){: .center-image }
 
-![](/assets/fc/fc1.jpg){: .center-image }
+<a href="https://www.etsy.com/listing/1836479954/funky-coder"><button>BUY</button></a>
 
 ## [Mini Flight Controls](/projects/mini-flight-controls)
 
