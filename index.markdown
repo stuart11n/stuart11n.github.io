@@ -45,6 +45,8 @@ Flaps and landing gear + a funky-coder all in one [more...](/projects/mini-fligh
 
 Quick release for Virpil WarBRD [more...](/projects/warbrd-qr)
 
+![](/assets/wbqr/wbqr1.jpg){: .center-image }
+
 ## [Encoder Box](/projects/encoder-box)
 
 Multiple encoders HID device [more...](/projects/encoder-box)
