@@ -23,6 +23,12 @@ VR focused input device for flight and racing [more...](/projects/funky-coder)
 
 <a href="https://www.etsy.com/listing/1836479954/funky-coder"><button>BUY</button></a>
 
+## [Funky-coder-plus](/projects/funky-coder)
+
+Funky-coder with a mode switch [more...](/projects/funky-coder-plus)
+
+<a href="https://www.etsy.com/listing/1836479954/funky-coder"><button>BUY</button></a>
+
 ![](/assets/fc/fc1.jpg){: .center-image }
 
 ## [Mini Flight Controls](/projects/mini-flight-controls)
@@ -32,6 +38,10 @@ Flaps and landing gear + a funky-coder all in one [more...](/projects/mini-fligh
 <a href="https://www.etsy.com/listing/1864699190/mini-flight-controls"><button>BUY</button></a>
 
 ![](/assets/fc/fc2.jpg){: .center-image }
+
+# [WarBRD quick release](/projects/warbrd-qr)
+
+Quick release for Virpil WarBRD [more...](/projects/warbrd-qr)
 
 ## [Encoder Box](/projects/encoder-box)
 
