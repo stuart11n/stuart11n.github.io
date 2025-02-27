@@ -25,7 +25,7 @@ VR focused input device for flight and racing [more...](/projects/funky-coder)
 
 ![](/assets/fc/fc1.jpg){: .center-image .small-image }
 
-## [Funky-coder-plus](/projects/funky-coder-plus)
+## [Funky-coder Plus](/projects/funky-coder-plus)
 
 Funky-coder with a mode switch [more...](/projects/funky-coder-plus)
 
