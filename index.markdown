@@ -3,7 +3,8 @@ layout: post
 title: Projects
 ---
 
-## [Etsy Shop](https://s16nengineering.etsy.com)
+<a href="https://s16nengineering.etsy.com">![](/assets/isolators/2.png)</a>
+Etsy Shop
 
 ## [Simrig Isolators](/projects/simrig-isolators)
 
