@@ -3,13 +3,13 @@ layout: post
 title: Projects
 ---
 
-[Etsy Shop](https://www.etsy.com/shop/s16nEngineering)
+## [Etsy Shop](https://s16nengineering.etsy.com)
 
 ## [Simrig Isolators](/projects/simrig-isolators)
 
 Enhance your simrig by isolating it from the floor [more...](/projects/simrig-isolators)
 
-<a href="https://www.etsy.com/listing/1844212953/simrig-vibration-isolators"><button>BUY</button></a>
+<a href="https://s16nengineering.etsy.com/listing/1844212953/simrig-vibration-isolators"><button>BUY</button></a>
 
 ![](/assets/isolators/2.png){: .center-image .small-image }
 
@@ -23,7 +23,7 @@ Rudder pedals with toe brakes for dual use rigs [more...](/projects/rudder-pedal
 
 VR focused input device for flight and racing [more...](/projects/funky-coder)
 
-<a href="https://www.etsy.com/listing/1836479954/funky-coder"><button>BUY</button></a>
+<a href="https://s16nengineering.etsy.com/listing/1836479954/flightracing-sim-dual-encoder"><button>BUY</button></a>
 
 ![](/assets/fc/fc1.jpg){: .center-image .small-image }
 
@@ -31,7 +31,7 @@ VR focused input device for flight and racing [more...](/projects/funky-coder)
 
 Funky-coder with a mode switch [more...](/projects/funky-coder-plus)
 
-<a href="https://www.etsy.com/listing/1880999431/funky-coder-plus"><button>BUY</button></a>
+<a href="https://s16nengineering.etsy.com/listing/1880999431/flightracing-sim-twin-dual-encoders"><button>BUY</button></a>
 
 ![](/assets/fc/fc-plus.jpg){: .center-image .small-image }
 
@@ -39,7 +39,7 @@ Funky-coder with a mode switch [more...](/projects/funky-coder-plus)
 
 Flaps and landing gear + a funky-coder all in one [more...](/projects/mini-flight-controls)
 
-<a href="https://www.etsy.com/listing/1864699190/mini-flight-controls"><button>BUY</button></a>
+<a href="https://s16nengineering.etsy.com/listing/1864699190/mini-flight-controls"><button>BUY</button></a>
 
 ![](/assets/fc/fc2.jpg){: .center-image .small-image }
 
@@ -47,7 +47,7 @@ Flaps and landing gear + a funky-coder all in one [more...](/projects/mini-fligh
 
 Quick release for Virpil WarBRD and MongoosT-50CM3 [more...](/projects/warbrd-qr)
 
-<a href="https://www.etsy.com/listing/1870347602/virpil-flightstick-quick-release-for"><button>BUY</button></a>
+<a href="https://s16nengineering.etsy.com/listing/1870347602/flightstick-quick-release-for-virpil"><button>BUY</button></a>
 
 ![](/assets/wbqr/wbqr1.jpg){: .center-image .small-image }
 
