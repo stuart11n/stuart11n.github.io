@@ -1,10 +1,10 @@
 ---
 layout: post
 categories: flightsim virpil warbrd qr quick release
-title: Virpil WarBRD & MongoosT-50CM3 Quick Release
+title: Virpil WarBRD
 ---
 
-This is a Quick Release mounting stalk for the Virpil WarBRD-D and other bases. 
+This is a Quick Release mounting stalk for the Virpil WarBRD-D.
 
 ![](/assets/wbqr/wbqr1.jpg){: .center-image }
 
@@ -22,8 +22,6 @@ The QR mount sits on the 4080 cross-member, it has a channel to route the USB ca
 Note: if your seat is on rails, it's position will be restricted when the stalk is attached.  
 
 If you have specific mounting requirements, or questions, let me know; the design has some leeway. If you have a different base, given the dimensions and mounting points, an appropriate top-plate could be made. 
-
-I have a top-plate for the MongoosT however I do not have such a base to test it on. It will certainly fit but I am unsure how strong the springs are vs. the WarBRD-D so I have not listed it as in stock. However if you're interested, get in touch. 
 
 A USB cable is included, connecting to the flight stick base (Virpil GX12-4L) and on the rig end, USB-A to your USB hub.
 
