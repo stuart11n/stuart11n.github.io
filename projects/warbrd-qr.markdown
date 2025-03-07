@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: flightsim virpil warbrd qr quick release
-title: Virpil WarBRD Quick Release
+title: Virpil WarBRD & MongoosT-50CM3 Quick Release
 ---
 
 This is a Quick Release for the Virpil WarBRD-D and MongoosT-50CM3. 
