@@ -4,7 +4,7 @@ title: Projects
 ---
 
 <a href="https://s16nengineering.etsy.com"><img src="/assets/logo.jpg" class="center-image logo"/></a>
-<div text-align="center">Etsy Shop</div>
+<div style="text-align:center">Etsy Shop</div>
 
 
 ## [Simrig Isolators](/projects/simrig-isolators)
