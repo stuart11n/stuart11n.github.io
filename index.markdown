@@ -41,9 +41,11 @@ Flaps and landing gear + a funky-coder all in one [more...](/projects/mini-fligh
 
 ![](/assets/fc/fc2.jpg){: .center-image .small-image }
 
-## [WarBRD quick release](/projects/warbrd-qr)
+## [Virpil Quick Release](/projects/warbrd-qr)
 
-Quick release for Virpil WarBRD [more...](/projects/warbrd-qr)
+Quick release for Virpil WarBRD and MongoosT-50CM3 [more...](/projects/warbrd-qr)
+
+<a href="https://www.etsy.com/listing/1870347602/virpil-flightstick-quick-release-for"><button>BUY</button></a>
 
 ![](/assets/wbqr/wbqr1.jpg){: .center-image .small-image }
 
