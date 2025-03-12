@@ -19,25 +19,29 @@ Inputs can be mapped in game as a normal HID device so it's compatible with all 
 
 #### Example config 
 
-Possibly in SPAD.next and MobiFlight.
+Using e.g. SPAD.next or MobiFlight.
 
 ##### Encoder 1
 
-|  mode | outer           | inner           | push            | hold            |
-|-------|-----------------|-----------------|-----------------|-----------------|
-|   1   | NAV 1/2 outer   | NAV 1/2 inner   | switch NAV 1/2  | swap NAV 1 <> 2 | 
+|  mode | outer           | inner           | push               | hold            |
+|-------|-----------------|-----------------|--------------------|-----------------|
+|   1   | NAV 1/2 outer   | NAV 1/2 inner   | switch NAV 1/2     | swap NAV 1 <> 2 | 
+|   2   | rudder trim     | elevator trim   | toggle rudder trim | toggle elevator trim                 | 
 
 ##### Encoder 2
 
 |  mode | outer           | inner           | push            | hold            |
 |-------|-----------------|-----------------|-----------------|-----------------|
 |   1   | COM 1/2 outer   | COM 1/2 inner   | switch COM 1/2  | swap COM 1 <> 2 | 
+|   2   | barometer       |                 |                 |                 | 
 
 ##### Funky 
 
-|  mode |     encoder  | up/down/left/right | push |
-|-------|--------------|--------------------|------|
-|   1   | G1000 joystick (range)  | G1000 joystick | G1000 joystick |
+|  mode |     encoder             | up/down/left/right                | push |
+|-------|-------------------------|-----------------------------------|------|
+|   1   | G1000 joystick (range)  | G1000 joystick up/down/left/right | G1000 joystick push |
+|   2   | COM volume              |       | |
+|   3   | view up/down            | view forward/back/left/right      |      |
 
 
 The Funky-coder Plus is available in my [Etsy Shop](https://www.etsy.com/listing/1880999431/funky-coder-plus)
