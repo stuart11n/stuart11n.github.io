@@ -3,8 +3,8 @@ layout: post
 title: Projects
 ---
 
-<a href="https://s16nengineering.etsy.com"><img src="/assets/etsy.png" class="center-image logo"/></a>
-<div style="text-align:center">Etsy Shop</div>
+<a href="https://s16nengineering.etsy.com"><img src="/assets/etsy.png" class="center-image"/></a>
+<div style="text-align:center"></div>
 
 
 ## [Simrig Isolators](/projects/simrig-isolators)
