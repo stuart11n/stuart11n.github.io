@@ -17,4 +17,12 @@ Inputs can be mapped in game as a normal HID device so it's compatible with all 
 
 ![](/assets/fc/fc-plus.jpg){: .center-image }
 
+Example config (possibly in SPAD.next and MobiFlight):
+
+|  mode | encoder 1 outer | encoder 1 inner | encoder 2 outer | encoder 2 inner | funky |
+|-------|-----------------|-----------------|-----------------|-----------------|-------|
+|   1   | NAV 1/2 outer   | NAV 1/2 inner   | | | | 
+
+
+
 The Funky-coder Plus is available in my [Etsy Shop](https://www.etsy.com/listing/1880999431/funky-coder-plus)
