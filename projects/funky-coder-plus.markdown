@@ -19,7 +19,9 @@ Inputs can be mapped in game as a normal HID device so it's compatible with all 
 
 #### Example config 
 
-Using e.g. SPAD.next or MobiFlight.
+This shows how you can map NAV1/2, COM1/2 and the joystick (with range zoom) of a G1000, plus volume, trim and view functions. With room to spare for more! 
+
+This is possible with e.g. SPAD.next or MobiFlight.
 
 ##### Encoder 1
 
