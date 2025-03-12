@@ -10,7 +10,7 @@ I am based in San Diego USA.
 
 If you have an questions, get in touch!
 
-Some of the devices on this site are available on my Etsy shop:
+Some of the devices on this site are available on my <a href="https://s16nengineering.etsy.com">Etsy shop</a>.
 
-<a href="https://s16nengineering.etsy.com"><img src="/assets/etsy.png" class="center-image etsy"/></a>
+
 
