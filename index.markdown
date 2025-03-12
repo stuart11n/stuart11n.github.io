@@ -43,7 +43,7 @@ Flaps and landing gear + a funky-coder all in one [more...](/projects/mini-fligh
 
 ## [Virpil Quick Release](/projects/warbrd-qr)
 
-Quick release for Virpil WarBRD and MongoosT-50CM3 [more...](/projects/warbrd-qr)
+Quick release for Virpil WarBRD [more...](/projects/warbrd-qr)
 
 <a href="https://s16nengineering.etsy.com/listing/1870347602/flightstick-quick-release-for-virpil"><button>BUY</button></a>
 

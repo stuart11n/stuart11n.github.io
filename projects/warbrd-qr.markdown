@@ -4,6 +4,8 @@ categories: flightsim virpil warbrd qr quick release
 title: Virpil WarBRD
 ---
 
+<a href="https://s16nengineering.etsy.com/listing/1870347602/flightstick-quick-release-for-virpil"><button>BUY</button></a>
+
 This is a Quick Release mounting stalk for the Virpil WarBRD-D.
 
 ![](/assets/wbqr/wbqr1.jpg){: .center-image }

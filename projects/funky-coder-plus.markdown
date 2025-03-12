@@ -4,6 +4,8 @@ categories: flightsim knobster encoder
 title: Funky-coder Plus
 ---
 
+<a href="https://s16nengineering.etsy.com/listing/1880999431/flightracing-sim-twin-dual-encoders"><button>BUY</button></a>
+
 Twin dual encoders and a funky switch with 4 modes (layers). For use with aviation sim and simracing. Great for VR!
 
 ### Features

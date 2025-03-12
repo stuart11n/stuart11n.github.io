@@ -4,7 +4,9 @@ categories: flightsim landing gear flaps
 title: Mini Flight Controls
 ---
 
-I thought it would be fun to have dedicated landing gear and flaps controls in the same form-factor as Funky-coder. Then combined them into one device.
+<a href="https://s16nengineering.etsy.com/listing/1864699190/mini-flight-controls"><button>BUY</button></a>
+
+Dedicated landing gear and flaps controls one device.
 
 ### Features
 
