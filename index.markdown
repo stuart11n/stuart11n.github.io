@@ -3,7 +3,7 @@ layout: post
 title: Projects
 ---
 
-<a href="https://s16nengineering.etsy.com"><img src="/assets/etsy.png" class="center-image"/></a>
+<a href="https://s16nengineering.etsy.com"><img src="/assets/etsy.png" class="center-image etsy"/></a>
 <div style="text-align:center"></div>
 
 
