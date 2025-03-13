@@ -11,7 +11,7 @@ My rig has 4 x BST-1, 2 x HPR, a DD+ wheel base & active harness - combined thes
 I got the idea from drummers, they use tennis balls sandwiched between sheets of plywood to isolate eletronic drum kits in apartment buildings. The result is very noticeable, in particular I had to turn down the bass shaker amps and the vibrations became more detailed.
 
 - by decoupling the rig from the floor, FFB and bass shaker effects become more distinct as they are no longer damped by the building, more energy is concentrated into the rig and they don't need to work so hard
-- it's quieter for you're neighbors and family
+- it's quieter for your neighbors and family
 - these isolators are very good on hardwood/tiled floors as they won't damage the floor and the rig will be quite easy to slide around 
 - fits 40-series profile
 - includes M8 x 20mm & profile nuts
