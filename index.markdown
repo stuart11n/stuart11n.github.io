@@ -61,3 +61,10 @@ A kitchen sink SimHub plug-in with webhooks and [more...](https://github.com/stu
 
 ![](/assets/misc/hookster.png){: .center-image .small-image }
 
+
+## [3D Printer Vibration Isolation](/projects/3d-print-tennis-balls)
+
+A kitchen sink SimHub plug-in with webhooks and [more...](/projects/3d-print-tennis-balls)
+
+![](/assets/misc/3d-printer-balls.jpg){: .center-image .small-image }
+
