@@ -8,5 +8,5 @@ So far they haven't budged. Not sure how this would fair with a P1 or Mini.
 
 Lost cost, even free to try if you have a generous dog :-)
 
-Be careful cutting the balls. I used a bandsaw.
+Be careful cutting the balls. I used a bandsaw which made it easy but it is possible with a utility knife.
 
