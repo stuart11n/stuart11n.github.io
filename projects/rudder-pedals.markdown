@@ -13,23 +13,23 @@ I designed these rudder pedals to be bolted to the underside of a racing rig ped
 
 ### Features
 
-- 3D printed, with 8mm linear rod and bearings and RC shocks
+- 3D printed, with 8mm linear rod and bearings
 - toe brakes and rudder control
 - AS5600 magnetic position sensors on all three axis 
 - adjustable pedal angle
 - USB-C
 
-### Possible future enhancements
+### Possible enhancements
 
-- quick release tension for rotary flight
-- experiment with a stepper motor for providing the centering force, replacing the springs. This could also provide force feedback
+- electro-mechanical release of centering force for rotary flight
+- experiment with a stepper motor for providing the centering force. This could also provide force feedback
 - further build simplification
 
 ### Previous Iterations
 
 #### Mk. 2
 
-Felt awful.
+These felt awful...
 
 ![](/assets/pedals/mk2.jpg){: .center-image }
 
@@ -60,7 +60,7 @@ A video of the pedals installed and working:
 
 #### Mk. 6
 
-Evolution of Mk. 4, but with separate toe brakes. Immediately after I finished them, I realized my mistake with Mk. 5...
+Evolution of Mk. 4, but with separate toe brakes. Immediately after I finished them, I realized my mistake with Mk. 5... 
 
 ![](/assets/pedals/mk6.JPG){: .center-image }
 
