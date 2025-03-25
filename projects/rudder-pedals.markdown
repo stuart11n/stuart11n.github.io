@@ -6,6 +6,11 @@ title: Rudder Pedals Mk. 7
 
 I designed these rudder pedals to be bolted to the underside of a racing rig pedal plate. 
 
+![](/assets/pedals/mk7.JPG){: .center-image }
+![](/assets/pedals/mk7b.JPG){: .center-image }
+![](/assets/pedals/mk7c.JPG){: .center-image }
+
+
 ### Features
 
 - 3D printed, with 8mm linear rod and bearings and RC shocks
