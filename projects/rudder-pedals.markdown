@@ -17,6 +17,7 @@ I designed these rudder pedals to be bolted to the underside of a racing rig ped
 - toe brakes and rudder control
 - AS5600 magnetic position sensors on all three axis 
 - adjustable pedal angle
+- semi-quick release
 - USB-C
 
 ### Possible enhancements
