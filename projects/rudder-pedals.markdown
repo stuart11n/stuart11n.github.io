@@ -4,7 +4,7 @@ categories: flightsim rudder pedals
 title: Rudder Pedals Mk. 7
 ---
 
-I designed these rudder pedals to be bolted to the underside of a racing rig pedal plate. 
+I designed these rudder pedals to be bolted to the underside of a racing rig pedal plate.
 
 ![](/assets/pedals/mk7.JPG){: .center-image }
 ![](/assets/pedals/mk7b.JPG){: .center-image }
@@ -42,14 +42,14 @@ The rudder control works really well, but I didn't include brakes.
 
 #### Mk. 4
 
-I hacked brakes onto Mk. 3 using load cells (pictured) and although they work they don't have good feel leading to the redesign.
+I hacked brakes onto Mk. 3 using load cells (pictured) and although they work they don't have very good feel.
 
 ![](/assets/pedals/mk4.JPG){: .center-image }
 ![](/assets/pedals/mk4b.JPG){: .center-image }
 
 #### Mk. 5
 
-Really nice, but hard to use the toe brakes. 
+Really nice, felt like I was getting somewhere but hard to use the toe brakes and a bit heavy to use. 
 
 ![](/assets/pedals/IMG_1098.JPG){: .center-image }
 ![](/assets/pedals/IMG_1099.JPG){: .center-image }
