@@ -23,7 +23,7 @@ Input device for aircraft trimmables [more...](/projects/trimbox)
 
 <a href="https://s16nengineering.etsy.com/listing/1897595063/flight-simulator-trim-box-for-rudder"><button>BUY</button></a>
 
-![](/assets/fc/fc1.jpg){: .center-image .small-image }
+![](/assets/trimbox/1.png){: .center-image .small-image }
 
 
 ## [Funky-coder](/projects/funky-coder)
