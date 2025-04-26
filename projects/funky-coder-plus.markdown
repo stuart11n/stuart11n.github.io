@@ -48,4 +48,30 @@ This is possible with e.g. SPAD.next or MobiFlight.
 |   3   | view up/down            | view forward/back/left/right      |      |
 
 
+Here's what I settled on:
+
+##### Encoder 1
+
+|  mode | outer           | inner           | push               | hold            |
+|-------|-----------------|-----------------|--------------------|-----------------|
+|   1   | NAV 1/2 outer   | NAV 1/2 inner   | switch NAV 1/2     | swap NAV 1 <> 2 | 
+|   2   | Mixture 2       | Mixture 1       |  |  | 
+|   3   | Cowls 2         | Cowls 1         |  |  | 
+
+##### Encoder 2
+
+|  mode | outer           | inner           | push            | hold            |
+|-------|-----------------|-----------------|-----------------|-----------------|
+|   1   | COM 1/2 outer   | COM 1/2 inner   | switch COM 1/2  | swap COM 1 <> 2 | 
+|   2   | Mixture 4       | Mixture 3       |  |  | 
+|   3   | Cowls 4         | Cowls 3         |  |  | 
+
+##### Funky 
+
+|  mode |     encoder             | up/down/left/right                | push |
+|-------|-------------------------|-----------------------------------|------|
+|   1   | G1000 joystick (range)  | G1000 joystick up/down/left/right | G1000 joystick push |
+|   2   | view up/down            | view forward/back/left/right      |      |
+
+
 The Funky-coder Plus is available in my [Etsy Shop](https://www.etsy.com/listing/1880999431/funky-coder-plus)
