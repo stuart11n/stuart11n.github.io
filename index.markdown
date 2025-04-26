@@ -17,15 +17,6 @@ Rudder pedals with toe brakes for dual use rigs [more...](/projects/rudder-pedal
 
 ![](/assets/pedals/IMG_1098.JPG){: .center-image .small-image }
 
-## [Trimbox](/projects/funky-coder)
-
-Input device for aircraft trimmables [more...](/projects/trimbox)
-
-<a href="https://s16nengineering.etsy.com/listing/1897595063/flight-simulator-trim-box-for-rudder"><button>BUY</button></a>
-
-![](/assets/trimbox/1.png){: .center-image .small-image }
-
-
 ## [Funky-coder](/projects/funky-coder)
 
 VR focused input device for flight and racing [more...](/projects/funky-coder)
@@ -41,6 +32,15 @@ Funky-coder with a mode switch [more...](/projects/funky-coder-plus)
 <a href="https://s16nengineering.etsy.com/listing/1880999431/flightracing-sim-twin-dual-encoders"><button>BUY</button></a>
 
 ![](/assets/fc/fc-plus.jpg){: .center-image .small-image }
+
+## [Trimbox](/projects/funky-coder)
+
+Input device for aircraft trimmables [more...](/projects/trimbox)
+
+<a href="https://s16nengineering.etsy.com/listing/1897595063/flight-simulator-trim-box-for-rudder"><button>BUY</button></a>
+
+![](/assets/trimbox/1.png){: .center-image .small-image }
+
 
 ## [Mini Flight Controls](/projects/mini-flight-controls)
 
