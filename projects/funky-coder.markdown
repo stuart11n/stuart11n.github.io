@@ -14,7 +14,7 @@ I fly and drive in VR only. I have built several button boxes, but eventually de
 - a dual encoder with push button, exposed as 5 buttons
 - USB-C
 
-![](/assets/fc/fc1.jpg){: .center-image }
+![](/assets/fc/fc1.png){: .center-image }
 
 Inputs can be mapped in-game as normal HID device buttons.
 

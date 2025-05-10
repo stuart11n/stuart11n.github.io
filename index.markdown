@@ -23,7 +23,7 @@ VR focused input device for flight and racing [more...](/projects/funky-coder)
 
 <a href="https://s16nengineering.etsy.com/listing/1836479954/flightracing-sim-dual-encoder"><button>BUY</button></a>
 
-![](/assets/fc/fc1.jpg){: .center-image .small-image }
+![](/assets/fc/fc1.png){: .center-image .small-image }
 
 ## [Funky-coder Plus](/projects/funky-coder-plus)
 
