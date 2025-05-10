@@ -9,7 +9,7 @@ Enhance your simrig by isolating it from the floor [more...](/projects/simrig-is
 
 <a href="https://s16nengineering.etsy.com/listing/1844212953/simrig-vibration-isolators"><button>BUY</button></a>
 
-![](/assets/isolators/2.png){: .center-image .small-image }
+![](/assets/isolators/1.JPG){: .center-image .small-image }
 
 ## [Rudder Pedals](/projects/rudder-pedals)
 
