@@ -3,8 +3,8 @@ layout: post
 title: Projects
 ---
 
-<a href="https://s16nengineering.etsy.com"><img src="/assets/etsy.png" /> </a>
-<a href="https://www.patreon.com/c/s16n"><img src="/assets/patreon.png" /> </a>
+<a href="https://s16nengineering.etsy.com"><img width="150px" src="/assets/etsy.png" /> </a>
+<a href="https://www.patreon.com/c/s16n"><img width="150px"src="/assets/patreon.png" /> </a>
 
 
 
