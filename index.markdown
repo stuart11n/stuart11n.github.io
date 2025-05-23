@@ -4,8 +4,9 @@ title: Projects
 ---
 
 <a href="https://s16nengineering.etsy.com"><img src="/assets/etsy.png" /> </a>
+<a href="https://www.patreon.com/c/s16n"><img src="/assets/patreon.png" /> </a>
 
-https://www.patreon.com/c/s16n
+
 
 ## [Simrig Isolators](/projects/simrig-isolators)
 
