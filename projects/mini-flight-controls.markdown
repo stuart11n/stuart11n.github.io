@@ -4,8 +4,6 @@ categories: flightsim landing gear flaps
 title: Mini Flight Controls
 ---
 
-<a href="https://s16nengineering.etsy.com/listing/1864699190/mini-flight-controls"><button>BUY</button></a>
-
 Dedicated landing gear and flaps controls one device. For use with aviation sim and simracing. Great for VR as it simplifies the physical interface space.
 
 ### Features

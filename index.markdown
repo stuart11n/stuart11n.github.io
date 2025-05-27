@@ -46,15 +46,11 @@ Funky-coder with a mode switch [more...](/projects/funky-coder-plus)
 
 Input device for aircraft trimmables [more...](/projects/trimbox)
 
-<a href="https://s16nengineering.etsy.com/listing/1897595063/flight-simulator-trim-box-for-rudder"><button>BUY</button></a>
-
 ![](assets/trimbox/1.png){: .center-image .small-image }
 
 ## [Mini Flight Controls](/projects/mini-flight-controls)
 
 Flaps and landing gear + a funky-coder all in one [more...](/projects/mini-flight-controls)
-
-<a href="https://s16nengineering.etsy.com/listing/1864699190/mini-flight-controls"><button>BUY</button></a>
 
 ![](assets/fc/fc2.jpg){: .center-image .small-image }
 

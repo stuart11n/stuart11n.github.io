@@ -4,8 +4,6 @@ categories: flightsim trim
 title: Trimbox
 ---
 
-<a href="https://s16nengineering.etsy.com/listing/1897595063/flight-simulator-trim-box-for-rudder"><button>BUY</button></a>
-
 This unit is designed for controlling trim surfaces and other trimmable aircraft inputs such as cowl flaps, mixture. 
 
 It features three wheel input and a lever. The lever output is an axis and the wheels output as both axis and buttons. 
