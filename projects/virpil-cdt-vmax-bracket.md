@@ -14,7 +14,7 @@ title: Virpil CDT-VMAX profile bracket
 
 ## STEP
 
-[Printables](https://www.printables.com/model/1309679-virpil-cdt-vmax-profile-bracket)
+Download on [Printables](https://www.printables.com/model/1309679-virpil-cdt-vmax-profile-bracket)
 
 ![1](../assets/vmax/1.png){: .center-image .small-image }
 
