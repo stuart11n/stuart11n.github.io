@@ -54,6 +54,12 @@ Flaps and landing gear + a funky-coder all in one [more...](/projects/mini-fligh
 
 ![](assets/fc/fc2.jpg){: .center-image .small-image }
 
+## [Virpil CDT-VMAX rig bracket](/projects/virpil-cdt-vmax-bracket)
+
+Bracket to mount Virpil CDT-VMAX to a simrig  [more...](/projects/virpil-cdt-vmax-bracket)
+
+![thumbnail IMG 1336](assets/vmax/thumbnail_IMG_1336.jpg){: .center-image .small-image }
+
 ## [Virpil Quick Release](/projects/warbrd-qr)
 
 Quick release for Virpil WarBRD [more...](/projects/warbrd-qr)
