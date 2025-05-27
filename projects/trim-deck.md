@@ -6,13 +6,17 @@ title: Trim Deck
 
 ![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](../assets/trim-deck/CDT_VMAX_Mount_2025-May-26_10-49-37PM-000_CustomizedView43852198952_jpg.jpg)
 
-I wanted a set of trim wheels, I could not find anything suitable so I made this - and added a bunch of switches. I made it the same size as the Virpil CDT-VMAX throttle so I could use the [same mount](./virpil-cdt-vmax-bracket) I designed for that. 
+I wanted a set of trim wheels, I could not find anything suitable so I created the Trim Deck. It's the same size as the Virpil CDT-VMAX throttle so I could use [this mounting bracket](./virpil-cdt-vmax-bracket). 
 
 # Trim Wheels
 
 ![1](../assets/trim-deck/1.png){: .center-image }
 
 The elevator uses an optical encoder with 360 pulses per revolution. This provides a very smooth motion. The rudder and aileron use mechanical encoders with 20 detents.
+
+The elevator wheel protrudes out of the bottom of the case.
+
+![5](../assets/trim-deck/5.png){: .center-image }
 
 # Fuel Tank Selection
 
@@ -33,6 +37,10 @@ There are four momentary push buttons, single color and constantly illuminated.
 ![4](../assets/trim-deck/4.png){: .center-image }
 
 Six chrome toggle (ON)-OFF-(ON) for anything you like. I used momentary action so that the game state doesn't matter. It rests in the middle, so whether the navigation lights in the game are on or off, you still push up to turn them on, push down to turn them off. However, if you prefer regular latching ON-OFF action, that is not a problem, just order different units.
+
+# Mounting
+
+It does not come with any mounting holes, in my application I reuse the existing bolts to attach it to my mounting bracket. Modify the case and bottom plate as needed. 
 
 # Software
 
