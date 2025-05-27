@@ -6,7 +6,7 @@ title: Trim Deck
 
 ![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](../assets/trim-deck/CDT_VMAX_Mount_2025-May-26_10-49-37PM-000_CustomizedView43852198952_jpg.jpg)
 
-I wanted a set of trim wheels, I could not find anything suitable so I made this - and added a bunch of switches. I made it the same size as the Virpil CDT-VMAX throttle so I could the [same mount](./virpil-cdt-vmax-bracket) I designed for that. 
+I wanted a set of trim wheels, I could not find anything suitable so I made this - and added a bunch of switches. I made it the same size as the Virpil CDT-VMAX throttle so I could use the [same mount](./virpil-cdt-vmax-bracket) I designed for that. 
 
 # Trim Wheels
 
@@ -36,9 +36,9 @@ Six chrome toggle (ON)-OFF-(ON) for anything you like. I used momentary action s
 
 # Software
 
-This runs on Freejoy. The build docs do not cover wiring the switches to the STM32 bluepill, that is left to you. The Freejoy website is great. If you have Arduino experience, you can use one instead.
+This runs on Freejoy. The build docs do not cover wiring the switches and encoders to the STM32 bluepill, that is left to you. The Freejoy website is great. If you have Arduino experience, you can use one instead.
 
-I sell a USB-C STM32 BluePill on my [Etsy](https://s16nengineering.etsy.com), pre-flashed with a custom Freejoy build, a config and matching connection diagram. This will save some headaches, time and and cost if you do not have microcontroller experience.
+I sell a USB-C STM32 BluePill on my [Etsy](https://s16nengineering.etsy.com), pre-flashed with a custom Freejoy build, a config *and matching connection diagram*. This will save some headaches, time and and cost if you do not have microcontroller experience.
 
 SPAD.next or Mobiflight are needed to map fuel tanks and to alter the speed of trim adjustment.
 
