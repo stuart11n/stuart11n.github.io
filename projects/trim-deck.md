@@ -10,13 +10,13 @@ I wanted a set of trim wheels, I could not find anything suitable so I made this
 
 # Trim Wheels
 
-![1](../assets/trim-deck/1.png)
+![1](../assets/trim-deck/1.png){: .center-image }
 
 The elevator uses an optical encoder with 360 pulses per revolution. This provides a very smooth motion. The rudder and aileron use mechanical encoders with 20 detents.
 
 # Fuel Tank Selection
 
-![2](../assets/trim-deck/2.png)
+![2](../assets/trim-deck/2.png){: .center-image }
 
 The red knobs are for fuel tank selection. They are 6-way rotary switches so you can map a twin engine very nicely. Or, use them for something else entirely.
 
@@ -24,13 +24,13 @@ Mapping tank selection is complicated, each plane may require different handling
 
 # Push Buttons
 
-![3](../assets/trim-deck/3.png)
+![3](../assets/trim-deck/3.png){: .center-image }
 
 There are four momentary push buttons, single color and constantly illuminated.
 
 # Toggles
 
-![4](../assets/trim-deck/4.png)
+![4](../assets/trim-deck/4.png){: .center-image }
 
 Six chrome toggle (ON)-OFF-(ON) for anything you like. I used momentary action so that the game state doesn't matter. It rests in the middle, so whether the navigation lights in the game are on or off, you still push up to turn them on, push down to turn them off. However, if you prefer regular latching ON-OFF action, that is not a problem, just order different units.
 
