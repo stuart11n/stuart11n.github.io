@@ -18,7 +18,7 @@ Enhance your simrig by isolating it from the floor [more...](/projects/simrig-is
 
 Trim controls for flight sim [more...](/projects/trim-deck)
 
-![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](assets/trim-deck/CDT_VMAX_Mount_2025-May-26_10-49-37PM-000_CustomizedView43852198952_jpg.jpg)
+![photo](assets/trim-deck/photo.png){: .center-image .small-image }
 
 ## [Rudder Pedals](/projects/rudder-pedals)
 
