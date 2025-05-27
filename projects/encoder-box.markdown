@@ -13,7 +13,7 @@ Ultimate encoder button box. I no longer use this because I prefer the simpler i
 - Three toggles 
 - USB-C
 
-![](/assets/eb/eb1.jpg){: .center-image }
+![](../assets/eb/eb1.jpg){: .center-image }
 
 Inputs can be mapped in-game as normal HID device buttons.
 

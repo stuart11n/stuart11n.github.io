@@ -19,9 +19,9 @@ I got the idea from drummers, they use tennis balls sandwiched between sheets of
 
 <iframe class="center-image" width="740" height="416" src="https://www.youtube.com/embed/oiSOLjrLcrQ?si=3xlgFTEuJvTTJUB7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-![](/assets/isolators/1.JPG){: .center-image }
-![](/assets/isolators/2.png){: .center-image }
-![](/assets/isolators/6.jpg){: .center-image }
-![](/assets/isolators/7.png){: .center-image }
+![](../assets/isolators/1.JPG){: .center-image }
+![](../assets/isolators/2.png){: .center-image }
+![](../assets/isolators/6.jpg){: .center-image }
+![](../assets/isolators/7.png){: .center-image }
 
 Available in my [Etsy Shop](https://www.etsy.com/listing/1844212953/)

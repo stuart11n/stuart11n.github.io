@@ -6,9 +6,9 @@ title: Rudder Pedals Mk. 7
 
 I designed these rudder pedals to be bolted to the underside of a racing rig pedal plate.
 
-![](/assets/pedals/mk7.JPG){: .center-image }
-![](/assets/pedals/mk7b.JPG){: .center-image }
-![](/assets/pedals/mk7c.JPG){: .center-image }
+![](../assets/pedals/mk7.JPG){: .center-image }
+![](../assets/pedals/mk7b.JPG){: .center-image }
+![](../assets/pedals/mk7c.JPG){: .center-image }
 
 
 ### Features
@@ -32,28 +32,28 @@ I designed these rudder pedals to be bolted to the underside of a racing rig ped
 
 These felt awful...
 
-![](/assets/pedals/mk2.jpg){: .center-image }
+![](../assets/pedals/mk2.jpg){: .center-image }
 
 #### Mk. 3
 
 The rudder control works really well, but I didn't include brakes. 
 
-![](/assets/pedals/mk3.jpg){: .center-image }
+![](../assets/pedals/mk3.jpg){: .center-image }
 
 #### Mk. 4
 
 I hacked brakes onto Mk. 3 using load cells (pictured) and although they work they don't have very good feel.
 
-![](/assets/pedals/mk4.JPG){: .center-image }
-![](/assets/pedals/mk4b.JPG){: .center-image }
+![](../assets/pedals/mk4.JPG){: .center-image }
+![](../assets/pedals/mk4b.JPG){: .center-image }
 
 #### Mk. 5
 
 Really nice, felt like I was getting somewhere but hard to use the toe brakes and a bit heavy to use. 
 
-![](/assets/pedals/IMG_1098.JPG){: .center-image }
-![](/assets/pedals/IMG_1099.JPG){: .center-image }
-![](/assets/pedals/IMG_1101.JPG){: .center-image }
+![](../assets/pedals/IMG_1098.JPG){: .center-image }
+![](../assets/pedals/IMG_1099.JPG){: .center-image }
+![](../assets/pedals/IMG_1101.JPG){: .center-image }
 
 A video of the pedals installed and working:
 
@@ -63,5 +63,5 @@ A video of the pedals installed and working:
 
 Evolution of Mk. 4, but with separate toe brakes. Immediately after I finished them, I realized my mistake with Mk. 5... 
 
-![](/assets/pedals/mk6.JPG){: .center-image }
+![](../assets/pedals/mk6.JPG){: .center-image }
 

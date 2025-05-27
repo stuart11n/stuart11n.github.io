@@ -26,5 +26,5 @@ Videos:
 - https://youtu.be/pZBpqWDpmsI
 - https://youtu.be/YUGfLCfSlpU
 
-![](/assets/trimbox/1.png){: .center-image }
+![](../assets/trimbox/1.png){: .center-image }
 

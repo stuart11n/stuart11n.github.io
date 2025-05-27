@@ -14,7 +14,7 @@ I fly and drive in VR only. I have built several button boxes, but eventually de
 - a dual encoder with push button, exposed as 5 buttons
 - USB-C
 
-![](/assets/fc/fc1.png){: .center-image }
+![](../assets/fc/fc1.png){: .center-image }
 
 Inputs can be mapped in-game as normal HID device buttons.
 
@@ -48,7 +48,7 @@ Note: aside from SPAD.next, Joystick Gremlin can also accomplish multiple modes 
 
 I use the weapon select switch on my flight stick so I can switch modes rapidly. HOTAF: Hand On Throttle And Funky-coder :-)
 
-![](/assets/fc/fc3.jpg){: .center-image }
+![](../assets/fc/fc3.jpg){: .center-image }
 
 ## Mounting options
 
@@ -56,7 +56,7 @@ I use the weapon select switch on my flight stick so I can switch modes rapidly.
 
 This can be flipped horizontally and vertically. For M3 socket head bolts. 
 
-![](/assets/fc/b1-1.png){: .center-image }
-![](/assets/fc/b1-2.png){: .center-image }
+![](../assets/fc/b1-1.png){: .center-image }
+![](../assets/fc/b1-2.png){: .center-image }
 
 The Funky-coder is available in my [Etsy Shop](https://www.etsy.com/listing/1836479954/)

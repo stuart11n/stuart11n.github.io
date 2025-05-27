@@ -8,7 +8,7 @@ title: Virpil WarBRD
 
 This is a Quick Release mounting stalk for the Virpil WarBRD-D.
 
-![](/assets/wbqr/wbqr1.jpg){: .center-image }
+![](../assets/wbqr/wbqr1.jpg){: .center-image }
 
 It comprises:
 

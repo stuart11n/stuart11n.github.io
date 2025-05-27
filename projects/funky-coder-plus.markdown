@@ -17,7 +17,7 @@ Twin dual encoders and a funky switch with 4 modes (layers). For use with aviati
 
 Inputs can be mapped in game as a normal HID device so it's compatible with all games, and tools such as SPAD.next and Axis And Ohs.
 
-![](/assets/fc/fc-plus.jpg){: .center-image }
+![](../assets/fc/fc-plus.jpg){: .center-image }
 
 #### Example config 
 
