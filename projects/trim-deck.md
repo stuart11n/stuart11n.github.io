@@ -36,9 +36,9 @@ Six chrome toggle (ON)-OFF-(ON) for anything you like. I used momentary action s
 
 # Software
 
-This runs on Freejoy. Figuring that out is left to you, the Freejoy website is great. 
+This runs on Freejoy. The build docs do not cover wiring the switches to the STM32 bluepill, that is left to you. The Freejoy website is great. If you have Arduino experience, you can use one instead.
 
-It you want an easier route, I sell a STM32 BluePill on my [Etsy](https://s16nengineering.etsy.com), pre-programmed with a custom Freejoy build + config and connection diagram. This will save some headaches and cost if you do not have a STM32 programmer.
+I sell a USB-C STM32 BluePill on my [Etsy](https://s16nengineering.etsy.com), pre-flashed with a custom Freejoy build, a config and matching connection diagram. This will save some headaches, time and and cost if you do not have microcontroller experience.
 
 SPAD.next or Mobiflight are needed to map fuel tanks and to alter the speed of trim adjustment.
 
