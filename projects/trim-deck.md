@@ -46,6 +46,9 @@ SPAD.next or Mobiflight are needed to map fuel tanks and to alter the speed of t
 
 STEP files are available by joining my [Patreon](https://patreon.com/s16n). When you join, you gain access to updates and other projects including my [simrig rudder pedals](rudder-pedals) 
 
+![0](../assets/trim-deck/0.png)
+*My build with custom switches replacing two toggles*
+
 # Build Guide
 
 There is not much space inside the case, so it's a little challenging. There are a lot of wires, so patience and a fine tip soldering iron is mandatory.
