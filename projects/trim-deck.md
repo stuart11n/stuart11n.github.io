@@ -6,7 +6,7 @@ title: Trim Deck
 
 ![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](../assets/trim-deck/CDT_VMAX_Mount_2025-May-26_10-49-37PM-000_CustomizedView43852198952_jpg.jpg)
 
-I wanted a set of trim wheels, I could not find anything suitable so I made this - and added a bunch of switches. I made it the same size as the Virpil CDT-VMAX throttle so I could the same mount I designed for that. 
+I wanted a set of trim wheels, I could not find anything suitable so I made this - and added a bunch of switches. I made it the same size as the Virpil CDT-VMAX throttle so I could the [same mount](./virpil-cdt-vmax-bracket) I designed for that. 
 
 # Trim Wheels
 
