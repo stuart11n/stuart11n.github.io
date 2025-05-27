@@ -3,13 +3,8 @@ layout: post
 title: Projects
 ---
 
-## Etsy
-
-<a href="https://s16nengineering.etsy.com"><img width="150px" src="assets/etsy.png" /> </a>
-
-## Patreon
-
-<a href="https://www.patreon.com/c/s16n"><img width="300px" src="assets/patreon.png" /> </a>
+[Etsy Shop](https://s16nengineering.etsy.com)  
+[Patreon](https://s16nengineering.etsy.com)
 
 ## [Simrig Isolators](/projects/simrig-isolators)
 
@@ -18,6 +13,12 @@ Enhance your simrig by isolating it from the floor [more...](/projects/simrig-is
 <a href="https://s16nengineering.etsy.com/listing/1844212953/simrig-vibration-isolators"><button>BUY</button></a>
 
 ![](assets/isolators/1.JPG){: .center-image .small-image }
+
+## [Trim Deck](/projects/trim-deck)
+
+Trim controls for flight sim [more...](/projects/trim-deck)
+
+![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](assets/trim-deck/CDT_VMAX_Mount_2025-May-26_10-49-37PM-000_CustomizedView43852198952_jpg.jpg)
 
 ## [Rudder Pedals](/projects/rudder-pedals)
 
