@@ -36,15 +36,15 @@ Six chrome toggle (ON)-OFF-(ON) for anything you like. I used momentary action s
 
 # Software
 
-This runs on Freejoy. Knowledge of Freejoy is required. 
+This runs on Freejoy. Figuring that out is left to you, the Freejoy website is great. 
 
-I sell a pre-programmed STM32 BluePill on my [Etsy](https://s16nengineering.etsy.com), pre-programmed with a custom Freejoy build + config and connection diagram. This will save some headaches and cost if you do not have a STM32 programmer.
+It you want an easier route, I sell a STM32 BluePill on my [Etsy](https://s16nengineering.etsy.com), pre-programmed with a custom Freejoy build + config and connection diagram. This will save some headaches and cost if you do not have a STM32 programmer.
 
 SPAD.next or Mobiflight are needed to map fuel tanks and to alter the speed of trim adjustment.
 
 # STEP files
 
-STEP files are available by joining my [Patreon](https://patreon.com/s16n). When you join, you gain access to updates and other projects including my simrig rudder pedals 
+STEP files are available by joining my [Patreon](https://patreon.com/s16n). When you join, you gain access to updates and other projects including my [simrig rudder pedals](rudder-pedals) 
 
 # Build Guide
 
