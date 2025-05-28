@@ -42,6 +42,16 @@ Funky-coder with a mode switch [more...](/projects/funky-coder-plus)
 
 ![](assets/fc/fc-plus.jpg){: .center-image .small-image }
 
+
+
+## [Funky-coder Quattro](https://s16nengineering.etsy.com/listing/4302300030)
+
+<a href="https://s16nengineering.etsy.com/listing/4302300030"><button>BUY</button></a>
+
+![May include: A black control panel with four knobs and four buttons. The knobs are labeled I, II, III, and IV. The buttons are black and red. The panel has a textured surface.](https://i.etsystatic.com/56550814/r/il/0918cd/6846689010/il_1140xN.6846689010_60pt.jpg){: .center-image .small-image }
+
+
+
 ## [Trimbox](/projects/funky-coder)
 
 Input device for aircraft trimmables [more...](/projects/trimbox)
