@@ -4,7 +4,7 @@ categories: encoder button-box
 title: Funky-coder
 ---
 
-I no longer use this - instead I joined two [Funky-coder Plus](funky-coder-plus) together to make the [Funky-coder Quattro](funky-coder-quattro) 
+I no longer use this - instead I joined two [Funky-coder Plus'](funky-coder-plus) together to make the [Funky-coder Quattro](funky-coder-quattro) 
 
 ### Features
 

@@ -8,15 +8,15 @@ title: Funky-coder Quattro
 
 
 
-It's exactly what it looks like!
+It's exactly what it looks like! Two Funky-coder Plus' Welded together!
 
 This is Funky-coder Quattro - for flightsim and simracing! Designed to make it easier to manage tunables on aircraft with up to four engines, or tunable engines/chassis characteristics such as ABS, ARB, TCS, etc in simracing.
 
-\- Four dual encoders (with push button) for controlling mixture, cowls, on up to four engines. Or maybe barometer, altitude, comms etc. In simracing, use it for ABS, brake balance/migration, boost, fuel map
-\- Two funky switches (4-way with rotary encoder) for even more control; altering camera position, interacting with Garmin GPS, door mirrors, ...
-\- Left rotary switch for selecting 1 of 3 layers. This applies to top row only, multiplying the total encoders from 8 to 24
-\- The second rotary switch is disguised as a three position ignition switch (no spring return)
-\- Plug and play, no drivers or external apps needed
+- Four dual encoders (with push button) for controlling mixture, cowls, on up to four engines. Or maybe barometer, altitude, comms etc. In simracing, use it for ABS, brake balance/migration, boost, fuel map
+- Two funky switches (4-way with rotary encoder) for even more control; altering camera position, interacting with Garmin GPS, door mirrors, ...
+- Left rotary switch for selecting 1 of 3 layers. This applies to top row only, multiplying the total encoders from 8 to 24
+- The second rotary switch is disguised as a three position ignition switch (no spring return)
+- Plug and play, no drivers or external apps needed
 
 
 
