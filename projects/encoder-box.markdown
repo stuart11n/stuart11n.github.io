@@ -4,7 +4,7 @@ categories: encoder button-box
 title: Funky-coder
 ---
 
-Ultimate encoder button box. I no longer use this because I prefer the simpler interface of the Funky-coder in VR.
+I no longer use this - instead I joined two [Funky-coder Plus](funky-coder-plus) together to make the [Funky-coder Quattro](funky-coder-quattro) 
 
 ### Features
 
