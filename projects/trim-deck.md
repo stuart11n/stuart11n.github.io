@@ -32,13 +32,13 @@ I have used SPAD.next to do this, per plane, and it works well. MobiFlight shoul
 
 ![3](../assets/trim-deck/3.png){: .center-image }
 
-There are four general purpose momentary push buttons, single color and constantly illuminated.  
+Four general purpose momentary push buttons, single color and constantly illuminated.  
 
 # Toggles
 
 ![4](../assets/trim-deck/4.png){: .center-image }
 
-Six general purpose chrome toggles (ON)-OFF-(ON) for anything you like. I use momentary action toggle so that the game state doesn't matter;  whether the navigation lights in the game are on or off, a push up always turns them on and push down turns them off. However, if you prefer regular latching ON-OFF-ON action, or even ON-OFF, that is not a problem, just order different units.
+Six general purpose chrome toggles (ON)-OFF-(ON). I use momentary action toggle so that the game state doesn't matter;  whether the navigation lights in the game are on or off, a push up always turns them on and push down turns them off. However, if you prefer regular latching ON-OFF-ON action, or even ON-OFF, that is not a problem, just order different units.
 
 # Mounting
 
