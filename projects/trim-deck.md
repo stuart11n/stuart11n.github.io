@@ -22,29 +22,31 @@ The elevator wheel protrudes out of the bottom of the case.
 
 ![2](../assets/trim-deck/2.png){: .center-image }
 
-The red knobs are for fuel tank selection. They are 6-way rotary switches so you can map a twin engine very nicely. Or, use them for something else entirely.
+The two red knobs are for fuel tank selection. They are 6-way rotary switches so you can map a twin engine very nicely or a single and have a spare for fuel valve, or use them for something else entirely.
 
-Mapping tank selection is complicated, each plane may require different handling. I have used SPAD.next to do this, per plane, and it works well. MobiFlight should also be able to manage it. I use it on the Black Box Dukes and Blackbird 310R, Flying Iron warbirds. It takes a while to set up each plane but it's worth it.
+Mapping tank selection can be tricky, each plane may require different mapping.  I use it on the Black Box Dukes and Blackbird 310R, Flying Iron warbirds. It takes a while to set up each plane but it's worth it. 
+
+I have used SPAD.next to do this, per plane, and it works well. MobiFlight should also be able to manage it but I have no experience with it. I have not tried mapping directly in-game.
 
 # Push Buttons
 
 ![3](../assets/trim-deck/3.png){: .center-image }
 
-There are four momentary push buttons, single color and constantly illuminated.
+There are four general purpose momentary push buttons, single color and constantly illuminated.  
 
 # Toggles
 
 ![4](../assets/trim-deck/4.png){: .center-image }
 
-Six chrome toggle (ON)-OFF-(ON) for anything you like. I used momentary action so that the game state doesn't matter. It rests in the middle, so whether the navigation lights in the game are on or off, you still push up to turn them on, push down to turn them off. However, if you prefer regular latching ON-OFF action, that is not a problem, just order different units.
+Six general purpose chrome toggles (ON)-OFF-(ON) for anything you like. I use momentary action toggle so that the game state doesn't matter;  whether the navigation lights in the game are on or off, a push up always turns them on and push down turns them off. However, if you prefer regular latching ON-OFF-ON action, or even ON-OFF, that is not a problem, just order different units.
 
 # Mounting
 
-It does not come with any mounting holes, in my application I reuse the existing bolts to attach it to my mounting bracket. Modify the case and bottom plate as needed. 
+The case does not come with any mounting holes, in my application I reuse the existing bolts to attach it to my mounting bracket. Modify the case or bottom plate as needed. Or use the included bottom plate that fixes directly onto my [mounting bracket](./virpil-cdt-vmax-bracket).
 
 # Software
 
-This runs on Freejoy. The build docs do not cover wiring the switches and encoders to the STM32 bluepill, that is left to you. The Freejoy website is great. If you have Arduino experience, you can use one instead.
+This run Freejoy. The build docs do not cover wiring the switches and encoders to the STM32 Bluepill, that is left to you. If you have Arduino experience, you can use one instead.
 
 I sell a USB-C STM32 BluePill on my [Etsy](https://s16nengineering.etsy.com), pre-flashed with a custom Freejoy build, a config *and matching connection diagram*. This will save some headaches, time and and cost if you do not have microcontroller experience.
 
