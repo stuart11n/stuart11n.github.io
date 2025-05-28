@@ -44,7 +44,7 @@ Funky-coder with a mode switch [more...](/projects/funky-coder-plus)
 
 
 
-## [Funky-coder Quattro](https://s16nengineering.etsy.com/listing/4302300030)
+## [Funky-coder Quattro](projects/funk-coder-quattro)
 
 <a href="https://s16nengineering.etsy.com/listing/4302300030"><button>BUY</button></a>
 
