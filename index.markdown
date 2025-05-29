@@ -24,7 +24,7 @@ Trim controls for flight sim [more...](/projects/trim-deck)
 
 Rudder pedals with toe brakes for dual use rigs [more...](/projects/rudder-pedals)
 
-![](assets/pedals/IMG_1098.JPG){: .center-image .small-image }
+![](assets/image-20250528211825527.png){: .center-image .small-image }
 
 ## [Funky-coder](/projects/funky-coder)
 
