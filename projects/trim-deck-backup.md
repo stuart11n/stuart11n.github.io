@@ -46,11 +46,39 @@ The case does not come with any mounting holes, in my application I reuse the ex
 
 # Software
 
+This run Freejoy. The build docs do not cover wiring the switches and encoders to the STM32 Bluepill, that is left to you. If you have Arduino experience, you can use one instead.
+
+I sell a USB-C STM32 BluePill on my [Etsy](https://s16nengineering.etsy.com), pre-flashed with a custom Freejoy build, a config *and matching connection diagram*. This will save some headaches, time and and cost if you do not have microcontroller experience.
+
 SPAD.next or Mobiflight are needed to map fuel tanks and to alter the speed of trim adjustment.
 
+# STEP files
 
+STEP files are available by joining my [Patreon](https://patreon.com/s16n). When you join, you gain access to updates and other projects including my [simrig rudder pedals](rudder-pedals) 
 
 ![0](../assets/trim-deck/0.png)
-*A build with custom switches replacing two of the toggles*
+*My build with custom switches replacing two toggles*
 
+# Build Guide
+
+There is not much space inside the case, so it's a little challenging. There are a lot of wires, so patience and a fine tip soldering iron is mandatory.
+
+# BOM
+
+- 1 x 2 phase Incremental Optical Rotary Encoder 360P/R DC 5-24v, 6mm Shaft
+  - [Amazon](https://www.amazon.com/dp/B07MWZ4CLT)
+- 2 x 1P12T Rotary Switch
+  - [Amazon](https://www.amazon.com/dp/B074WMC9C8)
+- 2 x EC11 encoders, 20mm shaft
+  - [Amazon](https://www.amazon.com/dp/B08728K3YB)
+- 6 x (ON)-OFF-(ON) toggle switches, 12mm mounting hole
+  - [Amazon](https://www.amazon.com/dp/B09JFYNFFK)
+- 4 x momentary switches, 16mm mounting hole
+  - [Amazon](https://www.amazon.com/dp/B0BFQM928J)
+- 4 x M4 hex socket bolts, 55mm 
+  - [Amazon](https://www.amazon.com/dp/B0DFYK39N6)
+- 30AWG silicone wire
+  - [Amazon](https://www.amazon.com/dp/B01M70EDCW) 
+- DC-DC boost module (for the optical rotary encoder)
+  - [Amazon](https://www.amazon.com/dp/B07T7FWVP8)
 

@@ -1,14 +1,18 @@
 ---
 layout: post
 categories: flightsim rudder pedals
-title: Rudder Pedals Mk. 7
+title: Rudder Pedals Mk. 8
 ---
 
 I designed these rudder pedals to be bolted to the underside of a racing rig pedal plate.
 
-![](../assets/pedals/mk7.JPG){: .center-image }
-![](../assets/pedals/mk7b.JPG){: .center-image }
-![](../assets/pedals/mk7c.JPG){: .center-image }
+![thumbnail_IMG_1341](assets/thumbnail_IMG_1341.jpg){: .center-image }
+
+
+
+<img src="assets/mk7.JPG" style="zoom:150%;" />
+
+Mk .8 is simpler and cheaper to build and has to potential for variable/motorized centering force.
 
 
 ### Features
@@ -17,16 +21,21 @@ I designed these rudder pedals to be bolted to the underside of a racing rig ped
 - toe brakes and rudder control
 - AS5600 magnetic position sensors on all three axis 
 - adjustable pedal angle
-- semi-quick release
+- easy install/removal, two bolts and it slides out
 - USB-C
 
 ### Possible enhancements
 
 - electro-mechanical release of centering force for rotary flight
 - experiment with a stepper motor for providing the centering force. This could also provide force feedback
-- further build simplification
 
 ### Previous Iterations
+
+#### Mk. 1
+
+Nope.
+
+![image-20250528193619460](assets/image-20250528193619460.png)
 
 #### Mk. 2
 
@@ -38,7 +47,7 @@ These felt awful...
 
 The rudder control works really well, but I didn't include brakes. 
 
-![](../assets/pedals/mk3.jpg){: .center-image }
+<img src="../assets/pedals/mk3.jpg" style="zoom:150%;" />
 
 #### Mk. 4
 
@@ -64,4 +73,13 @@ A video of the pedals installed and working:
 Evolution of Mk. 4, but with separate toe brakes. Immediately after I finished them, I realized my mistake with Mk. 5... 
 
 ![](../assets/pedals/mk6.JPG){: .center-image }
+
+#### Mk. 7
+
+Excellent pedals! Did not center very well, also impossible to release the centering force.
+
+
+![](../assets/pedals/mk7b.JPG){: .center-image }
+
+![](assets/mk7c.JPG){: .center-image }
 
