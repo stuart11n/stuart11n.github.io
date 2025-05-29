@@ -8,8 +8,6 @@ I designed these rudder pedals to be bolted to the underside of a racing rig ped
 
 ![thumbnail_IMG_1341](assets/thumbnail_IMG_1341.jpg){: .center-image }
 
-Mk .8 is simpler and cheaper to build and has the potential for variable/motorized centering force.
-
 
 ### Features
 
@@ -21,6 +19,8 @@ Mk .8 is simpler and cheaper to build and has the potential for variable/motoriz
 - USB-C
 
 <img src="assets/mk7.JPG" style="zoom:150%;" />
+
+Mk. 8 is simpler and cheaper to build and has the potential for variable/motorized centering force.
 
 #### Possible enhancements
 
