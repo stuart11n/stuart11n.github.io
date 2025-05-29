@@ -8,6 +8,8 @@ title: Trim Deck
 
 I wanted a set of trim wheels, I could not find anything suitable so I created the Trim Deck. It's the same size as the Virpil CDT-VMAX throttle so I could use [this mounting bracket](./virpil-cdt-vmax-bracket). 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/a8p1j_3Wt-U?si=X5OfM-vOUT1BMG70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 # Trim Wheels
 
 ![1](../assets/trim-deck/1.png){: .center-image }
@@ -52,5 +54,4 @@ SPAD.next or Mobiflight are needed to map fuel tanks and to alter the speed of t
 
 ![0](../assets/trim-deck/0.png)
 *A build with custom switches replacing two of the toggles*
-
 
