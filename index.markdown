@@ -3,9 +3,6 @@ layout: post
 title: Projects
 ---
 
-[Etsy Shop](https://s16nengineering.etsy.com)  
-[Patreon](https://s16nengineering.etsy.com)
-
 ## [Simrig Isolators](/projects/simrig-isolators)
 
 Enhance your simrig by isolating it from the floor [more...](/projects/simrig-isolators)
