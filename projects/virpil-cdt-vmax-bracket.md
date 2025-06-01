@@ -4,7 +4,7 @@ categories: flightsim virpil profile bracket
 title: Virpil CDT-VMAX profile bracket
 ---
 
-![thumbnail IMG 1336](../assets/vmax/thumbnail_IMG_1336.jpg){: .center-image .small-image }
+![thumbnail IMG 1336](../assets/2025-05-27T083432_IMG_1336_edit.jpg){: .center-image .small-image }
 
 - Bolts together, needs no support. Print with 5 or 6 walls. Infill 15%. PLA is fine.
 - Unbolt the bottom plate on the throttle, reuse the same bolts to attach it to the bracket (leave the bottom plate on) 
@@ -16,7 +16,11 @@ title: Virpil CDT-VMAX profile bracket
 
 Download on [Printables](https://www.printables.com/model/1309679-virpil-cdt-vmax-profile-bracket)
 
-![1](../assets/vmax/1.png){: .center-image .small-image }
+![2025-05-27T090054_IMG_1337_edit](../assets/2025-05-27T090054_IMG_1337_edit.jpg){: .center-image .small-image }
+
+
+
+![2025-05-27T090117_IMG_1338_edit](../assets/2025-05-27T090117_IMG_1338_edit.jpg){: .center-image .small-image }
 
 ## Parts needed
 

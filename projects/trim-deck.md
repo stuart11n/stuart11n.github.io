@@ -50,8 +50,6 @@ The case does not come with any mounting holes, in my application I reuse the ex
 
 SPAD.next or Mobiflight are needed to map fuel tanks and to alter the speed of trim adjustment.
 
-
-
-![0](../assets/trim-deck/0.png)
+![2025-05-27T134745_IMG_1340_edit](assets/2025-05-27T134745_IMG_1340_edit.jpg)
 *A build with custom switches replacing two of the toggles*
 
