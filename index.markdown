@@ -3,8 +3,6 @@ layout: post
 title: Projects
 ---
 
-[TOC]
-
 ## [Simrig Isolators](/projects/simrig-isolators)
 
 Enhance your simrig by isolating it from the floor [more...](/projects/simrig-isolators)
