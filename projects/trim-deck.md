@@ -44,11 +44,13 @@ Six general purpose chrome toggles (ON)-OFF-(ON). I use momentary action toggle 
 
 # Mounting
 
-The case does not come with any mounting holes, in my application I reuse the existing bolts to attach it to my mounting bracket. Modify the case or bottom plate as needed. Or use the included bottom plate that fixes directly onto my [mounting bracket](./virpil-cdt-vmax-bracket).
+There is an adapter plate that fixes directly onto my [mounting bracket](./virpil-cdt-vmax-bracket), an adapter so it can be attached to the [Virpil Desk Mount Adapter](https://virpil-controls.us.com/vpc-desk-mount-adapter-cdt-vmax-throttle.html) and a tilting desktop bracket.
 
 # Software
 
 SPAD.next or Mobiflight are needed to map fuel tanks and to alter the speed of trim adjustment.
+
+---
 
 ![2025-05-27T134745_IMG_1340_edit](assets/2025-05-27T134745_IMG_1340_edit.jpg)
 *A build with custom switches replacing two of the toggles*
