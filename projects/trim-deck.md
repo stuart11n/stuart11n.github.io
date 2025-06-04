@@ -44,7 +44,23 @@ Six general purpose chrome toggles (ON)-OFF-(ON). I use momentary action toggle 
 
 # Mounting
 
-There is an adapter plate that fixes directly onto my [mounting bracket](./virpil-cdt-vmax-bracket), an adapter so it can be attached to the [Virpil Desk Mount Adapter](https://virpil-controls.us.com/vpc-desk-mount-adapter-cdt-vmax-throttle.html) and a tilting desktop bracket.
+There are four options.
+
+An adapter that fixes directly onto my [mounting bracket](./virpil-cdt-vmax-bracket),
+
+![](../assets/image-20250604101217823.png)
+
+A spacer so it can be attached to the [Virpil Desk Mount Adapter](https://virpil-controls.us.com/vpc-desk-mount-adapter-cdt-vmax-throttle.html), or sit flat on a desk
+
+![](../assets/image-20250604100839104.png)
+
+A base for 1/4" desk clamp and 4 x m3 hardpoints (1/4" clamp not included)
+
+![](../assets/image-20250604095247303.png)
+
+Flat bottom
+
+![image-20250604101257599](../assets/image-20250604101257599.png)
 
 # Software
 
