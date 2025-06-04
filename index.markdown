@@ -15,6 +15,8 @@ Enhance your simrig by isolating it from the floor [more...](/projects/simrig-is
 
 Trim controls for flight sim [more...](/projects/trim-deck)
 
+<a href="https://www.etsy.com/listing/4315608606/trim-deck"><button>BUY</button></a>
+
 ![photo](assets/trim-deck/photo.png){: .center-image .small-image }
 
 ## [Rudder Pedals](/projects/rudder-pedals)

@@ -4,9 +4,11 @@ categories: flightsim trim
 title: Trim Deck
 ---
 
+<a href="https://www.etsy.com/listing/4315608606/trim-deck"><button>BUY</button></a>
+
 ![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](../assets/trim-deck/CDT_VMAX_Mount_2025-May-26_10-49-37PM-000_CustomizedView43852198952_jpg.jpg)
 
-I wanted a set of trim wheels, I could not find anything suitable so I created the Trim Deck. It's the same size as the Virpil CDT-VMAX throttle so I could use [this mounting bracket](./virpil-cdt-vmax-bracket). 
+Trim Deck is a set of trim wheels with ancillary buttons and knobs for controlling fuel valves, lights, etc.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/a8p1j_3Wt-U?si=X5OfM-vOUT1BMG70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
