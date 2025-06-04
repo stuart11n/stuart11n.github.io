@@ -14,7 +14,7 @@ I wanted a set of trim wheels, I could not find anything suitable so I created t
 
 ![1](../assets/trim-deck/1.png){: .center-image }
 
-The elevator uses an optical encoder with 360 pulses per revolution. This provides a very smooth motion. The rudder and aileron use mechanical encoders with 20 detents.
+The elevator is 110mm in diameter and uses an optical encoder with 360 pulses per revolution. This provides a very smooth motion. The rudder and aileron are 64mm in diameters and use mechanical encoders with 20 detents.
 
 The elevator wheel protrudes out of the bottom of the case.
 
@@ -44,17 +44,19 @@ Six general purpose chrome toggles (ON)-OFF-(ON). I use momentary action toggle 
 
 # Mounting
 
-There are four options.
+The size of the elevator wheel does make mounting a interesting. The housing is 136x51x170mm, the elevator wheel protrudes 30mm. 
 
-An adapter that fixes directly onto my [mounting bracket](./virpil-cdt-vmax-bracket),
+There are four mounting options:
+
+1. An adapter that fixes directly onto my [mounting bracket](./virpil-cdt-vmax-bracket),
 
 ![](../assets/image-20250604101217823.png)
 
-A spacer so it can be attached to the [Virpil Desk Mount Adapter](https://virpil-controls.us.com/vpc-desk-mount-adapter-cdt-vmax-throttle.html), or sit flat on a desk
+2. A spacer so it can be attached to the [Virpil Desk Mount Adapter](https://virpil-controls.us.com/vpc-desk-mount-adapter-cdt-vmax-throttle.html), or sit flat on a desk
 
 ![](../assets/image-20250604100839104.png)
 
-A base for 1/4" desk clamp and 4 x m3 hardpoints (1/4" clamp not included)
+3. A base with 1/4" screw socket for 1/4" desk clamp (not included) and 4 x m3 hardpoints for you own mounting options
 
 ![](../assets/image-20250604095247303.png)
 
