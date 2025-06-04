@@ -73,8 +73,6 @@ Bracket to mount Virpil CDT-VMAX to a simrig  [more...](/projects/virpil-cdt-vma
 
 Quick release for Virpil WarBRD [more...](/projects/warbrd-qr)
 
-<a href="https://s16nengineering.etsy.com/listing/1870347602/flightstick-quick-release-for-virpil"><button>BUY</button></a>
-
 ![](assets/wbqr/wbqr1.jpg){: .center-image .small-image }
 
 ## [Encoder Box](/projects/encoder-box)
