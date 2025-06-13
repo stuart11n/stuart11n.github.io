@@ -6,6 +6,8 @@ title: Virpil CDT-VMAX profile bracket V2
 
 
 
+![image-20250612184811786](../assets/image-20250612184811786.png)
+
 - For 40-series profile
 
 - Height adjustable a few centimeters up and down
