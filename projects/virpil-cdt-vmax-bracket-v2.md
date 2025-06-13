@@ -16,6 +16,8 @@ title: Virpil CDT-VMAX profile bracket V2
 
 - Print with strength profile. 5 or 6 walls. PLA is fine. Don't skimp on filament, it needs to be rigid.
 
+- Tolerances are **tight** on the 4040 interfaces, especially to top socket so please do "below the bed" test print on just that part to check before committing to the whole thing!
+
 - Two lower brackets included, depending on rig attachment point
 
 - Download on [Printables](https://www.printables.com/model/1309679-virpil-cdt-vmax-profile-bracket)
