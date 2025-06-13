@@ -32,7 +32,7 @@ title: Virpil CDT-VMAX profile bracket V2
 
 ## Parts needed
 
-- 8 x M6 profile nuts
+- 8 x M6 profile T-nuts (spring loaded is a must on the lower bracket to rig bolts)
 - 2 x M6 15mm hex socket bolts
 - 4 x M6 20mm hex socket bolts 
 - 4 x M6 25mm hex socket bolts 
