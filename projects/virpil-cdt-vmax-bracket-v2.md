@@ -14,8 +14,6 @@ title: Virpil CDT-VMAX profile bracket V2
 
 - The 4040 can pass through the lower bracket making it somewhat height adjustable (limited by distance to floor)
 
-- Prints with no support, but you may want some on the lower bracket due to the large fillet, just for a couple of layers to keep t clean
-
 - Print with strength profile. 5 or 6 walls. PLA is fine. Don't skimp on filament, it needs to be rigid.
 
 - Two lower brackets included, depending on rig attachment point
