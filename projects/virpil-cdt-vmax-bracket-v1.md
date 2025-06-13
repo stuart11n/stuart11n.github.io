@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: flightsim virpil profile bracket
-title: Virpil CDT-VMAX profile bracket
+title: Virpil CDT-VMAX profile bracket V1
 ---
 
 ![thumbnail IMG 1336](../assets/2025-05-27T083432_IMG_1336_edit.jpg){: .center-image .small-image }
