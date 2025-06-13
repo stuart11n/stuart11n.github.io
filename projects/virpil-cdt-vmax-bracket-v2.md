@@ -14,11 +14,11 @@ title: Virpil CDT-VMAX profile bracket V2
 
 - The 4040 can pass through the lower bracket making it somewhat height adjustable (limited by distance to floor)
 
-- Print with strength profile. 5 or 6 walls. PLA is fine. Don't skimp on filament, it needs to be rigid.
+- Print with strength profile. 5 or 6 walls. PLA is fine. Don't skimp on filament, it needs to be rigid
 
-- Tolerances are **tight** on the 4040 interfaces, especially to top socket so please do "below the bed" test print on just that part to check before committing to the whole thing! It prints correctly on my BBL A1.
+- Tolerances are **tight** on the 4040 interfaces, especially to top socket so please print `calibration-check.stl` before commiting to the whole thing and adjust accordingly. It prints correctly on my BBL A1
 
-- Two lower brackets included, depending on rig attachment point
+- Two lower brackets variants included, use depending on rig attachment point as illustrated in the rendering
 
 - Download on [Printables](https://www.printables.com/model/1309679-virpil-cdt-vmax-profile-bracket)
 
