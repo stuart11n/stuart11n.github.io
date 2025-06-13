@@ -12,7 +12,7 @@ title: Virpil CDT-VMAX profile bracket V2
 
 - For 40-series profile
 
-- The 4040 can pass through the lower bracket making it somewhat height adjustable (depending on distance to floor)
+- The 4040 can pass through the lower bracket making it somewhat height adjustable (limited by distance to floor)
 
 - Prints with no support
 
