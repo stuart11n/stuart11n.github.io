@@ -10,7 +10,7 @@ It features three wheel input and a lever. The lever output is an axis and the w
 
 The intention was to map the large wheel to elevator trim, the two middle wheels mapped to aileron trim and rudder trim, leaving the lever for cowl flaps for example. 
 
-I didn't like it much so created [Trim Deck](trim-deck)
+This inspired the [Trim Deck](trim-deck)
 
 Videos:
 
