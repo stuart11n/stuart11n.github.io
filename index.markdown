@@ -51,7 +51,7 @@ Funky-coder with a mode switch [more...](/projects/funky-coder-plus)
 
 
 
-## [Trimbox](/projects/funky-coder)
+## [Trimbox](/projects/trimbox)
 
 Input device for aircraft trimmables [more...](/projects/trimbox)
 
