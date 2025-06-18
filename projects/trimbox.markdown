@@ -12,10 +12,9 @@ The intention was to map the large wheel to elevator trim, the two middle wheels
 
 This inspired the [Trim Deck](trim-deck)
 
-Videos:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C4JrTbGTwhs?si=6qSYBVkBWjDdgvSb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-- https://youtu.be/pZBpqWDpmsI
-- https://youtu.be/YUGfLCfSlpU
+
 
 ![](../assets/trimbox/1.png){: .center-image }
 
