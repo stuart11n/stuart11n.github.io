@@ -54,11 +54,17 @@ These are the SIMCONNECT events and values I use in SPAD.next. The size of the i
 
 **I cannot guarantee how well it will function using other mechanisms**. 
 
-| Trim Wheel | SIMCONNECT data value  | Inc/Dec |
-| ---------- | ---------------------- | ------- |
-| Elevator   | ELEVATOR TRIM POSITION | 0.001   |
-| Aileron    | AILERON TRIM PCT       | 0.025   |
-| Rudder     | RUDDER TRIM PCT        | 0.025   |
+| Trim Wheel | SIMCONNECT data value  | Increment/Decrement by |
+| ---------- | ---------------------- | ---------------------- |
+| Elevator   | ELEVATOR TRIM POSITION | 0.001                  |
+| Aileron    | AILERON TRIM PCT       | 0.025                  |
+| Rudder     | RUDDER TRIM PCT        | 0.025                  |
+
+![image-20250620095926270](../assets/image-20250620095926270.png)
+
+![image-20250620095841470](../assets/image-20250620095841470.png)
+
+![image-20250620095907086](../assets/image-20250620095907086.png)
 
 # Mounting
 
