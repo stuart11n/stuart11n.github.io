@@ -48,7 +48,7 @@ Six general purpose chrome toggles (ON)-OFF-(ON). I use momentary action toggle 
 
 SPAD.next is required to map fuel tanks and to alter the speed of trim adjustment. This is certainly true for MSFS if you want the rotation of the wheels to match in-game speed (as show in the video).
 
-The elevator wheel emits 360 events per rotation and the aileron and rudder wheels emit 20 events per rotation.  Other software (e.g. Mobiflight, Axis and Ohs) that allows mapping of device events to SIMCONNECT data values should also work and games that have built-in functionality to make external trim wheels work effectively should too.  **As I haven't personally tested these alternatives I cannot attest  to their effectiveness.**
+The elevator wheel emits 360 events per rotation and the aileron and rudder wheels emit 20 events per rotation.  Other software (e.g. Mobiflight, Axis and Ohs) that allows mapping of device events to SIMCONNECT data values should also work and games that have built-in functionality to make external trim wheels work effectively should too.  **As I haven't personally tested these alternatives I cannot attest to their effectiveness.**
 
 This table shows the SIMCONNECT events and values I use in SPAD.next. The size of the increment/decrement can be adjusted to taste and/or to aircraft. Some aircraft have built-in trim sensitivity adjustments that may also be helpful.
 
