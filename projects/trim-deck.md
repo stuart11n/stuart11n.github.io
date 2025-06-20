@@ -44,6 +44,22 @@ Four general purpose momentary push buttons, single color and constantly illumin
 
 Six general purpose chrome toggles (ON)-OFF-(ON). I use momentary action toggle so that the game state doesn't matter;  whether the navigation lights in the game are on or off, a push up always turns them on and push down turns them off. 
 
+# Software
+
+SPAD.next is required to map fuel tanks and to alter the speed of trim adjustment. This is certainly true for MSFS if you want the rotation of the wheels to match in-game speed (as show in the video).
+
+The elevator wheel emits 360 events per rotation and the aileron and rudder wheels emit 20 event per rotation.  Other software (e.g. Mobiflight, Axis and Ohs) that allows mapping of events to changing SIMCONNECT data values may work. Other games may have built-in functionality to make the external trim wheels work effectively but I cannot guarantee that.
+
+These are the SIMCONNECT events and values I use in SPAD.next. The size of the increment/decrement can be adjust to taste, or to aircraft. Some aircraft have built in trim sensitivity adjustment that may also be helpful.
+
+**I cannot guarantee how well it will function using other mechanisms**. 
+
+| Trim Wheel | SIMCONNECT data value  | Inc/Dec |
+| ---------- | ---------------------- | ------- |
+| Elevator   | ELEVATOR TRIM POSITION | 0.001   |
+| Aileron    | AILERON TRIM PCT       | 0.025   |
+| Rudder     | RUDDER TRIM PCT        | 0.025   |
+
 # Mounting
 
 The size of the elevator wheel does make mounting a interesting. The housing is 136x51x170mm, the elevator wheel protrudes 30mm. 
@@ -65,12 +81,6 @@ There are four mounting options:
 Flat bottom
 
 ![image-20250604101257599](../assets/image-20250604101257599.png)
-
-# Software
-
-SPAD.next or Mobiflight are needed to map fuel tanks and to alter the speed of trim adjustment.
-
----
 
 ![2025-05-27T134745_IMG_1340_edit](assets/2025-05-27T134745_IMG_1340_edit.jpg)
 *A build with custom switches replacing two of the toggles*
