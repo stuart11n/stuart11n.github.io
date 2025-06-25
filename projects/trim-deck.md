@@ -6,7 +6,7 @@ title: Trim Deck
 
 <a href="https://www.etsy.com/listing/4315608606/trim-deck"><button>BUY</button></a>
 
-![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](../assets/trim-deck/CDT_VMAX_Mount_2025-May-26_10-49-37PM-000_CustomizedView43852198952_jpg.jpg)
+![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](../assets/CDT_VMAX_Mount_2025-Jun-25_01-45-21PM-000_CustomizedView36907726145_png.png)
 
 Trim Deck is a set of trim wheels with ancillary buttons and knobs for controlling fuel valves, lights, etc.
 
@@ -14,17 +14,17 @@ Trim Deck is a set of trim wheels with ancillary buttons and knobs for controlli
 
 # Trim Wheels
 
-![1](../assets/trim-deck/1.png){: .center-image }
+![1](../assets/Screenshot 2025-06-25 145135.png){: .center-image  .small}
 
 The elevator is 110mm in diameter and uses an optical encoder with 360 pulses per revolution. This provides a very smooth motion. The rudder and aileron are 64mm in diameters and use mechanical encoders with 20 detents.
 
 The elevator wheel protrudes out of the bottom of the case.
 
-![5](../assets/trim-deck/5.png){: .center-image }
+![5](../assets/CDT_VMAX_Mount_2025-Jun-25_01-45-53PM-000_CustomizedView54139521182_png.png){: .center-image }
 
 # Fuel Tank Selection
 
-![2](../assets/trim-deck/2.png){: .center-image }
+![2](../assets/Screenshot 2025-06-25 145141.png){: .center-image .small }
 
 The two red knobs are for fuel tank selection. They are 6-way rotary switches so you can map a twin engine very nicely or a single and have a spare for fuel valve, or use them for something else entirely.
 
