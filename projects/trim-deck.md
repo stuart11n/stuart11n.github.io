@@ -93,7 +93,7 @@ Combined the two action so, it will look like this in the UI
 
 
 
-### MizViz 310R
+### MilViz 310R
 
 A twin.
 
