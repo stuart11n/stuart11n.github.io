@@ -50,7 +50,11 @@ SPAD.next is required to map fuel tanks and to alter the speed of trim adjustmen
 
 The elevator wheel emits 360 events per rotation and the aileron and rudder wheels emit 20 events per rotation.  Other software (e.g. Mobiflight, Axis and Ohs) that allows mapping of device events to SIMCONNECT data values should also work and games that have built-in functionality to make external trim wheels work effectively should too.  **As I haven't personally tested these alternatives I cannot attest to their effectiveness.**
 
-This table shows the SIMCONNECT events and values I use in SPAD.next. The size of the increment/decrement can be adjusted to taste and/or to aircraft. Some aircraft have built-in trim sensitivity adjustments that may also be helpful.
+These table shows the SIMCONNECT events and values I use in SPAD.next. 
+
+## Trim
+
+The size of the increment/decrement can be adjusted to taste and/or to aircraft. Some aircraft have built-in trim sensitivity adjustments that may also be helpful.
 
 | Trim Wheel | SIMCONNECT data value  | Increment/Decrement by |
 | ---------- | ---------------------- | ---------------------- |
@@ -63,6 +67,69 @@ This table shows the SIMCONNECT events and values I use in SPAD.next. The size o
 ![image-20250620095841470](../assets/image-20250620095841470.png)
 
 ![image-20250620095907086](../assets/image-20250620095907086.png)
+
+## Fuel
+
+This is rough guidance, each aircraft may have specific requirements and LVAR, for example the MilViz 310R has 4 positions, left and right valves and uses only LVAR.  It can take some time to figure this out, the better aircraft cover this in their documentation. 
+
+Note: for the twins the numbers are reversed left vs. right to match the counter rotation of the physical knobs.
+
+### Default
+
+On each button press, two Actions must be performed:
+
+| Position | SIMCONNECT:FUEL_SELECTOR_SET | LVAR:FUEL_SELECTOR |
+| -------- | ---------------------------- | ------------------ |
+| 1        | 5                            | 5                  |
+| 2        | 4                            | 4                  |
+| 3        | 3                            | 3                  |
+| 4        | 2                            | 2                  |
+| 5        | 1                            | 1                  |
+| 6        | 0                            | 0                  |
+
+Combined the two action so, it will look like this in the UI
+
+![](../assets/image-20250625171615153.png)
+
+
+
+### MizViz 310R
+
+A twin.
+
+| Position | LVAR:C310_SW_FUEL_SEL_LEFT | LVAR:C310_SW_FUEL_SEL_RIGHT |
+| -------- | -------------------------- | --------------------------- |
+| 1        | 3                          | 0                           |
+| 2        | 2                          | 1                           |
+| 3        | 1                          | 2                           |
+| 4        | 0                          | 3                           |
+
+Use per aircraft profiles, alternatively a condition may be used to filter the actions:
+
+![image-20250625172144618](../assets/image-20250625172144618.png)
+
+### Black Square Duke
+
+Another twin.
+
+| Position | SIMCONNECT:FUEL_SELECTOR_SET | SIMCONNECT:FUEL_SELECTOR_2_SET |
+| -------- | ---------------------------- | ------------------------------ |
+| 1        | 0                            | 20                             |
+| 2        | 19                           | 19                             |
+| 3        | 20                           | 0                              |
+
+![image-20250625173255872](../assets/image-20250625173255872.png)
+
+### Flying Iron BF109
+
+| Position | LVAR:FuelValveSelected |
+| -------- | ---------------------- |
+| 1        | 3                      |
+| 2        | 2                      |
+| 3        | 1                      |
+| 4        | 0                      |
+
+![image-20250625173319888](../assets/image-20250625173319888.png)
 
 # Mounting
 
