@@ -133,13 +133,13 @@ Another twin.
 
 # Mounting
 
-The size of the elevator wheel does make mounting a interesting. The housing is 136x51x170mm, the elevator wheel protrudes 30mm. 
+The size of the elevator wheel does make mounting slightly challenging. The housing is 136x51x170mm, the elevator wheel protrudes 30mm. 
 
 There are four mounting options:
 
-1. An adapter that fixes directly onto my [mounting bracket](./virpil-cdt-vmax-bracket),
+1. An adapter that fixes directly onto my [mounting bracket](./virpil-cdt-vmax-bracket-v2),
 
-![](../assets/image-20250604101217823.png)
+![](../assets/Screenshot 2025-06-26 064211.png)
 
 2. A spacer so it can be attached to the [Virpil Desk Mount Adapter](https://virpil-controls.us.com/vpc-desk-mount-adapter-cdt-vmax-throttle.html), or sit flat on a desk
 
