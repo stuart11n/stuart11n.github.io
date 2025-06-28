@@ -64,7 +64,7 @@ The size of the increment/decrement can be adjusted to taste and/or to aircraft.
 
 ![image-20250620095926270](../assets/image-20250620095926270.png)
 
-![image-20250628145858700](../assets/image-20250628145858700.png)
+![image-20250628150234948](../assets/image-20250628150234948.png)
 
 ![image-20250620095841470](../assets/image-20250620095841470.png)
 
