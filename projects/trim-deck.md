@@ -64,9 +64,15 @@ The size of the increment/decrement can be adjusted to taste and/or to aircraft.
 
 ![image-20250620095926270](../assets/image-20250620095926270.png)
 
+![image-20250628145858700](../assets/image-20250628145858700.png)
+
 ![image-20250620095841470](../assets/image-20250620095841470.png)
 
+![image-20250628145939042](../assets/image-20250628145939042.png)
+
 ![image-20250620095907086](../assets/image-20250620095907086.png)
+
+![image-20250628150002618](../assets/image-20250628150002618.png)
 
 ## Fuel
 
