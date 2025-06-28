@@ -78,7 +78,7 @@ The size of the increment/decrement can be adjusted to taste and/or to aircraft.
 
 The Starship seems to work better with a larger increment of 0.005
 
-![image-20250628151205884](../assets/image-20250628151205884.png)
+![image-20250628151326774](../assets/image-20250628151326774.png)
 
 ## Fuel
 
