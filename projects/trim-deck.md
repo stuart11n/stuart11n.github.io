@@ -74,6 +74,12 @@ The size of the increment/decrement can be adjusted to taste and/or to aircraft.
 
 ![image-20250628150002618](../assets/image-20250628150002618.png)
 
+### Black Square Starship
+
+The Starship seems to work better with a larger increment of 0.005
+
+![image-20250628151205884](../assets/image-20250628151205884.png)
+
 ## Fuel
 
 This is rough guidance, each aircraft may have specific requirements and LVAR, for example the MilViz 310R has 4 positions, left and right valves and uses only LVAR. Others may use SIMCONNECT events or a combination. It can take some time to figure this out, the better aircraft cover this in their documentation. 
@@ -96,8 +102,6 @@ On each button press, two Actions must be performed:
 Combined the two action so, it will look like this in the UI
 
 ![](../assets/image-20250625171615153.png)
-
-
 
 ### MilViz 310R
 
