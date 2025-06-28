@@ -84,7 +84,9 @@ The Starship seems to work better with a larger increment of 0.005
 
 This is rough guidance, each aircraft may have specific requirements and LVAR, for example the MilViz 310R has 4 positions, left and right valves and uses only LVAR. Others may use SIMCONNECT events or a combination. It can take some time to figure this out, the better aircraft cover this in their documentation. 
 
-Note: for the twins the numbers are reversed left vs. right to match the counter rotation of the physical knobs.
+Note: for the twins the numbers are reversed left vs. right to match the counter rotation of the physical knobs:
+
+![image-20250628151958260](../assets/image-20250628151958260.png)
 
 ### Default
 
