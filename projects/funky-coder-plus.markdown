@@ -4,7 +4,7 @@ categories: flightsim knobster encoder
 title: Funky-coder Plus
 ---
 
-<a href="https://shop.s16n.com/listing/1880999431/twin-dual-encoders-funkyswitch-for-msfs"><button>BUY</button></a>
+<a href="https://shop.s16n.com/listing/1880999431/"><button>BUY</button></a>
 
 Twin dual encoders and a funky switch with 4 modes (layers). For use with aviation sim and simracing. Great for VR!
 
@@ -73,3 +73,5 @@ Here's what I settled on:
 |   1   | G1000 joystick (range)  | G1000 joystick up/down/left/right | G1000 joystick push |
 |   2   | view up/down            | view forward/back/left/right      |      |
 
+
+Available to [BUY](https://shop.s16n.com/listing/1880999431/)

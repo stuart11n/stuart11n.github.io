@@ -4,7 +4,7 @@ categories: simrig
 title: Simrig Isolators
 ---
 
-<a href="https://s16nengineering.etsy.com/listing/1844212953/simrig-vibration-isolators"><button>BUY</button></a>
+<a href="https://shop.s16n.com/listing/1844212953"><button>BUY</button></a>
 
 For 40-series profile and also 2" tubular rigs (Trak Racer RS6, TR8 Pro etc).
 
@@ -25,4 +25,4 @@ I got the idea from drummers, they use tennis balls sandwiched between sheets of
 
 ![](../assets/isolators/7.png){: .center-image }
 
-Available in my [Etsy Shop](https://www.etsy.com/listing/1844212953/)
+Available to [BUY](https://shop.s16n.com/listing/1844212953)
