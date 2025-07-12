@@ -32,6 +32,7 @@ plugins:
 header_pages:
   - index.markdown
   - about.markdown
+  - shop.markdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.
