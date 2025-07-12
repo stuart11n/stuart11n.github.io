@@ -4,7 +4,7 @@ categories: flightsim knobster encoder
 title: Funky-coder
 ---
 
-<a href="https://s16nengineering.etsy.com/listing/1836479954/flightracing-sim-dual-encoder"><button>BUY</button></a>
+<a href="https://shop.s16n.com/listing/1836479954/dual-encoder-funkyswitch-for-msfs-x"><button>BUY</button></a>
 
 I fly and drive in VR only. I have built several button boxes, but eventually decided it would be much easier to use a single multi-mode device that's easy to get my hands on while playing.
 

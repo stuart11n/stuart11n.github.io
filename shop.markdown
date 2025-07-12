@@ -4,4 +4,4 @@ title: Shop
 permalink: /shop/
 ---
 
-[shop](shop.s16n.com)
+[shop](https://shop.s16n.com)
