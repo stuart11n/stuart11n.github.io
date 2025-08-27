@@ -4,7 +4,7 @@ categories: flightsim knobster encoder
 title: Funky-coder
 ---
 
-<a href="https://shop.s16n.com/listing/1836479954/"><button>BUY</button></a>
+<a href="https://s16nengineering.etsy.com"><button>BUY</button></a>
 
 I fly and drive in VR only. I have built several button boxes, but eventually decided it would be much easier to use a single multi-mode device that's easy to get my hands on while playing.
 
@@ -59,4 +59,4 @@ This can be flipped horizontally and vertically. For M3 socket head bolts.
 ![](../assets/fc/b1-1.png){: .center-image }
 ![](../assets/fc/b1-2.png){: .center-image }
 
-Available to [BUY](https://shop.s16n.com/listing/1836479954/)
+Available to [BUY](https://s16nengineering.etsy.com)

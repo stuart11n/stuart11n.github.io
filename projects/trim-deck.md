@@ -4,7 +4,7 @@ categories: flightsim trim
 title: Trim Deck
 ---
 
-<a href="https://shop.s16n.com/listing/4315608606"><button>BUY</button></a>
+<a href="https://s16nengineering.etsy.com"><button>BUY</button></a>
 
 ![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](../assets/CDT_VMAX_Mount_2025-Jun-25_01-45-21PM-000_CustomizedView36907726145_png.png)
 

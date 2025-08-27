@@ -17,4 +17,4 @@ I no longer use this - instead I joined two [Funky-coder Plus'](funky-coder-plus
 
 Inputs can be mapped in-game as normal HID device buttons.
 
-The smaller Funky-coder is available in my [Etsy Shop](https://www.etsy.com/listing/1836479954/)
+The smaller Funky-coder is available in my [Etsy Shop](https://s16nengineering.etsy.com)
