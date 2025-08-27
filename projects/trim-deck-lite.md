@@ -82,7 +82,7 @@ Flat bottom
 
 ![Screenshot 2025-06-25 144838](../assets/Screenshot 2025-06-25 144838.png)
 
-close-up of customer build with black/gold colorway
+close-up of customer build with black/gold colorway. Custom color available.
 
 
 
