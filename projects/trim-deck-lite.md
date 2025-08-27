@@ -66,9 +66,9 @@ The Starship seems to work better with a larger increment of 0.005
 
 # Mounting
 
-The size of the elevator wheel does make mounting slightly challenging. The housing is 136x51x170mm, the elevator wheel protrudes 30mm. 
+The size of the wheels does make mounting slightly challenging. The housing is approximately 136x51x170mm, the elevator wheel protrudes ~30mm. 
 
-There are four mounting options:
+There are three mounting options:
 
 An adapter that fixes directly onto my [mounting bracket](./virpil-cdt-vmax-bracket-v2),
 
@@ -81,6 +81,8 @@ A base with 1/4" screw socket for 1/4" desk clamp (not included) and 4 x m3 hard
 Flat bottom
 
 ![image-20250604101257599](../assets/Screenshot 2025-08-27 131845.png)
+
+If you have an idea for a custom mount, get in touch and I will try to accomodate you.
 
 # Photos
 
