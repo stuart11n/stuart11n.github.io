@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: flightsim trim
-title: Trim Deck
+title: Trim Deck Lite
 ---
 
 <a href="https://s16nengineering.etsy.com"><button>BUY</button></a>
