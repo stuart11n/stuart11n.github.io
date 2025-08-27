@@ -84,7 +84,7 @@ Flat bottom
 
 # Photos
 
-close-up of customer build Trim Deck with black/gold colorway. Custom colors available.
+A close-up of a customer build of the Trim Deck with black/gold colorway. Custom colors on request.
 
 ![Screenshot 2025-06-25 144838](../assets/Screenshot 2025-06-25 144838.png)
 
