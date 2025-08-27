@@ -8,7 +8,7 @@ title: Virpil CDT-VMAX profile bracket V2
 
 ![image-20250612184811786](../assets/image-20250612184811786.png)
 
-[V1](virpil-cdt-vmax-bracket-v1.md) worked fine but I wanted more height, it could have been 3D printed (my [WarBRD QR](warbrd-qr.markdown)  is as tall) but I want to try something new.
+[V1](virpil-cdt-vmax-bracket-v1.md) worked fine but I wanted more height, it could have been 3D printed (my [WarBRD QR](warbrd-qr.markdown)  is around the same height) but I want to try something new.
 
 - For 40-series profile
 
