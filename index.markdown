@@ -11,6 +11,14 @@ Enhance your simrig by isolating it from the floor [more...](/projects/simrig-is
 
 ![](assets/isolators/1.JPG){: .center-image .small-image }
 
+## [Trim Deck Lite](/projects/trim-deck-lite)
+
+Trim controls for flight sim [more...](/projects/trim-deck)
+
+<a href="https://s16nengineering.etsy.com"><button>BUY</button></a>
+
+![photo](assets/Screenshot 2025-08-27 113548.png){: .center-image .small-image }
+
 ## [Trim Deck](/projects/trim-deck)
 
 Trim controls for flight sim [more...](/projects/trim-deck)
