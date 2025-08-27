@@ -16,7 +16,7 @@ This is a video of the full Trim Deck:
 
 # Trim Wheels
 
-The elevator is 110mm in diameter and uses an optical encoder with 360 pulses per revolution. This provides a very smooth motion. The rudder and aileron are 64mm in diameters and also use optical encoders.
+The elevator is 110mm in diameter and uses an optical encoder with 360 pulses per revolution. This provides a very smooth motion. The rudder and aileron are 80mm in diameters and also use optical encoders.
 
 The wheels protrude from the bottom of the case.
 
