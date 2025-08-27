@@ -74,17 +74,19 @@ An adapter that fixes directly onto my [mounting bracket](./virpil-cdt-vmax-brac
 
 ![](../assets/Screenshot 2025-06-26 064211.png)
 
-A base with 1/4" screw socket for 1/4" desk clamp (not included) and 4 x m3 hardpoints for you own mounting options
+A base with 1/4" screw socket for 1/4" desk clamp (not included) and 4 x m3 hardpoints for your own mounting options
 
-![](../assets/image-20250604095247303.png)
+![](../assets/Screenshot 2025-08-27 131739.png)
 
 Flat bottom
 
-![image-20250604101257599](../assets/image-20250604101257599.png)
+![image-20250604101257599](../assets/Screenshot 2025-08-27 131845.png)
+
+close-up of customer build Trim Deck with black/gold colorway. Custom colors available.
 
 ![Screenshot 2025-06-25 144838](../assets/Screenshot 2025-06-25 144838.png)
 
-close-up of customer build with black/gold colorway. Custom color available.
+
 
 
 
