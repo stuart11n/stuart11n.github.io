@@ -165,10 +165,14 @@ Flat bottom
 
 ![image-20250604101257599](../assets/image-20250604101257599.png)
 
+# Photos
+
+Close-up of customer build with black/gold colorway
+
 ![Screenshot 2025-06-25 144838](../assets/Screenshot 2025-06-25 144838.png)
 
-close-up of customer build with black/gold colorway
+A build with custom switches replacing two of the toggles
 
 ![2025-05-27T134745_IMG_1340_edit](assets/2025-05-27T134745_IMG_1340_edit.jpg)
-*A build with custom switches replacing two of the toggles*
+
 

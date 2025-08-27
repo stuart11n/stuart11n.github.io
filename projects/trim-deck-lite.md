@@ -10,13 +10,13 @@ title: Trim Deck Lite
 
 Trim Deck Lite is a set of trim wheels for elevator, aileron, rudder plus three buttons for controlling trim reset, auto-trim or something else. Each wheel has a friction damper; they will not freewheel or move of their own free-will.
 
-This is a video of the full Trim Deck:
+This is a video of the **full** Trim Deck:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/a8p1j_3Wt-U?si=X5OfM-vOUT1BMG70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 # Trim Wheels
 
-The elevator is 110mm in diameter and uses an optical encoder with 360 pulses per revolution. This provides a very smooth motion. The rudder and aileron are 80mm in diameters and also use optical encoders.
+The elevator is 110mm in diameter, the rudder and aileron are 80mm in diameters. They all use a optical encoders producing 100 pulses per revolution. This provides a very smooth motion. 
 
 The wheels protrude from the bottom of the case.
 
@@ -24,15 +24,15 @@ The wheels protrude from the bottom of the case.
 
 # Push Buttons
 
-![Screenshot 2025-08-27 120408](../assets/Screenshot 2025-08-27 120408.png){: .center-image .small }
+![Screenshot 2025-08-27 120408](../assets/Screenshot 2025-08-27 132334.png){: .center-image .small }
 
 Three general purpose momentary push buttons, single color and constantly illuminated.  
 
 # Software
 
-SPAD.next is required to map fuel tanks and to alter the speed of trim adjustment. This is certainly true for MSFS if you want the rotation of the wheels to match in-game speed (as show in the video).
+SPAD.next is required to alter the speed of trim adjustment. This is certainly true for MSFS if you want the rotation of the wheels to match in-game speed (as show in the video).
 
-The elevator wheel emits 360 events per rotation and the aileron and rudder wheels emit 20 events per rotation.  Other software (e.g. Mobiflight, Axis and Ohs) that allows mapping of device events to SIMCONNECT data values should also work and games that have built-in functionality to make external trim wheels work effectively should too.  **As I haven't personally tested these alternatives I cannot attest to their effectiveness.**
+The wheel emits 100 events per rotation.  Other software (e.g. Mobiflight, Axis and Ohs) that allows mapping of device events to SIMCONNECT data values should also work and games that have built-in functionality to make external trim wheels work effectively should too.  **As I haven't personally tested these alternatives I cannot attest to their effectiveness.**
 
 These table shows the SIMCONNECT events and values I use in SPAD.next. 
 
@@ -81,6 +81,8 @@ A base with 1/4" screw socket for 1/4" desk clamp (not included) and 4 x m3 hard
 Flat bottom
 
 ![image-20250604101257599](../assets/Screenshot 2025-08-27 131845.png)
+
+# Photos
 
 close-up of customer build Trim Deck with black/gold colorway. Custom colors available.
 
