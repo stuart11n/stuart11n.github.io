@@ -40,11 +40,13 @@ These never get desynchronized from the game, the limitation is there are 100 pr
 
 ### Axis
 
-Axis are straight forward. Not all games allow mapping all trims to an axis, but if they do you can control the sensitivity directly in the game by setting the upper and lower bounds (number of rotations) as you wish. 
+Mapping using axis is straight forward. You can control the sensitivity directly in the game by setting the upper and lower bounds (number of rotations) as you wish. 
 
 The downside is the axis position can become desynchronized from the game causing sudden jumps when the axis is. This can happen any time the trim wheel or trim in the game are moved independently of each other. For example at the start of a flight if the wheels are not centered the first time you touch the wheel the trim will jump to the wheel position. It can also happen if AP adjusts the trim.
 
-For this reason there is a trim reset button lower right. Press that button to center the wheel axis before a flight.
+For this reason there is a trim reset button lower right. Press that button to center the wheel axis before a flight. 
+
+Not all games allow mapping all trims to an axis.
 
 ## Software
 
