@@ -60,7 +60,7 @@ The wheel emits 100 events per rotation.  Other software (e.g. Mobiflight, Axis 
 
 These table shows the SIMCONNECT events and values I use in SPAD.next. 
 
-## Trim
+#### Settings
 
 The size of the increment/decrement can be adjusted to taste and/or to aircraft. Some aircraft have built-in trim sensitivity adjustments that may also be helpful. You will need to adjust these values.
 
