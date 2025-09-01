@@ -6,7 +6,7 @@ title: Trim Deck Lite
 
 <a href="https://s16nengineering.etsy.com"><button>BUY</button></a>
 
-![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](../assets/Screenshot 2025-08-27 113548-1756321534892-3.png)
+![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](../assets/Screenshot 2025-09-01 105848.png)
 
 Trim Deck Lite is a set of trim wheels for elevator, aileron, rudder plus three buttons for controlling trim reset, auto-trim or something else. Each wheel has a friction damper; they will not freewheel or move of their own free-will.
 
@@ -24,11 +24,11 @@ The wheels protrude from the bottom of the case.
 
 ![5](../assets/Screenshot 2025-08-27 120713.png){: .center-image }
 
-# Push Buttons
+# Encoders
 
-![Screenshot 2025-08-27 120408](../assets/Screenshot 2025-08-27 132334.png){: .center-image .small }
+![Screenshot 2025-09-01 111337](../assets/Screenshot 2025-09-01 111337.png)
 
-Three general purpose momentary push buttons, single color and constantly illuminated.  
+Two general purpose dual encoders are available for mapping.
 
 # Mapping
 
