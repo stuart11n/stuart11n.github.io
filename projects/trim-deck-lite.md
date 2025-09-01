@@ -32,21 +32,19 @@ Three general purpose momentary push buttons, single color and constantly illumi
 
 # Mapping
 
-The trim wheels can be mapped using button presses or axis, each has different advantages and disadvantages.
-
-### Button presses
-
-These never get desynchronized from the game, the limitation is there are 100 presses per revolution and how the sim interprets that varies. MSFS generally doesn't do well and motion will be hampered and very slow. To mitigate this, it is recommended to use some software such as SPAD.next which will allow the trim sensitivity to be adjusted precisely to your needs, per aircraft.
+The trim wheels can be mapped using button presses or axis, each has different advantages and disadvantages. Not all games allow mapping all trims to an axis.
 
 ### Axis
 
-Mapping using axis is straight forward. You can control the sensitivity directly in the game by setting the upper and lower bounds (number of rotations) as you wish. 
+Mapping using axis is straight forward. The sensitivity can be adjusted directly in the simulation by setting the upper and lower bounds (number of rotations) as you wish. 
 
-The downside is the axis position can become desynchronized from the game causing sudden jumps when the axis is. This can happen any time the trim wheel or trim in the game are moved independently of each other. For example at the start of a flight if the wheels are not centered the first time you touch the wheel the trim will jump to the wheel position. It can also happen if AP adjusts the trim.
+The downside is the axis position can become desynchronized from the simulation causing sudden jumps when the axis is moved, either physically or in the simulation. This can happen any time the trim wheel or trim in the simulation are moved independently of each other. For example at the start of a flight there will be mismatch between the physical position and where the simulation thinks the trim wheel is, so the first time you touch the physical wheel the trim will jump to the wheel position. It can also happen if AP adjusts the trim too.
 
-For this reason there is a trim reset button lower right. Press that button to center the wheel axis before a flight. 
+For this reason there is a trim reset button on lower right. Press that button to center all the **physical** trim wheel axis before a flight or any other time.
 
-Not all games allow mapping all trims to an axis.
+### Button presses
+
+Mapping with button presses will not desynchronize, the limitation is there are 100 presses per revolution and how the sim interprets each of those presses varies, even between aircraft. MSFS generally doesn't do this well and trim movement will most likely be very slow because it's actually expecting the button to be held. To mitigate this, it is recommended to use some software such as SPAD.next which will allows the trim sensitivity to be adjusted precisely to your needs, per aircraft is needed.
 
 ## Software
 
