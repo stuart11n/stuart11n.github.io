@@ -84,7 +84,7 @@ The size of the increment/decrement can be adjusted to taste and/or to aircraft.
 
 ### Black Square Starship
 
-The Starship seems to work better with a larger increment of 0.02
+The Starship seems to work better with a larger elevator increment of 0.02
 
 ![image-20250628151326774](../assets/image-20250628151326774.png)
 
