@@ -18,6 +18,8 @@ This is a video of the **full** Trim Deck:
 
 The elevator is 110mm in diameter, the rudder and aileron are 80mm in diameters. They all use a optical encoders producing 100 pulses per revolution. This provides a very smooth motion. 
 
+The trim wheels emit button presses and are also mapped to axis. 
+
 The wheels protrude from the bottom of the case.
 
 ![5](../assets/Screenshot 2025-08-27 120713.png){: .center-image }
@@ -28,17 +30,39 @@ The wheels protrude from the bottom of the case.
 
 Three general purpose momentary push buttons, single color and constantly illuminated.  
 
-# Software
+# Mapping
 
-SPAD.next is required to alter the speed of trim adjustment. This is certainly true for MSFS if you want the rotation of the wheels to match in-game speed (as show in the video).
+The trim wheels can be mapped using button presses or axis, each has different advantages and disadvantages.
 
-The wheel emits 100 events per rotation.  Other software (e.g. Mobiflight, Axis and Ohs) that allows mapping of device events to SIMCONNECT data values should also work and games that have built-in functionality to make external trim wheels work effectively should too.  **As I haven't personally tested these alternatives I cannot attest to their effectiveness.**
+### Button presses
+
+These never get desynchronized from the game, the limitation is there are 100 presses per revolution and how the sim interprets that varies. MSFS generally doesn't do well and motion will be hampered and very slow. To mitigate this, it is recommended to use some software such as SPAD.next which will allow the trim sensitivity to be adjusted precisely to your needs, per aircraft.
+
+### Axis
+
+Axis are straight forward. Not all games allow mapping all trims to an axis, but if they do you can control the sensitivity directly in the game by setting the upper and lower bounds (number of rotations) as you wish. 
+
+The downside is the axis position can become desynchronized from the game causing sudden jumps when the axis is. This can happen any time the trim wheel or trim in the game are moved independently of each other. For example at the start of a flight if the wheels are not centered the first time you touch the wheel the trim will jump to the wheel position. It can also happen if AP adjusts the trim.
+
+For this reason there is a trim reset button lower right. Press that button to center the wheel axis before a flight.
+
+## Software
+
+### Simtrim 
+
+https://flightsim.to/file/83514/simtrim-synchronising-your-analog-elevator-trim-wheel
+
+### SPAD.next
+
+SPAD.next is can be used to alter the speed of trim adjustment when mapping using button presses. This is certainly true for MSFS if you want the rotation of the wheels to match in-game speed (as show in the video).
+
+The wheel emits 100 events per rotation.  Other software (e.g. Mobiflight, Axis and Ohs) that allow the mapping of device events to SIMCONNECT data values should also work and games that have built-in functionality to make external trim wheels work effectively should too.  **As I haven't personally tested these alternatives I cannot attest to their effectiveness.**
 
 These table shows the SIMCONNECT events and values I use in SPAD.next. 
 
 ## Trim
 
-The size of the increment/decrement can be adjusted to taste and/or to aircraft. Some aircraft have built-in trim sensitivity adjustments that may also be helpful.
+The size of the increment/decrement can be adjusted to taste and/or to aircraft. Some aircraft have built-in trim sensitivity adjustments that may also be helpful. You will need to adjust these values.
 
 | Trim Wheel | SIMCONNECT data value  | Increment/Decrement by |
 | ---------- | ---------------------- | ---------------------- |
@@ -82,7 +106,7 @@ Flat bottom
 
 ![image-20250604101257599](../assets/Screenshot 2025-08-27 131845.png)
 
-If you have an idea for a custom mount, get in touch and I will try to accomodate you.
+If you have an idea for a custom mount, get in touch and I will try to accommodate you.
 
 # Photos
 
