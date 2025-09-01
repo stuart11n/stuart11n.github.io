@@ -62,13 +62,13 @@ These table shows the SIMCONNECT events and values I use in SPAD.next.
 
 #### Settings
 
-The size of the increment/decrement can be adjusted to taste and/or to aircraft. Some aircraft have built-in trim sensitivity adjustments that may also be helpful. You will need to adjust these values.
+The size of the increment/decrement can be adjusted to taste and/or to aircraft. Some aircraft have built-in trim sensitivity adjustments that may also be helpful. These are starting points:
 
 | Trim Wheel | SIMCONNECT data value  | Increment/Decrement by |
 | ---------- | ---------------------- | ---------------------- |
-| Elevator   | ELEVATOR TRIM POSITION | 0.001                  |
-| Aileron    | AILERON TRIM PCT       | 0.025                  |
-| Rudder     | RUDDER TRIM PCT        | 0.025                  |
+| Elevator   | ELEVATOR TRIM POSITION | 0.004                  |
+| Aileron    | AILERON TRIM PCT       | 0.01                   |
+| Rudder     | RUDDER TRIM PCT        | 0.01                   |
 
 ![image-20250620095926270](../assets/image-20250620095926270.png)
 
@@ -84,7 +84,7 @@ The size of the increment/decrement can be adjusted to taste and/or to aircraft.
 
 ### Black Square Starship
 
-The Starship seems to work better with a larger increment of 0.005
+The Starship seems to work better with a larger increment of 0.02
 
 ![image-20250628151326774](../assets/image-20250628151326774.png)
 
