@@ -6,7 +6,7 @@ title: Trim Deck Lite
 
 <a href="https://s16nengineering.etsy.com"><button>BUY</button></a>
 
-![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](../assets/Screenshot 2025-09-01 105848.png)
+![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](../assets/Screenshot 2025-08-31 110519.png)
 
 Trim Deck Lite is a set of trim wheels for elevator, aileron, rudder plus three buttons for controlling trim reset, auto-trim or something else. Each wheel has a friction damper; they will not freewheel or move of their own free-will.
 
@@ -16,9 +16,9 @@ This is a video of the **full** Trim Deck:
 
 # Trim Wheels
 
-The elevator is 110mm in diameter, the rudder and aileron are 80mm in diameters. They all use a optical encoders producing 100 pulses per revolution. This provides a very smooth motion. 
+The elevator is 110mm in diameter, the rudder and aileron are 80mm in diameters. All the wheels use magnetic sensors producing 100 pulses per revolution provides a very smooth motion. 
 
-The trim wheels emit button presses and are also mapped to axis. 
+The trim wheels emit button presses and are also mapped to separate axis. 
 
 The wheels protrude from the bottom of the case.
 
