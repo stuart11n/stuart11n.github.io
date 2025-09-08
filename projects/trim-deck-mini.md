@@ -1,14 +1,14 @@
 ---
 layout: post
 categories: flightsim trim
-title: Trim Deck Lite
+title: Trim Deck Mini
 ---
 
 <a href="https://s16nengineering.etsy.com"><button>BUY</button></a>
 
-![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](../assets/Screenshot 2025-08-31 110519.png)
+![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](../assets/Screenshot 2025-09-07 172513.png)
 
-Trim Deck Lite is a set of trim wheels for elevator, aileron, rudder plus dual encoders for controlling trim reset, auto-trim or something else. Each wheel has a friction damper; they will not freewheel or move of their own free-will.
+Trim Deck Mini is a set of trim wheels for elevator, aileron, rudder plus dual encoders for controlling trim reset, auto-trim or something else. Each wheel has a friction damper; they will not freewheel or move of their own free-will.
 
 This is a video of the **full** Trim Deck:
 
@@ -16,9 +16,13 @@ This is a video of the **full** Trim Deck:
 
 # Trim Wheels
 
-The wheels are all 67mm in diameter and use magnetic sensors producing 100 pulses per revolution provides a very smooth motion. 
+The elevator is 110mm in diameter, the rudder and aileron are 80mm in diameters. All the wheels use magnetic sensors producing 100 pulses per revolution provides a very smooth motion. 
 
 The trim wheels emit button presses and are also mapped to separate axis. 
+
+The wheels protrude from the bottom of the case.
+
+![5](../assets/Screenshot 2025-08-27 120713.png){: .center-image }
 
 # Encoders
 
@@ -83,6 +87,32 @@ The size of the increment/decrement can be adjusted to taste and/or to aircraft.
 The Starship seems to work better with a larger elevator increment of 0.02
 
 ![image-20250628151326774](../assets/image-20250628151326774.png)
+
+# Mounting
+
+The size of the wheels does make mounting slightly challenging. The housing is approximately 136x51x170mm, the elevator wheel protrudes ~30mm. 
+
+There are three mounting options:
+
+An adapter that fixes directly onto my [mounting bracket](./virpil-cdt-vmax-bracket-v2),
+
+![](../assets/Screenshot 2025-06-26 064211.png)
+
+A base with 1/4" screw socket for 1/4" desk clamp (not included) and 4 x m3 hardpoints for your own mounting options
+
+![](../assets/Screenshot 2025-08-27 131739.png)
+
+Flat bottom
+
+![image-20250604101257599](../assets/Screenshot 2025-08-27 131845.png)
+
+If you have an idea for a custom mount, get in touch and I will try to accommodate you.
+
+# Photos
+
+A close-up of a customer build of the Trim Deck with black/gold colorway. Custom colors on request.
+
+![Screenshot 2025-06-25 144838](../assets/Screenshot 2025-06-25 144838.png)
 
 
 
