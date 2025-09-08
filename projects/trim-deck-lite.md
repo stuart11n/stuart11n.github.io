@@ -10,10 +10,6 @@ title: Trim Deck Lite
 
 Trim Deck Lite is a set of trim wheels for elevator, aileron, rudder plus dual encoders for controlling trim reset, auto-trim or something else. Each wheel has a friction damper; they will not freewheel or move of their own free-will.
 
-It comes with the univeral bracket.
-
-![Screenshot 2025-06-27 102849](../assets/Screenshot 2025-06-27 102849.png)
-
 This is a video of the **full** Trim Deck:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/a8p1j_3Wt-U?si=X5OfM-vOUT1BMG70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
