@@ -10,7 +10,9 @@ title: Trim Deck Mini
 
 Trim Deck Mini is a set of trim wheels for elevator, aileron, rudder plus dual encoders for controlling trim reset, auto-trim or something else. Each wheel has a friction damper; they will not freewheel or move of their own free-will.
 
-It comes with the univeral bracket.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ozXpQ8t8xfc?si=GWmkTBK9v8mBi0pE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+It comes with the universal bracket.
 
 ![Screenshot 2025-06-27 102849](../assets/Screenshot 2025-06-27 102849.png)
 
