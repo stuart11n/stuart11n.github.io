@@ -10,6 +10,10 @@ title: Trim Deck Lite
 
 Trim Deck Lite is a set of trim wheels for elevator, aileron, rudder plus dual encoders for controlling trim reset, auto-trim or something else. Each wheel has a friction damper; they will not freewheel or move of their own free-will.
 
+It comes with the univeral bracket.
+
+![Screenshot 2025-06-27 102849](../assets/Screenshot 2025-06-27 102849.png)
+
 This is a video of the **full** Trim Deck:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/a8p1j_3Wt-U?si=X5OfM-vOUT1BMG70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -34,9 +38,7 @@ The trim wheels can be mapped using button presses or axis, each has different a
 
 Mapping using axis is straight forward. One rotation equals one axis cycle.
 
-The downside is the axis position can become desynchronized from the simulation causing sudden jumps when the axis is moved, either physically or in the simulation. This can happen any time the trim wheel or trim in the simulation are moved independently of each other. For example at the start of a flight there will be mismatch between the physical position and where the simulation thinks the trim wheel is, so the first time you touch the physical wheel the trim will jump to the wheel position. It can also happen if AP adjusts the trim too. This can be mitigated by always centering the wheel at the start of a flight, during a flight it is a little trickier.
-
-For this reason there is a trim reset button on lower right. Press that button to center all the **physical** trim wheel axis before a flight or any other time. See simtrim below as a possible solution.
+The downside is the axis position can become desynchronized from the simulation causing sudden jumps when the axis is moved, either physically or in the simulation. This can happen any time the trim wheel or trim in the simulation are moved independently of each other. For example at the start of a flight there will be mismatch between the physical position and where the simulation thinks the trim wheel is, so the first time you touch the physical wheel the trim will jump to the wheel position. It can also happen if AP adjusts the trim too. This can be mitigated by always centering the wheel at the start of a flight, during a flight it is a little trickier. See simtrim below for a possible solution.
 
 ### Button presses
 

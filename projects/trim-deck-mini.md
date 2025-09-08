@@ -38,9 +38,7 @@ The trim wheels can be mapped using button presses or axis, each has different a
 
 Mapping using axis is straight forward. One rotation equals one axis cycle.
 
-The downside is the axis position can become desynchronized from the simulation causing sudden jumps when the axis is moved, either physically or in the simulation. This can happen any time the trim wheel or trim in the simulation are moved independently of each other. For example at the start of a flight there will be mismatch between the physical position and where the simulation thinks the trim wheel is, so the first time you touch the physical wheel the trim will jump to the wheel position. It can also happen if AP adjusts the trim too. This can be mitigated by always centering the wheel at the start of a flight, during a flight it is a little trickier.
-
-For this reason there is a trim reset button on lower right. Press that button to center all the **physical** trim wheel axis before a flight or any other time. See simtrim below as a possible solution.
+The downside is the axis position can become desynchronized from the simulation causing sudden jumps when the axis is moved, either physically or in the simulation. This can happen any time the trim wheel or trim in the simulation are moved independently of each other. For example at the start of a flight there will be mismatch between the physical position and where the simulation thinks the trim wheel is, so the first time you touch the physical wheel the trim will jump to the wheel position. It can also happen if AP adjusts the trim too. This can be mitigated by always centering the wheel at the start of a flight, during a flight it is a little trickier. See simtrim below for a possible solution.
 
 ### Button presses
 
