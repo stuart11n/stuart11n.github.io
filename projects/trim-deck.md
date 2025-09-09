@@ -44,7 +44,7 @@ Mapping with button presses will not desynchronize, the limitation is there are 
 
 ### X-Plane 12
 
-Use Plane Maker to adjust the trim sensitivity alter the trim values in Control Geometry.
+Use Plane Maker to adjust the trim sensitivity in Control Geometry.
 
 ![Screenshot 2025-09-08 170622](../assets/Screenshot 2025-09-08 170622.png)
 
