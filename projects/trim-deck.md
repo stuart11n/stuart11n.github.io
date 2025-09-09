@@ -10,15 +10,15 @@ title: Trim Deck
 
 Trim Deck Lite is a set of trim wheels for elevator, aileron, rudder plus dual encoders for controlling trim reset, auto-trim or something else. Each wheel has a friction damper; they will not freewheel or move of their own free-will.
 
-This is a video of the **full** Trim Deck:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/a8p1j_3Wt-U?si=X5OfM-vOUT1BMG70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 # Trim Wheels
 
-The wheels are all 67mm in diameter and use magnetic sensors producing 100 pulses per revolution provides a very smooth motion. 
+The elevator is 110mm in diameter, the rudder and aileron are 80mm in diameters. All the wheels use magnetic sensors producing 100 pulses per revolution provides a very smooth motion. 
 
 The trim wheels emit button presses and are also mapped to separate axis. 
+
+The wheels protrude from the bottom of the case.
+
+![image-20250604101257599](../assets/Screenshot 2025-08-27 131845.png){ .center .small }
 
 # Encoders
 
@@ -81,6 +81,34 @@ The size of the increment/decrement can be adjusted to taste and/or to aircraft.
 The Starship seems to work better with a larger elevator increment of 0.02
 
 ![image-20250628151326774](../assets/image-20250628151326774.png)
+
+
+
+# Mounting
+
+The size of the wheels does make mounting slightly challenging. The housing is approximately 136x51x170mm, the elevator wheel protrudes ~30mm. 
+
+There are three mounting options:
+
+An adapter that fixes directly onto my [mounting bracket](./virpil-cdt-vmax-bracket-v2),
+
+![](../assets/Screenshot 2025-06-26 064211.png)
+
+A base with 1/4" screw socket for 1/4" desk clamp (not included) and 4 x m3 hardpoints for your own mounting options
+
+![](../assets/Screenshot 2025-08-27 131739.png)
+
+Flat bottom
+
+![image-20250604101257599](../assets/Screenshot 2025-08-27 131845.png)
+
+If you have an idea for a custom mount, get in touch and I will try to accommodate you.
+
+# Photos
+
+A close-up of a customer build of the Trim Deck with black/gold colorway. Custom colors on request.
+
+![Screenshot 2025-06-25 144838](../assets/Screenshot 2025-06-25 144838.png)
 
 
 

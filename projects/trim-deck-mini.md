@@ -10,25 +10,15 @@ title: Trim Deck Mini
 
 Trim Deck Mini is a set of trim wheels for elevator, aileron, rudder plus dual encoders for controlling trim reset, auto-trim or something else. Each wheel has a friction damper; they will not freewheel or move of their own free-will.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ozXpQ8t8xfc?si=GWmkTBK9v8mBi0pE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lRGX-Cq_l9s?si=nZ6pqjTQ2srB39fx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 It comes with the universal bracket.
 
 ![Screenshot 2025-06-27 102849](../assets/Screenshot 2025-06-27 102849.png)
 
-This is a video of the **full** Trim Deck:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/a8p1j_3Wt-U?si=X5OfM-vOUT1BMG70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-# Trim Wheels
-
-The elevator is 110mm in diameter, the rudder and aileron are 80mm in diameters. All the wheels use magnetic sensors producing 100 pulses per revolution provides a very smooth motion. 
+The wheels are all 67mm in diameter and use magnetic sensors producing 100 pulses per revolution provides a very smooth motion. 
 
 The trim wheels emit button presses and are also mapped to separate axis. 
-
-The wheels protrude from the bottom of the case.
-
-![5](../assets/Screenshot 2025-08-27 120713.png){: .center-image }
 
 # Encoders
 
@@ -44,17 +34,19 @@ The trim wheels can be mapped using button presses or axis, each has different a
 
 Mapping using axis is straight forward. One rotation equals one axis cycle.
 
-The downside is the axis position can become desynchronized from the simulation causing sudden jumps when the axis is moved, either physically or in the simulation. This can happen any time the trim wheel or trim in the simulation are moved independently of each other. For example at the start of a flight there will be mismatch between the physical position and where the simulation thinks the trim wheel is, so the first time you touch the physical wheel the trim will jump to the wheel position. It can also happen if AP adjusts the trim too. This can be mitigated by always centering the wheel at the start of a flight, during a flight it is a little trickier. See simtrim below for a possible solution.
+The downside is the axis position can become desynchronized from the simulation causing sudden jumps when the axis is moved, either physically or in the simulation. This can happen any time the trim wheel or trim in the simulation are moved independently of each other. For example at the start of a flight there will be mismatch between the physical position and where the simulation thinks the trim wheel is, so the first time you touch the physical wheel the trim will jump to the wheel position. It can also happen if AP adjusts the trim too. This can be mitigated by always centering the wheel at the start of a flight, during a flight it is a little trickier. 
 
 ### Button presses
 
-Mapping with button presses will not desynchronize, the limitation is there are 100 presses per revolution and how the sim interprets each of those presses varies, even between aircraft. MSFS generally doesn't do this well and trim movement will most likely be very slow because it's expecting the button to be _held_. To mitigate this, it is recommended to use some software such as SPAD.next which will allows the trim sensitivity to be adjusted precisely to your needs, per aircraft is needed.
+Mapping with button presses will not desynchronize, the limitation is there are 100 presses per revolution and how the sim interprets each of those presses varies, even between aircraft. MSFS generally doesn't do this well and trim movement will most likely be very slow because it's expecting the button to be _held_. To mitigate this, it is recommended to use some software such as SPAD.next which will allows the trim sensitivity to be adjusted precisely to your needs, per aircraft is needed. This can be done directly in X-Plane 12 using the Plane Maker.
 
 ## Software
 
-### Simtrim 
+### X-Plane 12
 
-https://flightsim.to/file/83514/simtrim-synchronising-your-analog-elevator-trim-wheel
+Use Plane Maker to adjust the trim sensitivity alter the trim values in Control Geometry.
+
+![Screenshot 2025-09-08 170622](../assets/Screenshot 2025-09-08 170622.png)
 
 ### SPAD.next
 
@@ -64,7 +56,7 @@ The wheel emits 100 events per rotation.  Other software (e.g. Mobiflight, Axis 
 
 These table shows the SIMCONNECT events and values I use in SPAD.next. 
 
-#### Settings
+### Settings
 
 The size of the increment/decrement can be adjusted to taste and/or to aircraft. Some aircraft have built-in trim sensitivity adjustments that may also be helpful. These are starting points:
 
@@ -86,39 +78,15 @@ The size of the increment/decrement can be adjusted to taste and/or to aircraft.
 
 ![image-20250628150002618](../assets/image-20250628150002618.png)
 
-### Black Square Starship
+#### Black Square Starship
 
 The Starship seems to work better with a larger elevator increment of 0.02
 
 ![image-20250628151326774](../assets/image-20250628151326774.png)
 
-# Mounting
+### Simtrim 
 
-The size of the wheels does make mounting slightly challenging. The housing is approximately 136x51x170mm, the elevator wheel protrudes ~30mm. 
-
-There are three mounting options:
-
-An adapter that fixes directly onto my [mounting bracket](./virpil-cdt-vmax-bracket-v2),
-
-![](../assets/Screenshot 2025-06-26 064211.png)
-
-A base with 1/4" screw socket for 1/4" desk clamp (not included) and 4 x m3 hardpoints for your own mounting options
-
-![](../assets/Screenshot 2025-08-27 131739.png)
-
-Flat bottom
-
-![image-20250604101257599](../assets/Screenshot 2025-08-27 131845.png)
-
-If you have an idea for a custom mount, get in touch and I will try to accommodate you.
-
-# Photos
-
-A close-up of a customer build of the Trim Deck with black/gold colorway. Custom colors on request.
-
-![Screenshot 2025-06-25 144838](../assets/Screenshot 2025-06-25 144838.png)
-
-
+https://flightsim.to/file/83514/simtrim-synchronising-your-analog-elevator-trim-wheel
 
 
 
