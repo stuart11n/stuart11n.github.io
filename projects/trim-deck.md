@@ -12,7 +12,7 @@ Trim Deck Lite is a set of trim wheels for elevator, aileron, rudder plus dual e
 
 # Trim Wheels
 
-The elevator is 110mm in diameter, the rudder and aileron are 80mm in diameters. All the wheels use magnetic sensors producing 100 pulses per revolution provides a very smooth motion. 
+The elevator is 110mm in diameter, the rudder and aileron are 62mm in diameters. All the wheels use magnetic sensors producing 100 pulses per revolution provides a very smooth motion. 
 
 The trim wheels emit button presses and are also mapped to separate axis. 
 
