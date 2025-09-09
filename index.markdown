@@ -19,7 +19,7 @@ Trim controls for flight sim [more...](/projects/trim-deck)
 
 ![photo](assets/Screenshot 2025-09-07 172513-1757291747395-4.png){: .center-image .small-image }
 
-## [Trim Deck Lite](/projects/trim-deck-lite)
+## [Trim Deck](/projects/trim-deck)
 
 Trim controls for flight sim [more...](/projects/trim-deck)
 
