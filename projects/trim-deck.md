@@ -18,7 +18,7 @@ The trim wheels emit button presses and are also mapped to separate axis.
 
 The wheels protrude from the bottom of the case.
 
-![image-20250604101257599](../assets/Screenshot 2025-08-27 131845.png){ .center .small }
+![image-20250604101257599](../assets/Screenshot 2025-08-27 131845.png)
 
 # Encoders
 
