@@ -42,9 +42,11 @@ Mapping with button presses will not desynchronize, the limitation is there are 
 
 ## Software
 
-### Simtrim 
+### X-Plane 12
 
-https://flightsim.to/file/83514/simtrim-synchronising-your-analog-elevator-trim-wheel
+Use Plane Maker to adjust the trim sensitivity alter the trim values in Control Geometry.
+
+![Screenshot 2025-09-08 170622](../assets/Screenshot 2025-09-08 170622.png)
 
 ### SPAD.next
 
@@ -76,13 +78,15 @@ The size of the increment/decrement can be adjusted to taste and/or to aircraft.
 
 ![image-20250628150002618](../assets/image-20250628150002618.png)
 
-### Black Square Starship
+#### Black Square Starship
 
 The Starship seems to work better with a larger elevator increment of 0.02
 
 ![image-20250628151326774](../assets/image-20250628151326774.png)
 
+### Simtrim 
 
+https://flightsim.to/file/83514/simtrim-synchronising-your-analog-elevator-trim-wheel
 
 # Mounting
 
