@@ -6,9 +6,9 @@ title: Trim Deck
 
 <a href="https://s16nengineering.etsy.com"><button>BUY</button></a>
 
-![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](../assets/Screenshot 2025-08-31 110519.png)
+![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](../assets/Screenshot 2025-09-10 094950.png)
 
-Trim Deck Lite is a set of trim wheels for elevator, aileron, rudder plus dual encoders for controlling trim reset, auto-trim or something else. Each wheel has a friction damper; they will not freewheel or move of their own free-will.
+Trim Deck is a set of trim wheels for elevator, aileron, rudder plus dual encoders for controlling trim reset, auto-trim or something else. Each wheel has a friction damper; they will not freewheel or move of their own free-will.
 
 # Trim Wheels
 
@@ -18,7 +18,7 @@ The trim wheels emit button presses and are also mapped to separate axis.
 
 The wheels protrude from the bottom of the case.
 
-![image-20250604101257599](../assets/Screenshot 2025-08-27 131845.png)
+![image-20250604101257599](../assets/Screenshot 2025-09-10 095052.png)
 
 # Encoders
 
@@ -88,21 +88,11 @@ https://flightsim.to/file/83514/simtrim-synchronising-your-analog-elevator-trim-
 
 # Mounting
 
-The size of the wheels does make mounting slightly challenging. The housing is approximately 136x51x170mm, the elevator wheel protrudes ~30mm. 
+The size of the wheels does make mounting slightly challenging. The housing is approximately 153x131x52mm, the elevator wheel protrudes ~30mm. 
 
-There are three mounting options:
 
-An adapter that fixes directly onto my [mounting bracket](./virpil-cdt-vmax-bracket-v2),
 
-![](../assets/Screenshot 2025-06-26 064211.png)
-
-A base with 1/4" screw socket for 1/4" desk clamp (not included) and 4 x m3 hardpoints for your own mounting options
-
-![](../assets/Screenshot 2025-08-27 131739.png)
-
-Flat bottom
-
-![image-20250604101257599](../assets/Screenshot 2025-08-27 131845.png)
+![](../assets/Screenshot 2025-09-10 095215.png)
 
 If you have an idea for a custom mount, get in touch and I will try to accommodate you.
 

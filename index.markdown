@@ -17,7 +17,7 @@ Trim controls for flight sim [more...](/projects/trim-deck)
 
 <a href="https://s16nengineering.etsy.com"><button>BUY</button></a>
 
-![photo](assets/Screenshot 2025-09-07 172513-1757291747395-4.png){: .center-image .small-image }
+![img](assets/il_fullxfull.7182036102_m1e9.jpg)
 
 ## [Trim Deck](/projects/trim-deck)
 
