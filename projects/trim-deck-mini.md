@@ -16,7 +16,7 @@ It comes with the universal bracket.
 
 ![Screenshot 2025-06-27 102849](../assets/Screenshot 2025-06-27 102849.png)
 
-The wheels are all 67mm in diameter and use magnetic sensors producing 100 pulses per revolution providing very smooth motion. 
+The wheels are all 67mm in diameter and use magnetic sensors providing very smooth motion. 
 
 The trim wheels emit button presses and are also mapped to separate axis. 
 
