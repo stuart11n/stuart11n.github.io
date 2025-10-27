@@ -6,14 +6,11 @@ title: FFBeast Flight Stick
 
 ![img](../assets/logo.png){: .center-image .small-image }
 
+I build FFBeast Flight Sticks. You may preorder and join the waitlist here: [FFBeast Flight Controls Preorder](https://forms.office.com/r/ZqVRTXDBVu)
 
-I can build you an FFBeast Flight Stick.
+It will be built on-demand, lead times vary. E-mail me at stuart@s16n.com with any questions.
 
-It will be built on-demand, lead times vary. E-mail me at stuart@s16n.com with any and all questions. 
-
-You may preorder and join the waitlist here: [FFBeast Flight Controls Preorder](https://forms.office.com/r/ZqVRTXDBVu)
-
-It will be fully licensed in cooperation with the original FFBeast creator. Compared to the original, there will be some minor construction, cosmetic and option differences. 
+Your flight stick will be fully licensed in cooperation with the original FFBeast creator. Compared to the original build, there may be some minor construction, cosmetic and option differences. 
 
 US Contiguous 48 customers only. If you are outside North America, please preorder [here](https://ffbeast.github.io/docs/en/joystick.html#ready-to-preorder)
 
