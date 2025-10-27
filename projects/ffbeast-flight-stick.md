@@ -17,9 +17,9 @@ You may preorder and join the waitlist here: [FFBeast Flight Controls Preorder](
 
 It will be fully licensed in cooperation with the original FFBeast creator. Compared to the original, there will be some minor construction, cosmetic and option differences. 
 
-US Contiguous 48 customers only. If you are outside North America, please preorder at https://ffbeast.github.io/docs/en/joystick.html#ready-to-preorder
+US Contiguous 48 customers only. If you are outside North America, please preorder [here](https://ffbeast.github.io/docs/en/joystick.html#ready-to-preorder)
 
-More info about the FFBeast Flight Control project are here: https://ffbeast.github.io/docs/en/joystick.html
+More info about the FFBeast Flight Control project are [here](https://ffbeast.github.io/docs/en/joystick.html)
 
 ![img](../assets/thrustmaster_on_extender-1761523114117-6.jpg){: .center-image .small-image }
 
