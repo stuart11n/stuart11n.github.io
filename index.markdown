@@ -11,6 +11,8 @@ I can build you an FFBeast Flight Stick. US Contiguous 48 customers only.
 
 ![img](./assets/logo.png){: .center-image .small-image }
 
+<a href="mailto:stuart@s16n.com"><button>PREORDER</button></a>
+
 ## [Simrig Isolators](/projects/simrig-isolators)
 
 Enhance your simrig by isolating it from the floor [more...](/projects/simrig-isolators)
