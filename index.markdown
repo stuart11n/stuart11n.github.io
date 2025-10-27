@@ -3,6 +3,14 @@ layout: post
 title: Projects
 ---
 
+
+
+## [FFBeast Flight Stick](/projects/ffbeast-flight-stick)
+
+I can build you an FFBeast Flight Stick. US Contiguous 48 customers only.
+
+![img](./assets/logo.png){: .center-image .small-image }
+
 ## [Simrig Isolators](/projects/simrig-isolators)
 
 Enhance your simrig by isolating it from the floor [more...](/projects/simrig-isolators)
