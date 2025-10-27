@@ -9,14 +9,19 @@ title: FFBeast Flight Stick
 
 
 
-I can build you an FFBeast Flight Stick on-demand.
+I can build you an FFBeast Flight Stick.
+
+It will be built on-demand, lead times vary. E-mail me at stuart@s16n.com with any and all questions. 
+
+You may preorder and join the waitlist here: [FFBeast Flight Controls Preorder](https://forms.office.com/r/ZqVRTXDBVu)
+
+It will be fully licensed in cooperation with the original FFBeast creator. Compared to the original, there will be some minor construction, cosmetic and option differences. 
+
+US Contiguous 48 customers only. If you are outside North America, please preorder at https://ffbeast.github.io/docs/en/joystick.html#ready-to-preorder
+
+More info about the FFBeast Flight Control project are here: https://ffbeast.github.io/docs/en/joystick.html
 
 ![img](../assets/thrustmaster_on_extender-1761523114117-6.jpg){: .center-image .small-image }
 
-US Contiguous 48 customers only. E-mail me at stuart@s16n.com for pre-ordering details. 
 
-It will be fully licensed. Compared to the original, there will  be some minor construction, cosmetic and option differences. 
 
-More info about the FFBeast project here:
-
-https://ffbeast.github.io/docs/en/joystick.html
