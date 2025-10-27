@@ -1,10 +1,3 @@
-```
-layout: post
-categories: ffbeast
-title: FFBeast Flight Stick
-
-```
-
 ![img](../assets/logo.png){: .center-image .small-image }
 
 
