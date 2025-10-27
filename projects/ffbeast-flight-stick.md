@@ -6,7 +6,7 @@ title: FFBeast Flight Stick
 
 ![img](../assets/logo.png){: .center-image .small-image }
 
-I build FFBeast Flight Sticks, fully licensed in cooperation with the original FFBeast creator. 
+I build FFBeast Flight Stick Bases, fully licensed in cooperation with the original FFBeast creator. 
 
 You may preorder and join the waitlist here: [FFBeast Flight Controls Preorder](https://forms.office.com/r/ZqVRTXDBVu)
 
@@ -16,9 +16,9 @@ Compared to the original build, there may be some minor construction, cosmetic a
 
 US Contiguous 48 customers only. If you are outside North America, please preorder [here](https://ffbeast.github.io/docs/en/joystick.html#ready-to-preorder)
 
-More info about the FFBeast Flight Control project are [here](https://ffbeast.github.io/docs/en/joystick.html)
+More info about the FFBeast Flight Controls project are [here](https://ffbeast.github.io/docs/en/joystick.html)
 
-![img](../assets/thrustmaster_on_extender-1761523114117-6.jpg){: .center-image .small-image }
+![image-20251027151925917](../assets/image-20251027151925917.png){: .center-image .small-image }
 
 
 
