@@ -1,5 +1,10 @@
-![img](../assets/logo.png){: .center-image .small-image }
+---
+layout: post
+categories: FFBeast Flight Stick
+title: FFBeast Flight Stick
+---
 
+![img](../assets/logo.png){: .center-image .small-image }
 
 
 I can build you an FFBeast Flight Stick.
