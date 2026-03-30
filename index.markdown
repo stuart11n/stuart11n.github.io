@@ -5,6 +5,12 @@ title: Projects
 
 
 
+## [Custom P51D panel](/projects/p51d-panel)
+
+Full custom design for a customer. 
+
+![IMG_2030](assets/IMG_2030.JPG)
+
 ## [Simrig Isolators](/projects/simrig-isolators)
 
 Enhance your simrig by isolating it from the floor [more...](/projects/simrig-isolators)
