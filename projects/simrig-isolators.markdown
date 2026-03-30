@@ -4,7 +4,7 @@ categories: simrig
 title: Simrig Isolators
 ---
 
-<a href="https://s16nengineering.etsy.com"><button>BUY</button></a>
+<a href="https://s16n.etsy.com"><button>BUY</button></a>
 
 For 40-series profile and also 2" tubular rigs (Trak Racer RS6, TR8 Pro etc).
 
