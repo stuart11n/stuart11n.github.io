@@ -9,7 +9,7 @@ title: Projects
 
 Full custom design for a customer. 
 
-![IMG_2030](assets/IMG_2030.JPG)
+![IMG_2030](assets/IMG_2030.JPG){: .center-image .small-image }
 
 ## [Simrig Isolators](/projects/simrig-isolators)
 
