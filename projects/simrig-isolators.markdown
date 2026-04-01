@@ -2,13 +2,14 @@
 layout: post
 categories: simrig
 title: Simrig Isolators
+
 ---
 
 <a href="https://s16n.etsy.com"><button>BUY</button></a>
 
 For 40-series profile and also 2" tubular rigs (Trak Racer RS6, TR8 Pro etc).
 
-When your rig has bass shakers and FFB wheel they can generate a **lot** of vibration which is transmitted into the building structure through the floor. These isolators reduce the vibration transferred, and when used on hardwood/vinyl/tile floor the rig is easy to move the rig around and protect the floor.
+When your rig has bass shakers and an FFB wheel they can generate a **lot** of vibration which is transmitted into the building structure through the floor. These isolators reduce the vibration transferred, and when used on hardwood/vinyl/tile floor the rig is easy to move the rig around and protect the floor.
 
 I got the idea from drummers, they use tennis balls sandwiched between sheets of plywood to isolate electronic drum kits in apartment buildings. The result is very noticeable, in particular you may find you need to turn down the bass shaker amps as they become move effective, the vibrations become more distinct.
 
