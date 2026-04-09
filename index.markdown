@@ -5,9 +5,9 @@ title: Projects
 
 
 
-## [GA block](/projects/p51d-panel)
+## [GA block](/projects/ga-block)
 
-My daily GA block.
+My daily GA flyer. 
 
 ![69d98f47-a2a2-4eeb-af7e-f937f299e673](assets/69d98f47-a2a2-4eeb-af7e-f937f299e673-1775774499992-3.jpg){: .center-image .small-image }
 

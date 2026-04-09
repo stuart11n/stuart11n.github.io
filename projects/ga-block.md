@@ -5,6 +5,7 @@ I couldn't find anything commercially available that did what I wanted or didn't
 * 9 axis, all magnetic sensors 
 * real mechanical friction on all the trim dials and stick controls
 * switches for turbine/prop control
+* finger lifters coming, detents and mechanism bolts on
 
 
 
