@@ -1,7 +1,7 @@
-I couldn't find anything commercially available that did what I wanted or didn't feel cheap. So I made this. It is attached to the side of my rig.
+I couldn't find anything commercially available that did what I wanted or didn't feel cheap. So I made this. It is attached to the side of my rig. It uses P51D style trim dials because I happen to like them, and they work great in VR.
 
 * 9 axis, all magnetic sensors 
-* real mechanical friction on all the trim dials and stick controls
+* real mechanical friction on all the trim dials and stick controls, nothing moves unless I want it to
 * switches for turbine/prop control
 * finger lifters coming, detents and mechanism bolts on
 
