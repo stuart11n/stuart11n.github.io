@@ -5,9 +5,15 @@ title: Projects
 
 
 
-## [Custom P51D panel](/projects/p51d-panel)
+## [GA block](/projects/p51d-panel)
 
-Full custom design for a customer. 
+My GA block - it does what I want. Everything commercially available under $1K (maybe more) seems deficient in one way or another.
+
+![69d98f47-a2a2-4eeb-af7e-f937f299e673](assets/69d98f47-a2a2-4eeb-af7e-f937f299e673-1775774499992-3.jpg){: .center-image .small-image }
+
+## [Custom P51D block](/projects/p51d-block)
+
+A remix for a specific requirement
 
 ![IMG_2030](assets/IMG_2030.JPG){: .center-image .small-image }
 
