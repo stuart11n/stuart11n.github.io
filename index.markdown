@@ -7,7 +7,7 @@ title: Projects
 
 ## [GA block](/projects/p51d-panel)
 
-My GA block - it does what I want. Everything commercially available under $1K (maybe more) seems deficient in one way or another.
+My daily GA block.
 
 ![69d98f47-a2a2-4eeb-af7e-f937f299e673](assets/69d98f47-a2a2-4eeb-af7e-f937f299e673-1775774499992-3.jpg){: .center-image .small-image }
 
@@ -16,6 +16,12 @@ My GA block - it does what I want. Everything commercially available under $1K (
 A remix for a specific requirement
 
 ![IMG_2030](assets/IMG_2030.JPG){: .center-image .small-image }
+
+## [Force Feedback Rudder Pedals](/projects/ffb-rudder-pedals)
+
+With loadcell toe brakes.
+
+![IMG_2010](assets/IMG_2010.webp){: .center-image .small-image }
 
 ## [Simrig Isolators](/projects/simrig-isolators)
 
@@ -42,17 +48,6 @@ Funky-coder with a mode switch [more...](/projects/funky-coder-plus)
 <a href="https://s16nengineering.etsy.com"><button>BUY</button></a>
 
 ![](assets/fc/fc-plus.jpg){: .center-image .small-image }
-
-
-
-
-
-
-## [3D Printer Vibration Isolation](/projects/3d-printer-balls)
-
-Low-cost/free and effective [more...](/projects/3d-printer-balls)
-
-![](assets/misc/3d-printer-balls.jpg){: .center-image .small-image }
 
 
 
