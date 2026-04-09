@@ -1,5 +1,3 @@
-## GA Block
-
 I couldn't find anything commercially available that did what I wanted or didn't feel cheap. So I made this. It is attached to the side of my rig.
 
 * 9 axis, all magnetic sensors 

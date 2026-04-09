@@ -1,5 +1,3 @@
-# P51D Block
-
 * 6 axis, magnetic sensor
 * real mechanical friction on all the trim dials and stick controls
 * lots of switches per customer specification
