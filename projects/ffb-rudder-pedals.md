@@ -1,6 +1,6 @@
 # FFB Rudder Pedals
 
-* Huge Nm
+* Huge Nm, 600W power supply
 
 * Loadcell toes brakes, the way to allow modulation with this much available torque
 
