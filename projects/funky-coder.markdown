@@ -28,7 +28,7 @@ All the encoders, joystick and buttons are available for binding.
 
 ### Multi-mode
 
-This variant has 4 modes. The modes are selected with the lower funkyswitch joystick; pressing Up/Down/Left/Right will set the mode 1/2/3/4. In each mode the top dual encoder and push buttons will output different logical buttons. This provides 8 encoders and 4 buttons that can be mapped to whatever functions you wish. 
+This variant has 4 modes. The modes are selected with the lower funkyswitch joystick; pressing Up/Down/Left/Right will set the mode 1/2/3/4. In each mode the top dual encoder and push button will output different logical buttons. This provides 8 encoders and 4 buttons that can be mapped to whatever functions you wish. 
 
 For example you could have a mode with encoders mapped to heading, altitude, and barometer, a mode for speed management with encoders mapped to speed & vertical speed, and a mode where they are mapped to rudder, elevator & aileron trim.
 
