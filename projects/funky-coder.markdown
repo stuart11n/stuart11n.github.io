@@ -28,13 +28,15 @@ All the encoders, joystick and buttons are available for binding.
 
 ### Multi-mode
 
-This variant has 4 modes. The modes are selected with the lower funkyswitch joystick; pressing Up/Down/Left/Right will set the mode 1/2/3/4. In each mode the top dual encoder and push button will output different logical buttons. This provides 8 encoders and 4 buttons that can be mapped to whatever functions you wish. 
+This variant has 4 modes. The modes are selected with the lower funky-switch joystick; pressing Up/Down/Left/Right will set the mode 1/2/3/4. In each mode the top dual encoder and push button will output different logical buttons. This provides 8 encoders and 4 buttons that can be mapped to whatever functions you wish. 
 
 For example you could have a mode with encoders mapped to heading, altitude, and barometer, a mode for speed management with encoders mapped to speed & vertical speed, and a mode where they are mapped to rudder, elevator & aileron trim.
 
-Likewise in simracing, you could split the various engine/suspension adjustments (ABS, MAP, TCS, brake bias, brake migration etc) into groups and assign encoders to them.
+Likewise in sim-racing, you could split the various engine/suspension adjustments (ABS, MAP, TCS, brake bias, brake migration etc) into groups and assign encoders to them.
 
 As the joystick is used for mode select, it is not available for binding.
+
+Note: this is no longer available as an option on Etsy due to lack of demand. Contact me beforehand if you are interested.
 
 ## SPAD and Modeless
 
