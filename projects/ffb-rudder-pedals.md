@@ -1,5 +1,5 @@
 ---
-typora-root-url: ./..\assets\images
+typora-root-url: ./../
 ---
 
 # FFB Rudder Pedals
@@ -22,9 +22,9 @@ typora-root-url: ./..\assets\images
 
   
 
-![IMG_2010](IMG_2010-1775774899610-1.webp)
+![IMG_2010](/assets/images/IMG_2010-1775774899610-1.webp)
 
 * They fit under my pedal plate, anchored to a cross-member
 
-![IMG_2009](IMG_2009.webp)
+![IMG_2009](/assets/images/IMG_2009.webp)
 

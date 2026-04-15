@@ -2,7 +2,7 @@
 layout: post
 categories: simrig
 title: Simrig Isolators
-
+typora-root-url: ./..
 ---
 
 <a href="https://s16n.etsy.com"><button>BUY</button></a>
@@ -20,10 +20,10 @@ I got the idea from drummers, they use tennis balls sandwiched between sheets of
 
 <iframe class="center-image" width="740" height="416" src="https://www.youtube.com/embed/oiSOLjrLcrQ?si=3xlgFTEuJvTTJUB7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-![](isolators/1.JPG){: .center-image }
+![](/assets/images/isolators/1.JPG){: .center-image }
 
-![](isolators/6.jpg){: .center-image }
+![](/assets/images/isolators/6.jpg){: .center-image }
 
-![](isolators/7.png){: .center-image }
+![](/assets/images/isolators/7.png){: .center-image }
 
 Available to [BUY](https://s16nengineering.etsy.com)

@@ -1,5 +1,5 @@
 ---
-typora-root-url: ./..\assets\images
+typora-root-url: ./../
 ---
 
 * 6 axis, magnetic sensor
@@ -8,9 +8,9 @@ typora-root-url: ./..\assets\images
 
 
 
-![IMG_2031](IMG_2031.JPG)
+![IMG_2031](/assets/images/IMG_2031.JPG)
 
-![IMG_2039](MG_2039.JPG)
+![IMG_2039](/assets/images/IMG_2039.JPG)
 
-![IMG_2030](IMG_2030-1774883805177-1.JPG)
+![IMG_2030](/assets/images/IMG_2030-1774883805177-1.JPG)
 

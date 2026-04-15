@@ -2,7 +2,7 @@
 layout: post
 categories: flightsim knobster encoder
 title: Funky-coder
-typora-root-url: ./..\assets\images
+typora-root-url: ./../assets/images
 ---
 
 <a href="https://s16n.etsy.com"><button>BUY</button></a>
