@@ -2,6 +2,7 @@
 layout: post
 categories: flightsim virpil warbrd qr quick release
 title: Virpil WarBRD
+typora-root-url: ./..\..\
 ---
 
 This is a Quick Release mounting stalk for the Virpil WarBRD-D.

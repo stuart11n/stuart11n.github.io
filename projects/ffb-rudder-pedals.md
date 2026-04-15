@@ -1,5 +1,6 @@
 ---
 typora-root-url: ./../
+title: Rudder Pedals Mk.9
 ---
 
 * Huge Nm, 600W power supply

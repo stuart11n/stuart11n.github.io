@@ -1,7 +1,8 @@
 ---
 layout: post
 categories: flightsim rudder pedals
-title: Rudder Pedals Mk. 8
+typora-root-url: ./..\..
+title: Rudder Pedals Mk.8
 ---
 
 I designed these rudder pedals to be bolted to the underside of a racing rig pedal plate.
@@ -18,7 +19,7 @@ I designed these rudder pedals to be bolted to the underside of a racing rig ped
 - easy install/removal, two bolts and it slides out
 - USB-C
 
-<img src="/assets/images/mk7.JPG" style="zoom:150%;" />
+<img src="assets/images/mk7.JPG" style="zoom:150%;" />
 
 Mk. 8 is simpler and cheaper to build and has the potential for variable/motorized centering force.
 
@@ -45,7 +46,7 @@ Excellent pedals! Did not center well, very difficult to adjust the centering fo
 
 Evolution of Mk. 4, but with separate toe brakes. Immediately after I finished them, I realized my mistake with Mk. 5... 
 
-![](pedals/mk6.JPG){: .center-image }
+![](/assets/images/pedals/mk6.JPG){: .center-image }
 
 #### Mk. 5
 

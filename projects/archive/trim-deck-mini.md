@@ -2,6 +2,7 @@
 layout: post
 categories: flightsim trim
 title: Trim Deck Mini
+typora-root-url: ./..\..\
 ---
 
 <a href="https://s16nengineering.etsy.com"><button>BUY</button></a>

@@ -2,6 +2,7 @@
 layout: post
 categories: flightsim trim
 title: Trimbox
+typora-root-url: ./..\..\
 ---
 
 This unit is designed for controlling trim surfaces and other trimmable aircraft inputs such as cowl flaps, mixture. 

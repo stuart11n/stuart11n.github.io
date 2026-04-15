@@ -2,6 +2,7 @@
 layout: post
 categories: flightsim virpil profile bracket
 title: Virpil CDT-VMAX profile bracket V2
+typora-root-url: ./..\..\
 ---
 
 
