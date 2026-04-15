@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Projects
-typora-root-url: ./assets\images
+typora-root-url: ./assets/images
 ---
 
 
