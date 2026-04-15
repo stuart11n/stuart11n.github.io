@@ -2,12 +2,10 @@
 layout: post
 categories: flightsim trim
 title: Trim Deck
-typora-root-url: ./..\..\assets\images\
+typora-root-url: ./..\..\
 ---
 
-<a href="https://s16nengineering.etsy.com"><button>BUY</button></a>
-
-![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](Screenshot 2025-09-10 094950.png)
+![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](/assets/images/Screenshot 2025-09-10 094950.png)
 
 Trim Deck is a set of trim wheels for elevator, aileron, rudder plus dual encoders for controlling trim reset, auto-trim or something else. Each wheel has a friction damper; they will not freewheel or move of their own free-will.
 
@@ -19,11 +17,11 @@ The trim wheels emit button presses and are also mapped to separate axis.
 
 The wheels protrude from the bottom of the case.
 
-![image-20250604101257599](Screenshot 2025-09-10 095052.png)
+![image-20250604101257599](/assets/images/Screenshot 2025-09-10 095052.png)
 
 # Encoders
 
-![Screenshot 2025-09-01 111337](/Screenshot 2025-09-01 111337.png)
+![Screenshot 2025-09-01 111337](/assets/images//Screenshot 2025-09-01 111337.png)
 
 Two general purpose dual encoders are available for mapping.
 
@@ -45,7 +43,7 @@ Mapping using axis is straight forward. One rotation equals one axis cycle. The 
 
 Use Plane Maker to adjust the trim sensitivity in Control Geometry.
 
-![Screenshot 2025-09-08 170622](/Screenshot 2025-09-08 170622.png)
+![Screenshot 2025-09-08 170622](/assets/images//Screenshot 2025-09-08 170622.png)
 
 ### SPAD.next
 
@@ -65,23 +63,23 @@ The size of the increment/decrement can be adjusted to taste and/or to aircraft.
 | Aileron    | AILERON TRIM PCT       | 0.01                   |
 | Rudder     | RUDDER TRIM PCT        | 0.01                   |
 
-![image-20250620095926270](/image-20250620095926270.png)
+![image-20250620095926270](/assets/images//image-20250620095926270.png)
 
-![image-20250628150234948](/image-20250628150234948.png)
+![image-20250628150234948](/assets/images//image-20250628150234948.png)
 
-![image-20250620095841470](/image-20250620095841470.png)
+![image-20250620095841470](/assets/images//image-20250620095841470.png)
 
-![image-20250628145939042](/image-20250628145939042.png)
+![image-20250628145939042](/assets/images//image-20250628145939042.png)
 
-![image-20250620095907086](/image-20250620095907086.png)
+![image-20250620095907086](/assets/images//image-20250620095907086.png)
 
-![image-20250628150002618](/image-20250628150002618.png)
+![image-20250628150002618](/assets/images//image-20250628150002618.png)
 
 #### Black Square Starship
 
 The Starship seems to work better with a larger elevator increment of 0.02
 
-![image-20250628151326774](/image-20250628151326774.png)
+![image-20250628151326774](/assets/images//image-20250628151326774.png)
 
 ### Simtrim 
 
@@ -93,7 +91,7 @@ The size of the wheels does make mounting slightly challenging. The housing is a
 
 
 
-![](/Screenshot 2025-09-10 095215.png)
+![](/assets/images//Screenshot 2025-09-10 095215.png)
 
 If you have an idea for a custom mount, get in touch and I will try to accommodate you.
 
@@ -101,7 +99,7 @@ If you have an idea for a custom mount, get in touch and I will try to accommoda
 
 A close-up of a customer build of the Trim Deck with black/gold colorway. Custom colors on request.
 
-![Screenshot 2025-06-25 144838](/Screenshot 2025-06-25 144838.png)
+![Screenshot 2025-06-25 144838](/assets/images//Screenshot 2025-06-25 144838.png)
 
 
 
