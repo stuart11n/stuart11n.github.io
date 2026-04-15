@@ -20,7 +20,7 @@ A remix for a specific requirement
 
 ## [Force Feedback Rudder Pedals](/projects/ffb-rudder-pedals)
 
-With loadcell toe brakes.
+With load-cell toe brakes.
 
 ![IMG_2010](/assets/images//IMG_2010.webp){: .center-image .small-image }
 

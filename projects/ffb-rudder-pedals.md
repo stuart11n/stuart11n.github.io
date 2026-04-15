@@ -2,8 +2,6 @@
 typora-root-url: ./../
 ---
 
-# FFB Rudder Pedals
-
 * Huge Nm, 600W power supply
 
 * Load-cell toes brakes, load-cells allow excellent brake modulation with this much available torque
