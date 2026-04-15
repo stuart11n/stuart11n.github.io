@@ -2,7 +2,7 @@
 layout: post
 categories: encoder button-box
 title: Funky-coder
-typora-root-url: ./..\..\assets\images
+typora-root-url: ./../../
 ---
 
 I no longer use this - instead I joined two [Funky-coder Plus'](funky-coder-plus) together to make the [Funky-coder Quattro](funky-coder-quattro) 
@@ -14,7 +14,7 @@ I no longer use this - instead I joined two [Funky-coder Plus'](funky-coder-plus
 - Three toggles 
 - USB-C
 
-![](eb/eb1.jpg){: .center-image }
+![](assets/images/eb/eb1.jpg){: .center-image }
 
 Inputs can be mapped in-game as normal HID device buttons.
 
