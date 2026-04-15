@@ -2,6 +2,7 @@
 layout: post
 categories: FFBeast Flight Stick
 title: FFBeast Flight Stick
+typora-root-url: ./..\..\assets\images
 ---
 
 ![img](/logo.png){: .center-image .small-image }

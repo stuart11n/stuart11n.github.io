@@ -2,10 +2,10 @@
 layout: post
 categories: flightsim trim
 title: Trim Deck OG
-typora-root-url: ./..\..\assets
+typora-root-url: ./..\..\assets\images\
 ---
 
-![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](..//CDT_VMAX_Mount_2025-Jun-25_01-45-21PM-000_CustomizedView36907726145_png.png)
+![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](CDT_VMAX_Mount_2025-Jun-25_01-45-21PM-000_CustomizedView36907726145_png.png)
 
 The Trim Deck Prototype is a set of trim wheels with ancillary buttons and knobs for controlling fuel valves, lights, etc.
 

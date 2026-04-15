@@ -8,7 +8,7 @@ This is a Quick Release mounting stalk for the Virpil WarBRD-D.
 
 Available on [Printables](https://www.printables.com/model/1217617-flightstick-simrig-quick-release-virpil-warbrd)
 
-![](../assets/wbqr/wbqr1.jpg){: .center-image }
+![](/wbqr/wbqr1.jpg){: .center-image }
 
 It comprises:
 
