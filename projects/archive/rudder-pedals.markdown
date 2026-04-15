@@ -6,7 +6,7 @@ title: Rudder Pedals Mk. 8
 
 I designed these rudder pedals to be bolted to the underside of a racing rig pedal plate.
 
-![thumbnail_IMG_1341](thumbnail_IMG_1341.jpg){: .center-image }
+![thumbnail_IMG_1341](/assets/images/thumbnail_IMG_1341.jpg){: .center-image }
 
 
 ### Features
@@ -18,7 +18,7 @@ I designed these rudder pedals to be bolted to the underside of a racing rig ped
 - easy install/removal, two bolts and it slides out
 - USB-C
 
-<img src="mk7.JPG" style="zoom:150%;" />
+<img src="/assets/images/mk7.JPG" style="zoom:150%;" />
 
 Mk. 8 is simpler and cheaper to build and has the potential for variable/motorized centering force.
 
@@ -35,9 +35,9 @@ Excellent pedals! Did not center well, very difficult to adjust the centering fo
 
 
 
-![](pedals/mk7b.JPG){: .center-image }
+![](/assets/images/mk7b.JPG){: .center-image }
 
-![](mk7c.JPG){: .center-image }
+![](/assets/images/mk7c.JPG){: .center-image }
 
 
 
@@ -51,9 +51,9 @@ Evolution of Mk. 4, but with separate toe brakes. Immediately after I finished t
 
 Really nice, felt like I was getting somewhere but hard to use the toe brakes and a bit heavy to use. 
 
-![](pedals/IMG_1098.JPG){: .center-image }
-![](pedals/IMG_1099.JPG){: .center-image }
-![](pedals/IMG_1101.JPG){: .center-image }
+![](/assets/images/IMG_1098.JPG){: .center-image }
+![](/assets/images/IMG_1099.JPG){: .center-image }
+![](/assets/images/IMG_1101.JPG){: .center-image }
 
 A video of the pedals installed and working:
 
@@ -65,14 +65,14 @@ A video of the pedals installed and working:
 
 I hacked brakes onto Mk. 3 using load cells (pictured) and although they work they don't have very good feel. But load cells made a return in 2026 FFB pedals.
 
-![](pedals/mk4.JPG){: .center-image }
-![](pedals/mk4b.JPG){: .center-image }
+![](/assets/images/mk4.JPG){: .center-image }
+![](/assets/images/mk4b.JPG){: .center-image }
 
 #### Mk. 3
 
 The rudder control works really well, but I didn't include brakes. 
 
-<img src="/pedals/mk3.jpg" style="zoom:150%;" />
+<img src="/assets/images//pedals/mk3.jpg" style="zoom:150%;" />
 
 
 
@@ -80,7 +80,7 @@ The rudder control works really well, but I didn't include brakes.
 
 These felt awful...
 
-![](/pedals/mk2.jpg){: .center-image }
+![](/assets/images/mk2.jpg){: .center-image }
 
 
 
@@ -88,5 +88,5 @@ These felt awful...
 
 Nope.
 
-![image-20250528193619460](image-20250528193619460.png)
+![image-20250528193619460](/assets/images/image-20250528193619460.png)
 

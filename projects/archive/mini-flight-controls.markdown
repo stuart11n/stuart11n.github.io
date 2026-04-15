@@ -14,6 +14,6 @@ Dedicated landing gear and flaps controls one device. For use with aviation sim 
 - plus all the features of Funky-coder
 - USB-C
 
-![](fc/fc2.jpg){: .center-image }
+![](/assets/images/fc2-1776213941727-6.jpg){: .center-image }
 
 The flaps and landing gear use a custom designed mechanism using AS5600 magnetic position sensors. The flaps are an axis with detents. By default the landing gear is mapped to button two events as MSFS cannot map an axis to the landing gear. There is an option to keep the landing gear as an axis however.

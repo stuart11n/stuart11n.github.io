@@ -2,6 +2,7 @@
 layout: post
 categories: flightsim knobster encoder
 title: Funky-coder Quattro
+typora-root-url: ./../..
 ---
 
 <a href="https://s16nengineering.etsy.com"><button>BUY</button></a>
