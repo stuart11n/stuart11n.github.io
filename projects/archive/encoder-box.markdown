@@ -13,7 +13,7 @@ I no longer use this - instead I joined two [Funky-coder Plus'](funky-coder-plus
 - Three toggles 
 - USB-C
 
-![](../assets/eb/eb1.jpg){: .center-image }
+![](/eb/eb1.jpg){: .center-image }
 
 Inputs can be mapped in-game as normal HID device buttons.
 

@@ -1,3 +1,7 @@
+---
+typora-root-url: ./..\assets\images
+---
+
 # FFB Rudder Pedals
 
 * Huge Nm, 600W power supply
@@ -18,8 +22,9 @@
 
   
 
-![IMG_2010](../assets/IMG_2010-1775774899610-1.webp)
+![IMG_2010](IMG_2010-1775774899610-1.webp)
 
 * They fit under my pedal plate, anchored to a cross-member
 
-![IMG_2009](../assets/IMG_2009.webp)
+![IMG_2009](IMG_2009.webp)
+

@@ -4,7 +4,7 @@ categories: FFBeast Flight Stick
 title: FFBeast Flight Stick
 ---
 
-![img](../assets/logo.png){: .center-image .small-image }
+![img](/logo.png){: .center-image .small-image }
 
 I build FFBeast Flight Stick Bases, fully licensed in cooperation with the original FFBeast creator. 
 
@@ -18,7 +18,7 @@ US Contiguous 48 customers only. If you are outside North America, please preord
 
 More info about the FFBeast Flight Controls project are [here](https://ffbeast.github.io/docs/en/joystick.html)
 
-![image-20251027151925917](../assets/image-20251027151925917.png){: .center-image .small-image }
+![image-20251027151925917](/image-20251027151925917.png){: .center-image .small-image }
 
 
 

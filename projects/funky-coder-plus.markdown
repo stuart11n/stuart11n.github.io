@@ -2,6 +2,7 @@
 layout: post
 categories: flightsim knobster encoder
 title: Funky-coder Plus
+typora-root-url: ./..\assets\images
 ---
 
 <a href="https://s16n.etsy.com"><button>BUY</button></a>
@@ -17,7 +18,7 @@ Twin dual encoders and a funky switch with 4 modes (layers). For use with aviati
 
 Inputs can be mapped in game as a normal HID device so it's compatible with all games, and tools such as SPAD.next and Axis And Ohs.
 
-![](../assets/fc/fc-plus.jpg){: .center-image }
+![](fc/fc-plus.jpg){: .center-image }
 
 #### Example config 
 

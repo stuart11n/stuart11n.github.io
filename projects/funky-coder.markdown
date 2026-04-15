@@ -2,6 +2,7 @@
 layout: post
 categories: flightsim knobster encoder
 title: Funky-coder
+typora-root-url: ./..\assets\images
 ---
 
 <a href="https://s16n.etsy.com"><button>BUY</button></a>
@@ -14,7 +15,7 @@ I fly and drive in VR only. I have built several button boxes, but eventually de
 - a dual encoder with push button, exposed as 5 buttons
 - USB-C
 
-![](../assets/fc/fc1.png){: .center-image }
+![](fc/fc1.png){: .center-image }
 
 Inputs can be mapped in-game as normal HID device buttons.
 
@@ -50,7 +51,7 @@ Note: aside from SPAD.next, Joystick Gremlin can also accomplish multiple modes 
 
 I use the weapon select switch on my flight stick so I can switch modes rapidly. HOTAF: Hand On Throttle And Funky-coder :-)
 
-![](../assets/fc/fc3.jpg){: .center-image }
+![](fc/fc3.jpg){: .center-image }
 
 ## Mounting options
 
@@ -58,7 +59,7 @@ I use the weapon select switch on my flight stick so I can switch modes rapidly.
 
 This can be flipped horizontally and vertically. For M3 socket head bolts. 
 
-![](../assets/fc/b1-1.png){: .center-image }
-![](../assets/fc/b1-2.png){: .center-image }
+![](fc/b1-1.png){: .center-image }
+![](fc/b1-2.png){: .center-image }
 
 Available to [BUY](https://s16nengineering.etsy.com)

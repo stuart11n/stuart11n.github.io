@@ -1,5 +1,6 @@
 ---
 title: Archive
+typora-root-url: ./..\..\assets\images
 ---
 
 [Trim Deck Mini](/projects/archive/trim-deck-mini)
