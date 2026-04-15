@@ -51,4 +51,4 @@ Funky-coder with a mode switch [more...](/projects/funky-coder-plus)
 
 
 
-## [Archive](projects/old/index)
+## [Archive](projects/archive/index)

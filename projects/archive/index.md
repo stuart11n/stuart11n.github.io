@@ -1,8 +1,8 @@
-```
+---
 title: Archive
-```
+---
 
-## [Trim Deck Mini](/projects/archive/trim-deck-mini)
+[Trim Deck Mini](/projects/archive/trim-deck-mini)
 
 Trim controls for flight sim [more...](/projects/archive/trim-deck)
 
