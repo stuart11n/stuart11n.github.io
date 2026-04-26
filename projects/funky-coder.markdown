@@ -19,31 +19,19 @@ I fly and drive in VR only. I have built several button boxes, but eventually de
 
 Inputs can be mapped in-game as normal HID device buttons.
 
-## Variants
-
-### Modeless
+## Binding
 
 All the encoders, joystick and buttons are available for binding.
 
 <iframe width="740" height="416" class="center-image" src="https://www.youtube.com/embed/8ph1lfgThUY?si=7H_nSfAJesfxKCqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-### Multi-mode
 
-This variant has 4 modes. The modes are selected with the lower funky-switch joystick; pressing Up/Down/Left/Right will set the mode 1/2/3/4. In each mode the top dual encoder and push button will output different logical buttons. This provides 8 encoders and 4 buttons that can be mapped to whatever functions you wish. 
 
-For example you could have a mode with encoders mapped to heading, altitude, and barometer, a mode for speed management with encoders mapped to speed & vertical speed, and a mode where they are mapped to rudder, elevator & aileron trim.
-
-Likewise in sim-racing, you could split the various engine/suspension adjustments (ABS, MAP, TCS, brake bias, brake migration etc) into groups and assign encoders to them.
-
-As the joystick is used for mode select, it is not available for binding.
-
-Note: this is no longer available as an option on Etsy due to lack of demand. Contact me beforehand if you are interested.
-
-## SPAD and Modeless
+## SPAD 
 
 SPAD.next can implement modes in software, and it can use any button as mode change; so mapping a switch on your flightstick for works well. Switch modes with one hand and the adjust with the other. It's very smooth. 
 
-One option is to cycle through different modes, e.g. altitude -> heading -> vertical speed -> barometer etc, and have it announce the mode using text to speech. This is great in VR. An example SPAD.next profile is included.
+One option is to cycle through different modes, e.g. altitude -> heading -> vertical speed -> barometer etc, and have it announce the mode using text to speech. This is great in VR. 
 
 Setting this up is a little time consuming and requires patience with SPAD.next, so if you just want basic modes then the multi-mode variant is probably for you. If you want more flexibility and retain the joystick function, modeless is better.
 
@@ -52,14 +40,5 @@ Note: aside from SPAD.next, Joystick Gremlin can also accomplish multiple modes 
 I use the weapon select switch on my flight stick so I can switch modes rapidly. HOTAF: Hand On Throttle And Funky-coder :-)
 
 ![](fc/fc3.jpg){: .center-image }
-
-## Mounting options
-
-### B1
-
-This can be flipped horizontally and vertically. For M3 socket head bolts. 
-
-![](fc/b1-1.png){: .center-image }
-![](fc/b1-2.png){: .center-image }
 
 Available to [BUY](https://s16nengineering.etsy.com)
