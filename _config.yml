@@ -32,7 +32,7 @@ plugins:
 header_pages:
   - shop.markdown
   - index.markdown
-  - about.markdown
+  - https://s16n.etsy.com
 
 # Exclude from processing.
 # The following items will not be processed, by default.
