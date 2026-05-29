@@ -74,6 +74,6 @@ Funky-coder with a mode switch [more...](/projects/funky-coder-plus)
 
 An automatic stylus saver for fully manual turntables [more...](/projects/stylus-saver)
 
-
+![image](/assets/images/image.webp){: .center-image .small-image }
 
 ## [Archive](projects/archive/index)
