@@ -70,4 +70,10 @@ Funky-coder with a mode switch [more...](/projects/funky-coder-plus)
 
 
 
+## [Stylus Saver](/projects/stylus-saver)
+
+An automatic stylus saver for fully manual turntables [more...](/projects/stylus-saver)
+
+
+
 ## [Archive](projects/archive/index)
