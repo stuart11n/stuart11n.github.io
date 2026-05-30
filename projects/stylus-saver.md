@@ -59,6 +59,7 @@ let CONFIG = {
 
 let consecutive_seconds = 0;
 let alert_sent = false;
+let alert2_sent = false;
 
 // Timer callback that runs every 1000ms (1 second)
 Timer.set(1000, true, function () {
@@ -72,16 +73,18 @@ Timer.set(1000, true, function () {
         sendPushoverNotification(CONFIG.warningMessage);
         alert_sent = true;
       }
-      if (consecutive_seconds >= CONFIG.powerOffDelay) {
+      if (consecutive_seconds >= CONFIG.powerOffDelay && !alert2_sent) {
         sendPushoverNotification(CONFIG.powerMessage);
         Shelly.call("Switch.Set", { id: 0, on: false });
+        alert2_sent= true;
       }
     } else {
       // Reset counter if power drops below threshold
       if (consecutive_seconds > 0 || alert_sent) {
         print("Resetting monitors");
         consecutive_seconds = 0;
-        alert_sent = false; 
+        alert_sent = false;
+        alert2_sent= false;
       }
     }
 });
