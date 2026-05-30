@@ -7,7 +7,7 @@ This is my PS-4750. It fully manual. Sometimes life's distractions take me away 
 
 ![image](/assets/images/image.webp)
 
-So I leveraged a [Shelly PM](https://us.shelly.com/products/shelly-1pm-mini-gen3), a script that runs on the Shelly and a (free) [Pushover](https://pushover.net/) account. (I won't cover the in's and out's of Shelly setup, its very simple to get going and configure from your phone and web browser. Likewise, Pushover is straightforward to sign-up and use).
+So I leveraged a [Shelly 1PM](https://us.shelly.com/products/shelly-1pm-mini-gen3), a script that runs on the Shelly and a (free) [Pushover](https://pushover.net/) account. (I won't cover the in's and out's of Shelly setup, its very simple to get going and configure from your phone and web browser. Likewise, Pushover is straightforward to sign-up and use).
 
 Before proceeding, please note that working with mains power can be hazardous. Read the full liability waiver [here](../disclaimer)
 
@@ -128,3 +128,9 @@ Set it to run at startup:
 I printed a simple box for mine:
 
 ![image-20260529173840529](/assets/images/image-20260529173840529.png){: .center-image .small-image }
+
+## PS-4750
+
+If has my own custom replacement pads. One of the reasons I was attracted to it was the appearance, there was no way I was going to slap a flat mat on there. The are 3D printed TPU with leather faces.
+
+The feet also have 3D printed TPU to replace the tired old perished originals so it regained some bounce back - though I have no idea how much it should have! Future tweaks are assured. 
