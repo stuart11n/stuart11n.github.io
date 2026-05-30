@@ -13,17 +13,17 @@ Before proceeding, please note that working with mains power can be hazardous. R
 
 The Shelly goes between the turntable and the mains power. It monitors the power consumption (watts) of the turntable and uses that to deduce where it is running to not. It tracks the continuous runtime and when it reaches the configured thresholds it triggers the two actions.
 
-![img](/assets/images/Mini_Plus1PM_3_72a2256e-d6ca-4e69-8bfa-05f0df0b6ce9.jpeg)
+![img](/assets/images/Mini_Plus1PM_3_72a2256e-d6ca-4e69-8bfa-05f0df0b6ce9.jpeg){: .center-image .small-image }
 
 
 
 ## Wiring
 
+Based on this article in the [Shelly KB](https://kb.shelly.cloud/knowledge-base/shelly-plus-1pm-mini#ShellyPlus1PMMini(SNSW-001P8EU)-Basicwiringdiagram)
+
 ![image-20260529135520824](/assets/images/image-20260529135520824.png)
 
 
-
-I 3D printed a box for mine.
 
 ## Switch
 
@@ -31,7 +31,7 @@ The switch is optional. If the turntable is turned off you need a way to turn it
 
 I have a momentary switch which works as a simple toggle. It must be configured as follows:
 
-![image-20260529135912405](/assets/images/image-20260529135912405.png)
+![image-20260529135912405](/assets/images/image-20260529135912405.png){: .center-image .small-image }
 
 
 
@@ -112,8 +112,12 @@ function sendPushoverNotification(message) {
 
 Set it to run at startup:
 
-![image-20260529135632756](/assets/images/image-20260529135632756.png)
+![image-20260529135632756](/assets/images/image-20260529135632756.png){: .center-image .small-image }
 
 
 
-> 
+## Box
+
+I printed a simple box for mine:
+
+![image-20260529173840529](/assets/images/image-20260529173840529.png){: .center-image .small-image }
