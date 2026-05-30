@@ -7,11 +7,13 @@ This is my PS-4750. It fully manual. Sometimes life's distractions take me away 
 
 ![image](/assets/images/image.webp)
 
-So I leveraged a [Shelly PM](https://us.shelly.com/products/shelly-1pm-mini-gen3), a script that runs on the Shelly and a (free) [Pushover](https://pushover.net/) account. I'm not going to cover the in's and out's of Shelly setup, its very simple to get going and configure from your phone and web browser. Likewise, Pushover is straightforward to sign-up and use.
+So I leveraged a [Shelly PM](https://us.shelly.com/products/shelly-1pm-mini-gen3), a script that runs on the Shelly and a (free) [Pushover](https://pushover.net/) account. (I won't cover the in's and out's of Shelly setup, its very simple to get going and configure from your phone and web browser. Likewise, Pushover is straightforward to sign-up and use).
 
 Before proceeding, please note that working with mains power can be hazardous. Read the full liability waiver [here](../disclaimer)
 
-The Shelly goes between the turntable and the mains power. It monitors the power consumption (watts) of the turntable and uses that to deduce where it is running to not. It tracks the continuous runtime and when it reaches the configured thresholds it triggers the two actions.
+## How it works
+
+The Shelly is connected between the turntable and the mains power. It monitors the power consumption (watts) of the turntable and uses that to deduce where it is running to not. It tracks the continuous runtime and when it reaches the configured thresholds it triggers the two actions.
 
 ![img](/assets/images/Mini_Plus1PM_3_72a2256e-d6ca-4e69-8bfa-05f0df0b6ce9.jpeg){: .center-image .small-image }
 
@@ -27,7 +29,7 @@ Based on this article in the [Shelly KB](https://kb.shelly.cloud/knowledge-base/
 
 ## Switch
 
-The switch is optional. If the turntable is turned off you need a way to turn it on again. This can be done with the Shelly App, or by wiring a switch. **Note: the switch runs as line voltage** so it is recommended to house the switch in the same box as the Shelly PM1 
+The switch is optional. If the turntable is turned off you need a way to turn it on again. This can be done with the Shelly App, or by wiring a switch. **Note: the switch runs as line voltage** so it is recommended to house the switch in the same box as the Shelly PM1.
 
 I have a momentary switch which works as a simple toggle. It must be configured as follows:
 
@@ -38,6 +40,8 @@ I have a momentary switch which works as a simple toggle. It must be configured 
 ## Script
 
 Add your Pushover credentials from your (free) Pushover account, adjust the notification and power-off delays, watts and messages to suit and add to the Shelly PM!
+
+The PS4750 uses 5W when running, however I have a 100V step-down transformer that idles at 1.5W so I picked 3W as the threshold instead of 0W. 
 
 ```
 let CONFIG = {
