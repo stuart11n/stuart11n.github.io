@@ -1,5 +1,5 @@
 ---
-title: Stylus Saver & run-time tracker
+title: Stylus Saver & Run-time Tracker
 typora-root-url: ./../
 ---
 
