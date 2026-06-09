@@ -49,9 +49,7 @@ I have a momentary switch which works as a simple toggle. It must be configured 
 
 To display the runtime in the dashboard you need to add a Virtual Device, add that in the Shelly UI.
 
-
-
-![image-20260609120706028](/assets/images/image-20260609120706028.png){: .center-image .small-image }
+![image-20260609142502650](/assets/images/image-20260609142502650.png){: .center-image .small-image }
 
 
 
