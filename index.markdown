@@ -70,9 +70,9 @@ Funky-coder with a mode switch [more...](/projects/funky-coder-plus)
 
 
 
-## [Stylus Saver](/projects/stylus-saver)
+## [Stylus Saver & Run-time Tracker](/projects/stylus-saver)
 
-An automatic stylus saver for fully manual turntables [more...](/projects/stylus-saver)
+An automatic stylus saver and run-time tracker for manual turntables [more...](/projects/stylus-saver)
 
 ![image](/assets/images/image.webp){: .center-image .small-image }
 

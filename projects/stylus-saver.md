@@ -1,9 +1,9 @@
 ---
-title: Stylus Saver
+title: Stylus Saver & run-time tracker
 typora-root-url: ./../
 ---
 
-This is my PS-4750. It fully manual. Sometimes life's distractions take me away from my turntable and when it reaches the end of the side it would be nice if it could remind me it is still running and turn itself off if I'm unresponsive.
+This is my PS-4750. It fully manual. Sometimes life's distractions take me away from my turntable and when it reaches the end of the side it would be nice if it could remind me it is still running and turn itself off if I'm unresponsive. It would be great if it could track run-time too.
 
 ![image](/assets/images/image.webp)
 
@@ -16,6 +16,14 @@ Before proceeding, please note that working with mains power can be hazardous. R
 The Shelly is connected between the turntable and the mains power. It monitors the power consumption (watts) of the turntable and uses that to deduce where it is running to not. It tracks the continuous runtime and when it reaches the configured thresholds it triggers the two actions.
 
 ![img](/assets/images/Mini_Plus1PM_3_72a2256e-d6ca-4e69-8bfa-05f0df0b6ce9.jpeg){: .center-image .small-image }
+
+
+
+Run-time is tracked on the Shelly Dashboard.
+
+
+
+![image-20260609120421578](/assets/images/image-20260609120421578.png){: .center-image .small-image }
 
 
 
@@ -34,6 +42,22 @@ The switch is optional. If the turntable is turned off you need a way to turn it
 I have a momentary switch which works as a simple toggle. It must be configured as follows:
 
 ![image-20260529135912405](/assets/images/image-20260529135912405.png){: .center-image .small-image }
+
+
+
+## Virtual Device
+
+To display the runtime in the dashboard you need to add a Virtual Device, add that in the Shelly UI.
+
+
+
+![image-20260609120706028](/assets/images/image-20260609120706028.png){: .center-image .small-image }
+
+
+
+
+
+![image-20260609120634882](/assets/images/image-20260609120634882.png){: .center-image .small-image }
 
 
 
@@ -68,6 +92,12 @@ Timer.set(1000, true, function () {
   let current_power = switchStatus.apower;
     if (current_power > CONFIG.power_threshold) {
       consecutive_seconds++;
+      
+      // track the run-time in a Virtual Device
+      let runtimeCounter = Virtual.getHandle("number:200");
+      let currentVal = runtimeCounter.getValue() || 0;
+      runtimeCounter.setValue(currentVal+=1/3600);
+      
       // Check if threshold duration met and alert hasn't been fired yet
       if (consecutive_seconds >= CONFIG.notificationDelay && !alert_sent) {
         sendPushoverNotification(CONFIG.warningMessage);
