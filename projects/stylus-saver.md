@@ -159,8 +159,3 @@ I printed a simple box for mine:
 
 ![image-20260529173840529](/assets/images/image-20260529173840529.png){: .center-image .small-image }
 
-## PS-4750
-
-If has my own custom replacement pads. One of the reasons I was attracted to it was the appearance, there was no way I was going to slap a flat mat on there. The are 3D printed TPU with leather faces.
-
-The feet also have 3D printed TPU to replace the tired old perished originals so it regained some bounce back - though I have no idea how much it should have! Future tweaks are assured. 
