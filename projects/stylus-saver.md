@@ -5,7 +5,7 @@ typora-root-url: ./../
 
 This is my PS-4750. It fully manual. Sometimes life's distractions take me away from my turntable and when it reaches the end of the side it would be nice if it could remind me it is still running and turn itself off if I'm unresponsive. It would be great if it could track run-time too.
 
-![image](/assets/images/image.webp)
+![2B93BCF6-8AA7-4CA4-9143-E5960DCA23D4](/assets/images/2B93BCF6-8AA7-4CA4-9143-E5960DCA23D4.webp)
 
 So I leveraged a [Shelly 1PM](https://us.shelly.com/products/shelly-1pm-mini-gen3), a script that runs on the Shelly and a (free) [Pushover](https://pushover.net/) account. (I won't cover the in's and out's of Shelly setup, its very simple to get going and configure from your phone and web browser. Likewise, Pushover is straightforward to sign-up and use).
 
