@@ -21,11 +21,11 @@ The Shelly is connected between the turntable and the mains power. It monitors t
 
 Run-time is tracked on the Shelly Dashboard so you'll know when to buy a new stylus!
 
+![image-20260609142301637](/assets/images/image-20260609142301637.png){: .center-image .small-image}
 
 
-![image-20260609120421578](/assets/images/image-20260609120421578.png){: .center-image .small-image }
 
-
+The easiest way to reset this when the time comes is to delete and re-create the Virtual Device.
 
 ## Wiring
 
