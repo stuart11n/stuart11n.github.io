@@ -65,7 +65,7 @@ To display the runtime in the dashboard you need to add a Virtual Device, add th
 
 Add your Pushover credentials from your (free) Pushover account, adjust the notification and power-off delays, watts and messages to suit and add to the Shelly PM!
 
-The PS4750 uses 5W when running, however I have a 100V step-down transformer that idles at 1.5W so I picked 3W as the threshold instead of 0W. 
+The PS-4750 uses 5W when running, however I have a 100V step-down transformer that idles at 1.5W so I picked 3W as the threshold instead of 0W. 
 
 ```
 let CONFIG = {
@@ -94,7 +94,7 @@ Timer.set(1000, true, function () {
       consecutive_seconds++;
       
       // track the run-time in a Virtual Device
-      let runtimeCounter = Virtual.getHandle("number:200");
+      let runtimeCounter = Virtual.getHandle("number:200"); // this must the ID inside Shelly
       let currentVal = runtimeCounter.getValue() || 0;
       runtimeCounter.setValue(currentVal+=1/3600);
       
