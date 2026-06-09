@@ -19,7 +19,7 @@ The Shelly is connected between the turntable and the mains power. It monitors t
 
 
 
-Run-time is tracked on the Shelly Dashboard.
+Run-time is tracked on the Shelly Dashboard so you'll know when to buy a new stylus!
 
 
 
