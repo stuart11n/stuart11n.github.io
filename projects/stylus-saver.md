@@ -92,7 +92,7 @@ Timer.set(1000, true, function () {
       consecutive_seconds++;
       
       // track the run-time in a Virtual Device
-      let runtimeCounter = Virtual.getHandle("number:200"); // this must the ID inside Shelly
+      let runtimeCounter = Virtual.getHandle("number:200"); // this must match the Virtual Device ID inside Shelly
       let currentVal = runtimeCounter.getValue() || 0;
       runtimeCounter.setValue(currentVal+=1/3600);
       
