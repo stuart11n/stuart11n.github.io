@@ -26,8 +26,6 @@ For known s16n devices, a **Settings** tab adds:
 - **Fetch** — load the current config from the device
 - **Write** — send edits back to the device
 - **Backup** / **Restore** — package configs for safekeeping or rollbacks
-- CircuitPython boards: edit over USB serial (no mass-storage drive required)
-- FreeJoy boards: transfer config over vendor HID
 
 ### Requirements
 
