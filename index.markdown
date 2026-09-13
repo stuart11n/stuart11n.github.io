@@ -46,6 +46,21 @@ permalink: /
     </div>
   </article>
 
+  <article class="project-card project-card--wide">
+    <a class="project-card__hit" href="/projects/controller-manager/">
+      <div class="project-card__media">
+        <img src="/assets/images/controller-manager/monitor.png" alt="">
+      </div>
+      <div class="project-card__body">
+        <h3 class="project-card__title">s16n Controller Manager</h3>
+        <p class="project-card__desc">Windows HID monitor and settings tool for s16n controllers.</p>
+      </div>
+    </a>
+    <div class="project-card__actions">
+      <a class="project-card__more" href="/projects/controller-manager/">View project</a>
+    </div>
+  </article>
+
   <article class="project-card">
     <a class="project-card__hit" href="/projects/aest-panel">
       <div class="project-card__media">

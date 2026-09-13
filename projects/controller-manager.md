@@ -1,0 +1,35 @@
+---
+layout: post
+title: s16n Controller Manager
+permalink: /projects/controller-manager/
+---
+
+Windows app for monitoring HID controllers and managing s16n device settings.
+
+![s16n Controller Manager Monitor tab](/assets/images/controller-manager/monitor.png){: .center-image }
+
+### Features
+
+- Enumerates HID joysticks, gamepads, and multi-axis controllers (hot plug / unplug)
+- One tab per connected device, with s16n devices sorted first
+- **Monitor** live view of buttons, axes, HATs, and discovered encoders
+- Automatic encoder detection from button pulse trains, with mean pulse timing
+- Color-coded activity (pressed, recent, idle) and optional fade
+- Timestamped input event log with deltas
+- Device summary with VID/PID, serial, capabilities, and Copy
+- Product image for known s16n devices
+
+### Settings (supported devices)
+
+For known CircuitPython and FreeJoy devices, a **Settings** tab adds:
+
+- **Fetch** — load the current config from the device
+- **Write** — send edits back to the device
+- **Backup** / **Restore** — package configs for safekeeping or rollbacks
+- CircuitPython boards: edit over USB serial (no mass-storage drive required)
+- FreeJoy boards: transfer config over vendor HID
+
+### Requirements
+
+- Windows 10/11 x64
+- Ships as a single self-contained exe (`s16n-controller-manager.exe`)
