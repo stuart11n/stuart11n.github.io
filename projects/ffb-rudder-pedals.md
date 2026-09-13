@@ -20,8 +20,6 @@ image: /assets/images/IMG_2010.webp
 
 * Low-profile, requires a strong anchor point at the rear (a wall, or simpit/rig cross-member)
 
-* If you are interested in a kit or ready-built unit, contact me 
-
   
 
 ![IMG_2010](/assets/images/IMG_2010-1775774899610-1.webp)
