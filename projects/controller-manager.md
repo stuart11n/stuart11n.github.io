@@ -7,7 +7,7 @@ image: /assets/images/controller-manager/monitor.png
 permalink: /projects/controller-manager/
 ---
 
-Windows app for monitoring HID controllers and managing s16n device settings.
+Windows app for monitoring HID controllers and managing s16n device settings. Free to download.
 
 <p><a class="btn btn--primary" href="https://github.com/stuart11n/s16n-releases/releases/download/controller-manager-latest/s16n-controller-manager.exe">Download for Windows</a></p>
 
