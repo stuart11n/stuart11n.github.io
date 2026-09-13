@@ -17,7 +17,7 @@ Wow and flutter are slow and fast speed variations in tape decks and turntables.
 
 A line-in wow &amp; flutter meter for turntables and tape decks, using test tones (DIN 3.15 kHz / JIS–NAB 3 kHz). It locks the carrier, splits wow vs flutter, shows a spectrum and weighted wow trace, and supports DIN, JIS, NAB, CCIR, and 2σ. Designed for use with a USB ADC (line input) — not the device microphone.
 
-<p><a class="btn btn--primary" href="https://s16n-wf.grok.me/" target="_blank" rel="noopener noreferrer">Open s16n-wf.grok.me</a></p>
+<p><a class="btn btn--primary" href="https://s16n-wf.grok.me/" target="_blank" rel="noopener noreferrer">Open W&amp;F Meter</a></p>
 
 ![W&amp;F meter showing DIN wow and flutter readout](/assets/images/turntable-audio/wow-flutter.png){: .center-image }
 
@@ -25,6 +25,6 @@ A line-in wow &amp; flutter meter for turntables and tape decks, using test tone
 
 A MEMS tachometer for turntables: place the phone face-up on the platter to measure RPM and wow &amp; flutter. Supports common speeds (16⅔, 33⅓, 45, 78) and DIN / JIS / NAB / 2σ standards.
 
-<p><a class="btn btn--primary" href="https://s16n-rpm.grok.me/" target="_blank" rel="noopener noreferrer">Open s16n-rpm.grok.me</a></p>
+<p><a class="btn btn--primary" href="https://s16n-rpm.grok.me/" target="_blank" rel="noopener noreferrer">Open GyroTach</a></p>
 
 ![GyroTach RPM and wow and flutter meter](/assets/images/turntable-audio/rpm.png){: .center-image }
