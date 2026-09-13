@@ -5,13 +5,13 @@ title: Simrig Isolators
 typora-root-url: ./..
 ---
 
-<a href="https://s16n.etsy.com"><button>BUY</button></a>
+<a class="btn btn--buy" href="{{ site.shop_url }}" target="_blank" rel="noopener noreferrer">Buy</a>
 
 For 40-series profile and also 2" tubular rigs (Trak Racer RS6, TR8 Pro etc).
 
-When your rig has bass shakers and an FFB wheel they can generate a **lot** of vibration which is transmitted into the building structure through the floor. These isolators reduce the vibration transferred, and when used on hardwood/vinyl/tile floor the rig is easy to move the rig around and protect the floor.
+When your rig has bass shakers and an FFB wheel they can generate a **lot** of vibration which is transmitted into the building structure through the floor. These isolators reduce the vibration transferred, and when used on hardwood/vinyl/tile floor the rig is easy to move around and protect the floor.
 
-I got the idea from drummers, they use tennis balls sandwiched between sheets of plywood to isolate electronic drum kits in apartment buildings. The result is very noticeable, in particular you may find you need to turn down the bass shaker amps as they become move effective, the vibrations become more distinct.
+I got the idea from drummers, they use tennis balls sandwiched between sheets of plywood to isolate electronic drum kits in apartment buildings. The result is very noticeable, in particular you may find you need to turn down the bass shaker amps as they become more effective, the vibrations become more distinct.
 
 - by decoupling the rig from the floor, FFB and bass shaker effects become more distinct as they are no longer damped by the building, more energy is concentrated into the rig and they don't need to work so hard
 - it's quieter for your neighbors and family
@@ -26,4 +26,4 @@ I got the idea from drummers, they use tennis balls sandwiched between sheets of
 
 ![](/assets/images/isolators/7.png){: .center-image }
 
-Available to [BUY](https://s16nengineering.etsy.com)
+Available to [Buy]({{ site.shop_url }})

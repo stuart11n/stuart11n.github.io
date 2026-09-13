@@ -3,11 +3,11 @@ title: Archive
 typora-root-url: ./..\..
 ---
 
-[Trim Deck Mini](/projects/archive/trim-deck-mini)
+## [Trim Deck Mini](/projects/archive/trim-deck-mini)
 
 Trim controls for flight sim [more...](/projects/archive/trim-deck)
 
-<a href="https://s16nengineering.etsy.com"><button>BUY</button></a>
+<a class="btn btn--buy" href="{{ site.shop_url }}" target="_blank" rel="noopener noreferrer">Buy</a>
 
 ![img](/assets/images/il_fullxfull.7182036102_m1e9.jpg){: .center-image .small-image }
 
@@ -15,7 +15,7 @@ Trim controls for flight sim [more...](/projects/archive/trim-deck)
 
 Trim controls for flight sim [more...](/projects/archive/trim-deck)
 
-<a href="https://s16nengineering.etsy.com"><button>BUY</button></a>
+<a class="btn btn--buy" href="{{ site.shop_url }}" target="_blank" rel="noopener noreferrer">Buy</a>
 
 ![photo](/assets/images/Screenshot 2025-08-31 110519-1757291758827-6.png){: .center-image .small-image }
 
@@ -31,7 +31,7 @@ Rudder pedals with toe brakes for dual use rigs [more...](/projects/archive/rudd
 
 ![](/assets/images/image-20250528211825527.png){: .center-image .small-image }
 
-## [Funky-coder Quattro](projects/archive/funky-coder-quattro)
+## [Funky-coder Quattro](/projects/archive/funky-coder-quattro)
 
 ![May include: A black control panel with four knobs and four buttons. The knobs are labeled I, II, III, and IV. The buttons are black and red. The panel has a textured surface.](/assets/images/il_1140xN.6846689010_60pt.jpg){: .center-image .small-image }
 

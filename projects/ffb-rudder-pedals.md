@@ -5,7 +5,7 @@ title: Rudder Pedals Mk.9
 
 * Huge Nm, 600W power supply
 
-* Load-cell toes brakes, load-cells allow excellent brake modulation with this much available torque
+* Load-cell toe brakes, load-cells allow excellent brake modulation with this much available torque
 
 * Stepped pedal faces, again, this offers great modulation between brake and rudder forces
 
@@ -15,9 +15,9 @@ title: Rudder Pedals Mk.9
 
 * Based on FFBeast
 
-* Low-profile, require a strong anchor point at the rear (a wall, or simpit/rig cross-member)
+* Low-profile, requires a strong anchor point at the rear (a wall, or simpit/rig cross-member)
 
-* If you are interested in a kit or ready built contact me 
+* If you are interested in a kit or ready-built unit, contact me 
 
   
 

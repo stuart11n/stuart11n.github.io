@@ -5,7 +5,7 @@ title: Funky-coder Quattro
 typora-root-url: ./../..
 ---
 
-<a href="https://s16nengineering.etsy.com"><button>BUY</button></a>
+<a class="btn btn--buy" href="{{ site.shop_url }}" target="_blank" rel="noopener noreferrer">Buy</a>
 
 It's exactly what it looks like! Two Funky-coder Plus' Welded together!
 
@@ -33,4 +33,4 @@ This is Funky-coder Quattro - for flightsim and simracing! Designed to make it e
 
 ![May include: A black control panel with a red button and multiple knobs. The panel is mounted on a black bracket with multiple holes. The bracket is attached to a black swivel arm.](https://i.etsystatic.com/56550814/r/il/2c8831/6895846441/il_1140xN.6895846441_jp68.jpg)
 
-Available to [BUY](https://s16nengineering.etsy.com)
+Available to [Buy]({{ site.shop_url }})

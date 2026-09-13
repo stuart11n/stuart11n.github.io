@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {%- include head.html -%}
+  <body class="home">
+    {%- include header.html -%}
+    <main class="page-content" aria-label="Content">
+      <section class="hero">
+        <div class="hero__glow" aria-hidden="true"></div>
+        <div class="wrapper hero__inner">
+          <div class="hero__copy">
+            <p class="hero__brand">{{ site.title | escape }}</p>
+            <h1 class="hero__title">Hardware built for the cockpit and the pit.</h1>
+            <p class="hero__lede">Flight panels, VR-friendly encoders, and sim-rig parts made in San Diego.</p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="{{ site.shop_url }}" target="_blank" rel="noopener noreferrer">Shop on Etsy</a>
+              <a class="btn btn--ghost" href="#projects">Browse projects</a>
+            </div>
+          </div>
+          <div class="hero__visual" aria-hidden="true">
+            <img src="{{ "/assets/images/fc-plus.jpg" | relative_url }}" alt="" class="hero__img hero__img--main">
+            <img src="{{ "/assets/images/IMG_2121.jpg" | relative_url }}" alt="" class="hero__img hero__img--float">
+          </div>
+        </div>
+      </section>
+
+      <div class="wrapper">
+        <div id="projects" class="projects-anchor">
+          {{ content }}
+        </div>
+      </div>
+    </main>
+    {%- include footer.html -%}
+  </body>
+</html>

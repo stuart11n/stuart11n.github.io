@@ -3,17 +3,17 @@ title: Stylus Saver & Run-time Tracker
 typora-root-url: ./../
 ---
 
-This is my PS-4750. It fully manual. Sometimes life's distractions take me away from my turntable and when it reaches the end of the side it would be nice if it could remind me it is still running and turn itself off if I'm unresponsive. It would be great if it could track run-time too.
+This is my PS-4750. It is fully manual. Sometimes life's distractions take me away from my turntable and when it reaches the end of the side it would be nice if it could remind me it is still running and turn itself off if I'm unresponsive. It would be great if it could track run-time too.
 
 ![2B93BCF6-8AA7-4CA4-9143-E5960DCA23D4](/assets/images/2B93BCF6-8AA7-4CA4-9143-E5960DCA23D4.webp)
 
-So I leveraged a [Shelly 1PM](https://us.shelly.com/products/shelly-1pm-mini-gen3), a script that runs on the Shelly and a (free) [Pushover](https://pushover.net/) account. (I won't cover the in's and out's of Shelly setup, its very simple to get going and configure from your phone and web browser. Likewise, Pushover is straightforward to sign-up and use).
+So I leveraged a [Shelly 1PM](https://us.shelly.com/products/shelly-1pm-mini-gen3), a script that runs on the Shelly and a (free) [Pushover](https://pushover.net/) account. (I won't cover the ins and outs of Shelly setup, it's very simple to get going and configure from your phone and web browser. Likewise, Pushover is straightforward to sign up and use).
 
 Before proceeding, please note that working with mains power can be hazardous. Read the full liability waiver [here](../disclaimer)
 
 ## How it works
 
-The Shelly is connected between the turntable and the mains power. It monitors the power consumption (watts) of the turntable and uses that to deduce where it is running to not. It tracks the continuous runtime and when it reaches the configured thresholds it triggers the two actions.
+The Shelly is connected between the turntable and the mains power. It monitors the power consumption (watts) of the turntable and uses that to deduce whether it is running or not. It tracks the continuous runtime and when it reaches the configured thresholds it triggers the two actions.
 
 ![img](/assets/images/Mini_Plus1PM_3_72a2256e-d6ca-4e69-8bfa-05f0df0b6ce9.jpeg){: .center-image .small-image }
 
@@ -37,7 +37,7 @@ Based on this article in the [Shelly KB](https://kb.shelly.cloud/knowledge-base/
 
 ## Switch
 
-The switch is optional. If the turntable is turned off you need a way to turn it on again. This can be done with the Shelly App, or by wiring a switch. **Note: the switch runs as line voltage** so it is recommended to house the switch in the same box as the Shelly PM1.
+The switch is optional. If the turntable is turned off you need a way to turn it on again. This can be done with the Shelly App, or by wiring a switch. **Note: the switch runs as line voltage** so it is recommended to house the switch in the same box as the Shelly 1PM.
 
 I have a momentary switch which works as a simple toggle. It must be configured as follows:
 

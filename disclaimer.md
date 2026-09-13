@@ -1,4 +1,8 @@
-## 
+---
+layout: page
+title: Disclaimer
+permalink: /disclaimer/
+---
 
 **DISCLAIMER & LIABILITY WAIVER**
 

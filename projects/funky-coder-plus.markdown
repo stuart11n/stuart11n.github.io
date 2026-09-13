@@ -5,7 +5,7 @@ title: Funky-coder Plus
 typora-root-url: ./../assets/images
 ---
 
-<a href="https://s16n.etsy.com"><button>BUY</button></a>
+<a class="btn btn--buy" href="{{ site.shop_url }}" target="_blank" rel="noopener noreferrer">Buy</a>
 
 Twin dual encoders and a funky switch with 4 modes (layers). For use with aviation sim and simracing. Great for VR!
 
@@ -75,4 +75,4 @@ Here's what I settled on:
 |   2   | view up/down            | view forward/back/left/right      |      |
 
 
-Available to [BUY](https://s16nengineering.etsy.com)
+Available to [Buy]({{ site.shop_url }})

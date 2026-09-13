@@ -5,7 +5,7 @@ title: Funky-coder
 typora-root-url: ./../assets/images
 ---
 
-<a href="https://s16n.etsy.com"><button>BUY</button></a>
+<a class="btn btn--buy" href="{{ site.shop_url }}" target="_blank" rel="noopener noreferrer">Buy</a>
 
 I fly and drive in VR only. I have built several button boxes, but eventually decided it would be much easier to use a single multi-mode device that's easy to get my hands on while playing.
 
@@ -29,7 +29,7 @@ All the encoders, joystick and buttons are available for binding.
 
 ## SPAD 
 
-SPAD.next can implement modes in software, and it can use any button as mode change; so mapping a switch on your flightstick for works well. Switch modes with one hand and the adjust with the other. It's very smooth. 
+SPAD.next can implement modes in software, and it can use any button as mode change; so mapping a switch on your flightstick works well. Switch modes with one hand and then adjust with the other. It's very smooth. 
 
 One option is to cycle through different modes, e.g. altitude -> heading -> vertical speed -> barometer etc, and have it announce the mode using text to speech. This is great in VR. 
 
@@ -41,4 +41,4 @@ I use the weapon select switch on my flight stick so I can switch modes rapidly.
 
 ![](fc/fc3.jpg){: .center-image }
 
-Available to [BUY](https://s16nengineering.etsy.com)
+Available to [Buy]({{ site.shop_url }})
