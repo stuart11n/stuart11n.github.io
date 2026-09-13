@@ -2,14 +2,30 @@ title: s16n
 email: stuart@s16n.com
 description: >-
   Custom flight sim and sim racing hardware from San Diego — panels, encoders, isolators, and one-off builds.
+tagline: Custom flight sim and sim racing hardware
 baseurl: ""
 url: "https://www.s16n.com"
 shop_url: "https://s16n.etsy.com"
+lang: en
+
+author:
+  name: Stuart
+  email: stuart@s16n.com
+
+logo: /assets/images/logo.jpg
+
+social:
+  name: s16n
+  links:
+    - https://s16n.etsy.com
+    - https://www.s16n.com
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 header_pages:
   - index.markdown
@@ -21,3 +37,9 @@ defaults:
       path: ""
     values:
       layout: page
+      image: /assets/images/logo.jpg
+  - scope:
+      path: "projects"
+    values:
+      layout: post
+      image: /assets/images/fc-plus.jpg

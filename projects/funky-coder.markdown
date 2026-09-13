@@ -2,6 +2,9 @@
 layout: post
 categories: flightsim knobster encoder
 title: Funky-coder
+description: >-
+  VR-focused HID input device with a funky switch and dual encoder for flight sim and sim racing.
+image: /assets/images/fc1.png
 typora-root-url: ./../assets/images
 ---
 

@@ -1,5 +1,8 @@
 ---
 title: Stylus Saver & Run-time Tracker
+description: >-
+  Automatic stylus saver and run-time tracker for manual turntables using a Shelly 1PM and Pushover alerts.
+image: /assets/images/image.webp
 typora-root-url: ./../
 ---
 

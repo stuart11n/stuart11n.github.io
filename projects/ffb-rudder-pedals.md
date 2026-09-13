@@ -1,6 +1,9 @@
 ---
 typora-root-url: ./../
-title: Rudder Pedals Mk.9
+title: Force Feedback Rudder Pedals
+description: >-
+  High-torque force feedback rudder pedals with load-cell toe brakes, based on FFBeast.
+image: /assets/images/IMG_2010.webp
 ---
 
 * Huge Nm, 600W power supply

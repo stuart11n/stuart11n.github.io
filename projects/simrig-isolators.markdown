@@ -2,6 +2,9 @@
 layout: post
 categories: simrig
 title: Simrig Isolators
+description: >-
+  Vibration isolators for 40-series profile and tubular sim rigs — quieter for neighbors, clearer FFB and bass shakers.
+image: /assets/images/1-1776213814761-1.JPG
 typora-root-url: ./..
 ---
 

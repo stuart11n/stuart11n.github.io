@@ -1,6 +1,9 @@
 ---
 layout: post
 title: s16n Controller Manager
+description: >-
+  Windows HID controller manager for s16n devices — live input monitor, encoder detection, and settings backup/restore.
+image: /assets/images/controller-manager/monitor.png
 permalink: /projects/controller-manager/
 ---
 

@@ -1,5 +1,8 @@
 ---
 title: Archive
+description: >-
+  Earlier s16n builds and retired designs — trim decks, brackets, and previous controller projects.
+image: /assets/images/photo.png
 typora-root-url: ./..\..
 ---
 

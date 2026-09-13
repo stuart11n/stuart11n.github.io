@@ -1,5 +1,8 @@
 ---
 title: Beechcraft Panel
+description: >-
+  Custom Beechcraft magneto panel for flight simulation.
+image: /assets/images/IMG_2035.JPG
 typora-root-url: ./../
 ---
 

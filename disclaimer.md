@@ -1,7 +1,9 @@
 ---
 layout: page
 title: Disclaimer
+description: Disclaimer and liability waiver for electrical and hardware content on s16n.com.
 permalink: /disclaimer/
+sitemap: false
 ---
 
 **DISCLAIMER & LIABILITY WAIVER**

@@ -1,5 +1,8 @@
 ---
 title: GA Block
+description: >-
+  Custom general-aviation control block with magnetic sensors, friction trim dials, and switches for flight sim.
+image: /assets/images/69d98f47-a2a2-4eeb-af7e-f937f299e673.jpg
 typora-root-url: ./../
 ---
 

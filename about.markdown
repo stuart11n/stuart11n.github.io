@@ -1,6 +1,8 @@
 ---
 layout: page
 title: About
+description: >-
+  Stuart builds hardware and software for flight sim, racing, and other projects from San Diego, USA.
 permalink: /about/
 ---
 

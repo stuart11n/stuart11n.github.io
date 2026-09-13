@@ -1,6 +1,9 @@
 ---
 layout: home
-title: Projects
+title: Custom flight sim and racing hardware
+description: >-
+  s16n builds custom flight sim and sim racing hardware in San Diego — Funky-coder, panels, isolators, Controller Manager, and more.
+image: /assets/images/fc-plus.jpg
 permalink: /
 ---
 

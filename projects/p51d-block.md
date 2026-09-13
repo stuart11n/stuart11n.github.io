@@ -1,5 +1,8 @@
 ---
 title: P51D Block
+description: >-
+  Custom P-51D-style control block with magnetic sensors, friction dials, and switches to customer spec.
+image: /assets/images/IMG_2030.JPG
 typora-root-url: ./../
 ---
 

@@ -1,7 +1,10 @@
 ---
 layout: page
 title: Shop
+description: >-
+  Buy s16n flight sim and sim racing hardware on Etsy, or request a custom panel or one-off build.
 permalink: /shop/
+image: /assets/images/fc-plus.jpg
 ---
 
 <div class="shop-panel">

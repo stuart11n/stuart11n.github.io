@@ -1,5 +1,8 @@
 ---
 title: Aerostar 600 Panel
+description: >-
+  Custom Aerostar 600 magneto and fuel panel for flight simulation.
+image: /assets/images/IMG_2121.jpg
 typora-root-url: ./../
 ---
 

@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Turntable / Audio tools
+description: >-
+  Web tools for turntable and tape deck wow & flutter and RPM — s16n-wf line-in meter and GyroTach MEMS tachometer.
+image: /assets/images/turntable-audio/wow-flutter.png
 permalink: /projects/turntable-audio/
 ---
 
