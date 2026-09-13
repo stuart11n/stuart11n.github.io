@@ -15,6 +15,38 @@ permalink: /
 <div class="project-grid">
 
   <article class="project-card">
+    <a class="project-card__hit" href="/projects/funky-coder">
+      <div class="project-card__media">
+        <img src="/assets/images/fc1.png" alt="">
+      </div>
+      <div class="project-card__body">
+        <h3 class="project-card__title">Funky-coder</h3>
+        <p class="project-card__desc">VR-focused input device for flight and racing.</p>
+      </div>
+    </a>
+    <div class="project-card__actions">
+      <a class="project-card__more" href="/projects/funky-coder">View project</a>
+      <a class="btn btn--buy" href="{{ site.shop_url }}" target="_blank" rel="noopener noreferrer">Buy</a>
+    </div>
+  </article>
+
+  <article class="project-card">
+    <a class="project-card__hit" href="/projects/funky-coder-plus">
+      <div class="project-card__media">
+        <img src="/assets/images/fc-plus.jpg" alt="">
+      </div>
+      <div class="project-card__body">
+        <h3 class="project-card__title">Funky-coder Plus</h3>
+        <p class="project-card__desc">Funky-coder with a mode switch.</p>
+      </div>
+    </a>
+    <div class="project-card__actions">
+      <a class="project-card__more" href="/projects/funky-coder-plus">View project</a>
+      <a class="btn btn--buy" href="{{ site.shop_url }}" target="_blank" rel="noopener noreferrer">Buy</a>
+    </div>
+  </article>
+
+  <article class="project-card">
     <a class="project-card__hit" href="/projects/aest-panel">
       <div class="project-card__media">
         <img src="/assets/images/IMG_2121.jpg" alt="">
@@ -116,38 +148,6 @@ permalink: /
     </a>
     <div class="project-card__actions">
       <a class="project-card__more" href="/projects/simrig-isolators">View project</a>
-      <a class="btn btn--buy" href="{{ site.shop_url }}" target="_blank" rel="noopener noreferrer">Buy</a>
-    </div>
-  </article>
-
-  <article class="project-card">
-    <a class="project-card__hit" href="/projects/funky-coder">
-      <div class="project-card__media">
-        <img src="/assets/images/fc1.png" alt="">
-      </div>
-      <div class="project-card__body">
-        <h3 class="project-card__title">Funky-coder</h3>
-        <p class="project-card__desc">VR-focused input device for flight and racing.</p>
-      </div>
-    </a>
-    <div class="project-card__actions">
-      <a class="project-card__more" href="/projects/funky-coder">View project</a>
-      <a class="btn btn--buy" href="{{ site.shop_url }}" target="_blank" rel="noopener noreferrer">Buy</a>
-    </div>
-  </article>
-
-  <article class="project-card">
-    <a class="project-card__hit" href="/projects/funky-coder-plus">
-      <div class="project-card__media">
-        <img src="/assets/images/fc-plus.jpg" alt="">
-      </div>
-      <div class="project-card__body">
-        <h3 class="project-card__title">Funky-coder Plus</h3>
-        <p class="project-card__desc">Funky-coder with a mode switch.</p>
-      </div>
-    </a>
-    <div class="project-card__actions">
-      <a class="project-card__more" href="/projects/funky-coder-plus">View project</a>
       <a class="btn btn--buy" href="{{ site.shop_url }}" target="_blank" rel="noopener noreferrer">Buy</a>
     </div>
   </article>
