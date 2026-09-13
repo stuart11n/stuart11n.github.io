@@ -183,6 +183,21 @@ permalink: /
   </article>
 
   <article class="project-card">
+    <a class="project-card__hit" href="/projects/turntable-audio/">
+      <div class="project-card__media">
+        <img src="/assets/images/turntable-audio/wow-flutter.png" alt="">
+      </div>
+      <div class="project-card__body">
+        <h3 class="project-card__title">Turntable / Audio tools</h3>
+        <p class="project-card__desc">Wow &amp; flutter and RPM meters for decks and turntables.</p>
+      </div>
+    </a>
+    <div class="project-card__actions">
+      <a class="project-card__more" href="/projects/turntable-audio/">View project</a>
+    </div>
+  </article>
+
+  <article class="project-card">
     <a class="project-card__hit" href="/projects/archive/">
       <div class="project-card__media">
         <img src="/assets/images/photo.png" alt="">
