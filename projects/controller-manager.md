@@ -21,7 +21,7 @@ Windows app for monitoring HID controllers and managing s16n device settings.
 
 ### Settings (supported devices)
 
-For known CircuitPython and FreeJoy devices, a **Settings** tab adds:
+For known s16n devices, a **Settings** tab adds:
 
 - **Fetch** — load the current config from the device
 - **Write** — send edits back to the device
