@@ -2,12 +2,12 @@
 layout: post
 title: Audio Tools
 description: >-
-  Web tools for turntable and tape deck wow & flutter and RPM — s16n-wf line-in meter and GyroTach MEMS tachometer.
+  Web tools for audio and turntables — wow & flutter meter, GyroTach RPM/W&F, and a USB audio oscilloscope.
 image: /assets/images/turntable-audio/wow-flutter.png
 permalink: /projects/turntable-audio/
 ---
 
-Web tools for checking turntable speed stability and wow &amp; flutter.
+Web tools for checking turntable speed stability, wow &amp; flutter, and audio signals.
 
 ### Wow &amp; flutter
 
@@ -28,3 +28,11 @@ A MEMS tachometer for turntables: place the phone face-up on the platter to meas
 <p><a class="btn btn--primary" href="https://s16n-rpm.grok.me/" target="_blank" rel="noopener noreferrer">Open GyroTach</a></p>
 
 ![GyroTach RPM and wow and flutter meter](/assets/images/turntable-audio/rpm.png){: .center-image }
+
+### [USB Scope](https://s16n-scope.grok.me/)
+
+A browser oscilloscope for USB audio inputs — Y-T and X-Y (Lissajous) views, rising-edge trigger, time base and Y scale knobs, and auto scale. Useful for checking line-level signals from decks and codecs.
+
+<p><a class="btn btn--primary" href="https://s16n-scope.grok.me/" target="_blank" rel="noopener noreferrer">Open USB Scope</a></p>
+
+![s16n USB Scope showing a 1 kHz demo waveform](/assets/images/turntable-audio/scope.png){: .center-image }

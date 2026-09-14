@@ -192,7 +192,7 @@ permalink: /
       </div>
       <div class="project-card__body">
         <h3 class="project-card__title">Audio Tools</h3>
-        <p class="project-card__desc">Wow &amp; flutter and RPM meters for decks and turntables.</p>
+        <p class="project-card__desc">Wow &amp; flutter, RPM, and USB oscilloscope tools.</p>
       </div>
     </a>
     <div class="project-card__actions">
