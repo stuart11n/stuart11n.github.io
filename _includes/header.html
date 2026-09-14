@@ -13,7 +13,10 @@
       </label>
 
       <div class="trigger">
-        <a class="page-link{% if page.url == '/' %} is-active{% endif %}" href="{{ "/" | relative_url }}">Projects</a>
+        <a class="page-link filter-link" href="{{ "/" | relative_url }}?filter=product" data-filter="product">Products</a>
+        <a class="page-link filter-link" href="{{ "/" | relative_url }}?filter=project" data-filter="project">Projects</a>
+        <a class="page-link filter-link" href="{{ "/" | relative_url }}?filter=audio" data-filter="audio">Audio</a>
+        <a class="page-link filter-link" href="{{ "/" | relative_url }}?filter=software" data-filter="software">Software</a>
         <a class="page-link{% if page.url == '/about/' %} is-active{% endif %}" href="{{ "/about/" | relative_url }}">About</a>
         <a class="page-link page-link--shop" href="{{ site.shop_url }}" target="_blank" rel="noopener noreferrer">Etsy</a>
       </div>

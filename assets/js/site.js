@@ -26,9 +26,19 @@
   }
 
   var cards = Array.prototype.slice.call(document.querySelectorAll(".project-card"));
-  var filterBtns = Array.prototype.slice.call(document.querySelectorAll(".filter-btn"));
+  var filterLinks = Array.prototype.slice.call(document.querySelectorAll(".filter-link"));
   var emptyMsg = document.querySelector(".project-filter-empty");
-  var activeFilter = null;
+  var validFilters = { product: true, project: true, audio: true, software: true };
+
+  function currentFilter() {
+    try {
+      var params = new URLSearchParams(window.location.search);
+      var filter = params.get("filter");
+      return validFilters[filter] ? filter : null;
+    } catch (e) {
+      return null;
+    }
+  }
 
   function revealCards(list) {
     list.forEach(function (card, i) {
@@ -41,8 +51,7 @@
     });
   }
 
-  function applyFilter(filter) {
-    activeFilter = filter;
+  function applyFilter(filter, updateUrl) {
     var visibleCount = 0;
     cards.forEach(function (card) {
       var tags = (card.getAttribute("data-tags") || "").split(/\s+/);
@@ -50,49 +59,67 @@
       card.hidden = !show;
       if (show) visibleCount += 1;
     });
-    filterBtns.forEach(function (btn) {
-      btn.classList.toggle("is-active", btn.getAttribute("data-filter") === filter);
+    filterLinks.forEach(function (link) {
+      link.classList.toggle("is-active", link.getAttribute("data-filter") === filter);
     });
     if (emptyMsg) emptyMsg.hidden = visibleCount > 0;
-    revealCards(cards.filter(function (card) { return !card.hidden; }));
+
+    if (updateUrl && window.history && window.history.replaceState) {
+      var url = window.location.pathname;
+      if (filter) url += "?filter=" + encodeURIComponent(filter);
+      window.history.replaceState({}, "", url);
+    }
+
+    if (cards.length) {
+      revealCards(cards.filter(function (card) { return !card.hidden; }));
+    }
   }
 
-  filterBtns.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      var filter = btn.getAttribute("data-filter");
-      if (activeFilter === filter) {
-        applyFilter(null);
-      } else {
-        applyFilter(filter);
-      }
-      var anchor = document.getElementById("projects");
-      if (anchor) {
-        anchor.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    });
-  });
-
-  if (!cards.length) return;
-
-  if (!("IntersectionObserver" in window)) {
-    revealCards(cards);
-    return;
-  }
-
-  var observer = new IntersectionObserver(
-    function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          observer.unobserve(entry.target);
+  // On homepage, intercept nav filter clicks so we don't full-reload
+  if (cards.length) {
+    filterLinks.forEach(function (link) {
+      link.addEventListener("click", function (event) {
+        var filter = link.getAttribute("data-filter");
+        if (!filter || !validFilters[filter]) return;
+        event.preventDefault();
+        applyFilter(filter, true);
+        var anchor = document.getElementById("projects");
+        if (anchor) {
+          anchor.scrollIntoView({ behavior: "smooth", block: "start" });
         }
       });
-    },
-    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
-  );
+    });
 
-  cards.forEach(function (card, i) {
-    card.style.transitionDelay = Math.min(i * 0.05, 0.25) + "s";
-    observer.observe(card);
-  });
+    applyFilter(currentFilter(), false);
+
+    if (!("IntersectionObserver" in window)) {
+      revealCards(cards.filter(function (card) { return !card.hidden; }));
+      return;
+    }
+
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+    );
+
+    cards.forEach(function (card, i) {
+      if (card.hidden) return;
+      card.style.transitionDelay = Math.min(i * 0.05, 0.25) + "s";
+      observer.observe(card);
+    });
+  } else {
+    // Mark active filter link when on other pages after navigating back isn't needed;
+    // highlight if URL somehow has filter (won't on about). No-op.
+    var filter = currentFilter();
+    filterLinks.forEach(function (link) {
+      link.classList.toggle("is-active", link.getAttribute("data-filter") === filter);
+    });
+  }
 })();
