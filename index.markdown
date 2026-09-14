@@ -9,14 +9,6 @@ permalink: /
 
 {% assign homepage_items = site.pages | where: "homepage", true | sort: "homepage_order" %}
 
-<div class="projects-intro">
-  <div>
-    <h2>Projects</h2>
-    <p>Panels, controls, and builds for sim and workshop.</p>
-  </div>
-  <a class="btn btn--ghost" href="{{ site.shop_url }}" target="_blank" rel="noopener noreferrer">Open shop</a>
-</div>
-
 <div class="project-grid">
   {% for item in homepage_items %}
     {% assign card_title = item.card_title | default: item.title %}
