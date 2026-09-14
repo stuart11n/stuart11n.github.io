@@ -191,7 +191,7 @@ permalink: /
         <img src="/assets/images/turntable-audio/wow-flutter.png" alt="">
       </div>
       <div class="project-card__body">
-        <h3 class="project-card__title">Turntable / Audio tools</h3>
+        <h3 class="project-card__title">Audio Tools</h3>
         <p class="project-card__desc">Wow &amp; flutter and RPM meters for decks and turntables.</p>
       </div>
     </a>
