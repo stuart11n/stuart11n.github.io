@@ -8,6 +8,7 @@ homepage: true
 homepage_order: 110
 tags:
   - project
+  - audio
 card_desc: "An automatic stylus saver and run-time tracker for manual turntables."
 ---
 
