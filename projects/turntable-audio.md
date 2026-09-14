@@ -10,6 +10,7 @@ homepage_order: 120
 tags:
   - project
   - audio
+  - software
 card_desc: "Wow & flutter, RPM, and USB oscilloscope tools."
 ---
 
