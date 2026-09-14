@@ -25,7 +25,7 @@ Windows app for monitoring HID controllers and managing s16n device settings. Fr
 
 - Enumerates HID joysticks, gamepads, and multi-axis controllers (hot plug / unplug)
 - One tab per connected device, with s16n devices sorted first
-- **Monitor** live view of buttons, axes, HATs, and discovered encoders
+- Monitor live view of buttons, axes, HATs, and discovered encoders
 - Automatic encoder detection from button pulse trains, with mean pulse timing
 - Color-coded activity (pressed, recent, idle) and optional fade
 - Timestamped input event log with deltas
