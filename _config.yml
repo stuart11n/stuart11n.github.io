@@ -29,7 +29,6 @@ plugins:
 
 header_pages:
   - index.markdown
-  - shop.markdown
   - about.markdown
 
 defaults:
