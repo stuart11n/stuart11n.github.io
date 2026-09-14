@@ -25,13 +25,57 @@
     floatImg.src = pool[1];
   }
 
-  var cards = document.querySelectorAll(".project-card");
+  var cards = Array.prototype.slice.call(document.querySelectorAll(".project-card"));
+  var filterBtns = Array.prototype.slice.call(document.querySelectorAll(".filter-btn"));
+  var emptyMsg = document.querySelector(".project-filter-empty");
+  var activeFilter = null;
+
+  function revealCards(list) {
+    list.forEach(function (card, i) {
+      card.classList.remove("is-visible");
+      if (card.hidden) return;
+      card.style.transitionDelay = Math.min(i * 0.05, 0.25) + "s";
+      requestAnimationFrame(function () {
+        card.classList.add("is-visible");
+      });
+    });
+  }
+
+  function applyFilter(filter) {
+    activeFilter = filter;
+    var visibleCount = 0;
+    cards.forEach(function (card) {
+      var tags = (card.getAttribute("data-tags") || "").split(/\s+/);
+      var show = !filter || tags.indexOf(filter) !== -1;
+      card.hidden = !show;
+      if (show) visibleCount += 1;
+    });
+    filterBtns.forEach(function (btn) {
+      btn.classList.toggle("is-active", btn.getAttribute("data-filter") === filter);
+    });
+    if (emptyMsg) emptyMsg.hidden = visibleCount > 0;
+    revealCards(cards.filter(function (card) { return !card.hidden; }));
+  }
+
+  filterBtns.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var filter = btn.getAttribute("data-filter");
+      if (activeFilter === filter) {
+        applyFilter(null);
+      } else {
+        applyFilter(filter);
+      }
+      var anchor = document.getElementById("projects");
+      if (anchor) {
+        anchor.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
+  });
+
   if (!cards.length) return;
 
   if (!("IntersectionObserver" in window)) {
-    cards.forEach(function (card) {
-      card.classList.add("is-visible");
-    });
+    revealCards(cards);
     return;
   }
 

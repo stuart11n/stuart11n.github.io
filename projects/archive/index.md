@@ -4,7 +4,14 @@ description: >-
   Earlier s16n builds and retired designs — trim decks, brackets, and previous controller projects.
 image: /assets/images/photo.png
 typora-root-url: ./..\..
+homepage: true
+homepage_order: 130
+tags:
+  - project
+card_desc: "Earlier builds and retired designs."
+card_more: "Browse archive"
 ---
+
 
 ## [Trim Deck Mini](/projects/archive/trim-deck-mini)
 

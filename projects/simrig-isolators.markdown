@@ -6,7 +6,14 @@ description: >-
   Vibration isolators for 40-series profile and tubular sim rigs — quieter for neighbors, clearer FFB and bass shakers.
 image: /assets/images/1-1776213814761-1.JPG
 typora-root-url: ./..
+homepage: true
+homepage_order: 100
+tags:
+  - product
+card_desc: "Enhance your simrig by isolating it from the floor."
+card_wide: true
 ---
+
 
 <a class="btn btn--buy" href="{{ site.shop_url }}" target="_blank" rel="noopener noreferrer">Buy</a>
 

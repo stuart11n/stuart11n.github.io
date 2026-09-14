@@ -4,7 +4,15 @@ description: >-
   Custom general-aviation control block with magnetic sensors, friction trim dials, and switches for flight sim.
 image: /assets/images/69d98f47-a2a2-4eeb-af7e-f937f299e673.jpg
 typora-root-url: ./../
+homepage: true
+homepage_order: 70
+tags:
+  - project
+card_desc: "My daily GA flyer."
+card_title: "GA block"
+card_image: /assets/images/69d98f47-a2a2-4eeb-af7e-f937f299e673-1775774499992-3.jpg
 ---
+
 
 I couldn't find anything commercially available that did what I wanted or didn't feel cheap. So I made this. It is attached to the side of my rig. It uses P51D style trim dials because I happen to like them, and they work great in VR.
 

@@ -6,7 +6,13 @@ description: >-
   Funky-coder with twin dual encoders, a funky switch, and a 4-way mode switch for flight sim and sim racing.
 image: /assets/images/fc-plus.jpg
 typora-root-url: ./../assets/images
+homepage: true
+homepage_order: 20
+tags:
+  - product
+card_desc: "Funky-coder with a mode switch."
 ---
+
 
 <a class="btn btn--buy" href="{{ site.shop_url }}" target="_blank" rel="noopener noreferrer">Buy</a>
 

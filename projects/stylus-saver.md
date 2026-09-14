@@ -4,7 +4,13 @@ description: >-
   Automatic stylus saver and run-time tracker for manual turntables using a Shelly 1PM and Pushover alerts.
 image: /assets/images/image.webp
 typora-root-url: ./../
+homepage: true
+homepage_order: 110
+tags:
+  - project
+card_desc: "An automatic stylus saver and run-time tracker for manual turntables."
 ---
+
 
 This is my PS-4750. It is fully manual. Sometimes life's distractions take me away from my turntable and when it reaches the end of the side it would be nice if it could remind me it is still running and turn itself off if I'm unresponsive. It would be great if it could track run-time too.
 

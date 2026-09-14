@@ -5,7 +5,14 @@ description: >-
   Web tools for audio and turntables — wow & flutter meter, GyroTach RPM/W&F, and a USB audio oscilloscope.
 image: /assets/images/turntable-audio/wow-flutter.png
 permalink: /projects/turntable-audio/
+homepage: true
+homepage_order: 120
+tags:
+  - project
+  - audio
+card_desc: "Wow & flutter, RPM, and USB oscilloscope tools."
 ---
+
 
 Web tools for checking turntable speed stability, wow &amp; flutter, and audio signals.
 
@@ -19,7 +26,7 @@ A line-in wow &amp; flutter meter for turntables and tape decks, using test tone
 
 <p><a class="btn btn--primary" href="https://s16n-wf.grok.me/" target="_blank" rel="noopener noreferrer">Open W&amp;F Meter</a></p>
 
-![W&amp;F meter showing DIN wow and flutter readout](/assets/images/turntable-audio/wow-flutter.png){: .center-image }
+![W&amp;F meter showing DIN wow and flutter readout](/assets/images/turntable-audio/wow-flutter.png){: .center-image .small-image }
 
 ### [GyroTach — RPM &amp; W&amp;F](https://s16n-rpm.grok.me/)
 
@@ -27,7 +34,7 @@ A MEMS tachometer for turntables: place the phone face-up on the platter to meas
 
 <p><a class="btn btn--primary" href="https://s16n-rpm.grok.me/" target="_blank" rel="noopener noreferrer">Open GyroTach</a></p>
 
-![GyroTach RPM and wow and flutter meter](/assets/images/turntable-audio/rpm.png){: .center-image }
+![GyroTach RPM and wow and flutter meter](/assets/images/turntable-audio/rpm.png){: .center-image .small-image }
 
 ### [USB Scope](https://s16n-scope.grok.me/)
 
@@ -35,4 +42,4 @@ A browser oscilloscope for USB audio inputs — Y-T and X-Y (Lissajous) views, r
 
 <p><a class="btn btn--primary" href="https://s16n-scope.grok.me/" target="_blank" rel="noopener noreferrer">Open USB Scope</a></p>
 
-![s16n USB Scope showing a 1 kHz demo waveform](/assets/images/turntable-audio/scope.png){: .center-image }
+![s16n USB Scope showing a 1 kHz demo waveform](/assets/images/turntable-audio/scope.png){: .center-image .small-image }

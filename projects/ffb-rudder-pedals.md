@@ -4,7 +4,13 @@ title: Force Feedback Rudder Pedals
 description: >-
   High-torque force feedback rudder pedals with load-cell toe brakes, based on FFBeast.
 image: /assets/images/IMG_2010.webp
+homepage: true
+homepage_order: 90
+tags:
+  - project
+card_desc: "With load-cell toe brakes."
 ---
+
 
 * Huge Nm, 600W power supply
 

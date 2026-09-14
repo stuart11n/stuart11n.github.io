@@ -6,7 +6,13 @@ description: >-
   VR-focused HID input device with a funky switch and dual encoder for flight sim and sim racing.
 image: /assets/images/fc1.png
 typora-root-url: ./../assets/images
+homepage: true
+homepage_order: 10
+tags:
+  - product
+card_desc: "VR-focused input device for flight and racing."
 ---
+
 
 <a class="btn btn--buy" href="{{ site.shop_url }}" target="_blank" rel="noopener noreferrer">Buy</a>
 
