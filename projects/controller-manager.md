@@ -43,4 +43,3 @@ For known s16n devices, a **Settings** tab adds:
 ### Requirements
 
 - Windows 10/11 x64
-- Ships as a single self-contained exe (`s16n-controller-manager.exe`)
