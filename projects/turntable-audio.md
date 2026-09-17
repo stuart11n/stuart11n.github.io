@@ -2,7 +2,7 @@
 layout: post
 title: Audio Tools
 description: >-
-  Web tools for audio and turntables — wow & flutter meter, GyroTach RPM/W&F, and a USB audio oscilloscope.
+  Web tools for audio and turntables — wow & flutter, GyroTach, USB Scope, and Phosphor AFG-20 waveform generator.
 image: /assets/images/turntable-audio/wow-flutter.png
 permalink: /projects/turntable-audio/
 homepage: true
@@ -11,7 +11,7 @@ tags:
   - project
   - audio
   - software
-card_desc: "Wow & flutter, RPM, and USB oscilloscope tools."
+card_desc: "Wow & flutter, RPM, scope, and audio waveform generator tools."
 ---
 
 
@@ -44,3 +44,38 @@ A browser oscilloscope for USB audio inputs — Y-T and X-Y (Lissajous) views, r
 <p><a class="btn btn--primary" href="https://scope.s16n.com/" target="_blank" rel="noopener noreferrer">Open USB Scope</a></p>
 
 ![s16n USB Scope showing a 1 kHz demo waveform](/assets/images/turntable-audio/scope.png){: .center-image .small-image }
+
+### [Phosphor AFG-20](https://afg.s16n.com/)
+
+Phosphor AFG-20 is a dual-channel audio arbitrary waveform generator that runs in the browser. It is modeled after a bench function generator, but it plays through your computer’s speakers or headphones instead of BNC outputs.
+
+Two independent channels (CH1 / CH2) each have frequency, amplitude, offset, phase, and waveform. You can run them together, couple frequency or amplitude, invert a channel, copy CH1 into CH2, and align phase.
+
+#### Waveforms
+
+Sine, square, triangle, ramps, pulse, white/pink noise, DC, sinc, exponential rise/fall, Gaussian, ECG, and a 1024-point arbitrary wave you draw by hand.
+
+#### Operating modes
+
+- **Continuous** — tone at a set frequency (0.1 Hz–20 kHz)
+- **Modulation** — AM, FM, PM, PWM, FSK
+- **Sweep** — linear or log frequency sweep
+- **Burst** — N-cycle or gated bursts
+
+#### Display
+
+A CRT-style scope shows Y-T traces or an X-Y (Lissajous) plot, plus a live dBfs meter.
+
+#### Output
+
+Stereo L/R, CH1 only, CH2 only, or mix. Master gain, mute, and a speaker-protect limiter. WAV export of the current setup.
+
+#### Memory
+
+Eight setup slots in the browser so you can store and recall instrument states.
+
+Use it as a tone source, stereo test signal, modulation demo, or a sketchpad for custom audio waves. Open Arb edit to draw a waveform, then hit OUT on a channel to hear it.
+
+<p><a class="btn btn--primary" href="https://afg.s16n.com/" target="_blank" rel="noopener noreferrer">Open AFG-20</a></p>
+
+![Phosphor AFG-20 dual-channel audio arbitrary waveform generator](/assets/images/turntable-audio/afg.png){: .center-image .small-image }
