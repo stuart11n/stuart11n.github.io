@@ -428,8 +428,17 @@ a.btn--ghost:hover {
   margin: 0;
 }
 
-.cta-row .bmc-btn {
-  height: 48px !important;
+.cta-row .bmc-wrap {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  transform: scale(0.75);
+  transform-origin: left center;
+  margin-right: -1.5rem;
+}
+
+.cta-row .bmc-wrap .bmc-btn {
+  height: 60px !important;
 }
 
 .btn--buy,

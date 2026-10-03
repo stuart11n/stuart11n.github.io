@@ -10,4 +10,6 @@ My name is Stuart and I make hardware and software for my hobbies and for client
 
 I am based in San Diego, USA.
 
-If you have any questions, get in touch!
+If you have any questions, get in touch on Discord: **stuart11n**.
+
+If you find the free tools useful, [buy me a coffee](https://www.buymeacoffee.com/c0d3c).
