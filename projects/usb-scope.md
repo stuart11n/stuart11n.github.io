@@ -16,9 +16,9 @@ card_desc: "Browser oscilloscope for USB audio inputs."
 
 A browser oscilloscope for USB audio inputs — Y-T and X-Y (Lissajous) views, rising-edge trigger, time base and Y scale knobs, and auto scale. Useful for checking line-level signals from decks and codecs.
 
-<p class="cta-row">
+<div class="cta-row">
   <a class="btn btn--primary" href="https://scope.s16n.com/" target="_blank" rel="noopener noreferrer">Open USB Scope</a>
   {% include bmc-button.html %}
-</p>
+</div>
 
 ![s16n USB Scope](/assets/images/turntable-audio/scope.png){: .center-image .small-image }

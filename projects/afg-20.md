@@ -43,9 +43,9 @@ Eight setup slots in the browser so you can store and recall instrument states.
 
 Use it as a tone source, stereo test signal, modulation demo, or a sketchpad for custom audio waves. Open Arb edit to draw a waveform, then hit OUT on a channel to hear it.
 
-<p class="cta-row">
+<div class="cta-row">
   <a class="btn btn--primary" href="https://afg.s16n.com/" target="_blank" rel="noopener noreferrer">Open AFG-20</a>
   {% include bmc-button.html %}
-</p>
+</div>
 
 ![Phosphor AFG-20 dual-channel audio arbitrary waveform generator](/assets/images/turntable-audio/afg.png){: .center-image .small-image }

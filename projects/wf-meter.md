@@ -18,9 +18,9 @@ Wow and flutter are slow and fast speed variations in tape decks and turntables.
 
 A line-in wow &amp; flutter meter for turntables and tape decks, using test tones (DIN 3.15 kHz / JIS–NAB 3 kHz). It locks the carrier, splits wow vs flutter, shows a spectrum and weighted wow trace, and supports DIN, JIS, NAB, CCIR, and 2σ. Designed for use with a USB ADC (line input) — not the device microphone.
 
-<p class="cta-row">
+<div class="cta-row">
   <a class="btn btn--primary" href="https://wf.s16n.com/" target="_blank" rel="noopener noreferrer">Open W&amp;F Meter</a>
   {% include bmc-button.html %}
-</p>
+</div>
 
 ![W&amp;F meter showing DIN wow and flutter readout](/assets/images/turntable-audio/wow-flutter.png){: .center-image .small-image }

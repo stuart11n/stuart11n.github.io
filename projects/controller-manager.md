@@ -17,10 +17,10 @@ card_wide: true
 
 Windows app for monitoring HID controllers and managing s16n device settings. Free to download.
 
-<p class="cta-row">
+<div class="cta-row">
   <a class="btn btn--primary" href="https://github.com/stuart11n/s16n-releases/releases/download/controller-manager-latest/s16n-controller-manager.exe">Download for Windows</a>
   {% include bmc-button.html %}
-</p>
+</div>
 
 ![s16n Controller Manager Monitor tab](/assets/images/controller-manager/monitor.png){: .center-image }
 

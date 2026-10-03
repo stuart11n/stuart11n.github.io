@@ -16,11 +16,11 @@ card_wide: true
 
 Windows desktop app for sim-pit setups: start and stop an ordered checklist of apps, webhooks, Shelly relays, COM commands, and system tweaks per profile (default: **Flight** and **Racing**). Replace ad-hoc batch files with one START / STOP, tray actions, or the command line. Free to download.
 
-<p class="cta-row">
+<div class="cta-row">
   <a class="btn btn--primary" href="https://github.com/stuart11n/simpit-launcher/releases/latest/download/SimpitLauncherSetup.exe">Download for Windows</a>
   <a class="btn btn--ghost" href="https://github.com/stuart11n/simpit-launcher" target="_blank" rel="noopener noreferrer">View on GitHub</a>
   {% include bmc-button.html %}
-</p>
+</div>
 
 ![Simpit Launcher main window](/assets/images/simpit-launcher/main.png){: .center-image }
 
