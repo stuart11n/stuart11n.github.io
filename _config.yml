@@ -12,7 +12,7 @@ author:
   name: Stuart
   email: stuart@s16n.com
 
-logo: /assets/images/logo.jpg
+logo: /assets/images/logo.png
 
 social:
   name: s16n
@@ -36,7 +36,7 @@ defaults:
       path: ""
     values:
       layout: page
-      image: /assets/images/logo.jpg
+      image: /assets/images/logo.png
   - scope:
       path: "projects"
     values:

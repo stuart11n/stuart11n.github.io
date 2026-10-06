@@ -98,7 +98,7 @@ img {
 .site-logo {
   width: 44px;
   height: 44px;
-  border-radius: 12px;
+  border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 6px 16px rgba(226, 29, 46, 0.25);
 }
@@ -106,7 +106,7 @@ img {
 .site-logo--sm {
   width: 36px;
   height: 36px;
-  border-radius: 10px;
+  border-radius: 50%;
 }
 
 .site-title__text {
