@@ -99,7 +99,8 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: contain;
+  background: transparent;
   box-shadow: 0 6px 16px rgba(226, 29, 46, 0.25);
 }
 
