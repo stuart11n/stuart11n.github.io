@@ -25,7 +25,7 @@ My Modi 2 died. The DAC was toast, but the case was fine — same Schiit mini ch
 
 ![Empty Modi 2 chassis](/assets/images/tuurd-foni/empty-chassis.jpg)
 
-I drilled the case for the new jacks, stripped the silver finish with an abrasive strip wheel, and painted it — black lid, red chassis — so it matches the stack.
+I drilled the case for the new jacks, stripped the silver finish with an abrasive strip wheel, and painted it — black lid, red chassis.
 
 ![Casework](/assets/images/tuurd-foni/casework.jpg)
 
