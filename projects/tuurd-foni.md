@@ -23,6 +23,8 @@ My Modi 2 died. The DAC was toast, but the case was fine — same Schiit mini ch
 
 ![Empty Modi 2 chassis](/assets/images/tuurd-foni/empty-chassis.jpg)
 
+I drilled the case for the new jacks, stripped the silver finish with an abrasive strip wheel, and painted it — black lid, red chassis — so it matches the stack.
+
 ![Tuurd Foni in the stack](/assets/images/tuurd-foni/hero.jpg)
 
 ![Parts laid out](/assets/images/tuurd-foni/parts-layout.jpg)
@@ -30,8 +32,6 @@ My Modi 2 died. The DAC was toast, but the case was fine — same Schiit mini ch
 ## How it works
 
 It is a passive A/B switch: two stereo inputs, one stereo output, one front toggle. Six RCA jacks on the back, switch on the front. Internals are hand-wired twisted pair with star grounding.
-
-I drilled the case for the new jacks, stripped the silver finish with an abrasive strip wheel, and painted it — black lid, red chassis — so it matches the stack.
 
 ![Casework](/assets/images/tuurd-foni/casework.jpg)
 
