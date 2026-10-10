@@ -13,8 +13,6 @@ tags:
 card_desc: "Two-input switcher in a repurposed Modi 2 case."
 ---
 
-![Tuurd Foni in the stack](/assets/images/tuurd-foni/hero.jpg)
-
 I have two turntables and two [Schiit Mani](https://www.schiit.com/) phono stages. That means two line outputs and one path into the rest of the system, so I need a switcher.
 
 The one I had worked, but it looked terrible stacked on the Manis.
@@ -24,6 +22,8 @@ The one I had worked, but it looked terrible stacked on the Manis.
 My Modi 2 died. The DAC was toast, but the case was fine — same Schiit mini chassis as the Manis. So I emptied it and turned it into a two-input line switcher.
 
 ![Empty Modi 2 chassis](/assets/images/tuurd-foni/empty-chassis.jpg)
+
+![Tuurd Foni in the stack](/assets/images/tuurd-foni/hero.jpg)
 
 ![Parts laid out](/assets/images/tuurd-foni/parts-layout.jpg)
 
