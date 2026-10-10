@@ -13,9 +13,9 @@ tags:
 card_desc: "Two-input switcher in a repurposed Modi 2 case."
 ---
 
-I have two turntables and two [Schiit Mani](https://www.schiit.com/) phono stages. That means two line outputs and one path into the rest of the system, so I need a switcher.
+I have two turntables and two [Schiit Mani](https://www.schiit.com/) phono stages. That means two line outputs and one path into the rest of the system (vintage, limited inputs), so I need a switcher.
 
-The one I had worked, but it looked terrible stacked on the Manis.
+The one I had worked, but it looked pretty rough stacked on the Manis.
 
 ![Old switcher on the Mani stack](/assets/images/tuurd-foni/old-switcher.jpg)
 
