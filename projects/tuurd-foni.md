@@ -33,7 +33,7 @@ I drilled the case for the new jacks, stripped the original silver paint with an
 
 ## How it works
 
-It is a passive A/B switch: two stereo inputs, one stereo output, one front toggle. Six RCA jacks on the back, DPDT switch on the front. Internals are hand-wired twisted pair with star grounding.
+It is a passive A/B switch: two stereo inputs, one stereo output, one front toggle. Six RCA jacks on the back. Internals are hand-wired twisted pair with star grounding.
 
 ![Stereo RCA 2-in / 1-out switch with star ground](/assets/images/tuurd-foni/schematic.png)
 
