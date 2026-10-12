@@ -674,12 +674,12 @@ body:not(.home) .page-content {
   margin: 1rem auto;
   display: block;
   max-width: 100%;
+  height: auto;
   border-radius: 14px;
 }
 
-.post-content video {
-  width: 100%;
-  height: auto;
+.post-content video.center-image {
+  width: auto;
 }
 
 .small-image {
