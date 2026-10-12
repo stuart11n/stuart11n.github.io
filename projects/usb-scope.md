@@ -2,7 +2,7 @@
 layout: post
 title: USB Scope
 description: >-
-  Browser oscilloscope for USB audio — Y-T, X-Y, and FFT with trigger, measures, cursors, persist, and PNG export.
+  Browser oscilloscope and spectrum analyzer for USB audio — Y-T, X-Y, FFT, notch filter, Sin(x)/x reconstruction, measures, and video export.
 image: /assets/images/turntable-audio/scope.png
 permalink: /projects/usb-scope/
 homepage: true
@@ -24,12 +24,15 @@ A browser oscilloscope and spectrum analyzer for USB audio inputs. Plug in a USB
 ### Features
 
 - **Y-T**, **X-Y** (Lissajous), and **FFT** views
-- Trigger: rise / fall / either, Left or Right channel, adjustable level
-- **DC** / **AC** coupling, time/div and Y (V) controls
-- Auto scale, persist (phosphor-style trail), and live measures (Vpp, RMS, freq, period, duty, THD, and more)
-- Drag A/B cursors on the plot for ΔX / ΔY readouts
-- Demo signals: 1 kHz sine, harmonics for FFT/THD, CD RF eye, and an X-Y “s16n” vector
-- Save the scope view as PNG or a 10s video
+- Trigger: rise / fall / either, Left or Right source, adjustable level
+- **DC** / **AC** coupling; show/hide Left and Right channels
+- **Notch** filter (Off / Notch / Inv) for stripping a carrier or listening to the residual
+- **Persist** Off / Lo / Hi (phosphor-style trail)
+- Y-T **Sin(x)/x** reconstruction (or Off for raw samples)
+- Time/div, Y (V), and trig-level knobs; auto scale
+- Live measures (Vpp, RMS, freq, period, duty, THD, and more) plus drag A/B cursors
+- Demos: 1 kHz sine, harmonics, calibrated 3 kHz · 4% THD, CD RF eye, and an X-Y “s16n” vector
+- Save as PNG or a 10s video
 
 <video class="center-image" controls playsinline preload="metadata" src="{{ '/assets/images/turntable-audio/scope-demo.webm' | relative_url }}">
   Your browser does not support the video tag.
