@@ -669,10 +669,17 @@ body:not(.home) .page-content {
 }
 
 .post-content img,
+.post-content video,
 .center-image {
   margin: 1rem auto;
   display: block;
+  max-width: 100%;
   border-radius: 14px;
+}
+
+.post-content video {
+  width: 100%;
+  height: auto;
 }
 
 .small-image {

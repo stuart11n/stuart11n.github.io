@@ -21,9 +21,13 @@ A browser oscilloscope for USB audio inputs. Plug in a USB ADC (OTG on Android),
   {% include bmc-button.html %}
 </div>
 
+<video class="center-image" controls playsinline preload="metadata" src="{{ '/assets/images/turntable-audio/scope-demo.webm' | relative_url }}">
+  Your browser does not support the video tag.
+</video>
+
 ![s16n USB Scope](/assets/images/turntable-audio/scope.png){: .center-image .small-image }
 
-![USB Scope CD RF eye demo with persist](/assets/images/turntable-audio/scope-cd-rf-eye.jpg){: .center-image }
+![USB Scope with persist and Save 10s video](/assets/images/turntable-audio/scope-cd-rf-eye.png){: .center-image }
 
 ### Features
 
@@ -33,4 +37,4 @@ A browser oscilloscope for USB audio inputs. Plug in a USB ADC (OTG on Android),
 - Auto scale, persist (phosphor-style trail), and live measures (Vpp, RMS, freq, period, duty, THD, and more)
 - Drag A/B cursors on the plot for ΔX / ΔY readouts
 - Demo signals: 1 kHz sine, harmonics for FFT/THD, CD RF eye, and an X-Y “s16n” vector
-- Save the scope view as PNG
+- Save the scope view as PNG or a 10s video
