@@ -23,6 +23,8 @@ A browser oscilloscope for USB audio inputs. Plug in a USB ADC (OTG on Android),
 
 ![s16n USB Scope](/assets/images/turntable-audio/scope.png){: .center-image .small-image }
 
+![USB Scope CD RF eye demo with persist](/assets/images/turntable-audio/scope-cd-rf-eye.jpg){: .center-image }
+
 ### Features
 
 - **Y-T**, **X-Y** (Lissajous), and **FFT** views
