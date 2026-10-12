@@ -37,4 +37,4 @@ A browser oscilloscope and spectrum analyzer for USB audio inputs. Plug in a USB
 
 ![s16n USB Scope](/assets/images/turntable-audio/scope.png){: .center-image .small-image }
 
-![USB Scope with persist and A/B cursors](/assets/images/turntable-audio/scope-cd-rf-eye.png){: .center-image .small-image }
+![USB Scope with persist and Save 10s video](/assets/images/turntable-audio/scope-cd-rf-eye.png){: .center-image }
