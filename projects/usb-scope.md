@@ -14,14 +14,15 @@ tags:
 card_desc: "Browser oscilloscope for USB audio inputs."
 ---
 
-A browser oscilloscope and spectrum analyzer for USB audio inputs. Plug in a USB ADC, pick the device, and Start — or use built-in demos. Useful for checking line-level signals from turntables and tape decks for setting head azimuth, anti-skating, testing other audio equipment, codecs, test gear.
+![s16n USB Scope FFT view with notch filter](/assets/images/turntable-audio/scope-hero.png){: .center-image }
+
+A browser oscilloscope and spectrum analyzer for USB audio inputs — audio frequency only (not RF or lab-bandwidth scopes). Plug in a USB ADC, pick the device, and Start — or use built-in demos. Useful for checking line-level signals from turntables and tape decks for setting head azimuth, anti-skating, testing other audio equipment, codecs, and test gear.
 
 Core scope features are free. **Pro** ($9.99 / year) unlocks FFT above 10 kHz, the notch filter, THD, Sin(x)/x reconstruction, oversample, and Save 10s video.
 
 <div class="cta-row">
   <a class="btn btn--primary" href="https://scope.s16n.com/" target="_blank" rel="noopener noreferrer">Open USB Scope</a>
   <a class="btn btn--ghost" href="https://s16n.lemonsqueezy.com/checkout/buy/8946001c-c7e8-4c1b-9375-1559f3fab759" target="_blank" rel="noopener noreferrer">Buy Pro</a>
-  {% include bmc-button.html %}
 </div>
 
 ### Features
