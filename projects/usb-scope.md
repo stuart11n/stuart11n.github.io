@@ -3,7 +3,7 @@ layout: post
 title: USB Scope
 description: >-
   Browser oscilloscope and spectrum analyzer for USB audio — Y-T, X-Y, FFT, notch filter, Sin(x)/x reconstruction, measures, and video export.
-image: /assets/images/turntable-audio/scope.png
+image: /assets/images/turntable-audio/scope-hero.png
 permalink: /projects/usb-scope/
 homepage: true
 homepage_order: 122
