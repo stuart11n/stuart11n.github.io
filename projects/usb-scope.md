@@ -21,14 +21,6 @@ A browser oscilloscope and spectrum analyzer for USB audio inputs. Plug in a USB
   {% include bmc-button.html %}
 </div>
 
-<video class="center-image" controls playsinline preload="metadata" src="{{ '/assets/images/turntable-audio/scope-demo.webm' | relative_url }}">
-  Your browser does not support the video tag.
-</video>
-
-![s16n USB Scope](/assets/images/turntable-audio/scope.png){: .center-image .small-image }
-
-![USB Scope with persist and Save 10s video](/assets/images/turntable-audio/scope-cd-rf-eye.png){: .center-image }
-
 ### Features
 
 - **Y-T**, **X-Y** (Lissajous), and **FFT** views
@@ -38,3 +30,11 @@ A browser oscilloscope and spectrum analyzer for USB audio inputs. Plug in a USB
 - Drag A/B cursors on the plot for ΔX / ΔY readouts
 - Demo signals: 1 kHz sine, harmonics for FFT/THD, CD RF eye, and an X-Y “s16n” vector
 - Save the scope view as PNG or a 10s video
+
+<video class="center-image" controls playsinline preload="metadata" src="{{ '/assets/images/turntable-audio/scope-demo.webm' | relative_url }}">
+  Your browser does not support the video tag.
+</video>
+
+![s16n USB Scope](/assets/images/turntable-audio/scope.png){: .center-image .small-image }
+
+![USB Scope with persist and Save 10s video](/assets/images/turntable-audio/scope-cd-rf-eye.png){: .center-image }
