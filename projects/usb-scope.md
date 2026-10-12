@@ -14,7 +14,7 @@ tags:
 card_desc: "Browser oscilloscope for USB audio inputs."
 ---
 
-A browser oscilloscope for USB audio inputs. Plug in a USB ADC (OTG on Android), pick the device, and Start — or use built-in demos on desktop. Useful for checking line-level signals from decks, codecs, and test gear.
+A browser oscilloscope and spectrum analyzer for USB audio inputs. Plug in a USB ADC, pick the device, and Start — or use built-in demos. Useful for checking line-level signals from decks, codecs, and test gear.
 
 <div class="cta-row">
   <a class="btn btn--primary" href="https://scope.s16n.com/" target="_blank" rel="noopener noreferrer">Open USB Scope</a>
