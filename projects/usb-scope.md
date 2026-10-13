@@ -47,10 +47,12 @@ X-Y (Lissajous) view while adjusting azimuth on a tape deck — aim for a tight,
   Your browser does not support the video tag.
 </video>
 
+### Example: FFT
+
 <video class="center-image" controls playsinline preload="metadata" src="{{ '/assets/images/turntable-audio/scope-demo.webm' | relative_url }}">
   Your browser does not support the video tag.
 </video>
 
-![s16n USB Scope](/assets/images/turntable-audio/scope.png){: .center-image .small-image }
+### Works on a smartphone
 
-![USB Scope desktop view with measures and cursors](/assets/images/turntable-audio/scope-cd-rf-eye.png){: .center-image }
+![s16n USB Scope on a phone](/assets/images/turntable-audio/scope.png){: .center-image .small-image }
