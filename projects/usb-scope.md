@@ -14,7 +14,7 @@ tags:
 card_desc: "Browser oscilloscope for USB audio inputs."
 ---
 
-![s16n USB Scope FFT view with notch filter](/assets/images/turntable-audio/scope-hero.png){: .center-image }
+![s16n USB Scope Y-T view with dual timebase and measures](/assets/images/turntable-audio/scope-hero.png){: .center-image }
 
 A browser oscilloscope and spectrum analyzer for USB audio inputs — audio frequency only (not RF or lab-bandwidth scopes). Plug in a USB ADC, pick the device, and Start — or use built-in demos. Useful for checking line-level signals from turntables and tape decks for setting head azimuth, anti-skating, testing other audio equipment, codecs, and test gear.
 
@@ -39,9 +39,9 @@ Core scope features are free. **Pro** ($9.99 / year) unlocks FFT above 10 kHz, t
 - Demos: 1 kHz sine, harmonics, calibrated 3 kHz · 4% THD, CD RF eye, and an X-Y “s16n” vector
 - Save as PNG; Save 10s video — Pro
 
-### Example: tape head azimuth
+### Example: Lissajous
 
-X-Y (Lissajous) view while adjusting azimuth on a tape deck — aim for a tight, stable ellipse/line on a high-frequency test tone.
+X-Y (Lissajous) view for tape head azimuth — aim for a tight, stable ellipse/line on a high-frequency test tone.
 
 <video class="center-image" controls playsinline preload="metadata" src="{{ '/assets/images/turntable-audio/scope-azimuth.webm' | relative_url }}">
   Your browser does not support the video tag.
