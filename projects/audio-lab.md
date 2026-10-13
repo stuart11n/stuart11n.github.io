@@ -50,9 +50,7 @@ X-Y (Lissajous) view for tape head azimuth — aim for a tight, stable ellipse/l
 
 ### Example: FFT
 
-<video class="center-image" controls playsinline preload="metadata" src="{{ '/assets/images/turntable-audio/scope-demo.webm' | relative_url }}">
-  Your browser does not support the video tag.
-</video>
+![Audio Lab FFT spectrum](/assets/images/turntable-audio/scope-fft.gif){: .center-image }
 
 ### Example: independent time bases
 
