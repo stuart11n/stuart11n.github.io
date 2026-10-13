@@ -12,6 +12,7 @@ tags:
   - audio
   - software
 card_desc: "Browser oscilloscope and spectrum analyzer for USB audio."
+card_wide: true
 ---
 
 ![s16n Audio Lab Y-T view with dual timebase and measures](/assets/images/turntable-audio/scope-hero.png){: .center-image }
@@ -52,6 +53,12 @@ X-Y (Lissajous) view for tape head azimuth — aim for a tight, stable ellipse/l
 <video class="center-image" controls playsinline preload="metadata" src="{{ '/assets/images/turntable-audio/scope-demo.webm' | relative_url }}">
   Your browser does not support the video tag.
 </video>
+
+### Example: independent time bases
+
+Separate A and B time/div so each channel can be scaled independently — useful when comparing signals at very different frequencies.
+
+![Audio Lab Y-T with independent A/B time bases](/assets/images/turntable-audio/scope-independent-timebases.png){: .center-image }
 
 ### Works on a smartphone
 
