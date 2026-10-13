@@ -44,7 +44,7 @@ Core scope features are free. **Pro** ($9.99 / year) unlocks FFT above 10 kHz, d
 
 ### Example: Lissajous
 
-X-Y (Lissajous) view for tape head azimuth — aim for a tight, stable ellipse/line on a high-frequency test tone. The FFT is also useful for this adjustment: aim to minimize the wandering.
+X-Y (Lissajous) view for tape head azimuth — aim for a tight, stable ellipse/line on a high-frequency test tone. The FFT is also useful for this adjustment: aim to minimize the wandering. Pro includes a chord line to aid alignment.
 
 ![Audio Lab X-Y Lissajous view](/assets/images/turntable-audio/scope-lissajous.gif){: .center-image }
 
@@ -56,7 +56,7 @@ X-Y (Lissajous) view for tape head azimuth — aim for a tight, stable ellipse/l
 
 Separate A and B time/div so each channel can be scaled independently — useful when comparing signals at very different frequencies.
 
-![Audio Lab Y-T with independent A/B time bases](/assets/images/turntable-audio/scope-independent-timebases.png){: .center-image }
+![Audio Lab Y-T with independent A/B time bases](/assets/images/turntable-audio/scope-independent-timebases.gif){: .center-image }
 
 ### Works on a smartphone
 
