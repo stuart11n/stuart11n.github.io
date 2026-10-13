@@ -39,6 +39,14 @@ Core scope features are free. **Pro** ($9.99 / year) unlocks FFT above 10 kHz, t
 - Demos: 1 kHz sine, harmonics, calibrated 3 kHz · 4% THD, CD RF eye, and an X-Y “s16n” vector
 - Save as PNG; Save 10s video — Pro
 
+### Example: tape head azimuth
+
+X-Y (Lissajous) view while adjusting azimuth on a tape deck — aim for a tight, stable ellipse/line on a high-frequency test tone.
+
+<video class="center-image" controls playsinline preload="metadata" src="{{ '/assets/images/turntable-audio/scope-azimuth.webm' | relative_url }}">
+  Your browser does not support the video tag.
+</video>
+
 <video class="center-image" controls playsinline preload="metadata" src="{{ '/assets/images/turntable-audio/scope-demo.webm' | relative_url }}">
   Your browser does not support the video tag.
 </video>
