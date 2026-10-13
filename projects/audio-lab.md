@@ -46,7 +46,7 @@ Core scope features are free. **Pro** ($9.99 / year) unlocks FFT above 10 kHz, d
 
 X-Y (Lissajous) view for tape head azimuth — aim for a tight, stable ellipse/line on a high-frequency test tone. The FFT is also useful for this adjustment: aim to minimize the wandering.
 
-![Audio Lab X-Y Lissajous view](/assets/images/turntable-audio/scope-lissajous.jpg){: .center-image }
+![Audio Lab X-Y Lissajous view](/assets/images/turntable-audio/scope-lissajous.gif){: .center-image }
 
 ### Example: FFT
 
