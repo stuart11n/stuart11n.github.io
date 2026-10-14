@@ -19,11 +19,10 @@ card_wide: true
 
 A browser oscilloscope and spectrum analyzer for USB audio inputs — audio frequency only (not RF or lab-bandwidth scopes). Plug in a USB ADC, pick the device, and Start — or use built-in demos. Useful for checking line-level signals from turntables and tape decks for setting head azimuth, anti-skating, testing other audio equipment, codecs, and test gear.
 
-Core scope features are free. **Pro** ($15.99) unlocks FFT above 10 kHz, display interpolation, notch filter, THD, cursors, trigger level, Y-T math, independent A/B time/div and Y, and Save Video.
+Core scope features are free. **Pro** ($15.99 via PayPal) unlocks FFT above 10 kHz, display interpolation, notch filter, THD, cursors, trigger level, Y-T math, independent A/B time/div and Y, Phase Aid, and Save Video. After payment, enter the email you paid with and the license key in the app.
 
 <div class="cta-row">
   <a class="btn btn--primary" href="https://scope.s16n.com/" target="_blank" rel="noopener noreferrer">Open Audio Lab</a>
-  <a class="btn btn--ghost" href="https://s16n.lemonsqueezy.com/checkout/buy/8946001c-c7e8-4c1b-9375-1559f3fab759" target="_blank" rel="noopener noreferrer">Buy Pro</a>
 </div>
 
 ### Features
@@ -37,6 +36,7 @@ Core scope features are free. **Pro** ($15.99) unlocks FFT above 10 kHz, display
 - **Persist** Off / Lo / Hi (phosphor-style trail)
 - Y-T display interpolation: **Sin(x)/x** or oversample — Pro
 - Y-T math channel: **A+B**, **A−B**, **A×B**, **A÷B** — Pro
+- **Phase Aid** chord line on X-Y for alignment — Pro
 - Auto scale and live measures (Vpp, RMS, freq, period, duty, and more); **THD** — Pro
 - Drag A/B cursors — Pro; FFT span above 10 kHz — Pro
 - Demos: 1 kHz sine, harmonics, calibrated 3 kHz · 4% THD, tape wobble, ping-pong sweep, rotating Lissajous, CD RF eye, and an X-Y “s16n” vector
@@ -44,7 +44,7 @@ Core scope features are free. **Pro** ($15.99) unlocks FFT above 10 kHz, display
 
 ### Example: Lissajous
 
-X-Y (Lissajous) view for tape head azimuth — aim for a tight, stable ellipse/line on a high-frequency test tone. The FFT is also useful for this adjustment: aim to minimize the wandering. Pro includes a chord line to aid alignment.
+X-Y (Lissajous) view for tape head azimuth — aim for a tight, stable ellipse/line on a high-frequency test tone. The FFT is also useful for this adjustment: aim to minimize the wandering. Pro **Phase Aid** draws a chord line to help with alignment.
 
 ![Audio Lab X-Y Lissajous view](/assets/images/turntable-audio/scope-lissajous.gif){: .center-image }
 
