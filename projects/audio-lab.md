@@ -19,7 +19,7 @@ card_wide: true
 
 A browser oscilloscope and spectrum analyzer for USB audio inputs — audio frequency only (not RF or lab-bandwidth scopes). Plug in a USB ADC, pick the device, and Start — or use built-in demos. Useful for checking line-level signals from turntables and tape decks for setting head azimuth, anti-skating, testing other audio equipment, codecs, and test gear.
 
-Core scope features are free. **Pro** ($9.99 / year) unlocks FFT above 10 kHz, display interpolation, notch filter, THD, cursors, trigger level, Y-T math, independent A/B time/div and Y, and Save Video.
+Core scope features are free. **Pro** ($15.99) unlocks FFT above 10 kHz, display interpolation, notch filter, THD, cursors, trigger level, Y-T math, independent A/B time/div and Y, and Save Video.
 
 <div class="cta-row">
   <a class="btn btn--primary" href="https://scope.s16n.com/" target="_blank" rel="noopener noreferrer">Open Audio Lab</a>
