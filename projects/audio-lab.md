@@ -22,7 +22,7 @@ A browser oscilloscope, spectrum analyzer, and wow &amp; flutter meter for USB a
 Core scope features are free. **Pro** ($15.99 via PayPal) unlocks FFT above 10 kHz, display interpolation, notch filter, THD, cursors, trigger level, Y-T math, independent A/B time/div and Y, Phase Aid, extra W&amp;F standards, and Save Video. After payment, enter the email you paid with and the license key in the app.
 
 <div class="cta-row">
-  <a class="btn btn--primary" href="https://scope.s16n.com/" target="_blank" rel="noopener noreferrer">Open Audio Lab</a>
+  <a class="btn btn--primary" href="https://audiolab.s16n.com/" target="_blank" rel="noopener noreferrer">Open Audio Lab</a>
 </div>
 
 ### Features
