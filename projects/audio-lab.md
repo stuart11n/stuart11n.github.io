@@ -2,7 +2,7 @@
 layout: post
 title: Audio Lab
 description: >-
-  Browser oscilloscope, spectrum analyzer, and wow & flutter meter for USB audio — Y-T, X-Y, W&F, FFT, and more.
+  Free browser audio analyzer for USB line-in — oscilloscope, Lissajous, FFT spectrum, THD, and wow & flutter (DIN/JIS/NAB). Tune tape decks, cassettes, turntables, and analogue gear from your phone or desktop.
 image: /assets/images/turntable-audio/scope-hero.png
 permalink: /projects/audio-lab/
 homepage: true
@@ -11,6 +11,32 @@ tags:
   - project
   - audio
   - software
+keywords:
+  - audio analyzer
+  - USB audio analyzer
+  - oscilloscope
+  - spectrum analyzer
+  - FFT
+  - Lissajous
+  - X-Y scope
+  - wow and flutter
+  - wow flutter meter
+  - DIN wow flutter
+  - JIS NAB CCIR
+  - THD
+  - distortion
+  - frequency response
+  - signal analyzer
+  - noise
+  - measure audio
+  - tape deck
+  - cassette
+  - reel to reel
+  - analogue
+  - turntable
+  - head azimuth
+  - NAK T100
+  - audio lab
 card_desc: "Browser oscilloscope, spectrum analyzer, and wow & flutter meter for USB audio."
 card_wide: true
 ---
