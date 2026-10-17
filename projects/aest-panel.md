@@ -7,7 +7,7 @@ typora-root-url: ./../
 homepage: true
 homepage_order: 40
 tags:
-  - product
+  - project
 card_title: "Aerostar 600 Magneto & Fuel Panel"
 ---
 

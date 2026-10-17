@@ -7,7 +7,7 @@ typora-root-url: ./../
 homepage: true
 homepage_order: 50
 tags:
-  - product
+  - project
 card_title: "Beechcraft Magneto Panel"
 ---
 

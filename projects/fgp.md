@@ -7,7 +7,7 @@ typora-root-url: ./../
 homepage: true
 homepage_order: 60
 tags:
-  - product
+  - project
 ---
 
 
