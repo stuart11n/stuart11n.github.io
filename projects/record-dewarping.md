@@ -35,7 +35,7 @@ Glass is a good choice because it is very flat, it spreads the heat evenly, and 
 
 1. **Clean everything.** Wipe the glass and the record. Any grit between the record and the glass will be pressed into the vinyl.
 2. **Build the sandwich.** Put the first sheet of glass on the bed, the record on top of it, and the second sheet of glass on top of the record.
-3. **Run the G-code.** Send the file below to the printer like any other print. The file never heats the nozzle or extrudes, so there is nothing to load. Just press Print.
+3. **Run the G-code.** Send the file below to the printer like any other print, then press Print.
 
    ![The printer's Plate to Print screen showing dewarp.gcode](/assets/images/record-dewarping/printer-screen.jpg){: .center-image .small-image }
 4. **Wait.** The bed heats to 57&nbsp;&deg;C, soaks for two hours, then switches off.
