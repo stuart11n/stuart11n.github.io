@@ -11,7 +11,7 @@ tags:
 card_desc: "Flatten a warped record with a 3D printer's heated bed and two sheets of glass."
 ---
 
-A warped record is a lot more annoying than a scratched one: the stylus rides up and down and the tonearm never settles. Vinyl goes soft when it is gently warmed, so with a little patience a warp can be pressed flat again. I do this with my 3D printer. Its heated bed holds a steady, accurate temperature for hours without any attention from me.
+A warped record can be more annoying than a scratched one: the stylus rides up and down and the tonearm never settles. Vinyl goes soft when it is gently warmed, so with a little patience a warp can be pressed flat again. I do this with my 3D printer. Its heated bed holds a steady, accurate temperature for hours without any attention from me.
 
 Please try this on a record you don't mind losing first, and note that you do this at your own risk. Results may not be optimal on vinyl with lipped edges.
 
