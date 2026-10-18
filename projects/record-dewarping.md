@@ -2,7 +2,7 @@
 title: Record Dewarping
 description: >-
   How to flatten a warped vinyl record using a 3D printer's heated bed, two sheets of glass and a simple 2-hour G-code file.
-image: /assets/images/image.webp
+image: /assets/images/record-dewarping/record-on-bed.jpg
 homepage: true
 homepage_order: 112
 tags:
@@ -15,6 +15,8 @@ A warped record is a lot more annoying than a scratched one: the stylus rides up
 
 Before proceeding, please try this on a record you don't mind losing first, and note that you do this at your own risk. Read the full liability waiver [here](../disclaimer)
 
+![A record between two sheets of glass on the printer bed](/assets/images/record-dewarping/record-on-bed.jpg){: .center-image }
+
 ## What you need
 
 - A 3D printer with a heated bed (mine is a Bambu printer, but anything that can hold a bed temperature will do)
@@ -26,14 +28,18 @@ Before proceeding, please try this on a record you don't mind losing first, and 
 
 The record is sandwiched between the two sheets of glass and set on the heated bed. The bed warms the glass, the glass warms the record evenly and holds it flat. The G-code simply heats the bed to the target temperature, holds it there for two hours, then turns the heat off.
 
+The two-hour hold is a heat soak: it gives the glass and the record time to come up to temperature and settle there, so the temperature is stable the whole time.
+
 Glass is a good choice because it is very flat, it spreads the heat evenly, and it doesn't flex or deform at these temperatures.
 
 ## Steps
 
 1. **Clean everything.** Wipe the glass and the record. Any grit between the record and the glass will be pressed into the vinyl.
 2. **Build the sandwich.** Put the first sheet of glass on the bed, the record on top of it, and the second sheet of glass on top of the record.
-3. **Run the G-code.** Send the file below to the printer like any other print.
-4. **Wait.** The bed heats to 57&nbsp;&deg;C, holds for two hours, then switches off.
+3. **Run the G-code.** Send the file below to the printer like any other print. My printer shows a message about the external spool because it treats this like any print. The file never heats the nozzle or extrudes, so there is nothing to load. Just press Print.
+
+   ![The printer's Plate to Print screen showing dewarp.gcode](/assets/images/record-dewarping/printer-screen.jpg){: .center-image .small-image }
+4. **Wait.** The bed heats to 57&nbsp;&deg;C, soaks for two hours, then switches off.
 5. **Let it cool down slowly, still sandwiched.** Don't pull the record out while it is warm and soft. Leave it between the glass until everything is back at room temperature, so it sets flat.
 
 ## The G-code
@@ -68,7 +74,6 @@ The first two comment lines are only there so Bambu printers recognize the file.
 
 - **Temperature:** change the number in `M190 S57`. Vinyl softens as it warms, so don't go hotter than you need to.
 - **Time:** change the number in `G4 S7200`. The value is in seconds, so 3 hours would be `G4 S10800`.
-- **Check the temperature at the record.** The printer measures the bed, not the glass on top of it. A thermometer on the top sheet shows what the record is actually seeing.
 - **A warp that returns** usually needs a longer hold or a slower cool-down rather than more heat.
 
 <div class="cta-row">
