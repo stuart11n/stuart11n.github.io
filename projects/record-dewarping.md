@@ -22,7 +22,6 @@ Please try this on a record you don't mind losing first, and note that you do th
 - A 3D printer with a heated bed large enough to hold a 12" record (mine is a Bambu Lab H2C)
 - Two flat sheets of glass, each larger than the record
 - The [G-code file](/assets/files/dewarp.gcode) below
-- A clean, dust-free surface
 
 ## How it works
 
