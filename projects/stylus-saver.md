@@ -165,5 +165,5 @@ Set it to run at startup:
 
 I printed a simple box for mine:
 
-![image-20260529173840529](/assets/images/image-20260529173840529.png){: .center-image .small-image }
+![image-20260529173840529](/assets/images/image-20260529173840529.jpg){: .center-image .small-image }
 

@@ -7,7 +7,7 @@ typora-root-url: ./..\..\
 
 <a class="btn btn--buy" href="{{ site.shop_url }}" target="_blank" rel="noopener noreferrer">Buy</a>
 
-![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](/assets/images/Screenshot 2025-09-07 172513.png)
+![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](/assets/images/Screenshot 2025-09-07 172513.jpg)
 
 Trim Deck Mini is a set of trim wheels for elevator, aileron, rudder plus dual encoders for controlling trim reset, auto-trim or something else. Each wheel has a friction damper; they will not freewheel or move of their own free-will.
 
@@ -15,7 +15,7 @@ Trim Deck Mini is a set of trim wheels for elevator, aileron, rudder plus dual e
 
 It comes with the universal bracket.
 
-![Screenshot 2025-06-27 102849](/assets/images/Screenshot 2025-06-27 102849.png)
+![Screenshot 2025-06-27 102849](/assets/images/Screenshot 2025-06-27 102849.jpg)
 
 The wheels are all 67mm in diameter and use magnetic sensors providing very smooth motion. 
 

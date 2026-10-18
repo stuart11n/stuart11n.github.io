@@ -17,5 +17,5 @@ This inspired the [Trim Deck](trim-deck)
 
 
 
-![](/assets/images/1-1776214142784-17.png){: .center-image }
+![](/assets/images/1-1776214142784-17.jpg){: .center-image }
 

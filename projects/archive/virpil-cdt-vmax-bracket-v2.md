@@ -7,7 +7,7 @@ typora-root-url: ./..\..\
 
 
 
-![image-20250612184811786](/assets/images/image-20250612184811786.png)
+![image-20250612184811786](/assets/images/image-20250612184811786.jpg)
 
 [V1](virpil-cdt-vmax-bracket-v1.md) worked fine but I wanted more height, it could have been 3D printed like my [WarBRD QR](warbrd-qr.markdown)  but I want to try something new.
 

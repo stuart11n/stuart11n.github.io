@@ -5,7 +5,7 @@ title: Trim Deck OG
 typora-root-url: ./..\..\
 ---
 
-![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](/assets/images/CDT_VMAX_Mount_2025-Jun-25_01-45-21PM-000_CustomizedView36907726145_png.png)
+![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](/assets/images/CDT_VMAX_Mount_2025-Jun-25_01-45-21PM-000_CustomizedView36907726145_png.jpg)
 
 The Trim Deck Prototype is a set of trim wheels with ancillary buttons and knobs for controlling fuel valves, lights, etc.
 
@@ -13,13 +13,13 @@ The Trim Deck Prototype is a set of trim wheels with ancillary buttons and knobs
 
 # Trim Wheels
 
-![1](/assets/images//Screenshot 2025-06-25 145135.png){: .center-image  .small}
+![1](/assets/images//Screenshot 2025-06-25 145135.jpg){: .center-image  .small}
 
 The elevator is 110mm in diameter and uses an optical encoder with 360 pulses per revolution. This provides a very smooth motion. The rudder and aileron are 64mm in diameters and use mechanical encoders with 20 detents.
 
 The elevator wheel protrudes out of the bottom of the case.
 
-![5](/assets/images//CDT_VMAX_Mount_2025-Jun-25_01-45-53PM-000_CustomizedView54139521182_png.png){: .center-image }
+![5](/assets/images//CDT_VMAX_Mount_2025-Jun-25_01-45-53PM-000_CustomizedView54139521182_png.jpg){: .center-image }
 
 # Fuel Tank Selection
 
@@ -85,7 +85,7 @@ This is rough guidance, each aircraft may have specific requirements and LVAR, f
 
 Note: for the twins the numbers are reversed left vs. right to match the counter rotation of the physical knobs:
 
-![image-20250628151958260](/assets/images//image-20250628151958260.png)
+![image-20250628151958260](/assets/images//image-20250628151958260.jpg)
 
 ### Default
 
@@ -158,7 +158,7 @@ There are four mounting options:
 
 3. A base with 1/4" screw socket for 1/4" desk clamp (not included) and 4 x m3 hardpoints for you own mounting options
 
-![](/assets/images/image-20250604095247303.png)
+![](/assets/images/image-20250604095247303.jpg)
 
 Flat bottom
 
@@ -168,5 +168,5 @@ Flat bottom
 
 Close-up of customer build with black/gold colorway
 
-![Screenshot 2025-06-25 144838](/assets/images/Screenshot 2025-06-25 144838.png)
+![Screenshot 2025-06-25 144838](/assets/images/Screenshot 2025-06-25 144838.jpg)
 

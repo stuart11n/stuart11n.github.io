@@ -35,7 +35,7 @@ I drilled the case for the new jacks, stripped the original silver paint with an
 
 It is a passive A/B switch: two stereo inputs, one stereo output, one front toggle. Six RCA jacks on the back. Internals are hand-wired twisted pair with star grounding.
 
-![Stereo RCA 2-in / 1-out switch with star ground](/assets/images/tuurd-foni/schematic.png)
+![Stereo RCA 2-in / 1-out switch with star ground](/assets/images/tuurd-foni/schematic.jpg)
 
 ![Finished front](/assets/images/tuurd-foni/finished-front.jpg)
 

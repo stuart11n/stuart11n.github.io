@@ -3,7 +3,7 @@ layout: post
 title: Audio Lab
 description: >-
   Free browser audio analyzer for USB line-in — oscilloscope, Lissajous, FFT spectrum, THD, and wow & flutter (DIN/JIS/NAB). Tune tape decks, cassettes, turntables, and analogue gear from your phone or desktop.
-image: /assets/images/turntable-audio/scope-hero.png
+image: /assets/images/turntable-audio/scope-hero.jpg
 permalink: /projects/audio-lab/
 homepage: true
 homepage_order: 25
@@ -41,7 +41,7 @@ card_desc: "Browser oscilloscope, spectrum analyzer, and wow & flutter meter for
 card_wide: true
 ---
 
-![s16n Audio Lab Y-T view with dual timebase and measures](/assets/images/turntable-audio/scope-hero.png){: .center-image }
+![s16n Audio Lab Y-T view with dual timebase and measures](/assets/images/turntable-audio/scope-hero.jpg){: .center-image }
 
 A browser oscilloscope, spectrum analyzer, and wow &amp; flutter meter for USB audio inputs — audio frequency only (not RF or lab-bandwidth scopes). Plug in a USB ADC, pick the device, and Start — or use built-in demos. Useful for checking line-level signals from turntables and tape decks for setting head azimuth, anti-skating, W&amp;F, testing other audio equipment, codecs, and test gear.
 
@@ -95,4 +95,4 @@ Separate A and B time/div so each channel can be scaled independently — useful
 
 ### Works on a smartphone
 
-![s16n Audio Lab on a phone](/assets/images/turntable-audio/scope.png){: .center-image .small-image }
+![s16n Audio Lab on a phone](/assets/images/turntable-audio/scope.jpg){: .center-image .small-image }

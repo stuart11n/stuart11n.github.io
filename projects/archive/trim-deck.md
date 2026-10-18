@@ -5,7 +5,7 @@ title: Trim Deck
 typora-root-url: ./..\..\
 ---
 
-![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](/assets/images/Screenshot 2025-09-10 094950.png)
+![CDT_VMAX_Mount_2025 May 26_10 49 37PM 000_CustomizedView43852198952_jpg](/assets/images/Screenshot 2025-09-10 094950.jpg)
 
 Trim Deck is a set of trim wheels for elevator, aileron, rudder plus dual encoders for controlling trim reset, auto-trim or something else. Each wheel has a friction damper; they will not freewheel or move of their own free-will.
 
@@ -99,7 +99,7 @@ If you have an idea for a custom mount, get in touch and I will try to accommoda
 
 A close-up of a customer build of the Trim Deck with black/gold colorway. Custom colors on request.
 
-![Screenshot 2025-06-25 144838](/assets/images//Screenshot 2025-06-25 144838.png)
+![Screenshot 2025-06-25 144838](/assets/images//Screenshot 2025-06-25 144838.jpg)
 
 
 

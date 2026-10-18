@@ -34,6 +34,6 @@ I got the idea from drummers, they use tennis balls sandwiched between sheets of
 
 ![](/assets/images/isolators/6.jpg){: .center-image }
 
-![](/assets/images/isolators/7.png){: .center-image }
+![](/assets/images/isolators/7.jpg){: .center-image }
 
 Available to [Buy]({{ site.shop_url }})

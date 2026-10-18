@@ -89,5 +89,5 @@ These felt awful...
 
 Nope.
 
-![image-20250528193619460](/assets/images/image-20250528193619460.png)
+![image-20250528193619460](/assets/images/image-20250528193619460.jpg)
 

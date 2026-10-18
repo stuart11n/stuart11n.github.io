@@ -3,7 +3,7 @@ layout: post
 title: Phosphor AFG-20
 description: >-
   Dual-channel browser audio arbitrary waveform generator — continuous, modulation, sweep, and burst modes up to 20 kHz.
-image: /assets/images/turntable-audio/afg.png
+image: /assets/images/turntable-audio/afg.jpg
 permalink: /projects/afg-20/
 homepage: true
 homepage_order: 123
@@ -48,4 +48,4 @@ Use it as a tone source, stereo test signal, modulation demo, or a sketchpad for
   {% include bmc-button.html %}
 </div>
 
-![Phosphor AFG-20 dual-channel audio arbitrary waveform generator](/assets/images/turntable-audio/afg.png){: .center-image .small-image }
+![Phosphor AFG-20 dual-channel audio arbitrary waveform generator](/assets/images/turntable-audio/afg.jpg){: .center-image .small-image }

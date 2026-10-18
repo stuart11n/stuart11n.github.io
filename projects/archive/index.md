@@ -2,7 +2,7 @@
 title: Archive
 description: >-
   Earlier s16n builds and retired designs — trim decks, brackets, and previous controller projects.
-image: /assets/images/photo.png
+image: /assets/images/photo.jpg
 typora-root-url: ./..\..
 homepage: true
 homepage_order: 130
@@ -27,19 +27,19 @@ Trim controls for flight sim [more...](/projects/archive/trim-deck)
 
 <a class="btn btn--buy" href="{{ site.shop_url }}" target="_blank" rel="noopener noreferrer">Buy</a>
 
-![photo](/assets/images/Screenshot 2025-08-31 110519-1757291758827-6.png){: .center-image .small-image }
+![photo](/assets/images/Screenshot 2025-08-31 110519-1757291758827-6.jpg){: .center-image .small-image }
 
 ## [Trim Deck OG](/projects/archive/trim-deck-og)  
 
 Trim controls for flight sim [more...](/projects/archive/trim-deck)
 
-![photo](/assets/images/photo.png){: .center-image .small-image }
+![photo](/assets/images/photo.jpg){: .center-image .small-image }
 
 ## [Rudder Pedals](/projects/archive/rudder-pedals)
 
 Rudder pedals with toe brakes for dual use rigs [more...](/projects/archive/rudder-pedals)
 
-![](/assets/images/image-20250528211825527.png){: .center-image .small-image }
+![](/assets/images/image-20250528211825527.jpg){: .center-image .small-image }
 
 ## [Funky-coder Quattro](/projects/archive/funky-coder-quattro)
 
@@ -51,7 +51,7 @@ Rudder pedals with toe brakes for dual use rigs [more...](/projects/archive/rudd
 
 Input device for aircraft trimmables [more...](/projects/archive/trimbox)
 
-![](/assets/images/1.png){: .center-image .small-image }
+![](/assets/images/1.jpg){: .center-image .small-image }
 
 ## [Mini Flight Controls](/projects/archive/mini-flight-controls)
 
