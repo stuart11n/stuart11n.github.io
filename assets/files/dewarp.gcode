@@ -1,3 +1,5 @@
+; Header for Bambu Printer Recognition
+; total_page_number: 1
 M104 S0         ; Hotend off
 M84             ; Disable stepper motors
 M107            ; Fan off

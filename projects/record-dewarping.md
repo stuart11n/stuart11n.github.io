@@ -48,6 +48,8 @@ This G-code is for a Bambu Lab H2C.
 [Download dewarp.gcode](/assets/files/dewarp.gcode)
 
 ```gcode
+; Header for Bambu Printer Recognition
+; total_page_number: 1
 M104 S0         ; Hotend off
 M84             ; Disable stepper motors
 M107            ; Fan off
@@ -66,6 +68,8 @@ What each line does:
 | `M190 S57` | Heats the bed to 57&nbsp;&deg;C and waits until it gets there. |
 | `G4 S7200` | Dwell: holds for 7200 seconds (2 hours) while the bed stays at temperature. |
 | `M140 S0` | Turns the bed heater off. |
+
+The first two comment lines are only there so Bambu printers recognize the file. If your printer is not a Bambu, you can drop them, but I have only used this on the H2C.
 
 ## Tuning
 
