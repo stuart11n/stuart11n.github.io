@@ -13,13 +13,13 @@ card_desc: "Flatten a warped record with a 3D printer's heated bed and two sheet
 
 A warped record is a lot more annoying than a scratched one: the stylus rides up and down and the tonearm never settles. Vinyl goes soft when it is gently warmed, so with a little patience a warp can be pressed flat again. I do this with my 3D printer. Its heated bed holds a steady, accurate temperature for hours without any attention from me.
 
-Before proceeding, please try this on a record you don't mind losing first, and note that you do this at your own risk. Read the full liability waiver [here](../disclaimer)
+Please try this on a record you don't mind losing first, and note that you do this at your own risk. Results may not be optimal on vinyl with lipped edges.
 
 ![A record between two sheets of glass on the printer bed](/assets/images/record-dewarping/record-on-bed.jpg){: .center-image }
 
 ## What you need
 
-- A 3D printer with a heated bed (mine is a Bambu printer, but anything that can hold a bed temperature will do)
+- A 3D printer with a heated bed large enough to hold a 12" record (mine is a Bambu Lab H2C)
 - Two flat sheets of glass, each larger than the record
 - The [G-code file](/assets/files/dewarp.gcode) below
 - A clean, dust-free surface
@@ -43,6 +43,8 @@ Glass is a good choice because it is very flat, it spreads the heat evenly, and 
 5. **Let it cool down slowly, still sandwiched.** Don't pull the record out while it is warm and soft. Leave it between the glass until everything is back at room temperature, so it sets flat.
 
 ## The G-code
+
+This G-code is for a Bambu Lab H2C.
 
 [Download dewarp.gcode](/assets/files/dewarp.gcode)
 
@@ -68,7 +70,7 @@ What each line does:
 | `G4 S7200` | Dwell: holds for 7200 seconds (2 hours) while the bed stays at temperature. |
 | `M140 S0` | Turns the bed heater off. |
 
-The first two comment lines are only there so Bambu printers recognize the file. If your printer is not a Bambu, you can drop them.
+The first two comment lines are only there so Bambu printers recognize the file. If your printer is not a Bambu, you can drop them, but I have only used this on the H2C.
 
 ## Tuning
 
