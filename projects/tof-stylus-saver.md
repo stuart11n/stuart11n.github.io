@@ -14,6 +14,8 @@ tags:
 card_desc: "A stylus saver that switches the turntable off when the tonearm reaches the centre, using a distance sensor."
 ---
 
+![The turntable](/assets/images/tof-stylus-saver/hero.jpg){: .center-image }
+
 This is an updated version of the [Stylus Saver](/projects/stylus-saver/). That one watches how much power the turntable draws. This one uses a distance sensor instead: a VL53L0X time-of-flight sensor sees the tonearm arrive at the centre of the record, then cuts power through a Shelly relay.
 
 Mains power is involved, so please work safely and don't connect the relay to anything you aren't sure about.
