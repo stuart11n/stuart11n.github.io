@@ -786,3 +786,56 @@ body:not(.home) .page-content {
 .site-footer .wrapper::after {
   display: none;
 }
+
+/* Feedback (thumbs up/down) */
+.feedback {
+  margin: 2.5rem 0 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.feedback[hidden] {
+  display: none;
+}
+
+.feedback__label {
+  margin: 0 0 0.6rem;
+  color: var(--ink-muted);
+}
+
+.feedback__buttons {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.feedback__btn {
+  font: inherit;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.feedback__btn:hover:not(:disabled) {
+  border-color: var(--ink-muted);
+}
+
+.feedback__btn:disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+
+.feedback__btn.is-chosen {
+  opacity: 1;
+  font-weight: 600;
+  border-color: var(--brand);
+}
+
+.feedback__status {
+  min-height: 1.2em;
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+}

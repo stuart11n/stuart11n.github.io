@@ -9,6 +9,14 @@ shop_url: "https://s16n.etsy.com"
 patreon_url: "https://www.patreon.com/c/s16n"
 lang: en
 
+exclude:
+  - functions
+  - publish.bat
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
 author:
   name: Stuart
   email: stuart@s16n.com

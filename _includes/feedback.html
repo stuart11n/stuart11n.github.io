@@ -1,0 +1,75 @@
+<div class="feedback" data-page="{{ page.url | escape }}" hidden>
+  <p class="feedback__label">Was this page useful?</p>
+  <div class="feedback__buttons">
+    <button type="button" class="feedback__btn" data-vote="up">👍 <span data-count="up">–</span></button>
+    <button type="button" class="feedback__btn" data-vote="down">👎 <span data-count="down">–</span></button>
+  </div>
+  <p class="feedback__status" aria-live="polite"></p>
+</div>
+<script>
+(function () {
+  var box = document.querySelector(".feedback");
+  if (!box) return;
+
+  var page = box.getAttribute("data-page");
+  var api = "/api/feedback";
+  var storageKey = "s16n-feedback:" + page;
+  var buttons = box.querySelectorAll(".feedback__btn");
+  var status = box.querySelector(".feedback__status");
+
+  var previous = null;
+  try { previous = localStorage.getItem(storageKey); } catch (e) {}
+
+  function showCounts(counts) {
+    ["up", "down"].forEach(function (vote) {
+      box.querySelector('[data-count="' + vote + '"]').textContent = counts[vote];
+    });
+  }
+
+  function lock(vote) {
+    buttons.forEach(function (button) {
+      button.disabled = true;
+      button.classList.toggle("is-chosen", button.getAttribute("data-vote") === vote);
+    });
+    status.textContent = "Thanks for the feedback.";
+  }
+
+  fetch(api + "?page=" + encodeURIComponent(page))
+    .then(function (response) {
+      if (!response.ok) throw new Error("bad response");
+      return response.json();
+    })
+    .then(function (counts) {
+      showCounts(counts);
+      box.hidden = false;
+      if (previous === "up" || previous === "down") lock(previous);
+    })
+    .catch(function () {
+      // Leave the widget hidden if the counter isn't reachable.
+    });
+
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      var vote = button.getAttribute("data-vote");
+      status.textContent = "Saving…";
+      fetch(api, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ page: page, vote: vote })
+      })
+        .then(function (response) {
+          if (!response.ok) throw new Error("bad response");
+          return response.json();
+        })
+        .then(function (counts) {
+          showCounts(counts);
+          try { localStorage.setItem(storageKey, vote); } catch (e) {}
+          lock(vote);
+        })
+        .catch(function () {
+          status.textContent = "Couldn't save your vote. Please try again.";
+        });
+    });
+  });
+})();
+</script>
