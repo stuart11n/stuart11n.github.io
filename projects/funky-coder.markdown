@@ -4,7 +4,7 @@ categories: flightsim knobster encoder
 title: Funky-coder
 description: >-
   VR-focused HID input device with a funky switch and dual encoder for flight sim and sim racing.
-image: /assets/images/fc1.jpg
+image: /assets/images/fc/fc-hero.jpg
 typora-root-url: ./../assets/images
 homepage: true
 homepage_order: 10
@@ -17,6 +17,8 @@ card_desc: "VR-focused input device for flight and racing."
 <a class="btn btn--buy" href="{{ site.shop_url }}" target="_blank" rel="noopener noreferrer">Buy</a>
 
 I fly and drive in VR only. I have built several button boxes, but eventually decided it would be much easier to use a single multi-mode device that's easy to get my hands on while playing.
+
+![Funky-coder and Funky-coder Plus](/assets/images/fc/fc-hero.jpg){: .center-image }
 
 ### Features
 
