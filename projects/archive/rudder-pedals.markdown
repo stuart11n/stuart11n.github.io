@@ -19,7 +19,7 @@ I designed these rudder pedals to be bolted to the underside of a racing rig ped
 - easy install/removal, two bolts and it slides out
 - USB-C
 
-<img src="assets/images/mk7.JPG" style="zoom:150%;" />
+<img src="/assets/images/mk7.JPG" style="zoom:150%;" />
 
 Mk. 8 is simpler and cheaper to build and has the potential for variable/motorized centering force.
 
