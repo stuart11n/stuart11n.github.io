@@ -27,8 +27,6 @@ Twin dual encoders and a funky switch with 4 modes (layers). For use with aviati
 
 Inputs can be mapped in game as a normal HID device so it's compatible with all games, and tools such as SPAD.next and Axis And Ohs.
 
-![](fc/fc-plus.jpg){: .center-image }
-
 #### Example config 
 
 This shows how you can map NAV1/2, COM1/2 and the joystick (with range zoom) of a G1000, plus volume, trim and view functions. With room to spare for more! 
