@@ -1,7 +1,7 @@
 (function () {
   var heroPool = [
     "/assets/images/fc1.jpg",
-    "/assets/images/fc-plus.jpg",
+    "/assets/images/fc/fc-hero.jpg",
     "/assets/images/IMG_2121.jpg",
     "/assets/images/IMG_2035.JPG",
     "/assets/images/32bb0f70-5cc1-479b-a1b6-6b0a85d70dbe.jpg",

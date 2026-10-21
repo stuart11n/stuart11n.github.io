@@ -4,7 +4,7 @@ categories: flightsim knobster encoder
 title: Funky-coder Plus
 description: >-
   Funky-coder with twin dual encoders, a funky switch, and a 4-way mode switch for flight sim and sim racing.
-image: /assets/images/fc-plus.jpg
+image: /assets/images/fc/fc-hero.jpg
 typora-root-url: ./../assets/images
 homepage: true
 homepage_order: 20
@@ -17,6 +17,8 @@ card_desc: "Funky-coder with a mode switch."
 <a class="btn btn--buy" href="{{ site.shop_url }}" target="_blank" rel="noopener noreferrer">Buy</a>
 
 Twin dual encoders and a funky switch with 4 modes (layers). For use with aviation sim and simracing. Great for VR!
+
+![Funky-coder and Funky-coder Plus](/assets/images/fc/fc-hero.jpg){: .center-image }
 
 ### Features
 
