@@ -21,7 +21,7 @@ Twin dual encoders and a funky switch with 4 modes (layers). For use with aviati
 ### Features
 
 - 2 x dual encoders with push button
-- 1 x funkyswitch with encoder, push button and 4-way POV
+- 1 x funkyswitch with encoder, push button and 4-way joystick with push
 - 4-way mode switch remaps the above providing 8 dual encoders and 4 funky switches in one unit
 - Dimensions: Approx. 70mm x 60mm x 32mm
 
