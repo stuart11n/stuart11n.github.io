@@ -69,6 +69,11 @@ arduino-cli monitor -p COMxx -c baudrate=115200
 
 Copy `secrets.h.example` to `secrets.h` and fill in your 2.4 GHz Wi-Fi details and the Shelly's IP address (`SHELLY_HOST`). Keep `secrets.h` out of version control.
 
+### Downloads
+
+- [vl53l0x_pololu.ino](/assets/files/tof-stylus-saver/vl53l0x_pololu.ino): the S2 Mini firmware
+- [secrets.h.example](/assets/files/tof-stylus-saver/secrets.h.example): copy this to `secrets.h` and fill in your values
+
 ## Calibration
 
 Sensors vary, so calibrate each one once. Hold a flat object exactly 40&nbsp;mm from the sensor, then send `c` over the serial monitor. The offset is saved to the board. If you want to start again, send `z` to clear it. After a full flash erase, calibrate again.
