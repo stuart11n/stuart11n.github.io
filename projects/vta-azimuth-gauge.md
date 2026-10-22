@@ -4,6 +4,7 @@ title: VTA & Azimuth Gauge
 permalink: /projects/vta-azimuth-gauge/
 description: >-
   A 3D-printed headshell gauge for setting azimuth and VTA on a tonearm, using the record surface as the reference.
+image: /assets/images/vta-azimuth-gauge/hero.jpg
 homepage: true
 homepage_order: 113
 tags:
@@ -11,6 +12,8 @@ tags:
   - audio
 card_desc: "A printable headshell gauge for setting azimuth and VTA."
 ---
+
+![The gauge on the headshell, set against a record](/assets/images/vta-azimuth-gauge/hero.jpg){: .center-image }
 
 This gauge attaches to the headshell and sets azimuth and VTA against a record. It's a quicker and more repeatable alternative to a mirror.
 
