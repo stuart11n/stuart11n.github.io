@@ -36,8 +36,6 @@ The gap between 40 and 50&nbsp;mm stops the relay from chattering when the arm s
 
 ## Hardware
 
-![The VMN40xML cartridge on the tonearm](/assets/images/tof-stylus-saver/cartridge.jpg){: .center-image .small-image }
-
 - A LOLIN (Wemos) S2 Mini
 - A Pololu VL53L0X time-of-flight sensor. I'd recommend this one over the cheaper VL6180X modules, which had problems with crosstalk from the cover glass.
 - A Shelly relay (Gen1 or Gen2) for switching the turntable

@@ -17,6 +17,8 @@ This is my PS-4750. It is fully manual. Sometimes life's distractions take me aw
 
 ![2B93BCF6-8AA7-4CA4-9143-E5960DCA23D4](/assets/images/2B93BCF6-8AA7-4CA4-9143-E5960DCA23D4.webp)
 
+![The VMN40xML cartridge on the tonearm](/assets/images/stylus-saver/cartridge.jpg){: .center-image .small-image }
+
 So I leveraged a [Shelly 1PM](https://us.shelly.com/products/shelly-1pm-mini-gen3), a script that runs on the Shelly and a (free) [Pushover](https://pushover.net/) account. (I won't cover the ins and outs of Shelly setup, it's very simple to get going and configure from your phone and web browser. Likewise, Pushover is straightforward to sign up and use).
 
 Before proceeding, please note that working with mains power can be hazardous. Read the full liability waiver [here](../disclaimer)
