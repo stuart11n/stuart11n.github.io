@@ -28,7 +28,7 @@
   var cards = Array.prototype.slice.call(document.querySelectorAll(".project-card"));
   var filterLinks = Array.prototype.slice.call(document.querySelectorAll(".filter-link"));
   var emptyMsg = document.querySelector(".project-filter-empty");
-  var validFilters = { product: true, project: true, audio: true, software: true };
+  var validFilters = { product: true, project: true, audio: true, software: true, aviasim: true };
 
   function currentFilter() {
     try {

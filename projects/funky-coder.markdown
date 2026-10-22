@@ -10,6 +10,7 @@ homepage: true
 homepage_order: 10
 tags:
   - product
+  - aviasim
 card_desc: "VR-focused input device for flight and racing."
 ---
 

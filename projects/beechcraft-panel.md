@@ -8,6 +8,7 @@ homepage: true
 homepage_order: 50
 tags:
   - project
+  - aviasim
 card_title: "Beechcraft Magneto Panel"
 ---
 

@@ -10,6 +10,7 @@ homepage: true
 homepage_order: 20
 tags:
   - product
+  - aviasim
 card_desc: "Funky-coder with a mode switch."
 ---
 

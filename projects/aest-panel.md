@@ -8,6 +8,7 @@ homepage: true
 homepage_order: 40
 tags:
   - project
+  - aviasim
 card_title: "Aerostar 600 Magneto & Fuel Panel"
 ---
 

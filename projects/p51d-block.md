@@ -8,6 +8,7 @@ homepage: true
 homepage_order: 80
 tags:
   - project
+  - aviasim
 card_desc: "A remix for a specific requirement."
 card_title: "Custom P51D block"
 ---

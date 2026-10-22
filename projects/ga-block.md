@@ -8,6 +8,7 @@ homepage: true
 homepage_order: 70
 tags:
   - project
+  - aviasim
 card_desc: "My daily GA flyer."
 card_title: "GA block"
 card_image: /assets/images/69d98f47-a2a2-4eeb-af7e-f937f299e673-1775774499992-3.jpg

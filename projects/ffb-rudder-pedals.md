@@ -8,6 +8,7 @@ homepage: true
 homepage_order: 90
 tags:
   - project
+  - aviasim
 card_desc: "With load-cell toe brakes."
 ---
 

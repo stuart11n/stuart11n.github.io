@@ -10,6 +10,7 @@ homepage: true
 homepage_order: 91
 tags:
   - project
+  - aviasim
 card_desc: "A force feedback collective with swappable heads for helicopters and warbirds."
 ---
 
