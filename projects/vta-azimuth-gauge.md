@@ -76,7 +76,7 @@ Measure these cartridges yourself rather than relying on the table.
 
 The older VM740ML and the newer AT-VM740xML are different cartridges, with different compliance and body heights. Check which one you have.
 
-Figures are from Audio-Technica's published specifications. As with the gauge itself, treat them as nominal.
+The Audio-Technica figures are from Audio-Technica's published specifications. As with the gauge itself, treat all of them as nominal.
 
 **Please check these numbers before you print.** Confirm the static compliance, body height and tracking force against the manufacturer's current datasheet for your exact cartridge, and redo the calculation yourself. Specifications change between models and revisions, retailer listings are often wrong, and I may have made a mistake. Use this table at your own risk.
 
