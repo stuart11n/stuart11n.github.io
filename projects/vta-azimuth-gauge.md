@@ -69,6 +69,8 @@ The older VM740ML and the newer AT-VM740xML are different cartridges, with diffe
 
 Figures are from Audio-Technica's published specifications. As with the gauge itself, treat them as nominal.
 
+**Please check these numbers before you print.** Confirm the static compliance, body height and tracking force against the manufacturer's current datasheet for your exact cartridge, and redo the calculation yourself. Specifications change between models and revisions, retailer listings are often wrong, and I may have made a mistake. Use this table at your own risk.
+
 ## More audio tools
 
 For other audio tools, see [s16n.com](https://www.s16n.com), including the [Audio Lab](/projects/audio-lab/) browser oscilloscope and wow & flutter meter.
