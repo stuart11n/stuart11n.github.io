@@ -83,6 +83,9 @@
         if (!filter || !validFilters[filter]) return;
         event.preventDefault();
         applyFilter(filter, true);
+        // No page load happens here, so close the mobile menu ourselves.
+        var navToggle = document.getElementById("nav-trigger");
+        if (navToggle) navToggle.checked = false;
         var anchor = document.getElementById("projects");
         if (anchor) {
           anchor.scrollIntoView({ behavior: "smooth", block: "start" });
