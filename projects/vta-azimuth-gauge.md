@@ -55,15 +55,24 @@ If the static compliance isn't published, a deflection of about 0.3&nbsp;mm will
 
 ### Loaded heights for common cartridges
 
-These use each cartridge's published static compliance, catalog body height and standard tracking force (2.0&nbsp;g for all of them). At 2.0&nbsp;g, deflection in mm is the compliance figure × 0.0196.
+These use each cartridge's published static compliance, catalog body height and standard tracking force. At 2.0&nbsp;g, deflection in mm is the compliance figure × 0.0196.
 
-| Cartridge | Static compliance (×10⁻⁶ cm/dyne) | Body height | Deflection | Loaded height |
-|---|---|---|---|---|
-| AT-VM740xML | 20 | 17.5&nbsp;mm | 0.39&nbsp;mm | **17.1&nbsp;mm** |
-| AT-VM95C, AT-VM95E | 17 | 17.2&nbsp;mm | 0.33&nbsp;mm | **16.9&nbsp;mm** |
-| AT-VM95EN, AT-VM95ML, AT-VM95SH | 20 | 17.2&nbsp;mm | 0.39&nbsp;mm | **16.8&nbsp;mm** |
-| AT VM510CB, VM520EB, VM530EN | 35 | 17.3&nbsp;mm | 0.69&nbsp;mm | **16.6&nbsp;mm** |
-| AT VM540ML, VM740ML, VM750SH, VM760SLC | 40 | 17.3&nbsp;mm | 0.78&nbsp;mm | **16.5&nbsp;mm** |
+| Cartridge | Static compliance (×10⁻⁶ cm/dyne) | Body height | Tracking force | Deflection | Loaded height |
+|---|---|---|---|---|---|
+| AT-VM740xML | 20 | 17.5&nbsp;mm | 2.0&nbsp;g | 0.39&nbsp;mm | **17.1&nbsp;mm** |
+| AT-VM95C, AT-VM95E | 17 | 17.2&nbsp;mm | 2.0&nbsp;g | 0.33&nbsp;mm | **16.9&nbsp;mm** |
+| AT-VM95EN, AT-VM95ML, AT-VM95SH | 20 | 17.2&nbsp;mm | 2.0&nbsp;g | 0.39&nbsp;mm | **16.8&nbsp;mm** |
+| AT VM510CB, VM520EB, VM530EN | 35 | 17.3&nbsp;mm | 2.0&nbsp;g | 0.69&nbsp;mm | **16.6&nbsp;mm** |
+| AT VM540ML, VM740ML, VM750SH, VM760SLC | 40 | 17.3&nbsp;mm | 2.0&nbsp;g | 0.78&nbsp;mm | **16.5&nbsp;mm** |
+| Shure M97xE ⚠️ | 25 | 15.6–16&nbsp;mm | 1.25&nbsp;g | 0.31&nbsp;mm | **15.3–15.7&nbsp;mm** |
+| Nagaoka MP-200 ⚠️ | 20 | 18.0–18.6&nbsp;mm | 1.8&nbsp;g | 0.35&nbsp;mm | **17.6–18.2&nbsp;mm** |
+
+⚠️ **The Shure and Nagaoka rows are less reliable than the Audio-Technica ones:**
+
+- **Shure M97xE:** the 25&nbsp;µm/mN compliance comes from the manual and reviews, which don't say how it was measured. Sources disagree on the body height (15.6 or 16&nbsp;mm). The damping brush also carries part of the tracking force, so the force on the stylus is uncertain.
+- **Nagaoka MP-200:** these figures come from retailer listings, not a Nagaoka datasheet. The two retailers disagree on the height (18.0 or 18.6&nbsp;mm, the latter measured from the top edge to the stylus tip).
+
+Measure these cartridges yourself rather than relying on the table.
 
 The older VM740ML and the newer AT-VM740xML are different cartridges, with different compliance and body heights. Check which one you have.
 
