@@ -10,6 +10,7 @@ homepage_order: 30
 tags:
   - project
   - software
+  - aviasim
 card_desc: "Windows HID monitor and settings tool for s16n controllers."
 card_wide: true
 ---

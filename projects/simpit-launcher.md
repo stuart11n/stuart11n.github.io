@@ -10,6 +10,7 @@ homepage_order: 35
 tags:
   - project
   - software
+  - aviasim
 card_desc: "Start/stop sim-pit task profiles for Flight and Racing."
 card_wide: true
 ---
