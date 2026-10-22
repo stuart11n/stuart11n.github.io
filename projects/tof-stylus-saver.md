@@ -113,15 +113,18 @@ It works by reading the Shelly's power measurement once a second. Any reading ab
 | `notificationDelay` | `60 * 25` | Seconds of continuous running before the "running too long" warning (25 minutes) |
 | `powerOffDelay` | `60 * 30` | Seconds of continuous running before the Shelly switches the turntable off (30 minutes) |
 | `intervalHours` | `10` | Send a notification each time the total run-time passes another multiple of this many hours |
+| `switch_id` | `0` | The Shelly switch whose power is measured and that gets turned off |
+| `dipSeconds` | `5` | Seconds below the threshold before the run counts as stopped. Short dips, such as the tonearm lifting, are ignored |
+| `saveRetrySeconds` | `60` | Seconds to wait before retrying a failed save of the total |
 
 ### What you'll get
 
-- **On startup:** a message with the device name and the total run-time so far.
+- **On startup:** a message with the device name and the total run-time so far. If the total can't be read, you get one alert and the script retries every 30 seconds.
 - **Each time the total passes a multiple of `intervalHours`:** a message with the total run-time. This is checked when run-time is saved, so the message can arrive up to an hour late.
 - **After `notificationDelay`:** a warning that the device has been running too long.
 - **After `powerOffDelay`:** the Shelly switches the turntable off and sends a "powered off" message.
 
-Run-time is saved to Number 200 once an hour of running and whenever the turntable stops, so a short restart doesn't lose much. The run-time counter carries over from the previous total, so it survives restarts.
+Run-time is saved to Number 200 once an hour of running and when the turntable stops. A failed save is kept in memory and retried after a minute, so run-time isn't lost to a brief network fault. The total carries over from the last saved value, so it survives restarts.
 
 ### Script
 
@@ -133,26 +136,37 @@ let CONFIG = {
   device_name: "SL-1500", // Configurable device label
   title: "Power Monitor",
 
-  power_threshold: 1, // Watts
-  notificationDelay: 60 * 25,
-  powerOffDelay: 60 * 30,
-  pm_component_id: 0,   // Usually 0 for single-channel PMs
-  intervalHours: 10     // Notify every 10 hours of active use
+  power_threshold: 1,         // Watts
+  notificationDelay: 60 * 25, // Seconds of running before the warning
+  powerOffDelay: 60 * 30,     // Seconds of running before the switch turns off
+  switch_id: 0,               // Switch whose power is measured and that gets turned off
+  dipSeconds: 5,              // Seconds below the threshold before the run counts as stopped
+  intervalHours: 10,          // Notify each time total run-time passes a multiple of this
+  saveRetrySeconds: 60        // Wait this long before retrying a failed save
 };
 
 // Auto-generate alert messages based on device_name
 CONFIG.warningMessage = CONFIG.device_name + " running too long";
 CONFIG.powerMessage = CONFIG.device_name + " powered off";
 
+const TOTAL_ID = 200; // Number component holding total run-time (hours)
+const POWER_ID = 201; // Number component showing current power (W)
+
 let consecutive_seconds = 0;
+let quiet_seconds = 0;
 let alert_sent = false;
 let alert2_sent = false;
 
-// Buffer accumulated seconds in RAM to avoid frequent flash writes
-let pending_runtime_seconds = 0;
-
-// Local tracking of total runtime
-let current_total_hours = 0;
+// Run-time state
+let total_loaded = false;     // true once the total has been read from Number:200
+let saved_hours = 0;          // last total written (or read) from Number:200
+let pending_seconds = 0;      // run-time buffered in RAM, not yet written
+let save_in_flight = false;
+let save_retry_in = 0;        // seconds to wait before retrying a failed save
+let load_in_flight = false;
+let load_retry_in = 0;        // seconds to wait before retrying a failed read
+let load_failure_reported = false;
+let startup_sent = false;
 
 function sendPushoverNotification(message) {
   print("Sending notification to Pushover...");
@@ -181,88 +195,124 @@ function sendPushoverNotification(message) {
   );
 }
 
+// Write the total to Number:200. Only clears the buffered seconds once the write succeeds.
+function commitRuntimeToVirtual() {
+  if (!total_loaded || save_in_flight || save_retry_in > 0 || pending_seconds === 0) return;
+
+  let sent_seconds = pending_seconds;
+  let new_hours = saved_hours + sent_seconds / 3600;
+  save_in_flight = true;
+
+  Shelly.call("Number.Set", { id: TOTAL_ID, value: new_hours }, function (result, error_code, error_message) {
+    save_in_flight = false;
+    if (error_code !== 0) {
+      print("Save failed, will retry. Code: " + error_code + " Msg: " + error_message);
+      save_retry_in = CONFIG.saveRetrySeconds;
+      return;
+    }
+
+    let before = Math.floor(saved_hours / CONFIG.intervalHours);
+    saved_hours = new_hours;
+    pending_seconds -= sent_seconds;
+    let after = Math.floor(saved_hours / CONFIG.intervalHours);
+
+    print("Saved total run-time: " + saved_hours.toFixed(2) + " hrs");
+    if (after > before) {
+      sendPushoverNotification(CONFIG.device_name + ": " + (after * CONFIG.intervalHours) +
+        " hours of use reached. Total runtime: " + saved_hours.toFixed(2) + " hours.");
+    }
+  });
+}
+
+// Read the stored total from Number:200. Retries every 30 seconds until it succeeds.
+function loadTotal() {
+  if (load_in_flight) return;
+  load_in_flight = true;
+
+  Shelly.call("Number.GetStatus", { id: TOTAL_ID }, function (result, error_code, error_message) {
+    load_in_flight = false;
+
+    if (error_code !== 0) {
+      print("Could not read total run-time. Code: " + error_code + " Msg: " + error_message);
+      load_retry_in = 30;
+      if (!load_failure_reported) {
+        load_failure_reported = true;
+        sendPushoverNotification(CONFIG.device_name + ": could not read total run-time. Retrying every 30 seconds.");
+      }
+      return;
+    }
+
+    saved_hours = (result && typeof result.value === "number") ? result.value : 0;
+    total_loaded = true;
+
+    if (!startup_sent) {
+      startup_sent = true;
+      sendPushoverNotification(CONFIG.device_name + ". Total runtime: " + saved_hours.toFixed(2) + " hours.");
+    }
+  });
+}
+
 // Helper function to write to Number components using RPC calls
 function updateVirtualNumber(id, val) {
   Shelly.call("Number.Set", { id: id, value: val });
 }
 
-// Helper function to flush accumulated runtime to Virtual:200
-function commitRuntimeToVirtual() {
-  if (pending_runtime_seconds === 0) return;
+// Start reading the total straight away, then run the once-a-second check.
+loadTotal();
 
-  let before = Math.floor(current_total_hours / CONFIG.intervalHours);
-  current_total_hours += pending_runtime_seconds / 3600;
-  let after = Math.floor(current_total_hours / CONFIG.intervalHours);
+Timer.set(1000, true, function () {
 
-  updateVirtualNumber(200, current_total_hours);
-  pending_runtime_seconds = 0;
-
-  if (after > before) {
-    sendPushoverNotification(CONFIG.device_name + ": " + (after * CONFIG.intervalHours) +
-      " hours of use reached. Total runtime: " + current_total_hours.toFixed(2) + " hours.");
+  if (!total_loaded) {
+    load_retry_in--;
+    if (load_retry_in <= 0) loadTotal();
   }
-}
+  if (save_retry_in > 0) save_retry_in--;
 
-// 1. Read initial value from Number:200 and startup
-Shelly.call("Number.GetStatus", { id: 200 }, function (result, error_code, error_message) {
-  if (error_code === 0 && result && result.value !== null) {
-    current_total_hours = result.value;
-  } else {
-    current_total_hours = 0;
-  }
+  let switchStatus = Shelly.getComponentStatus("switch:" + CONFIG.switch_id);
+  let current_power = (switchStatus && switchStatus.apower) ? switchStatus.apower : 0;
 
-  sendPushoverNotification(CONFIG.device_name + ". Total runtime: " + current_total_hours.toFixed(2) + " hours.");
+  // Update Number:201 with active power
+  updateVirtualNumber(POWER_ID, current_power);
 
-  // 2. Start timer after initial fetch succeeds
-  Timer.set(1000, true, function () {
+  if (current_power > CONFIG.power_threshold) {
+    quiet_seconds = 0;
+    consecutive_seconds++;
+    pending_seconds++;
 
-    let switchStatus = Shelly.getComponentStatus("switch:0");
-    let current_power = (switchStatus && switchStatus.apower) ? switchStatus.apower : 0;
-
-    // Update Number:201 with active power
-    updateVirtualNumber(201, current_power);
-
-    if (current_power > CONFIG.power_threshold) {
-      if (consecutive_seconds % 60 === 0) {
-        print("consecutive_seconds", consecutive_seconds, CONFIG.notificationDelay);
-      }
-
-      consecutive_seconds++;
-      pending_runtime_seconds++;
-
-      // Write to Virtual:200 only once every 3,600 active seconds (1 hour)
-      if (pending_runtime_seconds >= 3600) {
-        commitRuntimeToVirtual();
-      }
-
-      // Safety threshold alerts
-      if (consecutive_seconds >= CONFIG.notificationDelay && !alert_sent) {
-        sendPushoverNotification(CONFIG.warningMessage);
-        print("sending warning");
-        alert_sent = true;
-      }
-      if (consecutive_seconds >= CONFIG.powerOffDelay && !alert2_sent) {
-        commitRuntimeToVirtual();
-        sendPushoverNotification(CONFIG.powerMessage);
-        print("power off");
-        Shelly.call("Switch.Set", { id: 0, on: false });
-        alert2_sent = true;
-      }
-    } else {
-      // When device powers off/drops below threshold, save any remaining unsaved minutes
-      if (pending_runtime_seconds > 0) {
-        commitRuntimeToVirtual();
-      }
-
-      // Reset safety monitors
-      if (consecutive_seconds > 0 || alert_sent) {
-        print("Resetting monitors");
-        consecutive_seconds = 0;
-        alert_sent = false;
-        alert2_sent = false;
-      }
+    // Write to Virtual:200 only once every 3,600 active seconds (1 hour)
+    if (pending_seconds >= 3600) {
+      commitRuntimeToVirtual();
     }
-  });
+
+    // Safety threshold alerts
+    if (consecutive_seconds >= CONFIG.notificationDelay && !alert_sent) {
+      sendPushoverNotification(CONFIG.warningMessage);
+      print("sending warning");
+      alert_sent = true;
+    }
+    if (consecutive_seconds >= CONFIG.powerOffDelay && !alert2_sent) {
+      commitRuntimeToVirtual();
+      sendPushoverNotification(CONFIG.powerMessage);
+      print("power off");
+      Shelly.call("Switch.Set", { id: CONFIG.switch_id, on: false });
+      alert2_sent = true;
+    }
+  } else {
+    // Ignore brief dips (e.g. the tonearm lifting) so they don't reset the counters
+    quiet_seconds++;
+    if (quiet_seconds < CONFIG.dipSeconds) return;
+
+    // Device has really stopped: save any remaining run-time
+    commitRuntimeToVirtual();
+
+    // Reset safety monitors
+    if (consecutive_seconds > 0 || alert_sent) {
+      print("Resetting monitors");
+      consecutive_seconds = 0;
+      alert_sent = false;
+      alert2_sent = false;
+    }
+  }
 });
 ```
 
