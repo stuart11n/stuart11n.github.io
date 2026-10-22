@@ -53,6 +53,22 @@ For example, the AT-VM740xML:
 
 If the static compliance isn't published, a deflection of about 0.3&nbsp;mm will get you close. You can also measure the deflection.
 
+### Loaded heights for common cartridges
+
+These use each cartridge's published static compliance, catalog body height and standard tracking force (2.0&nbsp;g for all of them). At 2.0&nbsp;g, deflection in mm is the compliance figure × 0.0196.
+
+| Cartridge | Static compliance (×10⁻⁶ cm/dyne) | Body height | Deflection | Loaded height |
+|---|---|---|---|---|
+| AT-VM740xML | 20 | 17.5&nbsp;mm | 0.39&nbsp;mm | **17.1&nbsp;mm** |
+| AT-VM95C, AT-VM95E | 17 | 17.2&nbsp;mm | 0.33&nbsp;mm | **16.9&nbsp;mm** |
+| AT-VM95EN, AT-VM95ML, AT-VM95SH | 20 | 17.2&nbsp;mm | 0.39&nbsp;mm | **16.8&nbsp;mm** |
+| AT VM510CB, VM520EB, VM530EN | 35 | 17.3&nbsp;mm | 0.69&nbsp;mm | **16.6&nbsp;mm** |
+| AT VM540ML, VM740ML, VM750SH, VM760SLC | 40 | 17.3&nbsp;mm | 0.78&nbsp;mm | **16.5&nbsp;mm** |
+
+The older VM740ML and the newer AT-VM740xML are different cartridges, with different compliance and body heights. Check which one you have.
+
+Figures are from Audio-Technica's published specifications. As with the gauge itself, treat them as nominal.
+
 ## More audio tools
 
 For other audio tools, see [s16n.com](https://www.s16n.com), including the [Audio Lab](/projects/audio-lab/) browser oscilloscope and wow & flutter meter.
