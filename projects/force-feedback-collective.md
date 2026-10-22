@@ -52,6 +52,10 @@ I used a centering spring effect with aggressive gradients to actively reduce th
 
 ![The collective standing on the sim base](/assets/images/force-feedback-collective/standing.jpg){: .center-image .small-image }
 
+## Downloads
+
+- [collective.step](/assets/files/force-feedback-collective/collective.step) (20 MB): the public STEP model of the collective
+
 Now I'm truly hooked on helicopters. A proper collective really makes all the difference, and along with FFB on all the flight controls it makes flying much more intuitive.
 
 <div class="cta-row">
