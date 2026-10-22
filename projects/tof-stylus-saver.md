@@ -112,16 +112,16 @@ It works by reading the Shelly's power measurement once a second. Any reading ab
 | `power_threshold` | `1` | Watts. Above this, the turntable counts as running |
 | `notificationDelay` | `60 * 25` | Seconds of continuous running before the "running too long" warning (25 minutes) |
 | `powerOffDelay` | `60 * 30` | Seconds of continuous running before the Shelly switches the turntable off (30 minutes) |
-| `intervalHours` | `10` | Send a total run-time update every this many hours of running |
+| `intervalHours` | `10` | Send a notification each time the total run-time passes another multiple of this many hours |
 
 ### What you'll get
 
 - **On startup:** a message with the device name and the total run-time so far.
-- **Every `intervalHours` of running:** a message with the total run-time.
+- **Each time the total passes a multiple of `intervalHours`:** a message with the total run-time. This is checked when run-time is saved, so the message can arrive up to an hour late.
 - **After `notificationDelay`:** a warning that the device has been running too long.
 - **After `powerOffDelay`:** the Shelly switches the turntable off and sends a "powered off" message.
 
-Run-time is saved to Number 200 once an hour of running and whenever the turntable stops, so a short restart doesn't lose much.
+Run-time is saved to Number 200 once an hour of running and whenever the turntable stops, so a short restart doesn't lose much. The run-time counter carries over from the previous total, so it survives restarts.
 
 ### Script
 
@@ -150,8 +150,6 @@ let alert2_sent = false;
 
 // Buffer accumulated seconds in RAM to avoid frequent flash writes
 let pending_runtime_seconds = 0;
-let runtime_interval_seconds = 0;
-let TEN_HOURS_IN_SECONDS = CONFIG.intervalHours * 3600;
 
 // Local tracking of total runtime
 let current_total_hours = 0;
@@ -192,12 +190,17 @@ function updateVirtualNumber(id, val) {
 function commitRuntimeToVirtual() {
   if (pending_runtime_seconds === 0) return;
 
-  let hoursToAdd = pending_runtime_seconds / 3600;
-  current_total_hours += hoursToAdd;
+  let before = Math.floor(current_total_hours / CONFIG.intervalHours);
+  current_total_hours += pending_runtime_seconds / 3600;
+  let after = Math.floor(current_total_hours / CONFIG.intervalHours);
 
   updateVirtualNumber(200, current_total_hours);
   pending_runtime_seconds = 0;
-  print("Flushed runtime to Virtual Component. New total: " + current_total_hours.toFixed(2) + " hrs");
+
+  if (after > before) {
+    sendPushoverNotification(CONFIG.device_name + ": " + (after * CONFIG.intervalHours) +
+      " hours of use reached. Total runtime: " + current_total_hours.toFixed(2) + " hours.");
+  }
 }
 
 // 1. Read initial value from Number:200 and startup
@@ -225,19 +228,11 @@ Shelly.call("Number.GetStatus", { id: 200 }, function (result, error_code, error
       }
 
       consecutive_seconds++;
-      runtime_interval_seconds++;
       pending_runtime_seconds++;
 
       // Write to Virtual:200 only once every 3,600 active seconds (1 hour)
       if (pending_runtime_seconds >= 3600) {
         commitRuntimeToVirtual();
-      }
-
-      // Check if 10 hours of active use have elapsed
-      if (runtime_interval_seconds >= TEN_HOURS_IN_SECONDS) {
-        commitRuntimeToVirtual();
-        runtime_interval_seconds = 0;
-        sendPushoverNotification(CONFIG.device_name + ": " + CONFIG.intervalHours + " hours of use reached. Total runtime: " + current_total_hours.toFixed(2) + " hours.");
       }
 
       // Safety threshold alerts
