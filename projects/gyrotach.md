@@ -3,7 +3,7 @@ layout: post
 title: GyroTach
 description: >-
   MEMS tachometer for turntables — measure RPM and wow & flutter with DIN, JIS, NAB, and 2σ standards.
-image: /assets/images/turntable-audio/rpm.jpg
+image: /assets/images/turntable-audio/rpm-card.jpg
 permalink: /projects/gyrotach/
 homepage: true
 homepage_order: 121
