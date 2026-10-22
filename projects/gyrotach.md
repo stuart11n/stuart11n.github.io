@@ -3,7 +3,7 @@ layout: post
 title: GyroTach
 description: >-
   MEMS tachometer for turntables — measure RPM and wow & flutter with DIN, JIS, NAB, and 2σ standards.
-image: /assets/images/turntable-audio/rpm-top.jpg
+image: /assets/images/turntable-audio/rpm.jpg
 permalink: /projects/gyrotach/
 homepage: true
 homepage_order: 121
@@ -21,7 +21,7 @@ A MEMS tachometer for turntables: place the phone face-up on the platter to meas
   {% include bmc-button.html %}
 </div>
 
-![GyroTach RPM and wow and flutter meter](/assets/images/turntable-audio/rpm-top.jpg){: .center-image .small-image }
+![GyroTach RPM and wow and flutter meter](/assets/images/turntable-audio/rpm.jpg){: .center-image .small-image }
 
 
 ## Limitations of MEMS sensors
