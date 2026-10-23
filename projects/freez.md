@@ -48,7 +48,7 @@ The port follows the structure of the original source files. It emulates the VGA
 
 ## Source code
 
-You can download the [original 1995 source](/assets/files/freez/freez-source.zip) (370&nbsp;KB zip). It's Borland C++ with a lot of inline assembly, plus the game's graphics, maps and sounds.
+The [original 1995 source](https://github.com/stuart11n/freez) is on GitHub. It's Borland C++ with a lot of inline assembly, plus the game's graphics, maps and sounds.
 
 Here's a taste of the assembly: the routine that fades the screen to black. It copies the palette, then on each step it knocks one off every red, green and blue value that isn't already zero, waits for the VGA vertical retrace, and writes all 256 colours straight to the VGA DAC ports. It does that 64 times for a full fade, or 20 for a quick partial one.
 
