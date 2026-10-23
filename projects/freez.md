@@ -18,15 +18,15 @@ card_desc: "A DOS platformer I wrote in 1995, ported to run in the browser."
 I wrote FREEZ, a DOS platform game, in 1995 under the name Digital Synapse. This is a JavaScript port of my original Borland C and assembly source, so it runs in a web browser with its original graphics and sound.
 
 <div class="cta-row">
-  <a class="btn btn--primary" href="/freez/" target="_blank" rel="noopener noreferrer">Play FREEZ</a>
-  <a class="btn btn--primary" href="/freez/mobile/" target="_blank" rel="noopener noreferrer">Play on mobile</a>
+  <a class="btn btn--primary" href="/freez/" target="_blank" rel="noopener noreferrer">Play Original</a>
+  <a class="btn btn--primary" href="/freez/mobile/" target="_blank" rel="noopener noreferrer">Play 2026</a>
 </div>
 
 ![The FREEZ main menu](/assets/images/freez/menu.png){: .center-image .small-image }
 
 ## Controls
 
-The main version needs a keyboard. On a phone or tablet, use the mobile version instead. It has on-screen touch controls (left and right, fire, jump, OK, pause and menu), works in portrait and landscape, and has an optional CRT scanline effect.
+The original version needs a keyboard. On a phone or tablet, use the 2026 version instead. It has on-screen touch controls (left and right, fire, jump, OK, pause and menu), works in portrait and landscape, and has an optional CRT scanline effect.
 
 | Key | Action |
 |---|---|
