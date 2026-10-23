@@ -18,8 +18,8 @@ card_desc: "A DOS platformer I wrote in 1995, ported to run in the browser."
 I wrote FREEZ, a DOS platform game, in 1995 under the name Digital Synapse. This is a JavaScript port of my original Borland C and assembly source, so it runs in a web browser with its original graphics and sound.
 
 <div class="cta-row">
-  <a class="btn btn--primary" href="/freez/" target="_blank" rel="noopener noreferrer">Play 1995</a>
-  <a class="btn btn--primary" href="/freez/mobile/" target="_blank" rel="noopener noreferrer">Play 2026</a>
+  <a class="btn btn--primary" href="https://freez.s16n.com/" target="_blank" rel="noopener noreferrer">Play 1995</a>
+  <a class="btn btn--primary" href="https://freez.s16n.com/mobile/" target="_blank" rel="noopener noreferrer">Play 2026</a>
 </div>
 
 ![The FREEZ main menu](/assets/images/freez/menu.png){: .center-image .small-image }
