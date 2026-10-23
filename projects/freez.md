@@ -19,7 +19,7 @@ I wrote FREEZ, a DOS platform game, in 1995 under the name Digital Synapse. This
 
 <div class="cta-row">
   <a class="btn btn--primary" href="https://freez.s16n.com/" target="_blank" rel="noopener noreferrer">Play 1995</a>
-  <a class="btn btn--primary" href="https://freez.s16n.com/mobile/" target="_blank" rel="noopener noreferrer">Play 2026</a>
+  <a class="btn btn--primary" href="https://freez.s16n.com/2026/" target="_blank" rel="noopener noreferrer">Play 2026</a>
 </div>
 
 ![The FREEZ main menu](/assets/images/freez/menu.png){: .center-image .small-image }
