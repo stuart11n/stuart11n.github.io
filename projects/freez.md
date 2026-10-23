@@ -19,13 +19,14 @@ I wrote FREEZ, a DOS platform game, in 1995 under the name Digital Synapse. This
 
 <div class="cta-row">
   <a class="btn btn--primary" href="/freez/" target="_blank" rel="noopener noreferrer">Play FREEZ</a>
+  <a class="btn" href="/freez/mobile/" target="_blank" rel="noopener noreferrer">Play on mobile</a>
 </div>
 
 ![The FREEZ main menu](/assets/images/freez/menu.png){: .center-image .small-image }
 
 ## Controls
 
-FREEZ needs a keyboard, so it won't work on a phone or tablet.
+The main version needs a keyboard. On a phone or tablet, use the mobile version instead. It has on-screen touch controls (left and right, fire, jump, OK, pause and menu), works in portrait and landscape, and has an optional CRT scanline effect.
 
 | Key | Action |
 |---|---|
