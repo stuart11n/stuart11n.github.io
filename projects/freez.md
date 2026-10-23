@@ -3,19 +3,19 @@ layout: post
 title: Freez
 permalink: /projects/freez/
 description: >-
-  FREEZ, a 1996 DOS platform game by Digital Synapse, ported to JavaScript so it runs in the browser.
+  FREEZ, a DOS platform game I wrote in 1995, ported to JavaScript so it runs in the browser.
 image: /assets/images/freez/gameplay.png
 homepage: true
 homepage_order: 37
 tags:
   - project
   - software
-card_desc: "A 1996 DOS platformer, ported to run in the browser."
+card_desc: "A DOS platformer I wrote in 1995, ported to run in the browser."
 ---
 
 ![FREEZ gameplay in Misty Valley](/assets/images/freez/gameplay.png){: .center-image }
 
-FREEZ is a DOS platform game from 1996 by Digital Synapse. This is a JavaScript port of the original Borland C and assembly source, so it runs in a web browser with its original graphics and sound.
+I wrote FREEZ, a DOS platform game, in 1995. This is a JavaScript port of my original Borland C and assembly source, so it runs in a web browser with its original graphics and sound.
 
 <div class="cta-row">
   <a class="btn btn--primary" href="/freez/" target="_blank" rel="noopener noreferrer">Play FREEZ</a>
