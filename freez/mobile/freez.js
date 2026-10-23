@@ -95,6 +95,39 @@ function ps2(n) {                                   // SOUND.C: ps2() queues SFX
   if (!(GameSetup & 1)) return;
   playBuf(SFX[n]);
 }
+// distant thunder (rate limited). Pure sub-bass is inaudible on phone/laptop speakers, so the rumble has mid-range body
+// (brown noise sweeping 1.1kHz -> 140Hz) plus saturation, which adds harmonics that small speakers can reproduce.
+let lastThunder = 0, brownBuf = null, satCurve = null;
+function thunder() {
+  if (!(GameSetup & 1) || !actx) return;
+  const now = performance.now();
+  if (now - lastThunder < 9000 + Math.random() * 9000) return;
+  lastThunder = now;
+  if (actx.state === 'suspended') actx.resume();
+  if (!brownBuf) {
+    const n = actx.sampleRate * 5, b = actx.createBuffer(1, n, actx.sampleRate), d = b.getChannelData(0);
+    let last = 0;
+    for (let i = 0; i < n; i++) { last = (last + (Math.random() * 2 - 1) * .04) / 1.02; d[i] = last * 3.6; }
+    brownBuf = b;
+    satCurve = new Float32Array(1024);
+    for (let i = 0; i < 1024; i++) { const x = i / 512 - 1; satCurve[i] = Math.tanh(x * 3.2); }
+  }
+  const t = actx.currentTime + .2 + Math.random() * .8, len = 3 + Math.random() * 1.5;
+  const src = actx.createBufferSource(), lp = actx.createBiquadFilter(), sat = actx.createWaveShaper(), g = actx.createGain();
+  src.buffer = brownBuf;
+  lp.type = 'lowpass'; lp.Q.value = .9;
+  lp.frequency.setValueAtTime(1100, t); lp.frequency.exponentialRampToValueAtTime(140, t + len);
+  sat.curve = satCurve;
+  g.gain.setValueAtTime(0, t);
+  g.gain.linearRampToValueAtTime(.3, t + .08);                       // the crack / first hit
+  g.gain.linearRampToValueAtTime(.12, t + .45);
+  g.gain.linearRampToValueAtTime(.26, t + .8 + Math.random() * .4);   // the roll
+  g.gain.linearRampToValueAtTime(.09, t + 1.7);
+  g.gain.linearRampToValueAtTime(.15, t + 2.0 + Math.random() * .4);   // second, softer roll
+  g.gain.exponentialRampToValueAtTime(.001, t + len);
+  src.connect(lp); lp.connect(sat); sat.connect(g); g.connect(actx.destination);
+  src.start(t, Math.random() * 1.5); src.stop(t + len + .1);
+}
 const SFXFILES = ['23', '26', '21', '6', '7', '4', '2', '8', '18', '25', '11', '19', '3', '50'];
 
 // ===================================================================================
@@ -165,6 +198,27 @@ let RapidFire = 0, SuperJ = 0, SteamCount = 0, lp = 0;
 let wposx = 0, wposy = 0, DXPos = 0, DYPos = 0, DXPos2 = 0, DYPos2 = 0, FYpos = 0, TileX = 0, FTileX = 0, TileIndex = 0, FTileIndex = 0;
 const Drops = new Int16Array(800);         // 400 drops: x,y  (first 200 background, last 200 foreground)
 let SkyBright = 63, SkyBrightDr = 0, SkyBrightCt = 0, TractionType = 0, frameinc = 0, BonusFrame = 0, HalfFrame = 0, atilecount = 0;
+// Mobile build: jumping keeps its horizontal momentum (inertia); steering in the air is gentle.
+let airVX = 0, airFrac = 0, wasAir = false, groundVX = 0;
+const AIR_MAX = 2.4, AIR_ACCEL = 0.1, AIR_DRAG = 0.02;
+function airSteer() {
+  const L = keys[203] || keys[75], R = keys[205] || keys[77];
+  let target = 0;
+  if (L && !R) { target = -AIR_MAX; MCB &= 254; } else if (R && !L) { target = AIR_MAX; MCB |= 1; }
+  if (target === 0) airVX += Math.max(-AIR_DRAG, Math.min(AIR_DRAG, -airVX));            // drift, no instant stop
+  else if (!(Math.sign(airVX) === Math.sign(target) && Math.abs(airVX) >= AIR_MAX))     // never slow down a run you are already in
+    airVX += Math.max(-AIR_ACCEL, Math.min(AIR_ACCEL, target - airVX));                  // limited braking/turning
+  if (airVX < 0 && (Collision & 12)) airVX = 0;
+  if (airVX > 0 && (Collision & 48)) airVX = 0;
+  airFrac += airVX;
+  const st = airFrac < 0 ? Math.ceil(airFrac) : Math.floor(airFrac);
+  wposx = s16(wposx + st); airFrac -= st;
+}
+// land: turn the air speed back into the original momentum counters so ground movement carries on smoothly
+function landMomentum() {
+  const a = Math.abs(airVX), m = a >= 3.5 ? 35 : a >= 1.5 ? 20 : a > 0.3 ? 10 : 0;
+  if (airVX < 0) { MomRight = m; MomLeft = 0; } else { MomLeft = m; MomRight = 0; }
+}
 const DROPBASE = 0x1234;                   // stands in for OFFSET Drops (only used for colour jitter)
 
 // ===================================================================================
@@ -309,6 +363,7 @@ function FixPal() {                 // 8 -> 6 bit, BGR -> RGB
   }
 }
 const SavedPal = new Uint8Array(768);
+const cloudBase = new Uint8Array(9);           // original colours of the cloud palette entries 55-57
 function SavePal() { SavedPal.set(palMain); }
 function SetPal() { palMain.set(SavedPal); }
 function Screen(mode) { /* CRTC tweaks for the original 'widescreen' option: nothing to do here */ }
@@ -369,9 +424,12 @@ async function LoadLevel() {
   await Fade2Black(0);
   LoadLogo(CurrentLevel + 9);
   await FadeFromBlack(0);
+  await sleep(1000);                                         // mobile build: hold the level intro screen 1s longer
   BridgeGFX.set(file('brdg1.tga').subarray(0x312, 0x312 + 64));
   tile1.set(file('tset1a.tga').subarray(0x312, 0x312 + 65535));
   tile2.set(file('tset1b.tga').subarray(0x312, 0x312 + 65535));
+  // clouds (tiles 47-52) share palette entries 1/38/54 with sprites; give them private entries 55/56/57 so they can fade at night
+  for (let t = 47; t <= 52; t++) for (let i = t * 1024; i < t * 1024 + 1024; i++) { const v = tile1[i]; if (v === 1) tile1[i] = 55; else if (v === 38) tile1[i] = 56; else if (v === 54) tile1[i] = 57; }
   enemy0.set(file('enemy1a.tga').subarray(0x312, 0x312 + 19456));
   enemy1.set(file('enemy1b.tga').subarray(0x312, 0x312 + 19456));
   tilemap.set(file('tmap1.map').subarray(0, 8192));
@@ -381,6 +439,7 @@ async function LoadLevel() {
   await Fade2Black(0);
   palMain.set(file('dragon.tga').subarray(0x12, 0x12 + 768));
   FixPal();
+  for (const [dst, srcIdx] of [[55, 1], [56, 38], [57, 54]]) for (let k = 0; k < 3; k++) { palMain[dst * 3 + k] = palMain[srcIdx * 3 + k]; cloudBase[(dst - 55) * 3 + k] = palMain[srcIdx * 3 + k]; }
 }
 function LoadGame() {
   MCANIM.set(file('dragon.tga').subarray(0x312, 0x312 + 36864));
@@ -560,6 +619,7 @@ function skyrain() {
     const c1 = SEED2 >>> 31; SEED2 = (SEED2 << 1) >>> 0;
     if (c1) { SEED2 = (SEED2 ^ 0x1D872B41) >>> 0; ax = SEED2 & 0xFFFF; dx = SEED2 >>> 16; }
     if ((ax & 255) <= 20) {
+      thunder();
       ax &= 3;
       let STK4 = ax;
       dx = (dx & 255) + 32;
@@ -826,6 +886,7 @@ function collani() {
       En.pb(si + 12, En.b(si + 12) & ~4);
       if (!(ax > 319 || ax < -31 || bx > 190 || bx < -31)) {
         psprite32(ax, bx, En.b(si + 7), En.b(si + 8), En.sb(si + 11));
+        EnemySFX.voice(e, En.b(si), En.b(si + 7), En.b(si + 1), En.b(si + 8), ax, bx);
         En.pb(si + 12, En.b(si + 12) | 4);
       }
       if (BonusFrame & 2) En.pb(si + 8, (En.b(si + 8) + 1) & 255);
@@ -1100,43 +1161,54 @@ async function GameLoop() {
     cx += cx; bx += bx;
     let dl = 1;
     if (TractionType !== 0) dl = HalfFrame;
-    left: {
-      if (!(al === 1 || keys[203])) break left;
-      if (!(Collision & 1)) { dl = 1; if (Collision & 12) break left; }
-      if (Collision & 4) { MomRight = 0; break left; }
-      MCB &= 254; MomLeft = 0;
-      if (MomRight > 30) { wposx = s16(wposx + bx - 5); break left; }
-      if (MomRight >= 15 && MomRight <= 30) { wposx = s16(wposx - 2); MomRight = (MomRight + dl + dl) & 255; break left; }
-      wposx = s16(wposx - 1); MomRight = (MomRight + dl) & 255;
-    }
-    right: {
-      if (!(al === 2 || keys[205])) break right;
-      if (!(Collision & 1)) { dl = 1; if (Collision & 48) break right; }
-      if (Collision & 16) { MomLeft = 0; break right; }
-      MCB |= 1; MomRight = 0;
-      if (MomLeft > 30) { wposx = s16(wposx - (cx - 5)); break right; }
-      if (MomLeft >= 15 && MomLeft <= 30) { wposx = s16(wposx + 2); MomLeft = (MomLeft + dl + dl) & 255; break right; }
-      wposx = s16(wposx + 1); MomLeft = (MomLeft + dl) & 255;
-    }
-    // ---- Momentum handler
-    MCB &= 191;
-    mn: {
-      if (al !== 0) break mn;
-      if (keys[203] || keys[204] || keys[205] || keys[206]) break mn;
-      MCB |= 64;
-      dl = 25;
-      if (TractionType !== 0) dl = 15;
-      if (!(Collision & 1)) dl = 25;
-      if (!(Collision & 4)) {
-        if (MomRight >= dl) { wposx = s16(wposx - 3); MomRight--; break mn; }
-        if (MomRight > 10) { wposx = s16(wposx - 1); MomRight -= 2; break mn; }
+    const air = !(Collision & 1);
+    if (air) {
+      if (!wasAir) { airVX = groundVX; airFrac = 0; wasAir = true; }
+      if ((MCB & 4) && HitCount === 35) { if (MomRight === 80) airVX = -4; else if (MomLeft === 80) airVX = 4; MomLeft = MomRight = 0; }
+      MCB &= 191;
+      airSteer();
+    } else {
+      if (wasAir) { landMomentum(); wasAir = false; }
+      const x0 = wposx;
+      left: {
+        if (!(al === 1 || keys[203])) break left;
+        if (!(Collision & 1)) { dl = 1; if (Collision & 12) break left; }
+        if (Collision & 4) { MomRight = 0; break left; }
+        MCB &= 254; MomLeft = 0;
+        if (MomRight > 30) { wposx = s16(wposx + bx - 5); break left; }
+        if (MomRight >= 15 && MomRight <= 30) { wposx = s16(wposx - 2); MomRight = (MomRight + dl + dl) & 255; break left; }
+        wposx = s16(wposx - 1); MomRight = (MomRight + dl) & 255;
       }
-      MomRight = 0;
-      if (!(Collision & 16)) {
-        if (MomLeft >= dl) { wposx = s16(wposx + 3); MomLeft--; break mn; }
-        if (MomLeft > 10) { wposx = s16(wposx + 1); MomLeft -= 2; break mn; }
+      right: {
+        if (!(al === 2 || keys[205])) break right;
+        if (!(Collision & 1)) { dl = 1; if (Collision & 48) break right; }
+        if (Collision & 16) { MomLeft = 0; break right; }
+        MCB |= 1; MomRight = 0;
+        if (MomLeft > 30) { wposx = s16(wposx - (cx - 5)); break right; }
+        if (MomLeft >= 15 && MomLeft <= 30) { wposx = s16(wposx + 2); MomLeft = (MomLeft + dl + dl) & 255; break right; }
+        wposx = s16(wposx + 1); MomLeft = (MomLeft + dl) & 255;
       }
-      MomLeft = 0;
+      // ---- Momentum handler
+      MCB &= 191;
+      mn: {
+        if (al !== 0) break mn;
+        if (keys[203] || keys[204] || keys[205] || keys[206]) break mn;
+        MCB |= 64;
+        dl = 25;
+        if (TractionType !== 0) dl = 15;
+        if (!(Collision & 1)) dl = 25;
+        if (!(Collision & 4)) {
+          if (MomRight >= dl) { wposx = s16(wposx - 3); MomRight--; break mn; }
+          if (MomRight > 10) { wposx = s16(wposx - 1); MomRight -= 2; break mn; }
+        }
+        MomRight = 0;
+        if (!(Collision & 16)) {
+          if (MomLeft >= dl) { wposx = s16(wposx + 3); MomLeft--; break mn; }
+          if (MomLeft > 10) { wposx = s16(wposx + 1); MomLeft -= 2; break mn; }
+        }
+        MomLeft = 0;
+      }
+      groundVX = groundVX * .5 + s16(wposx - x0) * .5;
     }
     if (keys[24]) await sleep(50);                            // DEV: O = slow motion
     if (keys[25]) await Pause();
@@ -1258,8 +1330,15 @@ async function GameLoop() {
       const o = 288, r0 = palMain[o], g0 = palMain[o + 1], b0 = palMain[o + 2];
       for (let k = 0; k < 7; k++) { palMain[o + k * 3] = palMain[o + k * 3 + 3]; palMain[o + k * 3 + 1] = palMain[o + k * 3 + 4]; palMain[o + k * 3 + 2] = palMain[o + k * 3 + 5]; }
       palMain[o + 21] = r0; palMain[o + 22] = g0; palMain[o + 23] = b0;
+      // clouds follow the sky: bright by day, dark bluish-grey at night
+      const lvl = SkyBrightDr === 0 ? SkyBright / 63 : 1 - SkyBright / 63;
+      for (let c = 0; c < 3; c++) {
+        palMain[165 + c * 3] = Math.round(cloudBase[c * 3] * (.28 + .72 * lvl) * (.72 + .28 * lvl));
+        palMain[166 + c * 3] = Math.round(cloudBase[c * 3 + 1] * (.28 + .72 * lvl) * (.78 + .22 * lvl));
+        palMain[167 + c * 3] = Math.round(cloudBase[c * 3 + 2] * (.30 + .70 * lvl));
+      }
       await vsync();
-      if (!(MCB & 128)) dac.set(palMain.subarray(192, 192 + 120), 192);
+      if (!(MCB & 128)) { dac.set(palMain.subarray(192, 192 + 120), 192); dac.set(palMain.subarray(165, 174), 165); }
     } else {
       // NOSCCS: straight to buffer copy
     }
@@ -1270,7 +1349,7 @@ async function GameLoop() {
     if (LastStat === 14) {
       LastStat = 2; MomLeft = 0; MomRight = 0; SteamCount = 0; Frame = 0;
       TScore = Score; TTimer = Timer; TEnergy = Energy;
-      MCB |= 129; MCB &= 247 & 251;
+      MCB |= 129; MCB &= 247 & 251; airVX = groundVX = airFrac = 0; wasAir = false;
       if (Level.b(lp + 4) === 1) MCB |= 1; else MCB &= 254;
     }
     // ---- Random steam
@@ -1344,6 +1423,7 @@ async function main() {
       MCB |= 1; MCB |= 128; MCB &= 239 & 247 & 251;
       Frame = 0; SuperJ = 0; MomLeft = 0; MomRight = 0; JumpStat = 0; LastStat = 0; Energy = 100; TEnergy = 100;
       RapidFire = 0; SteamCount = 0; atilecount = 0;
+      airVX = groundVX = airFrac = 0; wasAir = false; EnemySFX.reset();
       Music.play('level');
       const r = await GameLoop();
       if (gameWon) break;                                     // win screen already shown

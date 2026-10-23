@@ -31,7 +31,9 @@ I wrote FREEZ, a DOS platform game, in 1995 under the name Digital Synapse. This
 **2026** is a separate build for phones and tablets as well as desktops:
 
 - **Display:** upscaled to 640×480 and stretched to 4:3, drawn with a WebGL shader. There are three scaling filters (Pixel, Sharp and Smooth) and three CRT modes (Off, Scanlines and Full CRT, with curvature, scanlines, a phosphor mask, bloom and vignette). It falls back to a plain canvas if WebGL isn't available.
-- **Music:** chiptune music for the menu and the level, plus win and game over jingles, all synthesised in the browser with no audio files.
+- **Music:** a small ProTracker-style music player with menu and level songs plus win and game over jingles. It uses 8-bit looped waveforms and drum samples, Amiga-style hard-panned stereo and tracker effects like arpeggio, vibrato and slides, all synthesised in the browser with no audio files.
+- **Sound:** birds squawk and the yellow hoppers squish as they land, quieter and panned by how far away they are. At night the clouds darken with the sky and a storm brings distant thunder.
+- **Jump inertia:** you keep your horizontal speed in the air, with gentle steering, so jumps feel more natural.
 - **End screens:** a win screen with fireworks and a time-bonus tally, and a game over screen.
 - **A longer level 1:** the level I shipped had no end flag and an unfinished hall with no floor. The 2026 version finishes it with a long corridor of pits, spikes and blocks, a shaft down to a new lower lane with springs and moving platforms, a restart flag and the end flag.
 - **Touch controls:** left, right, fire and jump, plus OK, pause and menu. It works in portrait and landscape.
