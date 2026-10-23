@@ -24,28 +24,42 @@ I wrote FREEZ, a DOS platform game, in 1995 under the name Digital Synapse. This
 
 ![The FREEZ main menu](/assets/images/freez/menu.png){: .center-image .small-image }
 
-## Controls
+## Two versions
 
-The original version needs a keyboard. On a phone or tablet, use the 2026 version instead. It has on-screen touch controls (left and right, fire, jump, OK, pause and menu), works in portrait and landscape, and has an optional CRT scanline effect.
+**Original** is the game as I wrote it: 320×200 VGA graphics, played with a keyboard.
+
+**2026** is a separate build for phones and tablets as well as desktops:
+
+- The picture is upscaled to 640×480 with Scale2x and stretched to 4:3.
+- On-screen touch controls: left, right, fire and jump, plus OK, pause and menu.
+- Works in portrait and landscape.
+- An optional CRT scanline effect, with the CRT button or F6 on a keyboard.
+- A fullscreen button, and you can add it to your home screen to play it full screen in landscape.
+
+## Controls
 
 | Key | Action |
 |---|---|
 | Arrow keys | Move |
 | Ctrl, Z or Up | Jump |
 | Alt, X or Shift | Fire |
+| Enter or Space | Select |
 | P | Pause |
+| Esc | Quit to the menu |
 | F1 | Sound on/off |
 | F2 | Weather on/off |
 | F3 | Parallax on/off |
-| Esc | Quit |
 
-In the menus, use Space or Enter to choose.
+The debug keys from the original still work: L ends the level, T the timer, A steam, and S makes you die.
 
 ![Running through Misty Valley](/assets/images/freez/action.png){: .center-image .small-image }
 
 ## About the port
 
-The port follows the structure of the original source files. It emulates the VGA screen, palette and 70&nbsp;Hz timing of the original, and loads the game's original graphics, maps and sounds. Your setup choices are remembered in your browser.
+It's a direct JavaScript translation of my original source, not an emulator. VGA mode 13h is drawn to a canvas, the DAC palette and retrace waits are emulated at 70&nbsp;Hz, and the assembly routines are rewritten function by function. Your setup choices are remembered in your browser.
+
+- Only the level 1 data exists in the game I shipped, so finishing it takes you back to the menu.
+- Sound uses the original WAV files. The DOS build I shipped had sound compiled out, so the browser version has sound the original release didn't.
 
 ## Source code
 
