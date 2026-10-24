@@ -271,7 +271,7 @@ async function loadFolders() {
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
 async function runSearch(params) {
-  const q = new URLSearchParams({ type: 'release', per_page: '20', ...params });
+  const q = new URLSearchParams({ type: 'release', format: 'Vinyl', per_page: '20', ...params });
   return (await discogs('/database/search?' + q)).results || [];
 }
 
