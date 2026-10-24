@@ -12,8 +12,6 @@ I am based in San Diego, USA.
 
 If you have any questions, get in touch on Discord: **stuart11n**.
 
-If you find the free tools useful:
-
 <div class="cta-row">
   {% include bmc-button.html %}
 </div>
