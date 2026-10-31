@@ -47,7 +47,7 @@ card_wide: true
 
 A browser oscilloscope, spectrum analyzer, spectrograph, and wow &amp; flutter meter for USB audio inputs — audio frequency only (not RF or lab-bandwidth scopes). Plug in a USB ADC, pick the device, and Start — or use built-in demos. Useful for checking line-level signals from turntables and tape decks for setting head azimuth, anti-skating, W&amp;F, testing other audio equipment, codecs, and test gear.
 
-Core scope features are free. **Pro** ($15.99 via PayPal) unlocks FFT above 10 kHz, display interpolation, notch filter, THD, cursors, trigger level, Y-T math, independent A/B time/div and Y, Phase Aid, extra W&amp;F standards, Save Video, and unlimited spectrograph (free preview is 30 s). After payment, enter the email you paid with and the license key in the app.
+Core scope features are free. **Pro** ($15.99 via PayPal) unlocks unlimited FFT (dB / Pink EQ / log X / average) and spectrograph (free preview is 60 s each), interpolation, band-stop / band-pass, THD, trigger level, Y-T math, independent A/B time/div and Y, Phase Aid, extra W&amp;F standards, and Save Video. Cursors are free in every mode. After payment, enter the email you paid with and the license key in the app.
 
 <div class="cta-row">
   <a class="btn btn--primary" href="https://audiolab.s16n.com/" target="_blank" rel="noopener noreferrer">Open Audio Lab</a>
@@ -60,36 +60,42 @@ Core scope features are free. **Pro** ($15.99 via PayPal) unlocks FFT above 10 k
 - Independent **A/B time/div** and **A/B Y** (unlock B from A) — Pro
 - Trigger: rise / fall / either, A or B source; adjustable trig level — Pro
 - **DC** / **AC** coupling
-- **Notch** filter (Off / Notch / Inv) with frequency presets — Pro
+- **Band-stop** / **Band-pass** filter with frequency presets — Pro
 - **Persist** Off / Lo / Hi (phosphor-style trail)
 - Y-T display interpolation: **Sin(x)/x** or oversample — Pro
 - Y-T math channel: **A+B**, **A−B**, **A×B**, **A÷B** — Pro
 - **Phase Aid** chord line on X-Y for alignment — Pro
 - Auto scale and live measures (Vpp, RMS, freq, period, duty, and more); **THD** — Pro
-- Drag A/B cursors — Pro on Y-T, X-Y, and FFT; free on SG. FFT / SG span above 10 kHz — Pro
-- Demos: 1 kHz sine, harmonics, calibrated 3 kHz · 4% THD, tape wobble, ping-pong sweep, rotating Lissajous, CD RF eye, an X-Y “s16n” vector, and Hello spectrogram
+- Drag A/B cursors — free in every mode
+- **Audio** plays the analysed signal through the speakers
+- FFT / spectrograph **Max freq** to Nyquist (up to 24 kHz). Free FFT and SG sessions last 60 s
+- Demos: 1 kHz sine, harmonics, calibrated 3 kHz · 4% THD, tape wobble, ping-pong sweep, rotating Lissajous, CD RF eye, an X-Y “s16n” vector, pink noise, Hello spectrogram, Aphex Twin face, and Dial-up
 - Save as PNG; Save 10s video — Pro
 
 ### FFT
 
 **FFT** is a Hann spectrum. Frequency runs along X and magnitude is on Y. A and B stay separate traces.
 
-- **Max freq** sets the span (500 Hz–24 kHz). Free stops at 10 kHz; above that is Pro
-- Magnitude is **Linear** or **dB**. In dB, **dB range** is 40–120 dB (default 80). Auto scale sets the top and locks the knob; turn Auto off and the Y knob sets the range. In Linear, that knob sets the magnitude scale
-- Show A, B, or both
-- Drag A/B cursors — Pro. Peak frequency sits under the plot. **THD** is Pro
+- **Max freq** sets the full span (500 Hz–24 kHz, up to Nyquist)
+- Magnitude is **Linear**, **dB**, or **Pink EQ** (+3 dB/oct so ideal pink noise reads flat)
+- X axis is **Log** (20 Hz–max) or **Linear** (0–max)
+- **Average** Off (instant), Low (snappy), or High (steady pink curve)
+- Pinch or drag a window to zoom frequency; **Reset zoom** or double-click restores the full span
+- In dB / Pink EQ, **dB range** is 40–120 dB (default 80). Auto scale sets the top; turn Auto off and the Y knob sets the range. In Linear, that knob sets the magnitude scale
+- Show A, B, or both. Peak frequency sits under the plot. **THD** is Pro
 - **Persist** leaves a phosphor trail on the spectrum
+- Free preview is 60 s, then it returns to Y-T. Pro keeps FFT running
 
 ### Spectrograph
 
-**SG** is a scrolling Hann FFT. New columns appear on the right and history shifts left, so time moves right→left. Frequency is on Y (0 at the bottom) and color is dBFS.
+**SG** is a scrolling Hann FFT. New columns appear on the right and history shifts left, so time moves right→left. Frequency is on Y (0 at the bottom) and color is dBFS. Visible history is a fixed 4.5 s window.
 
-- **Max freq** sets the span (500 Hz–24 kHz). Free stops at 10 kHz; above that is Pro. The Hello demo runs at 12 kHz while it plays
+- **Max freq** sets the span (500 Hz–24 kHz, up to Nyquist)
 - **dB range** is 40–120 dB (default 80). Auto scale sets the color top and locks the knob; turn Auto off and the Y knob sets the range
 - Show A, B, or both — both on averages the two magnitudes
-- Horizontal cursors read frequency (free in this view). Peak frequency sits under the plot
-- Free preview is 30 s, then it stops. Pro keeps the spectrograph running
-- Demo: **Hello spectrogram** paints “hello” across the waterfall at 12 kHz and 120 dB
+- Horizontal cursors read frequency. Peak frequency sits under the plot
+- Free preview is 60 s, then it stops. Pro keeps the spectrograph running
+- Demos: **Hello spectrogram** paints “hello”; **Aphex Twin** paints a face; **Dial-up** plays a real handshake recording (turn **Audio** on to hear it)
 
 ### Wow &amp; flutter
 
