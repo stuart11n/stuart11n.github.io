@@ -45,7 +45,7 @@ card_wide: true
 
 ![s16n Audio Lab Y-T view with dual timebase and measures](/assets/images/turntable-audio/scope-hero.jpg){: .center-image }
 
-A browser oscilloscope, spectrum analyzer, spectrograph, and wow &amp; flutter meter for USB audio inputs — audio frequency only (not RF or lab-bandwidth scopes). Plug in a USB ADC, pick the device, and Start — or use built-in demos. Useful for checking line-level signals from turntables and tape decks for setting head azimuth, anti-skating, W&amp;F, frequency response, testing other audio equipment, codecs, and test gear.
+A browser oscilloscope, spectrum analyzer, spectrograph, and wow &amp; flutter meter for USB audio inputs — audio frequency only (not RF or lab-bandwidth scopes). Plug in a USB ADC, pick the device, and Start — or use built-in demos. Useful for checking line-level signals from turntables and tape decks for setting head azimuth, anti-skating, measuring W&amp;F, frequency response, testing other audio equipment, codecs, and test gear.
 
 Core scope features are free. **Pro** ($15.99 via PayPal) unlocks unlimited FFT (dB / Pink EQ / log X / average) and spectrograph (free preview is 60 s each), interpolation, band-stop / band-pass, THD, trigger level, Y-T math, independent A/B time/div and Y, Phase Aid, extra W&amp;F standards, and Save Video. Cursors are free in every mode. After payment, enter the email you paid with and the license key in the app.
 
