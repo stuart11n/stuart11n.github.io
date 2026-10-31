@@ -58,7 +58,7 @@ Knobs and channel buttons sit in the mid column. Mode buttons and the rest of th
 
 Click **A** or **B** to show or hide that trace. At least one channel stays on. The swatch next to the letter is the channel color — click it to pick a new one.
 
-**X-Y** forces both on and relabels them **X = A** and **Y = B**. **W&amp;F** reads A only (**In = A**).
+**X-Y** forces both on and relabels them **X = A** and **Y = B**. **W&amp;F** reads A only (**In = A**). **Spectrograph** uses the **Channel** row (**Mix** / **A** / **B** / **A−B**) instead of hiding traces.
 
 #### Auto scale, Measure, Audio, Cursors
 
@@ -89,7 +89,7 @@ Click the padlock (**Unlock B from A**, Pro) so B no longer tracks A. Lock it ag
 
 ![Audio Lab X-Y with Time / div, Y, Phase Aid, and X = A / Y = B](/assets/images/turntable-audio/howto-controls-xy.png){: .center-image }
 
-**FFT** and **Spectrograph** replace time/Y with **Max freq** (up to Nyquist) and, in dB / Pink EQ, **dB range** (40–120 dB). In FFT Linear, that second knob is a magnitude scale. Auto scale still owns the Y knob until you turn it off. Spectrograph has no Persist control.
+**FFT** and **Spectrograph** replace time/Y with **Max freq** (up to Nyquist) and, in dB / Pink EQ, **dB range** (40–120 dB). In FFT Linear, that second knob is a magnitude scale. Auto scale still owns the Y knob until you turn it off. Spectrograph has no Persist control — it has **Y axis**, **Channel**, and **Sharp** instead.
 
 **W&amp;F** hides the knobs. Use **Standard**, **Carrier**, **Eccentricity**, and **Range % FS** on the panel instead.
 
@@ -124,6 +124,19 @@ FFT-only, above Coupling:
 ![Audio Lab FFT with Magnitude dB, Log X, Average Off, Max freq and dB range](/assets/images/turntable-audio/howto-controls-fft.png){: .center-image }
 
 Y-T also has **Display interpolation** (Off, **Sin(x)/x**, Oversample — Pro) and **Math** (A+B, A−B, A×B, A÷B — Pro). Those sit under Persist.
+
+#### Spectrograph
+
+Spectrograph-only, above Coupling. Time still scrolls right→left; these pick what the waterfall shows.
+
+- **Y axis** — **Lin** (0–max), **Log** (20 Hz–max), **Mel** (denser lows), or **Bark** (critical bands). Frequency is on Y, not X.
+- **Channel** — **Mix** (mean of A and B), **A**, **B**, or **A−B**. A−B uses diverging colours so a difference stands out.
+- **Sharp** — **Off** is ordinary magnitude columns. **On** is frequency reassignment — thinner ridges, less smear.
+- **Scrub** — a **10×** overview sits under the plot (~45 s of history). Drag it to move the 4.5 s window. Scrubbing pauses the live scroll; **Resume** (or P) jumps back to now.
+
+Cursors here are free and horizontal (frequency). The **Hello spectrogram** demo is this view.
+
+![Audio Lab Spectrograph with Y axis, Channel, Sharp, and the 10× scrub overview](/assets/images/turntable-audio/howto-controls-sg.png){: .center-image }
 
 ### Align tape-head azimuth
 

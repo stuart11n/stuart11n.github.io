@@ -70,6 +70,7 @@ Core scope features are free. **Pro** ($15.99 via PayPal) unlocks unlimited FFT 
 - Drag A/B cursors — Pro
 - **Audio** plays the analysed signal through the speakers
 - FFT / Spectrograph **Max freq** to Nyquist (up to 24 kHz). Free FFT and Spectrograph sessions last 60 s
+- Spectrograph **Y axis** Lin / Log / Mel / Bark; **Channel** Mix / A / B / A−B; **Sharp** frequency reassignment; drag the 10× overview to scrub
 - Demos: 1 kHz sine, harmonics, calibrated 3 kHz · 4% THD, tape wobble, ping-pong sweep, rotating Lissajous, CD RF eye, an X-Y “s16n” vector, pink noise, Hello spectrogram, Aphex Twin face, and Dial-up
 - Save as PNG; Save 10s video — Pro
 
@@ -89,11 +90,14 @@ Core scope features are free. **Pro** ($15.99 via PayPal) unlocks unlimited FFT 
 
 ### Spectrograph
 
-**Spectrograph** is a scrolling Hann FFT. New columns appear on the right and history shifts left, so time moves right→left. Frequency is on Y (0 at the bottom) and color is dBFS. Visible history is a fixed 4.5 s window.
+**Spectrograph** is a scrolling Hann FFT. New columns appear on the right and history shifts left, so time moves right→left. Frequency is on Y (0 at the bottom) and color is dBFS. Visible history is a fixed 4.5 s window. A 10× overview under the plot holds ~45 s.
 
 - **Max freq** sets the span (500 Hz–24 kHz, up to Nyquist)
+- **Y axis** is **Lin** (0–max), **Log** (20 Hz–max), **Mel** (denser lows), or **Bark** (critical bands)
+- **Channel** is **Mix** (mean of A and B), **A**, **B**, or **A−B** (diverging colours)
+- **Sharp** On uses frequency reassignment — thinner ridges. Off is ordinary magnitude columns
 - **dB range** is 40–120 dB (default 80). Auto scale sets the color top and locks the knob; turn Auto off and the Y knob sets the range
-- Show A, B, or both — both on averages the two magnitudes
+- Drag the **10×** overview to scrub. That pauses the live scroll; **Resume** (or P) jumps back to now
 - Horizontal cursors read frequency. Peak frequency sits under the plot
 - Free preview is 60 s, then it stops. Pro keeps the spectrograph running
 - Demos: **Hello spectrogram** paints “hello”; **Aphex Twin** paints a face; **Dial-up** plays a real handshake recording (turn **Audio** on to hear it)
@@ -107,7 +111,7 @@ Built-in W&amp;F meter on channel A — play a 3.15 / 3 kHz test tone from the d
 - Turntable eccentricity notch: Off, 33, or 45
 - Range: Auto, 0.1, 0.3, 1, or 3%; hold / average with reset
 
-How-tos for a reference tape or test record are in [How to]({{ '/projects/audio-lab/how-to/' | relative_url }}): controls (Notch, Coupling, knobs, cursors), recommended ADC, tape-head azimuth, tape and turntable W&amp;F, turntable frequency response, anti-skate, and cassette or turntable channel balance.
+How-tos for a reference tape or test record are in [How to]({{ '/projects/audio-lab/how-to/' | relative_url }}): controls (Notch, Coupling, knobs, cursors, Spectrograph Y axis / Channel / Sharp / scrub), recommended ADC, tape-head azimuth, tape and turntable W&amp;F, turntable frequency response, anti-skate, and cassette or turntable channel balance.
 
 ### Example: Lissajous
 
