@@ -2,7 +2,7 @@
 layout: post
 title: Audio Lab How to
 description: >-
-  How to use s16n Audio Lab with a reference tape or test record — tape-head azimuth, tape and turntable wow & flutter, turntable frequency response, anti-skate, and cassette or turntable channel balance.
+  How to use s16n Audio Lab with a reference tape or test record — recommended ADC, tape-head azimuth, tape and turntable wow & flutter, turntable frequency response, anti-skate, and cassette or turntable channel balance.
 image: /assets/images/turntable-audio/scope-hero.jpg
 permalink: /projects/audio-lab/how-to/
 tags:
@@ -18,6 +18,8 @@ keywords:
   - cassette
   - test record
   - reference tape
+  - usb adc
+  - behringer uca202
 ---
 
 How-to notes for [Audio Lab]({{ '/projects/audio-lab/' | relative_url }}) — a USB ADC, a reference tape or test record.
@@ -32,6 +34,16 @@ How-to notes for [Audio Lab]({{ '/projects/audio-lab/' | relative_url }}) — a 
 
 * TOC
 {:toc}
+
+### Recommended ADC
+
+Audio Lab reads a stereo USB device in the browser. You need a class-compliant ADC with **line** inputs — not the laptop or phone microphone.
+
+- **Behringer UCA202 / UCA222** — cheap RCA line-in, no mic preamp in the way. Fine for a tape deck or a phono stage.
+- Any 2-in USB interface with a LINE pad (Focusrite Scarlett and similar) works if you set the inputs to line, not instrument or mic.
+- 48 kHz is enough. The analyzer tops out at 24 kHz.
+- On a phone, use USB-C OTG (Android) or a camera adapter (iPhone) and pick that device in the app.
+- A turntable still needs a phono stage in front of the ADC. Do not plug the cartridge into line-in.
 
 ### Align tape-head azimuth
 
