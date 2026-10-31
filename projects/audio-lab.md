@@ -107,7 +107,7 @@ Built-in W&amp;F meter on channel A — play a 3.15 / 3 kHz test tone from the d
 - Turntable eccentricity notch: Off, 33, or 45
 - Range: Auto, 0.1, 0.3, 1, or 3%; hold / average with reset
 
-How-tos for a reference tape or test record are in [How to]({{ '/projects/audio-lab/how-to/' | relative_url }}): tape-head azimuth, tape and turntable W&amp;F, and turntable frequency response.
+How-tos for a reference tape or test record are in [How to]({{ '/projects/audio-lab/how-to/' | relative_url }}): tape-head azimuth, tape and turntable W&amp;F, turntable frequency response, anti-skate, and cassette or turntable channel balance.
 
 ### Example: Lissajous
 

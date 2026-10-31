@@ -2,7 +2,7 @@
 layout: post
 title: Audio Lab How to
 description: >-
-  How to use s16n Audio Lab with a reference tape or test record — tape-head azimuth, tape and turntable wow & flutter, and turntable frequency response with pink noise.
+  How to use s16n Audio Lab with a reference tape or test record — tape-head azimuth, tape and turntable wow & flutter, turntable frequency response, anti-skate, and cassette or turntable channel balance.
 image: /assets/images/turntable-audio/scope-hero.jpg
 permalink: /projects/audio-lab/how-to/
 tags:
@@ -13,6 +13,9 @@ keywords:
   - azimuth
   - wow and flutter
   - frequency response
+  - anti-skate
+  - channel balance
+  - cassette
   - test record
   - reference tape
 ---
@@ -68,3 +71,34 @@ Use a test record with a **pink-noise** band, through a phono stage, into the US
 4. A flat-ish pair of traces is the cartridge + arm + preamp response after RIAA. Look for channel mismatch, a rising or falling treble tilt, a bass hump (arm/cartridge resonance), or a suck-out. Switch Magnitude to **dB** if you want the raw −3 dB/oct pink slope instead.
 
 The **Pink noise** demo shows the same Pink EQ + log X setup without a record.
+
+### Set turntable anti-skate
+
+Use a test record with a **tracking / anti-skate** band (a loud 300 Hz tone is common) or a silent, unmodulated groove. Tracking force should already be set.
+
+1. Phono stage into the USB ADC. Start Audio Lab. Show **A** and **B** (A is left, B is right if the ADC is wired that way).
+2. Play the tracking band. Switch to **Y-T**. Auto scale on. A clean tone is a steady pair of sine waves. Mistracking is a sudden spike, a collapsing edge, or hash on one channel.
+3. Switch to **FFT** as a check. Both channels should share one peak and the same harmonic stack. Extra broadband junk or one channel’s harmonics jumping means that side is losing the groove. Pro **THD** rising on one channel only is the same story. **Spectrograph** shows bursts of hash when a wall lets go.
+4. Turn anti-skate until A and B break up together — or neither does at that level. Too little anti-skate usually dirties **B** (outer / right wall) first; too much dirties **A** (inner / left). If the disc has an inner-groove band, recheck there — skating force is highest toward the label.
+
+A silent groove is a cruder check: the arm should sit still, and Y-T / FFT noise should look similar on A and B. Do not chase a steady midband level offset with anti-skate — that is channel balance.
+
+### Check cassette channel balance
+
+Use the **400 Hz** or **1 kHz** reference on a cassette test tape, or a tone recorded equally on both tracks. Midband, so azimuth is not the whole story.
+
+1. Deck line out into the USB ADC. Start Audio Lab. Show **A** and **B**.
+2. Play the tone. **Y-T** with Auto off so both traces share a scale, or read **RMS** / **Vpp** on each channel. Switch to **FFT** and compare the two peaks in dB.
+3. A few tenths of a dB is normal. Around 1 dB or more is worth chasing: playback balance, record-level pots, or head height. If the midband matches but the highs do not, go back to azimuth.
+
+A commercially recorded cassette can sanity-check a deck, but the tape itself may already be unbalanced.
+
+### Check turntable channel balance
+
+Use a **1 kHz** (or other midband) band on a test record, through a phono stage, into the USB ADC. Prefer a lateral / L+R tone so both walls are driven the same.
+
+1. Start Audio Lab on that input. Show **A** and **B**.
+2. Play the tone at a typical tracking force. **Y-T** with Auto off, or read **RMS** / **Vpp**. **FFT** with both traces — the peaks should sit on top of each other.
+3. A few tenths of a dB is typical cartridge scatter. A steady 1 dB or more is cartridge, wiring, or the phono stage — not anti-skate. If only the highs disagree, check stylus azimuth and the frequency-response how-to above.
+
+Pink-noise FFT (Pink EQ, Average High) shows the same imbalance across the band if you do not have a 1 kHz cut.
