@@ -1,0 +1,37 @@
+---
+typora-root-url: ./../
+title: Force Feedback Rudder Pedals
+description: >-
+  High-torque force feedback rudder pedals with load-cell toe brakes, based on FFBeast.
+image: /assets/images/IMG_2010.webp
+homepage: true
+homepage_order: 90
+tags:
+  - project
+  - aviasim
+card_desc: "With load-cell toe brakes."
+---
+
+
+* Huge Nm, 600W power supply
+
+* Load-cell toe brakes, load-cells allow excellent brake modulation with this much available torque
+
+* Stepped pedal faces, again, this offers great modulation between brake and rudder forces
+
+* Very long pedal travel, with linear and efficient power delivery unlike rotating arm mechanism
+
+* Great for helicopters and aeroplanes
+
+* Based on FFBeast
+
+* Low-profile, requires a strong anchor point at the rear (a wall, or simpit/rig cross-member)
+
+  
+
+![IMG_2010](/assets/images/IMG_2010-1775774899610-1.webp)
+
+* They fit under my pedal plate, anchored to a cross-member
+
+![IMG_2009](/assets/images/IMG_2009.webp)
+

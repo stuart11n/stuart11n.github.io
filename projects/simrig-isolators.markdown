@@ -1,0 +1,39 @@
+---
+layout: post
+categories: simrig
+title: Simrig Isolators
+description: >-
+  Vibration isolators for 40-series profile and tubular sim rigs — quieter for neighbors, clearer FFB and bass shakers.
+image: /assets/images/1-1776213814761-1.JPG
+typora-root-url: ./..
+homepage: true
+homepage_order: 100
+tags:
+  - product
+card_desc: "Enhance your simrig by isolating it from the floor."
+card_wide: true
+---
+
+
+<a class="btn btn--buy" href="{{ site.shop_url }}" target="_blank" rel="noopener noreferrer">Buy</a>
+
+For 40-series profile and also 2" tubular rigs (Trak Racer RS6, TR8 Pro etc).
+
+When your rig has bass shakers and an FFB wheel they can generate a **lot** of vibration which is transmitted into the building structure through the floor. These isolators reduce the vibration transferred, and when used on hardwood/vinyl/tile floor the rig is easy to move around and protect the floor.
+
+I got the idea from drummers, they use tennis balls sandwiched between sheets of plywood to isolate electronic drum kits in apartment buildings. The result is very noticeable, in particular you may find you need to turn down the bass shaker amps as they become more effective, the vibrations become more distinct.
+
+- by decoupling the rig from the floor, FFB and bass shaker effects become more distinct as they are no longer damped by the building, more energy is concentrated into the rig and they don't need to work so hard
+- it's quieter for your neighbors and family
+- these isolators are very good on hardwood/tiled floors as they won't damage the floor and the rig will be quite easy to slide around (like a small sofa)
+- fits 40-series profile and 2" tubular rigs
+
+<iframe class="center-image" width="740" height="416" src="https://www.youtube.com/embed/oiSOLjrLcrQ?si=3xlgFTEuJvTTJUB7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+![](/assets/images/isolators/1.JPG){: .center-image }
+
+![](/assets/images/isolators/6.jpg){: .center-image }
+
+![](/assets/images/isolators/7.jpg){: .center-image }
+
+Available to [Buy]({{ site.shop_url }})

@@ -1,0 +1,27 @@
+<header class="site-header" role="banner">
+  <div class="wrapper site-header__inner">
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+      <img class="site-logo" src="{{ "/assets/images/logo.png" | relative_url }}" alt="" width="44" height="44">
+      <span class="site-title__text">{{ site.title | escape }}</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+      <label for="nav-trigger" class="menu-icon" aria-label="Open menu">
+        <span></span>
+        <span></span>
+      </label>
+
+      <div class="trigger">
+        <a class="page-link filter-link" href="{{ "/" | relative_url }}?filter=product" data-filter="product">Products</a>
+        <a class="page-link filter-link" href="{{ "/" | relative_url }}?filter=project" data-filter="project">Projects</a>
+        <a class="page-link filter-link" href="{{ "/" | relative_url }}?filter=audio" data-filter="audio">Audio</a>
+        <a class="page-link filter-link" href="{{ "/" | relative_url }}?filter=software" data-filter="software">Software</a>
+        <a class="page-link filter-link" href="{{ "/" | relative_url }}?filter=aviasim" data-filter="aviasim">Aviasim</a>
+        <a class="page-link{% if page.url == '/about/' %} is-active{% endif %}" href="{{ "/about/" | relative_url }}">About</a>
+        <a class="page-link page-link--shop" href="{{ site.shop_url }}" target="_blank" rel="noopener noreferrer">Etsy</a>
+        <a class="page-link page-link--shop page-link--patreon" href="{{ site.patreon_url }}" target="_blank" rel="noopener noreferrer">Patreon</a>
+      </div>
+    </nav>
+  </div>
+</header>

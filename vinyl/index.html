@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Record Scanner</title>
+<style>
+  :root { --bg:#fafaf8; --fg:#1b1b1b; --muted:#6a6a6a; --card:#fff; --line:#ddd; --accent:#1f6feb; --ok:#1a7f37; --err:#c62828; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#141414; --fg:#eee; --muted:#9a9a9a; --card:#1e1e1e; --line:#333; --accent:#58a6ff; --ok:#3fb950; --err:#ff6b6b; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; font:16px/1.4 system-ui, sans-serif; background:var(--bg); color:var(--fg); }
+  main { max-width:640px; margin:0 auto; padding:16px; }
+  h1 { font-size:1.3rem; margin:0 0 12px; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px; margin-bottom:14px; }
+  label { display:block; font-size:.85rem; color:var(--muted); margin:8px 0 2px; }
+  input, select, textarea { width:100%; padding:9px; font:inherit; border:1px solid var(--line); border-radius:6px; background:var(--bg); color:var(--fg); }
+  button { font:inherit; padding:10px 14px; border:0; border-radius:6px; background:var(--accent); color:#fff; cursor:pointer; }
+  button.secondary { background:transparent; color:var(--accent); border:1px solid var(--accent); }
+  button:disabled { opacity:.5; cursor:default; }
+  .row { display:flex; gap:8px; flex-wrap:wrap; margin-top:10px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:0 10px; }
+  #preview { max-width:100%; max-height:260px; border-radius:6px; display:block; margin:10px 0 0; }
+  .slots { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; }
+  .slot { margin:0; position:relative; height:110px; border:2px dashed var(--line); border-radius:8px; display:flex; align-items:center; justify-content:center; color:var(--muted); cursor:pointer; overflow:hidden; background-size:cover; background-position:center; }
+  .slot input { position:absolute; inset:0; opacity:0; cursor:pointer; width:100%; height:100%; padding:0; }
+  .slot.filled { border-style:solid; border-color:var(--ok); color:transparent; }
+  .thumbs img { height:60px; border-radius:4px; margin:6px 6px 0 0; }
+  .status { color:var(--muted); min-height:1.4em; }
+  .status.err { color:var(--err); } .status.ok { color:var(--ok); }
+  .match { display:flex; gap:10px; padding:10px 0; border-top:1px solid var(--line); align-items:center; }
+  .match:first-child { border-top:0; }
+  .match img { width:64px; height:64px; object-fit:cover; border-radius:4px; background:var(--line); flex:none; }
+  .match .info { flex:1; min-width:0; font-size:.9rem; }
+  .match .info b { display:block; }
+  .match .meta { color:var(--muted); font-size:.8rem; }
+  .match a { color:var(--accent); font-size:.8rem; }
+  .question { background:rgba(31,111,235,.1); border-left:3px solid var(--accent); padding:8px 10px; border-radius:4px; margin:10px 0; }
+  details summary { cursor:pointer; color:var(--muted); }
+  [hidden] { display:none !important; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Record Scanner</h1>
+
+  <section>
+    <details id="settings">
+      <summary>Settings</summary>
+      <label for="anthropicKey">Anthropic API key</label>
+      <input id="anthropicKey" type="password" autocomplete="off" placeholder="sk-ant-...">
+      <label for="discogsToken">Discogs personal access token</label>
+      <input id="discogsToken" type="password" autocomplete="off">
+      <label for="model">Model</label>
+      <input id="model" value="claude-sonnet-5-5">
+      <p class="meta" style="color:var(--muted);font-size:.8rem">Keys are stored only in this browser's localStorage and sent only to api.anthropic.com and api.discogs.com. Create a Discogs token at discogs.com/settings/developers.</p>
+      <div class="row"><button id="saveSettings">Save</button></div>
+    </details>
+  </section>
+
+  <section id="capture">
+    <label>Take up to 3 photos (e.g. cover, label, runout)</label>
+    <div class="slots" id="slots">
+      <label class="slot"><input type="file" accept="image/*" capture="environment" data-slot="0"><span>📷 Cover</span></label>
+      <label class="slot"><input type="file" accept="image/*" capture="environment" data-slot="1"><span>📷 Label</span></label>
+      <label class="slot"><input type="file" accept="image/*" capture="environment" data-slot="2"><span>📷 Runout</span></label>
+    </div>
+    <p class="meta" style="margin:8px 0 0;font-size:.85rem">Or upload instead (up to 3):
+      <input id="photoUpload" type="file" accept="image/*" multiple></p>
+    <label for="hint">Anything you already know (optional)</label>
+    <input id="hint" placeholder="e.g. 1st pressing, UK, 12&quot; single">
+    <div class="row"><button id="identify" disabled>Identify</button></div>
+    <p class="status" id="idStatus"></p>
+  </section>
+
+  <section id="followup" hidden>
+    <div class="question" id="question"></div>
+    <label for="answer">Your answer (matrix / runout etc.)</label>
+    <textarea id="answer" rows="2"></textarea>
+    <label for="photo2">…or add up to 3 more photos (label / dead wax)</label>
+    <input id="photo2" type="file" accept="image/*" capture="environment" multiple>
+    <div class="row"><button id="sendAnswer">Continue</button></div>
+  </section>
+
+  <section id="search" hidden>
+    <b>Identified as</b>
+    <div class="grid">
+      <div><label>Artist</label><input id="f_artist"></div>
+      <div><label>Title</label><input id="f_title"></div>
+      <div><label>Label</label><input id="f_label"></div>
+      <div><label>Catalog #</label><input id="f_catno"></div>
+      <div><label>Year</label><input id="f_year"></div>
+      <div><label>Barcode / matrix</label><input id="f_barcode"></div>
+    </div>
+    <div class="row"><button id="doSearch">Search Discogs</button></div>
+    <p class="status" id="searchStatus"></p>
+  </section>
+
+  <section id="results" hidden>
+    <div class="grid">
+      <div><label>Add to folder</label><select id="folder"></select></div>
+    </div>
+    <div id="matches"></div>
+    <p class="status" id="addStatus"></p>
+  </section>
+</main>
+
+<script>
+const $ = id => document.getElementById(id);
+const store = {
+  get(k) { try { return localStorage.getItem(k) || ''; } catch { return ''; } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch {} }
+};
+const setStatus = (el, msg, cls = '') => { el.textContent = msg; el.className = 'status ' + cls; };
+
+$('anthropicKey').value = store.get('rs_anthropic');
+$('discogsToken').value = store.get('rs_discogs');
+$('model').value = store.get('rs_model') || 'claude-sonnet-5-5';
+if (!store.get('rs_anthropic') || !store.get('rs_discogs')) $('settings').open = true;
+$('saveSettings').onclick = () => {
+  store.set('rs_anthropic', $('anthropicKey').value.trim());
+  store.set('rs_discogs', $('discogsToken').value.trim());
+  store.set('rs_model', $('model').value.trim());
+  $('settings').open = false;
+  discogsUser = null; loadFolders();
+};
+
+// ---- images ----
+let images = [];      // base64 JPEGs for the first message
+let history = [];     // conversation with Claude
+let lastId = null;
+
+function downscale(file, max = 1568) {
+  return new Promise((res, rej) => {
+    const img = new Image();
+    img.onload = () => {
+      const s = Math.min(1, max / Math.max(img.width, img.height));
+      const c = document.createElement('canvas');
+      c.width = Math.round(img.width * s); c.height = Math.round(img.height * s);
+      c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+      URL.revokeObjectURL(img.src);
+      res(c.toDataURL('image/jpeg', 0.85));
+    };
+    img.onerror = rej;
+    img.src = URL.createObjectURL(file);
+  });
+}
+const MAX_PHOTOS = 3;
+let slots = [null, null, null];
+function refreshImages() {
+  images = slots.filter(Boolean);
+  document.querySelectorAll('.slot').forEach((el, i) => {
+    el.classList.toggle('filled', !!slots[i]);
+    el.style.backgroundImage = slots[i] ? `url(${slots[i]})` : '';
+  });
+  $('identify').disabled = !images.length;
+}
+document.querySelectorAll('.slot input').forEach(inp => {
+  inp.onchange = async () => {
+    if (inp.files[0]) slots[+inp.dataset.slot] = await downscale(inp.files[0]);
+    refreshImages();
+  };
+});
+$('photoUpload').onchange = async e => {
+  const files = [...e.target.files].slice(0, MAX_PHOTOS);
+  slots = [null, null, null];
+  for (let i = 0; i < files.length; i++) slots[i] = await downscale(files[i]);
+  refreshImages();
+};
+const imgBlock = d => ({ type: 'image', source: { type: 'base64', media_type: 'image/jpeg', data: d.split(',')[1] } });
+
+// ---- Claude ----
+const SYSTEM = `You identify vinyl records from photos (covers, labels, dead-wax runouts).
+Reply with ONLY a JSON object, no prose, with these keys:
+{"artist":str,"title":str,"label":str,"catno":str,"year":str,"format":str,"country":str,"barcode":str,"matrix":str,
+ "confidence":"high"|"medium"|"low","needs_more_info":bool,"question":str,"notes":str}
+Use "" for unknown fields. Read text exactly as printed. If you cannot narrow the album to a specific pressing well enough to search Discogs
+(or you cannot identify it at all), set needs_more_info true and put one short, concrete request in "question"
+(e.g. photograph the label, or read the matrix/runout etchings, catalogue number, or barcode). Otherwise needs_more_info is false.`;
+
+async function askClaude() {
+  const key = store.get('rs_anthropic');
+  if (!key) { $('settings').open = true; throw new Error('Add your Anthropic API key in Settings.'); }
+  const r = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json',
+      'x-api-key': key,
+      'anthropic-version': '2023-06-01',
+      'anthropic-dangerous-direct-browser-access': 'true'
+    },
+    body: JSON.stringify({ model: store.get('rs_model') || 'claude-sonnet-5-5', max_tokens: 1024, system: SYSTEM, messages: history })
+  });
+  const j = await r.json();
+  if (!r.ok) throw new Error(j.error?.message || 'Anthropic error ' + r.status);
+  const text = j.content.map(b => b.text || '').join('');
+  history.push({ role: 'assistant', content: text });
+  const m = text.match(/\{[\s\S]*\}/);
+  if (!m) throw new Error('Could not parse model reply.');
+  return JSON.parse(m[0]);
+}
+
+function showResult(r) {
+  lastId = r;
+  $('f_artist').value = r.artist || ''; $('f_title').value = r.title || '';
+  $('f_label').value = r.label || ''; $('f_catno').value = r.catno || '';
+  $('f_year').value = r.year || ''; $('f_barcode').value = r.barcode || r.matrix || '';
+  $('search').hidden = false;
+  if (r.needs_more_info) {
+    $('followup').hidden = false;
+    $('question').textContent = r.question || 'Can you provide more detail (label photo, matrix/runout)?';
+  } else {
+    $('followup').hidden = true;
+    doSearch();
+  }
+}
+
+$('identify').onclick = async () => {
+  $('identify').disabled = true;
+  setStatus($('idStatus'), 'Asking Claude…');
+  try {
+    const hint = $('hint').value.trim();
+    history = [{ role: 'user', content: [...images.map(imgBlock), { type: 'text', text: 'Identify this record.' + (hint ? ' Extra info: ' + hint : '') }] }];
+    const r = await askClaude();
+    setStatus($('idStatus'), `${r.artist || '?'} — ${r.title || '?'} (${r.confidence})` + (r.notes ? ' · ' + r.notes : ''), 'ok');
+    showResult(r);
+  } catch (e) { setStatus($('idStatus'), e.message, 'err'); }
+  $('identify').disabled = false;
+};
+
+$('sendAnswer').onclick = async () => {
+  $('sendAnswer').disabled = true;
+  setStatus($('idStatus'), 'Asking Claude…');
+  try {
+    const extra = await Promise.all([...$('photo2').files].slice(0, MAX_PHOTOS).map(downscale));
+    const txt = $('answer').value.trim() || '(see attached photo)';
+    history.push({ role: 'user', content: [...extra.map(imgBlock), { type: 'text', text: txt }] });
+    const r = await askClaude();
+    $('answer').value = ''; $('photo2').value = '';
+    setStatus($('idStatus'), `${r.artist || '?'} — ${r.title || '?'} (${r.confidence})`, 'ok');
+    showResult(r);
+  } catch (e) { setStatus($('idStatus'), e.message, 'err'); }
+  $('sendAnswer').disabled = false;
+};
+
+// ---- Discogs ----
+async function discogs(path, opts = {}) {
+  const tok = store.get('rs_discogs');
+  if (!tok) { $('settings').open = true; throw new Error('Add your Discogs token in Settings.'); }
+  const r = await fetch('https://api.discogs.com' + path, {
+    ...opts,
+    headers: { Authorization: 'Discogs token=' + tok, 'content-type': 'application/json', ...(opts.headers || {}) }
+  });
+  const text = await r.text();
+  let j = {}; try { j = text ? JSON.parse(text) : {}; } catch {}
+  if (!r.ok) throw new Error(j.message || 'Discogs error ' + r.status);
+  return j;
+}
+
+let discogsUser = null;
+async function loadFolders() {
+  if (!store.get('rs_discogs')) return;
+  try {
+    if (!discogsUser) discogsUser = (await discogs('/oauth/identity')).username;
+    const f = await discogs(`/users/${discogsUser}/collection/folders`);
+    $('folder').innerHTML = f.folders.filter(x => x.id !== 0).map(x => `<option value="${x.id}">${esc(x.name)}</option>`).join('');
+  } catch (e) { setStatus($('addStatus'), e.message, 'err'); }
+}
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+async function runSearch(params) {
+  const q = new URLSearchParams({ type: 'release', format: 'Vinyl', per_page: '20', ...params });
+  return (await discogs('/database/search?' + q)).results || [];
+}
+
+async function doSearch() {
+  setStatus($('searchStatus'), 'Searching Discogs…');
+  $('results').hidden = false; $('matches').innerHTML = '';
+  try {
+    const v = id => $(id).value.trim();
+    const code = v('f_barcode');
+    const strict = {};
+    if (v('f_artist')) strict.artist = v('f_artist');
+    if (v('f_title')) strict.release_title = v('f_title');
+    if (v('f_label')) strict.label = v('f_label');
+    if (v('f_catno')) strict.catno = v('f_catno');
+    if (v('f_year')) strict.year = v('f_year');
+    // try progressively looser searches until something matches
+    const attempts = [];
+    if (/^\d{8,14}$/.test(code.replace(/\s/g, ''))) attempts.push({ barcode: code.replace(/\s/g, '') });
+    attempts.push(strict);
+    const { year, label, ...noYL } = strict; attempts.push(noYL);
+    attempts.push({ q: [v('f_artist'), v('f_title'), code && !/^\d+$/.test(code) ? code : ''].filter(Boolean).join(' ') });
+    let results = [];
+    for (const a of attempts) {
+      if (!Object.keys(a).length || (a.q === '')) continue;
+      results = await runSearch(a);
+      if (results.length) break;
+    }
+    if (!results.length) { setStatus($('searchStatus'), 'No matches. Edit the fields and search again.', 'err'); return; }
+    setStatus($('searchStatus'), `${results.length} possible matches`, 'ok');
+    $('matches').innerHTML = results.map(r => `
+      <div class="match">
+        <img src="${esc(r.thumb || r.cover_image)}" alt="" loading="lazy">
+        <div class="info"><b>${esc(r.title)}</b>
+          <div class="meta">${esc([r.year, r.country, (r.format || []).join(', ')].filter(Boolean).join(' · '))}</div>
+          <div class="meta">${esc([(r.label || []).slice(0, 2).join(', '), r.catno].filter(Boolean).join(' · '))}</div>
+          <a href="https://www.discogs.com${esc(r.uri)}" target="_blank" rel="noopener">View on Discogs</a>
+        </div>
+        <button data-id="${r.id}">Add</button>
+      </div>`).join('');
+    loadFolders();
+  } catch (e) { setStatus($('searchStatus'), e.message, 'err'); }
+}
+$('doSearch').onclick = doSearch;
+
+$('matches').onclick = async e => {
+  const b = e.target.closest('button[data-id]'); if (!b) return;
+  b.disabled = true; setStatus($('addStatus'), 'Adding…');
+  try {
+    if (!discogsUser) await loadFolders();
+    const folder = $('folder').value || 1;
+    const res = await discogs(`/users/${discogsUser}/collection/folders/${folder}/releases/${b.dataset.id}`, { method: 'POST' });
+    b.textContent = 'Added ✓';
+    setStatus($('addStatus'), `Added to your collection (instance ${res.instance_id}).`, 'ok');
+  } catch (err) { b.disabled = false; setStatus($('addStatus'), err.message, 'err'); }
+};
+
+loadFolders();
+</script>
+</body>
+</html>
