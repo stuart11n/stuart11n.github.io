@@ -65,7 +65,7 @@ Click **A** or **B** to show or hide that trace. At least one channel stays on. 
 - **Auto scale** fits the plot to the signal. The Y (or dB range) knob greys out while it is on. Turn Auto off to set the scale yourself — needed when you want A and B on the same volts/div.
 - **Measure** opens the readout: Vpp, RMS, frequency, period, duty, and more. **THD** is Pro. Tabs pick A or B (and the math channel when that is on).
 - **Audio** plays the analysed signal through the speakers. It starts off.
-- **Cursors** are Pro in Y-T and FFT, and free in Spectrograph. Y-T drops two vertical time cursors; FFT / Spectrograph drop frequency cursors. Drag A and B on the plot. Deltas land in the Measure list.
+- **Cursors** are Pro. Y-T drops two vertical time cursors; FFT / Spectrograph drop frequency cursors. Drag A and B on the plot. Deltas land in the Measure list.
 
 ![Audio Lab Y-T with Cursors on and Measure showing Δt and ΔV](/assets/images/turntable-audio/howto-controls-cursors.png){: .center-image }
 
@@ -129,12 +129,12 @@ Y-T also has **Display interpolation** (Off, **Sin(x)/x**, Oversample — Pro) a
 
 Spectrograph-only, above Coupling. Time still scrolls right→left; these pick what the waterfall shows.
 
-- **Y axis** — **Lin** (0–max), **Log** (20 Hz–max), **Mel** (denser lows), or **Bark** (critical bands). Frequency is on Y, not X.
-- **Channel** — **Mix** (mean of A and B), **A**, **B**, or **A−B**. A−B uses diverging colours so a difference stands out.
-- **Sharp** — **Off** is ordinary magnitude columns. **On** is frequency reassignment — thinner ridges, less smear.
+- **Y axis** — **Lin** (0–max) is free. **Log** (20 Hz–max), **Mel** (denser lows), and **Bark** (critical bands) are Pro. Frequency is on Y, not X.
+- **Channel** — **Mix** (mean of A and B), **A**, and **B** are free. **A−B** is Pro — diverging colours so a difference stands out.
+- **Sharp** — **Off** is ordinary magnitude columns. **On** is frequency reassignment — thinner ridges, less smear. On is Pro.
 - **Scrub** — a **10×** overview sits under the plot (~45 s of history). Drag it to move the 4.5 s window. Scrubbing pauses the live scroll; **Resume** (or P) jumps back to now.
 
-Cursors here are free and horizontal (frequency). The **Hello spectrogram** demo is this view.
+Cursors here are Pro and horizontal (frequency). The **Hello spectrogram** demo is this view.
 
 ![Audio Lab Spectrograph with Y axis, Channel, Sharp, and the 10× scrub overview](/assets/images/turntable-audio/howto-controls-sg.png){: .center-image }
 
