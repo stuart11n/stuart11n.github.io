@@ -674,6 +674,16 @@ body:not(.home) .page-content {
 .post-content h3 {
   font-family: var(--font-display);
   letter-spacing: -0.02em;
+  scroll-margin-top: 5.5rem;
+}
+
+#markdown-toc {
+  margin: 0 0 2rem;
+  padding-left: 1.2rem;
+}
+
+#markdown-toc a {
+  text-decoration: none;
 }
 
 .post-content img,

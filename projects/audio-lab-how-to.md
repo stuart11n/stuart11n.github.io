@@ -27,6 +27,12 @@ How-to notes for [Audio Lab]({{ '/projects/audio-lab/' | relative_url }}) — a 
   <a class="btn btn--ghost" href="{{ '/projects/audio-lab/' | relative_url }}">Back to Audio Lab</a>
 </div>
 
+### Contents
+{:.no_toc}
+
+* TOC
+{:toc}
+
 ### Align tape-head azimuth
 
 Use a dual-channel azimuth tone on a reference tape — typically 8, 10, or 15 kHz, recorded on both tracks.
