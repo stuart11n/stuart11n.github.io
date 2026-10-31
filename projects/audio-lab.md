@@ -45,7 +45,7 @@ card_wide: true
 
 ![s16n Audio Lab Y-T view with dual timebase and measures](/assets/images/turntable-audio/scope-hero.jpg){: .center-image }
 
-A browser oscilloscope, spectrum analyzer, spectrograph, and wow &amp; flutter meter for USB audio inputs — audio frequency only (not RF or lab-bandwidth scopes). Plug in a USB ADC, pick the device, and Start — or use built-in demos. Useful for checking line-level signals from turntables and tape decks for setting head azimuth, anti-skating, W&amp;F, testing other audio equipment, codecs, and test gear.
+A browser oscilloscope, spectrum analyzer, spectrograph, and wow &amp; flutter meter for USB audio inputs — audio frequency only (not RF or lab-bandwidth scopes). Plug in a USB ADC, pick the device, and Start — or use built-in demos. Useful for checking line-level signals from turntables and tape decks for setting head azimuth, anti-skating, W&amp;F, frequency response, testing other audio equipment, codecs, and test gear.
 
 Core scope features are free. **Pro** ($15.99 via PayPal) unlocks unlimited FFT (dB / Pink EQ / log X / average) and spectrograph (free preview is 60 s each), interpolation, band-stop / band-pass, THD, trigger level, Y-T math, independent A/B time/div and Y, Phase Aid, extra W&amp;F standards, and Save Video. Cursors are free in every mode. After payment, enter the email you paid with and the license key in the app.
 
@@ -55,7 +55,7 @@ Core scope features are free. **Pro** ($15.99 via PayPal) unlocks unlimited FFT 
 
 ### Features
 
-- **Y-T**, **X-Y** (Lissajous), **W&amp;F**, **FFT**, and **SG** (spectrograph) views
+- **Y-T**, **X-Y** (Lissajous), **W&amp;F**, **FFT**, and **Spectrograph** views
 - Dual channels **A** / **B** with show/hide and custom colors
 - Independent **A/B time/div** and **A/B Y** (unlock B from A) — Pro
 - Trigger: rise / fall / either, A or B source; adjustable trig level — Pro
@@ -68,7 +68,7 @@ Core scope features are free. **Pro** ($15.99 via PayPal) unlocks unlimited FFT 
 - Auto scale and live measures (Vpp, RMS, freq, period, duty, and more); **THD** — Pro
 - Drag A/B cursors — free in every mode
 - **Audio** plays the analysed signal through the speakers
-- FFT / spectrograph **Max freq** to Nyquist (up to 24 kHz). Free FFT and SG sessions last 60 s
+- FFT / Spectrograph **Max freq** to Nyquist (up to 24 kHz). Free FFT and Spectrograph sessions last 60 s
 - Demos: 1 kHz sine, harmonics, calibrated 3 kHz · 4% THD, tape wobble, ping-pong sweep, rotating Lissajous, CD RF eye, an X-Y “s16n” vector, pink noise, Hello spectrogram, Aphex Twin face, and Dial-up
 - Save as PNG; Save 10s video — Pro
 
@@ -88,7 +88,7 @@ Core scope features are free. **Pro** ($15.99 via PayPal) unlocks unlimited FFT 
 
 ### Spectrograph
 
-**SG** is a scrolling Hann FFT. New columns appear on the right and history shifts left, so time moves right→left. Frequency is on Y (0 at the bottom) and color is dBFS. Visible history is a fixed 4.5 s window.
+**Spectrograph** is a scrolling Hann FFT. New columns appear on the right and history shifts left, so time moves right→left. Frequency is on Y (0 at the bottom) and color is dBFS. Visible history is a fixed 4.5 s window.
 
 - **Max freq** sets the span (500 Hz–24 kHz, up to Nyquist)
 - **dB range** is 40–120 dB (default 80). Auto scale sets the color top and locks the knob; turn Auto off and the Y knob sets the range
