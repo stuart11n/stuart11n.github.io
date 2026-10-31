@@ -29,6 +29,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
 }
 
 body {
@@ -671,10 +672,11 @@ body:not(.home) .page-content {
 }
 
 .post-content h2,
-.post-content h3 {
+.post-content h3,
+.post-content h4 {
   font-family: var(--font-display);
   letter-spacing: -0.02em;
-  scroll-margin-top: 5.5rem;
+  scroll-margin-top: 7rem;
 }
 
 #markdown-toc {
