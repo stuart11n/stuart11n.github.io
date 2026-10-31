@@ -111,7 +111,7 @@ Notch is not on W&amp;F.
 
 #### Persist
 
-**Off** / **Lo** / **Hi**. Hi is the phosphor trail — useful for a drifting Lissajous or a rare glitch. Persist is on Y-T, X-Y, and FFT. Spectrograph and W&amp;F do not have it.
+**Off** / **Lo** / **Hi**. Hi is the phosphor trail — useful for a drifting Lissajous or a rare glitch. The **CD RF eye** demo is the clear case: without persist the diamond lattice is hard to see; **Persist** Hi burns the eye in as traces overlay. Persist is on Y-T, X-Y, and FFT. Spectrograph and W&amp;F do not have it.
 
 #### Magnitude, X axis, Average
 
