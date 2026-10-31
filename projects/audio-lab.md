@@ -119,6 +119,13 @@ A face drawn in frequency bands while the waterfall scrolls right→left.
 <video class="center-image" autoplay muted loop playsinline preload="auto" src="{{ '/assets/images/turntable-audio/scope-spectrograph.webm' | relative_url }}">
 </video>
 
+### Example: dial-up modem
+
+Handshake then carrier — probe tones stack as bars, then the waterfall fills with the data burst.
+
+<video class="center-image" autoplay muted loop playsinline preload="auto" src="{{ '/assets/images/turntable-audio/scope-dialup.webm' | relative_url }}">
+</video>
+
 ### Example: independent time bases
 
 Separate A and B time/div so each channel can be scaled independently — useful when comparing signals at very different frequencies.
