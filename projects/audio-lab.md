@@ -51,6 +51,7 @@ Core scope features are free. **Pro** ($15.99 via PayPal) unlocks unlimited FFT 
 
 <div class="cta-row">
   <a class="btn btn--primary" href="https://audiolab.s16n.com/" target="_blank" rel="noopener noreferrer">Open Audio Lab</a>
+  <a class="btn btn--ghost" href="{{ '/projects/audio-lab/how-to/' | relative_url }}">How to</a>
 </div>
 
 ### Features
@@ -105,6 +106,8 @@ Built-in W&amp;F meter on channel A — play a 3.15 / 3 kHz test tone from the d
 - Carrier: Auto, 3150, 3000, or 1000 Hz
 - Turntable eccentricity notch: Off, 33, or 45
 - Range: Auto, 0.1, 0.3, 1, or 3%; hold / average with reset
+
+How-tos for a reference tape or test record are in [How to]({{ '/projects/audio-lab/how-to/' | relative_url }}): tape-head azimuth, tape and turntable W&amp;F, and turntable frequency response.
 
 ### Example: Lissajous
 
