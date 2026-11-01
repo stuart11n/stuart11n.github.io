@@ -65,7 +65,7 @@ The UCA202 / UCA222 often wants **−1**. Do not assume that. Other interfaces a
 
 Knobs and channel buttons sit in the mid column. Mode buttons and the rest of the panel sit on the right. What you get depends on **Y-T**, **X-Y**, **W&amp;F**, **FFT**, or **Spectrograph**.
 
-![Audio Lab Y-T with A/B knobs locked, Auto scale, Measure, and the Y-T panel](/assets/images/turntable-audio/howto-controls-yt.png){: .center-image }
+![Audio Lab Y-T with Time / div, A/B Y, Auto scale, Measure, and the Y-T panel](/assets/images/turntable-audio/howto-controls-yt.png){: .center-image }
 
 #### Channels
 
@@ -86,19 +86,18 @@ Click **A** or **B** to show or hide that trace. At least one channel stays on. 
 
 #### Knobs
 
-**Y-T** has five knobs:
+**Y-T** has four knobs:
 
-- **A Time / div** — time per division for A. The padlock locks B to A.
-- **B Time / div** — independent B timebase when the lock is open.
-- **A Y (V)** — volts per division for A. Same padlock for B’s Y.
+- **Time / div** — shared timebase for A and B.
+- **A Y (V)** — volts per division for A. The padlock locks B’s Y to A.
 - **B Y (V)** — independent B scale when the lock is open.
 - **Trig level** — trigger threshold (Pro). Edge is Rise / Fall / Either; source is A or B.
 
-Click the padlock (**Unlock B from A**, Pro) so B no longer tracks A. Lock it again to copy A onto B. Independent time/div and Y are Pro. A math channel other than Off forces A and B back together.
+Click the padlock (**Unlock B from A**, Pro) so B’s Y no longer tracks A. Lock it again to copy A onto B. Independent Y is Pro. A math channel other than Off forces A and B back together.
 
-![Audio Lab Y-T with B unlocked from A — open padlocks on Time / div and Y](/assets/images/turntable-audio/howto-controls-yt-unlock.png){: .center-image }
+![Audio Lab Y-T with B Y unlocked from A](/assets/images/turntable-audio/howto-controls-yt-unlock.png){: .center-image }
 
-**X-Y** has one **Time / div** and one **Y (V)**. No A/B lock — A is always X and B is always Y.
+**X-Y** has one **Time / div** and one **Y (V)**. No A/B Y lock — A is always X and B is always Y.
 
 ![Audio Lab X-Y with Time / div, Y, Phase Aid, and X = A / Y = B](/assets/images/turntable-audio/howto-controls-xy.png){: .center-image }
 
