@@ -23,6 +23,7 @@ keywords:
   - notch
   - cursors
   - persist
+  - sample trim
 ---
 
 How-to notes for [Audio Lab]({{ '/projects/audio-lab/' | relative_url }}) — a USB ADC, a reference tape or test record.
@@ -42,11 +43,23 @@ How-to notes for [Audio Lab]({{ '/projects/audio-lab/' | relative_url }}) — a 
 
 Audio Lab reads a stereo USB device in the browser. You need a class-compliant ADC with **line** inputs — not the laptop or phone microphone.
 
-- **Behringer UCA202 / UCA222** — cheap RCA line-in, no mic preamp in the way. Fine for a tape deck or a phono stage.
+- **Behringer UCA202 / UCA222** — cheap RCA line-in, no mic preamp in the way. Fine for a tape deck or a phono stage. Some units need **−1 sample** on **Channel B trim** in **Input options**. The only way to know 100% is a known-good input (same tone, both channels, in phase).
 - Any 2-in USB interface with a LINE pad (Focusrite Scarlett and similar) works if you set the inputs to line, not instrument or mic.
 - 48 kHz is enough. The analyzer tops out at 24 kHz.
 - On a phone, use USB-C OTG (Android) or a camera adapter (iPhone) and pick that device in the app.
 - A turntable still needs a phono stage in front of the ADC. Do not plug the cartridge into line-in.
+
+### Input sample trim
+
+Some USB ADCs deliver B one sample late or early versus A. That looks like a fat X-Y ellipse on a mono tone, or A and B not stacking on Y-T, even when the source is identical.
+
+![Audio Lab Input options with Channel B trim at 0 samples](/assets/images/turntable-audio/howto-input-trim.png){: .center-image }
+
+1. Pick the USB device. Next to **USB audio input**, open **Input options**.
+2. **Channel B trim** is −10…+10 samples. **0** is no shift. Positive delays B; negative advances B.
+3. Feed a known-good signal — a mono / Y-split midband tone into both line inputs. On **Y-T**, A and B should sit on top of each other. On **X-Y**, aim for a tight 45° line, not an open ellipse. Nudge trim until they do. **Reset** returns to 0.
+
+The UCA202 / UCA222 often wants **−1**. Do not assume that without the tone check — other interfaces are usually 0.
 
 ### Controls
 

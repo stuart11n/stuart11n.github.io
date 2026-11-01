@@ -58,6 +58,7 @@ Core scope features are free. **Pro** ($15.99 via PayPal) unlocks unlimited FFT 
 
 - **Y-T**, **X-Y** (Lissajous), **W&amp;F**, **FFT**, and **Spectrograph** views
 - Dual channels **A** / **B** with show/hide and custom colors
+- **Input options** — **Channel B trim** (±10 samples) to cancel ADC channel skew
 - Independent **A/B time/div** and **A/B Y** (unlock B from A) — Pro
 - Trigger: rise / fall / either, A or B source; adjustable trig level — Pro
 - **DC** / **AC** coupling
@@ -111,7 +112,7 @@ Built-in W&amp;F meter on channel A — play a 3.15 / 3 kHz test tone from the d
 - Turntable eccentricity notch: Off, 33, or 45
 - Range: Auto, 0.1, 0.3, 1, or 3%; hold / average with reset
 
-How-tos for a reference tape or test record are in [How to]({{ '/projects/audio-lab/how-to/' | relative_url }}): controls (Notch, Coupling, knobs, cursors, Spectrograph Y axis / Channel / Sharp / scrub), recommended ADC, tape-head azimuth, tape and turntable W&amp;F, turntable frequency response, anti-skate, and cassette or turntable channel balance.
+How-tos for a reference tape or test record are in [How to]({{ '/projects/audio-lab/how-to/' | relative_url }}): controls (Notch, Coupling, knobs, cursors, Spectrograph Y axis / Channel / Sharp / scrub), recommended ADC and input sample trim, tape-head azimuth, tape and turntable W&amp;F, turntable frequency response, anti-skate, and cassette or turntable channel balance.
 
 ### Example: Lissajous
 
