@@ -43,7 +43,7 @@ How-to notes for [Audio Lab]({{ '/projects/audio-lab/' | relative_url }}) — a 
 
 Audio Lab reads a stereo USB device in the browser. You need a class-compliant ADC with **line** inputs — not the laptop or phone microphone.
 
-- **Behringer UCA202 / UCA222** — cheap RCA line-in, no mic preamp in the way. Fine for a tape deck or a phono stage. Some units need **−1 sample** on **Channel B trim** in **Input options**. The only way to know 100% is a known-good input (same tone, both channels, in phase).
+- **Behringer UCA202 / UCA222** — cheap RCA line-in, no mic preamp in the way. Fine for a tape deck or a phono stage. Some units need **−1 sample** on **Channel B trim** in **Input options**. Confirm with one output from a source into both ADC inputs — **X-Y** should be a perfect line.
 - Any 2-in USB interface with a LINE pad (Focusrite Scarlett and similar) works if you set the inputs to line, not instrument or mic.
 - 48 kHz is enough. The analyzer tops out at 24 kHz.
 - On a phone, use USB-C OTG (Android) or a camera adapter (iPhone) and pick that device in the app.
@@ -57,9 +57,9 @@ Some USB ADCs deliver B one sample late or early versus A. That looks like a fat
 
 1. Pick the USB device. Next to **USB audio input**, open **Input options**.
 2. **Channel B trim** is −10…+10 samples. **0** is no shift. Positive delays B; negative advances B.
-3. Feed a known-good signal — a mono / Y-split midband tone into both line inputs. On **Y-T**, A and B should sit on top of each other. On **X-Y**, aim for a tight 45° line, not an open ellipse. Nudge trim until they do. **Reset** returns to 0.
+3. Connect **one** output from a source to **both** ADC inputs (Y-split or two leads from the same jack). Switch to **X-Y**. A perfect match is a tight 45° line. An open ellipse means the channels are skewed — adjust trim until the figure collapses to a line. **Reset** returns to 0.
 
-The UCA202 / UCA222 often wants **−1**. Do not assume that without the tone check — other interfaces are usually 0.
+The UCA202 / UCA222 often wants **−1**. Do not assume that. Other interfaces are usually 0. The only 100% check is that one-output-into-both-inputs **X-Y** line.
 
 ### Controls
 
