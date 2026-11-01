@@ -43,7 +43,7 @@ card_desc: "Browser oscilloscope, spectrum, spectrograph, and wow & flutter mete
 card_wide: true
 ---
 
-![s16n Audio Lab Y-T view with measures](/assets/images/turntable-audio/scope-hero.jpg){: .center-image }
+![s16n Audio Lab Spectrograph — Aphex Twin face demo](/assets/images/turntable-audio/scope-hero.jpg){: .center-image }
 
 A browser oscilloscope, spectrum analyzer, spectrograph, and wow &amp; flutter meter for USB audio inputs — audio frequency only (not RF or lab-bandwidth scopes). Plug in a USB ADC, pick the device, and Start — or use built-in demos. Useful for checking line-level signals from turntables and tape decks for setting head azimuth, anti-skating, measuring W&amp;F, frequency response, testing other audio equipment, codecs, and test gear.
 
