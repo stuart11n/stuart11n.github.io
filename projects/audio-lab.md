@@ -51,7 +51,7 @@ Core scope features are free. **Pro** ($15.99 via PayPal) unlocks unlimited FFT 
 
 <div class="cta-row">
   <a class="btn btn--primary" href="https://audiolab.s16n.com/" target="_blank" rel="noopener noreferrer">Open Audio Lab</a>
-  <a class="btn btn--ghost" href="{{ '/projects/audio-lab/how-to/' | relative_url }}">How to</a>
+  <a class="btn btn--info" href="{{ '/projects/audio-lab/how-to/' | relative_url }}">Info</a>
 </div>
 
 ### Features

@@ -413,6 +413,18 @@ a.btn--primary:hover {
   color: #fff;
 }
 
+.btn--info,
+a.btn--info {
+  background: var(--sky);
+  color: #fff;
+}
+
+.btn--info:hover,
+a.btn--info:hover {
+  background: #1858c7;
+  color: #fff;
+}
+
 .btn--ghost,
 a.btn--ghost {
   background: transparent;
