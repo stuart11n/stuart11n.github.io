@@ -57,8 +57,7 @@ Desktop port of the earlier browser lab. Same modes and measures; Pro-style feat
   <a class="btn btn--primary" href="https://github.com/stuart11n/s16n-releases/releases/download/audio-lab-latest/s16n-audio-lab.exe">Download for Windows</a>
   <a class="btn btn--ghost" href="https://github.com/stuart11n/s16n-releases/releases/download/audio-lab-latest/s16n-audio-lab-ubuntu">Linux</a>
   <a class="btn btn--ghost" href="https://github.com/stuart11n/s16n-releases/releases/download/audio-lab-latest/s16n-audio-lab-macos-arm">macOS ARM</a>
-  <a class="btn btn--info" href="{{ '/projects/audio-lab/how-to/' | relative_url }}">Info</a>
-  {% include bmc-button.html %}
+  <a class="btn btn--info" href="{{ '/projects/audio-lab/how-to/' | relative_url }}">How To</a>
 </div>
 
 Default window ~1280×800 (minimum width 1280). Linux needs ALSA and the usual GUI libs at run time.
@@ -150,7 +149,7 @@ Chirp · 1 kHz · Harmonics · 4% THD · Tape · Sweep · Lissajous · CD eye ·
 - **Save Video** → WebM (AV1), plot region, timed capture of the painted frame
 - Files land under **Pictures/AudioLab**
 
-How-tos for a reference tape or test record are in [Info]({{ '/projects/audio-lab/how-to/' | relative_url }}): controls, recommended ADC and input sample trim, tape-head azimuth, tape and turntable W&amp;F, turntable frequency response, anti-skate, and cassette or turntable channel balance.
+How-tos for a reference tape or test record are in [How To]({{ '/projects/audio-lab/how-to/' | relative_url }}): controls, recommended ADC and input sample trim, tape-head azimuth, tape and turntable W&amp;F, turntable frequency response, anti-skate, and cassette or turntable channel balance.
 
 ### Example: Lissajous
 
