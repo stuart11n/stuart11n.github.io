@@ -192,16 +192,16 @@ The **Turntable wow** demo is a 3150 Hz tone with 0.55 Hz wow — Eccentricity 3
 
 ### Check turntable frequency response
 
-Use a test record with a **pink-noise** band, through a phono stage, into the USB ADC. Set **Pink** magnitude EQ and **Average** High. Use **Log** X so bass and treble share the plot.
+Use a test record with a **pink-noise** band, through a phono stage, into the USB ADC. Set **Pink** magnitude EQ. For a vinyl cut, use **Log** X and **Average** High so bass and treble share the plot and the curve settles.
 
-![Audio Lab FFT on Pink EQ, Log X, and Average High](/assets/images/turntable-audio/howto-fft-pink.png){: .center-image }
+![Audio Lab FFT on Pink EQ (demo defaults: Linear X, Average Low)](/assets/images/turntable-audio/howto-fft-pink.png){: .center-image }
 
 1. Start Audio Lab on that input. Switch to **FFT**. Show **A** and **B**.
-2. Set Magnitude to **Pink EQ** (+3 dB/oct). Ideal pink then reads flat. Set X to **Log**. Set **Average** to High and wait for the curve to settle.
+2. Set Magnitude to **Pink EQ** (+3 dB/oct). Ideal pink then reads flat. For a record, set X to **Log** and **Average** to High and wait for the curve to settle.
 3. Play the pink-noise band at a typical tracking force. Auto scale on, or fix **dB range** so both channels share a scale.
 4. A flat-ish pair of traces is the cartridge + arm + preamp response after RIAA. Look for channel mismatch, a rising or falling treble tilt, a bass hump (arm/cartridge resonance), or a suck-out. Switch Magnitude to **dB** if you want the raw −3 dB/oct pink slope instead.
 
-The **Pink noise** demo is this same setup without a record.
+The **Pink noise** demo starts the same FFT + Pink EQ path without a record (Linear X, Average Low). Switch to Log / High when you want the vinyl-style view.
 
 ### Set turntable anti-skate
 
