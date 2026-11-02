@@ -51,7 +51,7 @@ card_wide: true
 
 A desktop audio tool with advanced features — **Y-T**, **X-Y**, **FFT**, **Spectrograph**, and **W&amp;F**, plus triggers, cursors, measures, notch filtering, and plot export. Audio frequency only (not RF or lab-bandwidth scopes). Plug in a USB ADC, pick the device, and Run — or use the built-in examples. Useful for turntables and tape decks (azimuth, anti-skate, W&amp;F, frequency response), codecs, and other line-level gear.
 
-Desktop port of the earlier browser lab. Same modes and measures; licensed desktop unlocks the full feature set. **$25 / year** via PayPal (enter the email you paid with and the license key in the app). Local app, local settings — no account. Windows, Linux, and macOS (Apple Silicon). Built with Rust, egui, and cpal.
+Desktop port of the earlier browser lab. Same modes and measures; licensed desktop unlocks the full feature set. **$25 / year** via PayPal (enter the email you paid with and the license key in the app). Local app, local settings — no account. Windows, Linux, and macOS (Apple Silicon).
 
 <div class="cta-row">
   <a class="btn btn--primary" href="https://github.com/stuart11n/s16n-releases/releases/download/audio-lab-latest/s16n-audio-lab.exe">Download for Windows</a>
