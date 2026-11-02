@@ -2,7 +2,7 @@
 layout: post
 title: Audio Lab
 description: >-
-  Free browser audio analyzer for USB line-in — oscilloscope, Lissajous, FFT spectrum, spectrograph, THD, and wow & flutter (DIN/JIS/NAB). Tune tape decks, cassettes, turntables, and analogue gear from your phone or desktop.
+  Desktop audio oscilloscope, Lissajous, FFT, spectrograph, and wow & flutter meter for USB line-in — Windows, Linux, and macOS. Triggers, cursors, measures, notch, demos, PNG and WebM export.
 image: /assets/images/turntable-audio/scope-hero.jpg
 permalink: /projects/audio-lab/
 homepage: true
@@ -39,84 +39,122 @@ keywords:
   - head azimuth
   - NAK T100
   - audio lab
-card_desc: "Browser oscilloscope, spectrum, spectrograph, and wow & flutter meter for USB audio."
+  - desktop
+  - windows
+  - macos
+  - linux
+card_desc: "Desktop oscilloscope, spectrum, spectrograph, and wow & flutter meter for USB audio."
 card_wide: true
 ---
 
 ![s16n Audio Lab Spectrograph — Aphex Twin face demo](/assets/images/turntable-audio/scope-hero.jpg){: .center-image }
 
-A browser oscilloscope, spectrum analyzer, spectrograph, and wow &amp; flutter meter for USB audio inputs — audio frequency only (not RF or lab-bandwidth scopes). Plug in a USB ADC, pick the device, and Start — or use built-in demos. Useful for checking line-level signals from turntables and tape decks for setting head azimuth, anti-skating, measuring W&amp;F, frequency response, testing other audio equipment, codecs, and test gear.
+A phosphor-style desktop instrument for live or demo audio — **Y-T**, **X-Y**, **FFT**, **Spectrograph**, and **W&amp;F** — with triggers, cursors, measures, notch filtering, and plot export. Audio frequency only (not RF or lab-bandwidth scopes). Plug in a USB ADC, pick the device, and Run — or use the built-in examples. Useful for turntables and tape decks (azimuth, anti-skate, W&amp;F, frequency response), codecs, and other line-level gear.
 
-Core scope features are free. **Pro** ($15.99 via PayPal) unlocks unlimited FFT and Spectrograph (free preview is 60 s each), log X axis, Spectrograph Log / Mel / Bark Y, A−B, Sharp, FFT zoom, band-stop / band-pass, cursors, Save PNG, Save Video, interpolation, THD, trigger level, Y-T math, independent A/B Y, Phase Aid, and extra W&amp;F standards. After payment, enter the email you paid with and the license key in the app.
+Desktop port of the earlier browser lab. Same modes and measures; Pro-style features are unlocked. Local app, local settings — no account. Windows, Linux, and macOS (Apple Silicon). Built with Rust, egui, and cpal.
 
 <div class="cta-row">
-  <a class="btn btn--primary" href="https://audiolab.s16n.com/" target="_blank" rel="noopener noreferrer">Open Audio Lab</a>
+  <a class="btn btn--primary" href="https://github.com/stuart11n/s16n-releases/releases/download/audio-lab-latest/s16n-audio-lab.exe">Download for Windows</a>
+  <a class="btn btn--ghost" href="https://github.com/stuart11n/s16n-releases/releases/download/audio-lab-latest/s16n-audio-lab-ubuntu">Linux</a>
+  <a class="btn btn--ghost" href="https://github.com/stuart11n/s16n-releases/releases/download/audio-lab-latest/s16n-audio-lab-macos-arm">macOS ARM</a>
   <a class="btn btn--info" href="{{ '/projects/audio-lab/how-to/' | relative_url }}">Info</a>
+  {% include bmc-button.html %}
 </div>
 
-### Features
+Default window ~1280×800 (minimum width 1280). Linux needs ALSA and the usual GUI libs at run time.
 
-- **Y-T**, **X-Y** (Lissajous), **W&amp;F**, **FFT**, and **Spectrograph** views
-- Dual channels **A** / **B** with show/hide and custom colors
-- **Input options** — **Channel B trim** (±10 samples) to cancel ADC channel skew
-- Independent **A/B Y** (unlock B from A) — Pro
-- Trigger: rise / fall / either, A or B source; adjustable trig level — Pro
-- **DC** / **AC** coupling
-- **Band-stop** / **Band-pass** filter with frequency presets — Pro
-- **Persist** Off / Lo / Hi (phosphor-style trail)
-- Y-T display interpolation: **Sin(x)/x** or oversample — Pro
-- Y-T math channel: **A+B**, **A−B**, **A×B**, **A÷B** — Pro
-- **Phase Aid** chord line on X-Y for alignment — Pro
-- Auto scale and live measures (Vpp, RMS, freq, period, duty, and more); **THD** — Pro
-- Drag A/B cursors — Pro
-- **Audio** plays the analysed signal through the speakers
-- FFT / Spectrograph **Max freq** to Nyquist (up to 24 kHz). Free FFT and Spectrograph sessions last 60 s
-- Spectrograph **Y axis** Lin (free) / Log / Mel / Bark — Pro; **Channel** Mix / A / B, or **A−B** (diverging colours) — Pro; **Sharp** frequency reassignment — Pro; drag the 10× overview to scrub
-- Demos: 1 kHz sine, harmonics, calibrated 3 kHz · 4% THD, tape wobble, ping-pong sweep, rotating Lissajous, CD RF eye, an X-Y “s16n” vector, pink noise, Hello spectrogram, Aphex Twin face, and Dial-up
-- Save as PNG; Save 10s video — Pro
+### Display modes
+
+- **Y-T** — amplitude vs time, dual channel
+- **X-Y** — Lissajous / vector plot (A vs B)
+- **FFT** — spectrum
+- **Spectrograph** — scrolling waterfall (time × frequency)
+- **W&amp;F** — wow &amp; flutter meter and demod waveform
+
+### Input &amp; monitoring
+
+- Live input via system audio devices (cpal); device picker; empty = default device
+- Built-in **Example** generator — switch Live ↔ Example without leaving the app
+- **Channel B sample trim** (−10…+10 samples) for ADC channel skew
+- **Audio** speaker monitor (off by default)
+- **AC** / **DC** coupling
+- Notch / band-pass style filter: on/off, frequency, Q, invert (stop vs pass), with on-plot S/P marker
+- Max frequency ceiling tracks the open converter’s **Nyquist** when the sample rate changes
+- Settings persist in the OS config directory
+
+### Dual channel
+
+- Independent **A** / **B** enable and colour pickers
+- Linked or unlocked vertical scales (A=B lock)
+- On X-Y: **X = A**, **Y = B**
+
+### Y-T
+
+- Time/div
+- **Trigger**: rising / falling / either; source A or B; level; visual markers
+- **Math** on screen: Off · A+B · A−B · A×B · A÷B
+- Interpolation (including a sinc-style path)
+- **Persist** Off / Lo / Hi — CRT-style trails that keep glowing across time/div changes
+- Auto scale or manual volts/div
+
+### X-Y
+
+- Dedicated XY time window
+- Phosphor persist
+- **Phase Aid** — major-axis guide + tint (in-phase vs out-of-phase cue)
 
 ### FFT
 
-**FFT** is a Hann spectrum. Frequency runs along X and magnitude is on Y. A and B stay separate traces.
-
-- **Max freq** sets the full span (500 Hz–24 kHz, up to Nyquist)
-- Magnitude is **Linear**, **dB**, or **Pink EQ** (+3 dB/oct so ideal pink noise reads flat)
-- X axis is **Log** (20 Hz–max) or **Linear** (0–max) — Pro
-- **Average** Off (instant), Low (snappy), or High (steady pink curve)
-- Pinch or drag a window to zoom frequency; **Reset zoom** or double-click restores the full span — Pro
-- In dB / Pink EQ, **dB range** is 40–120 dB (default 80). Auto scale sets the top; turn Auto off and the Y knob sets the range. In Linear, that knob sets the magnitude scale
-- Show A, B, or both. Peak frequency sits under the plot. **THD** is Pro
-- **Persist** leaves a phosphor trail on the spectrum
-- Free preview is 60 s, then it returns to Y-T. Pro keeps FFT running
+- Magnitudes: **Linear** · **dB** · **Pink** (+3 dB/oct so ideal pink reads flat)
+- X-axis: **Linear** · **Log**
+- Averaging: Off / Low / High
+- Analysis lengths shared with Spectrograph: **2k · 8k · 16k · 32k** (default **2k**)
+- Max frequency and dB range knobs; auto scale for level
+- Frequency zoom: scroll about the cursor, drag a marquee when cursors are off, double-click / Reset for full span
+- Peak frequency readout
 
 ### Spectrograph
 
-**Spectrograph** is a scrolling Hann FFT. New columns appear on the right and history shifts left, so time moves right→left. Frequency is on Y (0 at the bottom) and color is dBFS. Visible history is a fixed 4.5 s window. A 10× overview under the plot holds ~45 s.
-
-- **Max freq** sets the span (500 Hz–24 kHz, up to Nyquist)
-- **Y axis** is **Lin** (0–max, free), or **Log** (20 Hz–max), **Mel** (denser lows), or **Bark** (critical bands) — Pro
-- **Channel** is **Mix** (mean of A and B), **A**, or **B**. **A−B** (diverging colours) is Pro
-- **Sharp** On uses frequency reassignment — thinner ridges. Off is ordinary magnitude columns. On is Pro
-- **dB range** is 40–120 dB (default 80). Auto scale sets the color top and locks the knob; turn Auto off and the Y knob sets the range
-- Drag the **10×** overview to scrub. That pauses the live scroll; **Resume** (or P) jumps back to now
-- Horizontal cursors read frequency — Pro. Peak frequency sits under the plot
-- Free preview is 60 s, then it stops. Pro keeps the spectrograph running
-- Demos: **Hello spectrogram** paints “hello”; **Aphex Twin** paints a face; **Dial-up** plays a real handshake recording (turn **Audio** on to hear it)
+- Scrolling waterfall (~**25 columns/s**, independent of window width and sample rate)
+- ~**4.5 s** of main history at that rate
+- Y-axis: **Linear · Log · Mel · Bark**
+- Channel: **Mix · Left · Right · Diff**
+- **Sharp** — reassigned / sharpened frequency display
+- Shared FFT size with spectrum mode
+- Overview scrub strip under the plot (scrub history; pauses while scrubbing)
+- Max freq / dB range / auto scale
 
 ### Wow &amp; flutter
 
-Built-in W&amp;F meter on channel A — play a 3.15 / 3 kHz test tone from the deck or turntable.
+- Standards: **DIN · JIS · NAB · CCIR · AES 2σ · Unweighted**
+- Carriers: **Auto · 3150 · 3000 · 1000 Hz**
+- Eccentricity: **Off · 33⅓ · 45 RPM**
+- Range: Auto or fixed **0.1% · 0.3% · 1% · 3%**
+- Live readout: weighted %, wow, flutter, peak hold, carrier lock, level; reset hold
 
-- Standards: **DIN** (free); **JIS**, **NAB**, **CCIR**, **2σ**, and unweighted — Pro
-- Carrier: Auto, 3150, 3000, or 1000 Hz
-- Turntable eccentricity notch: Off, 33, or 45
-- Range: Auto, 0.1, 0.3, 1, or 3%; hold / average with reset
+### Measure &amp; cursors
 
-How-tos for a reference tape or test record are in [How to]({{ '/projects/audio-lab/how-to/' | relative_url }}): controls (Notch, Coupling, knobs, cursors, Spectrograph Y axis / Channel / Sharp / scrub), recommended ADC and input sample trim, tape-head azimuth, tape and turntable W&amp;F, turntable frequency response, anti-skate, and cassette or turntable channel balance.
+Side panels: **Control · Measure · Input**.
+
+- Measure channel: **A · B · Math** (Math only when Y-T math is on)
+- Readouts: **Vpp, RMS, Freq, Period, Duty, THD, Peak, Mag, Span**, plus cursor cells **XA/XB/ΔX, YA/YB/ΔY** when cursors are on
+- Cursors on Y-T, FFT, and Spectrograph — drag A/B (and Y pairs on Y-T); units follow the mode
+
+### Built-in examples
+
+Chirp · 1 kHz · Harmonics · 4% THD · Tape · Sweep · Lissajous · CD eye · Osci · Pink · Turntable · Hello · Aphex · Dial-up
+
+### Export
+
+- **Save PNG** of the scope plot (framebuffer crop — matches what’s on screen). Ctrl/Cmd+S
+- **Save Video** → WebM (AV1), plot region, timed capture of the painted frame
+- Files land under **Pictures/AudioLab**
+
+How-tos for a reference tape or test record are in [Info]({{ '/projects/audio-lab/how-to/' | relative_url }}): controls, recommended ADC and input sample trim, tape-head azimuth, tape and turntable W&amp;F, turntable frequency response, anti-skate, and cassette or turntable channel balance.
 
 ### Example: Lissajous
 
-X-Y (Lissajous) view for tape head azimuth — aim for a tight, stable ellipse/line on a high-frequency test tone. The FFT is also useful for this adjustment: aim to minimize the wandering. Pro **Phase Aid** draws a chord line to help with alignment.
+X-Y for tape-head azimuth — aim for a tight, stable ellipse/line on a high-frequency test tone. **Phase Aid** draws a chord line to help with alignment.
 
 <video class="center-image" autoplay muted loop playsinline preload="auto" src="{{ '/assets/images/turntable-audio/scope-lissajous.webm' | relative_url }}">
 </video>
@@ -139,7 +177,3 @@ Handshake then carrier — probe tones stack as bars, then the waterfall fills w
 
 <video class="center-image" autoplay muted loop playsinline preload="auto" src="{{ '/assets/images/turntable-audio/scope-dialup.webm' | relative_url }}">
 </video>
-
-### Works on a smartphone
-
-![s16n Audio Lab on a phone](/assets/images/turntable-audio/scope.jpg){: .center-image .small-image }

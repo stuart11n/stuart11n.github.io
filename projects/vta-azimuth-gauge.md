@@ -82,4 +82,4 @@ The Audio-Technica figures are from Audio-Technica's published specifications. A
 
 ## More audio tools
 
-For other audio tools, see [s16n.com](https://www.s16n.com), including the [Audio Lab](/projects/audio-lab/) browser oscilloscope and wow & flutter meter.
+For other audio tools, see [s16n.com](https://www.s16n.com), including the [Audio Lab](/projects/audio-lab/) desktop oscilloscope and wow & flutter meter.
