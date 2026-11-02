@@ -49,7 +49,7 @@ card_wide: true
 
 ![s16n Audio Lab Spectrograph — Aphex Twin face demo](/assets/images/turntable-audio/scope-hero.jpg){: .center-image }
 
-A phosphor-style desktop instrument for live or demo audio — **Y-T**, **X-Y**, **FFT**, **Spectrograph**, and **W&amp;F** — with triggers, cursors, measures, notch filtering, and plot export. Audio frequency only (not RF or lab-bandwidth scopes). Plug in a USB ADC, pick the device, and Run — or use the built-in examples. Useful for turntables and tape decks (azimuth, anti-skate, W&amp;F, frequency response), codecs, and other line-level gear.
+A desktop audio tool with advanced features — **Y-T**, **X-Y**, **FFT**, **Spectrograph**, and **W&amp;F**, plus triggers, cursors, measures, notch filtering, and plot export. Audio frequency only (not RF or lab-bandwidth scopes). Plug in a USB ADC, pick the device, and Run — or use the built-in examples. Useful for turntables and tape decks (azimuth, anti-skate, W&amp;F, frequency response), codecs, and other line-level gear.
 
 Desktop port of the earlier browser lab. Same modes and measures; Pro-style features are unlocked. Local app, local settings — no account. Windows, Linux, and macOS (Apple Silicon). Built with Rust, egui, and cpal.
 
