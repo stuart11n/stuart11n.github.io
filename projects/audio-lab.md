@@ -96,11 +96,15 @@ Default window ~1280×800 (minimum width 1280). Linux needs ALSA and the usual G
 - **Persist** Off / Lo / Hi — CRT-style trails that keep glowing across time/div changes
 - Auto scale or manual volts/div
 
+![Audio Lab Y-T with Time / div, A/B Y, Auto scale, and the Control panel](/assets/images/turntable-audio/howto-controls-yt.png){: .center-image }
+
 ### X-Y
 
 - Dedicated XY time window
 - Phosphor persist
 - **Phase Aid** — major-axis guide + tint (in-phase vs out-of-phase cue)
+
+![Audio Lab X-Y with Phase Aid on a fat azimuth ellipse](/assets/images/turntable-audio/howto-azimuth-xy.png){: .center-image }
 
 ### FFT
 
@@ -111,6 +115,8 @@ Default window ~1280×800 (minimum width 1280). Linux needs ALSA and the usual G
 - Max frequency and dB range knobs; auto scale for level
 - Frequency zoom: scroll about the cursor, drag a marquee when cursors are off, double-click / Reset for full span
 - Peak frequency readout
+
+![Audio Lab FFT with Magnitude dB, Log X, and Average Off](/assets/images/turntable-audio/howto-controls-fft.png){: .center-image }
 
 ### Spectrograph
 
@@ -123,6 +129,8 @@ Default window ~1280×800 (minimum width 1280). Linux needs ALSA and the usual G
 - Overview scrub strip under the plot (scrub history; pauses while scrubbing)
 - Max freq / dB range / auto scale
 
+![Audio Lab Spectrograph with Y axis, Channel, Sharp, and the scrub overview](/assets/images/turntable-audio/howto-controls-sg.png){: .center-image }
+
 ### Wow &amp; flutter
 
 - Standards: **DIN · JIS · NAB · CCIR · AES 2σ · Unweighted**
@@ -131,6 +139,8 @@ Default window ~1280×800 (minimum width 1280). Linux needs ALSA and the usual G
 - Range: Auto or fixed **0.1% · 0.3% · 1% · 3%**
 - Live readout: weighted %, wow, flutter, peak hold, carrier lock, level; reset hold
 
+![Audio Lab W&amp;F on DIN, 3150 Hz, eccentricity 33](/assets/images/turntable-audio/howto-wf-turntable.png){: .center-image }
+
 ### Measure &amp; cursors
 
 Side panels: **Control · Measure · Input**.
@@ -138,6 +148,8 @@ Side panels: **Control · Measure · Input**.
 - Measure channel: **A · B · Math** (Math only when Y-T math is on)
 - Readouts: **Vpp, RMS, Freq, Period, Duty, THD, Peak, Mag, Span**, plus cursor cells **XA/XB/ΔX, YA/YB/ΔY** when cursors are on
 - Cursors on Y-T, FFT, and Spectrograph — drag A/B (and Y pairs on Y-T); units follow the mode
+
+![Audio Lab Y-T with Cursors on and Measure showing Δt and ΔV](/assets/images/turntable-audio/howto-controls-cursors.png){: .center-image }
 
 ### Built-in examples
 
