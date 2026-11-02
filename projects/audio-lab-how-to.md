@@ -30,6 +30,8 @@ How-to notes for [Audio Lab]({{ '/projects/audio-lab/' | relative_url }}) — a 
 
 <div class="cta-row">
   <a class="btn btn--primary" href="https://github.com/stuart11n/s16n-releases/releases/download/audio-lab-latest/s16n-audio-lab.exe">Download for Windows</a>
+  <a class="btn btn--ghost" href="https://github.com/stuart11n/s16n-releases/releases/download/audio-lab-latest/s16n-audio-lab-ubuntu">Linux</a>
+  <a class="btn btn--ghost" href="https://github.com/stuart11n/s16n-releases/releases/download/audio-lab-latest/s16n-audio-lab-macos-arm">macOS ARM</a>
   <a class="btn btn--ghost" href="{{ '/projects/audio-lab/' | relative_url }}">Back to Audio Lab</a>
 </div>
 
