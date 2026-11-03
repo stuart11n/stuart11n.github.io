@@ -151,17 +151,6 @@ Cursors here are horizontal (frequency). The **Hello** demo is this view.
 
 ![Audio Lab Spectrograph with Y axis, Channel, Sharp, and the 10× scrub overview](/assets/images/turntable-audio/howto-controls-sg.png){: .center-image }
 
-### Tools
-
-The **Tools** tab is a tone generator on the **default playback** device — useful for a known stimulus into a loopback, a tape deck record path, or another ADC under test. It does not change live input gain.
-
-- **Max Output Level** — dBV of a 0 dBFS sine on that output, saved per device (**2 dBV** typical, **1.8 dBV** Pro, **0.8 dBV** UMC202HD). The readout shows FS Vrms and peak volts.
-- **Level** — digital tone level relative to that full scale: **0 dB**, **−10 dB**, or **−20 dB**, with Vrms / dBV / peak dBFS under the chips.
-- **Frequency** — **Off**, **3 kHz**, **3150 Hz**, **10 kHz**, **1 kHz**, **Sweep** (20 Hz ↔ 20 kHz log, 10 s each way), **Pink** (forces Level to −20 dB), or **Custom** (drag Hz).
-- **Start** / **Stop** — open or close the tone stream on the default output.
-
-Match **Max Output Level** to the interface datasheet (or a measured 0 dBFS sine) so the dBV readout is honest. Prefer **−10 dB** or **−20 dB** into gear that clips near line level; leave **0 dB** for a calibrated full-scale check.
-
 ### Align tape-head azimuth
 
 Use a dual-channel azimuth tone on a reference tape — typically 8, 10, or 15 kHz, recorded on both tracks. Turn on **Phase Aid** — that chord is the setting this check is built around. An FFT / Spectrograph confirm helps too.
@@ -264,3 +253,36 @@ Some USB ADCs deliver B one sample late or early versus A. That looks like a fat
 3. Connect **one** output from a source to **both** ADC inputs (Y-split or two leads from the same jack). Switch to **X-Y**. A perfect match is a tight 45° line. An open ellipse means the channels are skewed — adjust trim until the figure collapses to a line.
 
 The UCA202 / UCA222 often wants **−1**. Do not assume that. Other interfaces are usually 0. The only 100% check is that one-output-into-both-inputs **X-Y** line.
+
+### Tools
+
+The **Tools** tab is a tone generator on the **default playback** device — useful for a known stimulus into a loopback, a tape deck record path, or another ADC under test. It does not change live input gain.
+
+- **Max Output Level** — dBV of a 0 dBFS sine on that output, saved per device (**2 dBV** typical, **1.8 dBV** Pro, **0.8 dBV** UMC202HD). The readout shows FS Vrms and peak volts. Those presets assume the interface **output gain is at max**. Performing a **2 dBV** calibration is recommended.
+- **Level** — digital tone level relative to that full scale: **0 dB**, **−10 dB**, or **−20 dB**, with Vrms / dBV / peak dBFS under the chips.
+- **Frequency** — **Off**, **3 kHz**, **3150 Hz**, **10 kHz**, **1 kHz**, **Sweep** (20 Hz ↔ 20 kHz log, 10 s each way), **Pink** (forces Level to −20 dB), or **Custom** (drag Hz).
+- **Start** / **Stop** — open or close the tone stream on the default output.
+
+Prefer **−10 dB** or **−20 dB** into gear that clips near line level; leave **0 dB** for a calibrated full-scale check.
+
+#### Calibrate output to 2 dBV
+
+**Max Output Level** is a label for “what dBV is a 0 dBFS sine on this output?” It does not change the DAC voltage by itself — an RMS voltmeter on the line out does the real check.
+
+1. Set the interface **output gain to max** (or to the fixed line-out you will always use).
+2. On **Tools**, set **Max Output Level** to **2 dBV**, **Level** to **0 dB**, and **Frequency** to **1 kHz**. **Start**.
+3. Measure the analog output with a true-RMS voltmeter. **+2 dBV** is **1.259 Vrms** (≈ **1.26 V**).
+4. If the meter already reads ~1.26 Vrms, the cal matches — leave **Max Output Level** on **2 dBV**. If it is off, trim the interface output gain until the meter hits ~1.26 Vrms, then keep **Max Output Level** at **2 dBV** so the app’s dBV / Vrms readouts agree with the bench.
+
+After that, drop **Level** to **−10 dB** or **−20 dB** for everyday stimulus so you are not driving gear at full scale.
+
+#### Calibrate input to 2 dBV
+
+Same idea on the capture path: **Max Input Level** is “what dBV is 0 dBFS on this ADC?” — it scales the Y-T / Measure volt labels. It does not move the interface gain knobs.
+
+1. Finish the **2 dBV** output cal above (tone at **Level** **0 dB**, **1 kHz**, ~1.26 Vrms on the meter).
+2. On **Source**, set **Max Input Level** to **2 dBV**. Pick **Live** and the USB ADC.
+3. Loop the tone output straight into that ADC’s line inputs (same channels you will measure with).
+4. Switch to **Y-T**, open **Measure**, read **RMS**. Turn the interface **input** gain until **RMS** shows about **1.26 V** (and the sine is not flat-topped). At **Max Input Level** **2 dBV**, that readout means the loopback is sitting at digital full scale — input cal matches the output cal.
+
+Keep the LINE pad on; do not use mic gain for this. If you cannot reach 1.26 Vrms without clipping, the interface’s max input is below +2 dBV at that pad — pick a different **Max Input Level** preset to match a measured full-scale, or pad the loopback.
