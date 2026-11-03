@@ -53,7 +53,7 @@ Audio Lab reads a stereo USB (or other system) audio device on the desktop. You 
 
 ### Set input level
 
-On **Source**, pick **Max Input Level** for your device (**2 dBV** typical, **1.8 dBV** Pro-class, **+17.8 dBV** UMC202HD). That only scales the volt labels — set LINE gain on the interface (or in the Windows mixer) so the signal is healthy without clipping.
+On **Source**, pick **Max Input Level** for your device (**2 dBV** typical, **1.8 dBV** Pro-class, **+17.8 dBV** UMC202HD, **+19.8 dBV** Scarlett 2i2). That only scales the volt labels — set LINE gain on the interface (or in the Windows mixer) so the signal is healthy without clipping.
 
 Performing a **2 dBV** calibration is recommended but not mandatory for many measurements and adjustments — see [Calibration](#calibration).
 
@@ -87,7 +87,7 @@ Click **A** or **B** to show or hide that trace. At least one channel stays on. 
 - **Time / div** — shared timebase for A and B.
 - **A Y (V)** — volts per division for A. The padlock locks B’s Y to A.
 - **B Y (V)** — independent B scale when the lock is open.
-- **Trig level** — trigger threshold. Edge is Rise / Fall / Either; source is A or B.
+- **Trig level** — trigger threshold. On the deck under **Auto**: Fall / Rise / Both edge, then **A** / **B** source.
 
 Click the padlock (**Unlock B from A**) so B’s Y no longer tracks A. Lock it again to copy A onto B. A math channel other than Off forces A and B back together.
 
@@ -241,8 +241,7 @@ Pink-noise FFT (Pink EQ, **Log** X, Average High) shows the same imbalance acros
 
 The **Tools** tab is a tone generator on the **default playback** device — useful for a known stimulus into a loopback, a tape deck record path, or another ADC under test. It does not change live input gain.
 
-- **Max Output Level** — dBV of a 0 dBFS sine on that output, saved per device (**2 dBV** typical, **1.8 dBV** Pro, **0.8 dBV** UMC202HD). Those presets assume the interface **output gain is at max**.
-- **Level** — digital tone level relative to that full scale: **0 dB**, **−10 dB**, or **−20 dB**, with Vrms / dBV / peak dBFS under the chips.
+- **Level** — digital tone level relative to DAC full scale: **0 dB**, **−10 dB**, or **−20 dB** (readout is peak dBFS).
 - **Frequency** — **Off**, **3 kHz**, **3150 Hz**, **10 kHz**, **1 kHz**, **Sweep** (20 Hz ↔ 20 kHz log, 10 s each way), **Pink** (forces Level to −20 dB), or **Custom** (drag Hz).
 - **Start** / **Stop** — open or close the tone stream on the default output.
 
@@ -254,12 +253,12 @@ Performing a **2 dBV** calibration is recommended but not mandatory for many mea
 
 #### Calibrate output to 2 dBV
 
-**Max Output Level** is a label for “what dBV is a 0 dBFS sine on this output?” It does not change the DAC voltage by itself — an RMS voltmeter on the line out does the real check.
+The tone **Level** is digital only (0 dB = 0 dBFS on the DAC). Analog level is set on the interface — an RMS voltmeter on the line out does the real check. Aim for **+2 dBV** at full-scale digital (**Level** **0 dB**).
 
 1. Set the interface **output gain to max** (or to the fixed line-out you will always use).
-2. On **Tools**, set **Max Output Level** to **2 dBV**, **Level** to **0 dB**, and **Frequency** to **1 kHz**. **Start**.
+2. On **Tools**, set **Level** to **0 dB** and **Frequency** to **1 kHz**. **Start**.
 3. Measure the analog output with a true-RMS voltmeter. **+2 dBV** is **1.259 Vrms** (≈ **1.26 V**).
-4. If the meter already reads ~1.26 Vrms, the cal matches — leave **Max Output Level** on **2 dBV**. If it is off, trim the interface output gain until the meter hits ~1.26 Vrms, then keep **Max Output Level** at **2 dBV** so the app’s dBV / Vrms readouts agree with the bench.
+4. If the meter already reads ~1.26 Vrms, you are done. If it is off, trim the interface output gain until the meter hits ~1.26 Vrms. Leave that gain alone afterward so a **Level** **0 dB** tone stays at +2 dBV.
 
 After that, drop **Level** to **−10 dB** or **−20 dB** for everyday stimulus so you are not driving gear at full scale.
 

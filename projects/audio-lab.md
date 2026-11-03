@@ -74,7 +74,7 @@ Default window ~1280×800 (minimum width 1280).
 ### Input &amp; monitoring
 
 - **Source** tab: Live ↔ Example, device picker, **Max Input Level** (dBV at 0 dBFS, per device), **Channel B sample trim** (−10…+10)
-- **Tools** tab: tone generator on the default playback device — **Max Output Level**, Level, frequency presets, Start / Stop
+- **Tools** tab: tone generator on the default playback device — Level, frequency presets, Start / Stop
 - **Audio** speaker monitor (off by default)
 - **AC** / **DC** coupling
 - Notch / band-pass style filter: on/off, frequency, Q, invert (stop vs pass), with on-plot S/P marker
