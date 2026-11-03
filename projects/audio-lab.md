@@ -73,9 +73,8 @@ Default window ~1280×800 (minimum width 1280). Linux needs ALSA and the usual G
 
 ### Input &amp; monitoring
 
-- Live input via system audio devices (cpal); device picker; empty = default device
-- Built-in **Example** generator — switch Live ↔ Example without leaving the app
-- **Channel B sample trim** (−10…+10 samples) for ADC channel skew
+- **Source** tab: Live ↔ Example, device picker, **Max Input Level** (dBV at 0 dBFS, per device), **Channel B sample trim** (−10…+10)
+- **Tools** tab: tone generator on the default playback device — **Max Output Level**, Level, frequency presets, Start / Stop
 - **Audio** speaker monitor (off by default)
 - **AC** / **DC** coupling
 - Notch / band-pass style filter: on/off, frequency, Q, invert (stop vs pass), with on-plot S/P marker
@@ -144,7 +143,7 @@ Default window ~1280×800 (minimum width 1280). Linux needs ALSA and the usual G
 
 ### Measure &amp; cursors
 
-Side panels: **Control · Measure · Input**.
+Side panels: **Control · Measure · Source · Tools**.
 
 - Measure channel: **A · B · Math** (Math only when Y-T math is on)
 - Readouts: **Vpp, RMS, Freq, Period, Duty, THD, Peak, Mag, Span**, plus cursor cells **XA/XB/ΔX, YA/YB/ΔY** when cursors are on
@@ -161,7 +160,7 @@ Chirp · 1 kHz · Harmonics · 4% THD · Tape · Sweep · Lissajous · CD eye ·
 - **Save PNG** of the scope plot (framebuffer crop — matches what’s on screen). Ctrl/Cmd+S
 - **Save Video** → WebM (AV1), plot region, timed capture of the painted frame
 
-How-tos for a reference tape or test record are in [How To]({{ '/projects/audio-lab/how-to/' | relative_url }}): controls, recommended ADC and input sample trim, tape-head azimuth, tape and turntable W&amp;F, turntable frequency response, anti-skate, and cassette or turntable channel balance.
+How-tos for a reference tape or test record are in [How To]({{ '/projects/audio-lab/how-to/' | relative_url }}): input level, Tools tone generator, controls, recommended ADC and input sample trim, tape-head azimuth, tape and turntable W&amp;F, turntable frequency response, anti-skate, and cassette or turntable channel balance.
 
 ### Example: Lissajous
 

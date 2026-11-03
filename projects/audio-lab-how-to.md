@@ -2,7 +2,7 @@
 layout: post
 title: Audio Lab How to
 description: >-
-  How to use s16n Audio Lab with a reference tape or test record — controls, recommended ADC, tape-head azimuth, tape and turntable wow & flutter, turntable frequency response, anti-skate, and cassette or turntable channel balance.
+  How to use s16n Audio Lab with a reference tape or test record — input level, Tools tone generator, controls, recommended ADC, tape-head azimuth, tape and turntable wow & flutter, turntable frequency response, anti-skate, and cassette or turntable channel balance.
 image: /assets/images/turntable-audio/scope-hero.jpg
 permalink: /projects/audio-lab/how-to/
 tags:
@@ -46,14 +46,25 @@ How-to notes for [Audio Lab]({{ '/projects/audio-lab/' | relative_url }}) — a 
 Audio Lab reads a stereo USB (or other system) audio device on the desktop. You need a class-compliant ADC with **line** inputs — not the laptop or phone microphone.
 
 - **Behringer U-Phoria UMC202HD** — combo inputs with a LINE pad; set them to line, not instrument or mic.
-- **Behringer UCA202 / UCA222** — cheap RCA line-in, no mic preamp in the way. Fine for a tape deck or a phono stage. Some units need **−1 sample** on **Channel B trim** in **Input options**. It can appear and disappear. Confirm with one output from a source into both ADC inputs — **X-Y** should be a perfect line.
+- **Behringer UCA202 / UCA222** — cheap RCA line-in, no mic preamp in the way. Fine for a tape deck or a phono stage. Some units need **−1 sample** on **Channel B trim** on the **Source** tab. It can appear and disappear. Confirm with one output from a source into both ADC inputs — **X-Y** should be a perfect line.
 - Any other 2-in USB interface with a LINE pad (**Focusrite Scarlett 2i2** and similar) works if you set the inputs to line.
 - 48 kHz is enough. Max frequency tracks the open device’s Nyquist.
 - A turntable still needs a phono stage in front of the ADC. Do not plug the cartridge into line-in.
 
+### Set input level
+
+Audio Lab does not set hardware gain. The ADC’s LINE pad and gain knobs (or the OS mixer, if that is all you have) set how loud the signal is into the converter. The app only reads what arrives.
+
+1. Set the interface inputs to **line**, not mic or instrument. Start with gain low.
+2. Play a typical test tone or pink band. In Audio Lab, open **Source**, pick **Live** and the USB device, then **Run**.
+3. Watch **Y-T** (or **FFT**). Turn the interface gain up until the waveform fills a useful part of the screen without flat-topping. Measure **Vpp** / **RMS** on the **Measure** tab; on FFT, the peak should sit well below 0 dBFS — leave headroom, do not ride the rails.
+4. On **Source**, set **Max Input Level** to the dBV that matches a 0 dBFS sine on that interface (**2 dBV** typical, **1.8 dBV** Pro-class, **+17.8 dBV** UMC202HD). That calibration is saved per device. It scales the volt labels and Measure volts — it does not change the ADC gain.
+
+Too hot and you clip (squared-off Y-T, smashed FFT peaks, junk harmonics). Too quiet and noise and THD readouts get mushy. Re-check level when you change decks, records, or tapes.
+
 ### Controls
 
-Knobs and channel buttons sit in the mid column. Mode buttons and the rest of the panel sit on the right. What you get depends on **Y-T**, **X-Y**, **W&amp;F**, **FFT**, or **Spectrograph**.
+Side tabs on the right: **Control · Measure · Source · Tools**. Knobs and channel buttons sit in the mid column. Mode buttons and the rest of the Control panel sit on the right. What you get depends on **Y-T**, **X-Y**, **W&amp;F**, **FFT**, or **Spectrograph**.
 
 ![Audio Lab Y-T with Time / div, A/B Y, Auto scale, Measure, and the Y-T panel](/assets/images/turntable-audio/howto-controls-yt.png){: .center-image }
 
@@ -139,6 +150,17 @@ Spectrograph-only, above Coupling. Time still scrolls right→left; these pick w
 Cursors here are horizontal (frequency). The **Hello** demo is this view.
 
 ![Audio Lab Spectrograph with Y axis, Channel, Sharp, and the 10× scrub overview](/assets/images/turntable-audio/howto-controls-sg.png){: .center-image }
+
+### Tools
+
+The **Tools** tab is a tone generator on the **default playback** device — useful for a known stimulus into a loopback, a tape deck record path, or another ADC under test. It does not change live input gain.
+
+- **Max Output Level** — dBV of a 0 dBFS sine on that output, saved per device (**2 dBV** typical, **1.8 dBV** Pro, **0.8 dBV** UMC202HD). The readout shows FS Vrms and peak volts.
+- **Level** — digital tone level relative to that full scale: **0 dB**, **−10 dB**, or **−20 dB**, with Vrms / dBV / peak dBFS under the chips.
+- **Frequency** — **Off**, **3 kHz**, **3150 Hz**, **10 kHz**, **1 kHz**, **Sweep** (20 Hz ↔ 20 kHz log, 10 s each way), **Pink** (forces Level to −20 dB), or **Custom** (drag Hz).
+- **Start** / **Stop** — open or close the tone stream on the default output.
+
+Match **Max Output Level** to the interface datasheet (or a measured 0 dBFS sine) so the dBV readout is honest. Prefer **−10 dB** or **−20 dB** into gear that clips near line level; leave **0 dB** for a calibrated full-scale check.
 
 ### Align tape-head azimuth
 
@@ -237,8 +259,8 @@ Some USB ADCs deliver B one sample late or early versus A. That looks like a fat
 
 ![Audio Lab Input options with Channel B trim at 0 samples](/assets/images/turntable-audio/howto-input-trim.png){: .center-image }
 
-1. Pick the USB device. Next to **USB audio input**, open **Input options**.
-2. **Channel B trim** is −10…+10 samples. **0** is no shift. Positive delays B; negative advances B.
-3. Connect **one** output from a source to **both** ADC inputs (Y-split or two leads from the same jack). Switch to **X-Y**. A perfect match is a tight 45° line. An open ellipse means the channels are skewed — adjust trim until the figure collapses to a line. **Reset** returns to 0.
+1. Open the **Source** tab. Pick the USB device (**Live**).
+2. **Channel B trim** is −10…+10 samples. **0** is no shift. Positive delays B; negative advances B. **Reset trim** returns to 0.
+3. Connect **one** output from a source to **both** ADC inputs (Y-split or two leads from the same jack). Switch to **X-Y**. A perfect match is a tight 45° line. An open ellipse means the channels are skewed — adjust trim until the figure collapses to a line.
 
 The UCA202 / UCA222 often wants **−1**. Do not assume that. Other interfaces are usually 0. The only 100% check is that one-output-into-both-inputs **X-Y** line.
