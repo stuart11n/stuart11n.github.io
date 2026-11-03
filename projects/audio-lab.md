@@ -79,7 +79,7 @@ Default window ~1280×800 (minimum width 1280). Linux needs ALSA and the usual G
 - **Audio** speaker monitor (off by default)
 - **AC** / **DC** coupling
 - Notch / band-pass style filter: on/off, frequency, Q, invert (stop vs pass), with on-plot S/P marker
-- Max frequency ceiling tracks the open converter’s **Nyquist** when the sample rate changes
+- Max frequency ceiling tracks the open device’s **Nyquist** when the sample rate changes
 - Settings persist in the OS config directory
 
 ### Dual channel
@@ -160,7 +160,6 @@ Chirp · 1 kHz · Harmonics · 4% THD · Tape · Sweep · Lissajous · CD eye ·
 
 - **Save PNG** of the scope plot (framebuffer crop — matches what’s on screen). Ctrl/Cmd+S
 - **Save Video** → WebM (AV1), plot region, timed capture of the painted frame
-- Files land under **Pictures/AudioLab**
 
 How-tos for a reference tape or test record are in [How To]({{ '/projects/audio-lab/how-to/' | relative_url }}): controls, recommended ADC and input sample trim, tape-head azimuth, tape and turntable W&amp;F, turntable frequency response, anti-skate, and cassette or turntable channel balance.
 

@@ -48,20 +48,8 @@ Audio Lab reads a stereo USB (or other system) audio device on the desktop. You 
 - **Behringer U-Phoria UMC202HD** — combo inputs with a LINE pad; set them to line, not instrument or mic.
 - **Behringer UCA202 / UCA222** — cheap RCA line-in, no mic preamp in the way. Fine for a tape deck or a phono stage. Some units need **−1 sample** on **Channel B trim** in **Input options**. It can appear and disappear. Confirm with one output from a source into both ADC inputs — **X-Y** should be a perfect line.
 - Any other 2-in USB interface with a LINE pad (**Focusrite Scarlett 2i2** and similar) works if you set the inputs to line.
-- 48 kHz is enough. Max frequency tracks the open converter’s Nyquist.
+- 48 kHz is enough. Max frequency tracks the open device’s Nyquist.
 - A turntable still needs a phono stage in front of the ADC. Do not plug the cartridge into line-in.
-
-### Input sample trim
-
-Some USB ADCs deliver B one sample late or early versus A. That looks like a fat X-Y ellipse on a mono tone, or A and B not stacking on Y-T, even when the source is identical.
-
-![Audio Lab Input options with Channel B trim at 0 samples](/assets/images/turntable-audio/howto-input-trim.png){: .center-image }
-
-1. Pick the USB device. Next to **USB audio input**, open **Input options**.
-2. **Channel B trim** is −10…+10 samples. **0** is no shift. Positive delays B; negative advances B.
-3. Connect **one** output from a source to **both** ADC inputs (Y-split or two leads from the same jack). Switch to **X-Y**. A perfect match is a tight 45° line. An open ellipse means the channels are skewed — adjust trim until the figure collapses to a line. **Reset** returns to 0.
-
-The UCA202 / UCA222 often wants **−1**. Do not assume that. Other interfaces are usually 0. The only 100% check is that one-output-into-both-inputs **X-Y** line.
 
 ### Controls
 
@@ -242,3 +230,15 @@ Use a **1 kHz** (or other midband) band on a test record, through a phono stage,
 3. A few tenths of a dB is typical cartridge scatter. A steady 1 dB or more is cartridge, wiring, or the phono stage — not anti-skate. If only the highs disagree, check stylus azimuth and the frequency-response how-to above.
 
 Pink-noise FFT (Pink EQ, **Log** X, Average High) shows the same imbalance across the band if you do not have a 1 kHz cut.
+
+### Input sample trim
+
+Some USB ADCs deliver B one sample late or early versus A. That looks like a fat X-Y ellipse on a mono tone, or A and B not stacking on Y-T, even when the source is identical.
+
+![Audio Lab Input options with Channel B trim at 0 samples](/assets/images/turntable-audio/howto-input-trim.png){: .center-image }
+
+1. Pick the USB device. Next to **USB audio input**, open **Input options**.
+2. **Channel B trim** is −10…+10 samples. **0** is no shift. Positive delays B; negative advances B.
+3. Connect **one** output from a source to **both** ADC inputs (Y-split or two leads from the same jack). Switch to **X-Y**. A perfect match is a tight 45° line. An open ellipse means the channels are skewed — adjust trim until the figure collapses to a line. **Reset** returns to 0.
+
+The UCA202 / UCA222 often wants **−1**. Do not assume that. Other interfaces are usually 0. The only 100% check is that one-output-into-both-inputs **X-Y** line.
