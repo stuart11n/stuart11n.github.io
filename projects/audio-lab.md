@@ -55,13 +55,13 @@ Licensed desktop unlocks the full feature set. **$25 / year** via PayPal (enter 
 
 <div class="cta-row">
   <a class="btn btn--primary" href="https://github.com/stuart11n/s16n-releases/releases/download/audio-lab-latest/s16n-audio-lab.exe">Download for Windows</a>
-  <a class="btn btn--ghost" href="https://github.com/stuart11n/s16n-releases/releases/download/audio-lab-latest/s16n-audio-lab-linux">Linux</a>
+  <a class="btn btn--ghost" href="#linux">Linux</a>
   <a class="btn btn--ghost" href="https://github.com/stuart11n/s16n-releases/releases/download/audio-lab-latest/s16n-audio-lab-macos-arm">macOS ARM</a>
   <a class="btn btn--ghost" href="https://scope.s16n.com">Free Web Version</a>
   <a class="btn btn--info" href="{{ '/projects/audio-lab/how-to/' | relative_url }}">How To</a>
 </div>
 
-Default window ~1280×800 (minimum width 1280). Linux needs ALSA and the usual GUI libs at run time.
+Default window ~1280×800 (minimum width 1280).
 
 ### Display modes
 
@@ -187,3 +187,23 @@ Handshake then carrier — probe tones stack as bars, then the waterfall fills w
 
 <video class="center-image" autoplay muted loop playsinline preload="auto" src="{{ '/assets/images/turntable-audio/scope-dialup.webm' | relative_url }}">
 </video>
+
+### Linux
+
+x86_64 binary. Requires **glibc 2.35+** (Ubuntu 22.04+, Debian 12+, Fedora 36+, and similar).
+
+**Fedora** — `alsa-lib` `gtk3` `libxkbcommon` `libxcb` `mesa-libGL` `libX11`
+
+```
+sudo dnf install alsa-lib gtk3 libxkbcommon libxcb mesa-libGL libX11
+```
+
+**Debian / Ubuntu** — `libasound2` `libgtk-3-0` `libxkbcommon0` `libxcb-shape0` `libxcb-xfixes0` `libgl1` `libx11-6`
+
+```
+sudo apt install libasound2 libgtk-3-0 libxkbcommon0 libxcb-shape0 libxcb-xfixes0 libgl1 libx11-6
+```
+
+<div class="cta-row">
+  <a class="btn btn--primary" href="https://github.com/stuart11n/s16n-releases/releases/download/audio-lab-latest/s16n-audio-lab-linux">Download for Linux</a>
+</div>
