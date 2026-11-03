@@ -55,7 +55,7 @@ Licensed desktop unlocks the full feature set. **$25 / year** via PayPal (enter 
 
 <div class="cta-row">
   <a class="btn btn--primary" href="https://github.com/stuart11n/s16n-releases/releases/download/audio-lab-latest/s16n-audio-lab.exe">Download for Windows</a>
-  <a class="btn btn--ghost" href="https://github.com/stuart11n/s16n-releases/releases/download/audio-lab-latest/s16n-audio-lab-ubuntu">Linux</a>
+  <a class="btn btn--ghost" href="https://github.com/stuart11n/s16n-releases/releases/download/audio-lab-latest/s16n-audio-lab-linux">Linux</a>
   <a class="btn btn--ghost" href="https://github.com/stuart11n/s16n-releases/releases/download/audio-lab-latest/s16n-audio-lab-macos-arm">macOS ARM</a>
   <a class="btn btn--ghost" href="https://scope.s16n.com">Free Web Version</a>
   <a class="btn btn--info" href="{{ '/projects/audio-lab/how-to/' | relative_url }}">How To</a>
