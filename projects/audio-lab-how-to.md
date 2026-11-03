@@ -237,18 +237,6 @@ Use a **1 kHz** (or other midband) band on a test record, through a phono stage,
 
 Pink-noise FFT (Pink EQ, **Log** X, Average High) shows the same imbalance across the band if you do not have a 1 kHz cut.
 
-### Input sample trim
-
-Some USB ADCs deliver B one sample late or early versus A. That looks like a fat X-Y ellipse on a mono tone, or A and B not stacking on Y-T, even when the source is identical.
-
-![Audio Lab Input options with Channel B trim at 0 samples](/assets/images/turntable-audio/howto-input-trim.png){: .center-image }
-
-1. Open the **Source** tab. Pick the USB device (**Live**).
-2. **Channel B trim** is −10…+10 samples. **0** is no shift. Positive delays B; negative advances B. **Reset trim** returns to 0.
-3. Connect **one** output from a source to **both** ADC inputs (Y-split or two leads from the same jack). Switch to **X-Y**. A perfect match is a tight 45° line. An open ellipse means the channels are skewed — adjust trim until the figure collapses to a line.
-
-The UCA202 / UCA222 often wants **−1**. Do not assume that. Other interfaces are usually 0. The only 100% check is that one-output-into-both-inputs **X-Y** line.
-
 ### Tools
 
 The **Tools** tab is a tone generator on the **default playback** device — useful for a known stimulus into a loopback, a tape deck record path, or another ADC under test. It does not change live input gain.
@@ -281,7 +269,19 @@ Same idea on the capture path: **Max Input Level** is “what dBV is 0 dBFS on t
 
 1. Finish the **2 dBV** output cal above (tone at **Level** **0 dB**, **1 kHz**, ~1.26 Vrms on the meter).
 2. On **Source**, set **Max Input Level** to **2 dBV**. Pick **Live** and the USB ADC.
-3. Loop the tone output straight into that ADC’s line inputs (same channels you will measure with).
+3. Loop the output back into the input, and use the **Tools** tab to output **1 kHz** (**Level** **0 dB**, **Start**).
 4. Switch to **Y-T**, open **Measure**, read **RMS**. In the **Windows sound mixer**, open the recording device for that ADC and adjust its **input** level until **RMS** shows about **1.26 V** (and the sine is not flat-topped). At **Max Input Level** **2 dBV**, that readout means the loopback is sitting at digital full scale — input cal matches the output cal.
 
 Keep the LINE pad on; do not use mic gain for this. If you cannot reach 1.26 Vrms without clipping, the interface’s max input is below +2 dBV at that pad — pick a different **Max Input Level** preset to match a measured full-scale, or pad the loopback.
+
+#### Input sample trim
+
+Some USB ADCs deliver B one sample late or early versus A. That looks like a fat X-Y ellipse on a mono tone, or A and B not stacking on Y-T, even when the source is identical.
+
+![Audio Lab Input options with Channel B trim at 0 samples](/assets/images/turntable-audio/howto-input-trim.png){: .center-image }
+
+1. Open the **Source** tab. Pick the USB device (**Live**).
+2. **Channel B trim** is −10…+10 samples. **0** is no shift. Positive delays B; negative advances B. **Reset trim** returns to 0.
+3. Connect **one** output from a source to **both** ADC inputs (Y-split or two leads from the same jack). Switch to **X-Y**. A perfect match is a tight 45° line. An open ellipse means the channels are skewed — adjust trim until the figure collapses to a line.
+
+The UCA202 / UCA222 often wants **−1**. Do not assume that. Other interfaces are usually 0. The only 100% check is that one-output-into-both-inputs **X-Y** line.
