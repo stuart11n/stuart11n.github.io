@@ -56,7 +56,7 @@ Licensed desktop unlocks the full feature set. **$25 / year** via PayPal (enter 
 <div class="cta-row">
   <a class="btn btn--primary" href="https://github.com/stuart11n/s16n-releases/releases/download/audio-lab-latest/s16n-audio-lab.exe">Download for Windows</a>
   <a class="btn btn--ghost" href="#linux">Linux</a>
-  <a class="btn btn--ghost" href="https://github.com/stuart11n/s16n-releases/releases/download/audio-lab-latest/s16n-audio-lab-macos-arm">macOS ARM</a>
+  <a class="btn btn--ghost" href="#macos">macOS ARM</a>
   <a class="btn btn--ghost" href="https://scope.s16n.com">Free Web Version</a>
   <a class="btn btn--info" href="{{ '/projects/audio-lab/how-to/' | relative_url }}">How To</a>
 </div>
@@ -206,4 +206,18 @@ sudo apt install libasound2 libgtk-3-0 libxkbcommon0 libxcb-shape0 libxcb-xfixes
 
 <div class="cta-row">
   <a class="btn btn--primary" href="https://github.com/stuart11n/s16n-releases/releases/download/audio-lab-latest/s16n-audio-lab-linux">Download for Linux</a>
+</div>
+
+### macOS
+
+Apple Silicon (arm64) **.dmg**. The build is not notarized, so Gatekeeper will block the first launch.
+
+1. Open the disk image and drag **s16n Audio Lab** to Applications (or run it from the mount).
+2. When macOS says it “can’t be opened” / was blocked, open **System Settings → Privacy &amp; Security** (or **System Preferences → Security &amp; Privacy** on older macOS).
+3. Scroll to the security messages at the bottom and click **Open Anyway** for Audio Lab. Confirm again if prompted.
+
+You can also **Control-click** (or right-click) the app → **Open** the first time, then confirm.
+
+<div class="cta-row">
+  <a class="btn btn--primary" href="https://github.com/stuart11n/s16n-releases/releases/download/audio-lab-latest/s16n-audio-lab-macos-arm.dmg">Download for macOS ARM</a>
 </div>
