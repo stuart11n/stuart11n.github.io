@@ -2,7 +2,7 @@
 layout: post
 title: Audio Lab How to
 description: >-
-  How to use s16n Audio Lab with a reference tape or test record — input level, Tools tone generator, controls, recommended ADC, tape-head azimuth, tape and turntable wow & flutter, turntable frequency response, anti-skate, and cassette or turntable channel balance.
+  How to use s16n Audio Lab with a reference tape or test record — input level, Tools tone generator, controls, recommended ADC, tape-head azimuth, tape and turntable wow & flutter, turntable frequency response, anti-skate, cassette or turntable channel balance, and MCP automation examples.
 image: /assets/images/turntable-audio/scope-hero.jpg
 permalink: /projects/audio-lab/how-to/
 tags:
@@ -24,6 +24,8 @@ keywords:
   - cursors
   - persist
   - sample trim
+  - MCP
+  - automation
 ---
 
 How-to notes for [Audio Lab]({{ '/projects/audio-lab/' | relative_url }}) — a USB ADC, a reference tape or test record.
@@ -284,3 +286,34 @@ Some USB ADCs deliver B one sample late or early versus A. That looks like a fat
 3. Connect **one** output from a source to **both** ADC inputs (Y-split or two leads from the same jack). Switch to **X-Y**. A perfect match is a tight 45° line. An open ellipse means the channels are skewed — adjust trim until the figure collapses to a line.
 
 The UCA202 / UCA222 often wants **−1**. Do not assume that. Other interfaces are usually 0. The only 100% check is that one-output-into-both-inputs **X-Y** line.
+
+### MCP
+
+Drive Audio Lab from an AI agent (Cursor, Claude Desktop, Claude Code) or any localhost HTTP client. Feature overview is on the [product page]({{ '/projects/audio-lab/#mcp-server' | relative_url }}).
+
+1. Start the desktop app. On **Tools**, turn **MCP → SERVER ON** (listens on `127.0.0.1:18765`).
+2. Point the client at the stdio bridge that ships with the app (`lab_help`, `lab_get`, `lab_measure`, `lab_set`, `lab_tone`, `lab_capture`).
+3. Loop the Tools tone into the ADC (or use a live source) so measures can lock onto frequency.
+
+Custom tone frequencies are plain Hz strings (`"2000"`, `"2500"`). Presets also work (`1k`, `3k`, `3150`, `10k`, `sweep`, `pink`). Levels: `0`, `-10`, `-20`.
+
+#### Example: Spectrograph → Y-T tone check
+
+Ask the agent something like:
+
+> Switch to Spectrograph, play a 2 kHz tone, wait until it is detected, show the readouts, and capture a PNG. Then switch to Y-T, change the tone to 2.5 kHz, wait until that is detected, show the readouts, capture again, and stop the tone.
+
+A typical tool sequence:
+
+1. **`lab_set`** — `display_mode: "sg"` (optionally `sg_peak_labels: true`).
+2. **`lab_tone`** — `action: "start"`, `freq: "2000"`, `level: "-10"` (or `"0"` if you have headroom).
+3. Poll **`lab_measure`** until the tone shows up — on Spectrograph check `sg_peak_labels` / `peak_hz` near **2000 Hz**; on Y-T / FFT use `measure.freq_hz` with `measure.valid_freq`.
+4. **`lab_measure`** again and report the readouts (Vpp, RMS, freq, peaks).
+5. **`lab_capture`** — `format: "png"`.
+6. **`lab_set`** — `display_mode: "yt"`.
+7. **`lab_tone`** — `action: "configure"`, `freq: "2500"` (tone stays running).
+8. Poll **`lab_measure`** until frequency settles near **2500 Hz**.
+9. **`lab_measure`** → show readouts; **`lab_capture`** → `format: "png"`.
+10. **`lab_tone`** — `action: "stop"`.
+
+Keep the app in the foreground for PNG captures (they grab the painted plot). If `lab_*` fails with connection refused, MCP is off or the app is not running.
