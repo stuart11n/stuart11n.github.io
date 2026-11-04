@@ -49,7 +49,7 @@ card_desc: "Desktop oscilloscope, spectrum, spectrograph, W&F, and MCP control f
 card_wide: true
 ---
 
-![s16n Audio Lab Spectrograph — Aphex Twin face demo](/assets/images/turntable-audio/scope-hero.jpg){: .center-image }
+![s16n Audio Lab — FFT with color grade and notch](/assets/images/turntable-audio/scope-hero.jpg){: .center-image }
 
 A desktop audio tool with advanced features — **Y-T**, **X-Y**, **FFT**, **Spectrograph**, and **W&amp;F**, plus triggers, cursors, measures, notch filtering, plot export, and a local **MCP server** so AI agents and scripts can drive the lab. Audio frequency only (not RF or lab-bandwidth scopes). Plug in a USB ADC, pick the device, and Run — or use the built-in examples. Useful for turntables and tape decks (azimuth, anti-skate, W&amp;F, frequency response), codecs, and other line-level gear.
 
@@ -129,6 +129,8 @@ Drive Audio Lab from Cursor, Claude Desktop, Claude Code, or any localhost HTTP 
 - Magnitudes: **Linear** · **dB** · **Pink** (+3 dB/oct so ideal pink reads flat)
 - X-axis: **Linear** · **Log**
 - Averaging: Off / Low / High
+- **Color grade** — DPX-style density fill under the spectrum (live stroke off while on; Persist is separate)
+- Peak labels on/off
 - Analysis lengths shared with Spectrograph: **2k · 8k · 16k · 32k** (default **2k**)
 - Max frequency and dB range knobs; auto scale for level
 - Frequency zoom: scroll about the cursor, drag a marquee when cursors are off, double-click / Reset for full span

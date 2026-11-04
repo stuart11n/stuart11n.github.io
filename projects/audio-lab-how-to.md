@@ -123,13 +123,15 @@ Notch is not on W&amp;F.
 
 **Off** / **Lo** / **Hi**. Hi is the phosphor trail — useful for a drifting Lissajous or a rare glitch. The **CD RF eye** demo is the clear case: without persist the diamond lattice is hard to see; **Persist** Hi burns the eye in as traces overlay. Persist is on Y-T, X-Y, and FFT. Spectrograph and W&amp;F do not have it.
 
-#### Magnitude, X axis, Average
+#### Magnitude, X axis, Average, Color grade
 
 FFT-only, above Coupling:
 
 - **Magnitude** — **Linear**, **dB**, or **Pink EQ** (+3 dB/oct so ideal pink reads flat).
 - **X axis** — **Log** (20 Hz–max) or **Linear** (0–max).
 - **Average** — **Off** (instant), **Low**, or **High** (steady pink curve).
+- **Color grade** — DPX-style density fill under the curve. Heat where the spectrum spends time; the live stroke turns off while it is on. Independent of **Persist**.
+- **Peak labels** — mark spectrum peaks on the plot.
 
 ![Audio Lab FFT with Magnitude dB, Log X, Average Off, Max freq and dB range](/assets/images/turntable-audio/howto-controls-fft.png){: .center-image }
 
