@@ -89,6 +89,22 @@ Default window ~1280×800 (minimum width 1280).
 - Linked or unlocked vertical scales (A=B lock)
 - On X-Y: **X = A**, **Y = B**
 
+### Export
+
+- **Save PNG** of the scope plot (framebuffer crop — matches what’s on screen). Ctrl/Cmd+S
+- **Save Video** → WebM (AV1), plot region, timed capture of the painted frame
+
+### MCP server
+
+Drive Audio Lab from Cursor, Claude Desktop, Claude Code, or any localhost HTTP client. Off by default — turn on **Tools → MCP → SERVER ON**.
+
+- Localhost only (`127.0.0.1`, default port **18765**)
+- Read live state and measures (including spectrograph peak labels)
+- Change settings remotely (mode, triggers, scales, filters, and more)
+- Start / stop / configure the Tools tone generator
+- Capture the plot as **PNG**, **CSV**, or **WAV**
+- Stdio MCP bridge ships with the app (`lab_get`, `lab_set`, `lab_measure`, `lab_tone`, `lab_capture`)
+
 ### Y-T
 
 - Time/div
@@ -156,22 +172,6 @@ Side panels: **Control · Measure · Source · Tools**.
 ### Built-in examples
 
 Chirp · 1 kHz · Harmonics · 4% THD · Tape · Sweep · Lissajous · CD eye · Osci · Pink · Turntable · Hello · Aphex · Dial-up
-
-### Export
-
-- **Save PNG** of the scope plot (framebuffer crop — matches what’s on screen). Ctrl/Cmd+S
-- **Save Video** → WebM (AV1), plot region, timed capture of the painted frame
-
-### MCP server
-
-Drive Audio Lab from Cursor, Claude Desktop, Claude Code, or any localhost HTTP client. Off by default — turn on **Tools → MCP → SERVER ON**.
-
-- Localhost only (`127.0.0.1`, default port **18765**)
-- Read live state and measures (including spectrograph peak labels)
-- Change settings remotely (mode, triggers, scales, filters, and more)
-- Start / stop / configure the Tools tone generator
-- Capture the plot as **PNG**, **CSV**, or **WAV**
-- Stdio MCP bridge ships with the app (`lab_get`, `lab_set`, `lab_measure`, `lab_tone`, `lab_capture`)
 
 How-tos for a reference tape or test record are in [How To]({{ '/projects/audio-lab/how-to/' | relative_url }}): input level, Tools tone generator, controls, recommended ADC and input sample trim, tape-head azimuth, tape and turntable W&amp;F, turntable frequency response, anti-skate, and cassette or turntable channel balance.
 
