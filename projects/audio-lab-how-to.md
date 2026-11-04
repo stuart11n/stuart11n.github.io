@@ -2,7 +2,7 @@
 layout: post
 title: Audio Lab How to
 description: >-
-  How to use s16n Audio Lab with a reference tape or test record — input level, Tools tone generator, controls, recommended ADC, tape-head azimuth, tape and turntable wow & flutter, turntable frequency response, anti-skate, cassette or turntable channel balance, and MCP automation examples.
+  How to use s16n Audio Lab with a reference tape or test record — input level, Tools tone generator, controls, recommended ADC, Audio Analyzer (THD, IMD, crosstalk, dynamic range), tape-head azimuth, cartridge crosstalk / azimuth, tape and turntable wow & flutter, turntable frequency response, anti-skate, cassette or turntable channel balance, and MCP automation examples.
 image: /assets/images/turntable-audio/scope-hero.jpg
 permalink: /projects/audio-lab/how-to/
 tags:
@@ -24,6 +24,12 @@ keywords:
   - cursors
   - persist
   - sample trim
+  - analyzer
+  - THD
+  - IMD
+  - crosstalk
+  - dynamic range
+  - cartridge azimuth
   - MCP
   - automation
 ---
@@ -61,7 +67,7 @@ Performing a **2 dBV** calibration is recommended but not mandatory for many mea
 
 ### Controls
 
-Side tabs on the right: **Control · Measure · Source · Tools**. Knobs and channel buttons sit in the mid column. Mode buttons and the rest of the Control panel sit on the right. What you get depends on **Y-T**, **X-Y**, **W&amp;F**, **FFT**, or **Spectrograph**.
+Side tabs on the right: **Control · Measure · Source · Tools**. Knobs and channel buttons sit in the mid column. Mode buttons and the rest of the Control panel sit on the right. What you get depends on **Y-T**, **X-Y**, **W&amp;F**, **FFT**, **Spectrograph**, or **Analyzer**.
 
 ![Audio Lab Y-T with Time / div, A/B Y, Auto scale, Measure, and the Y-T panel](/assets/images/turntable-audio/howto-controls-yt.png){: .center-image }
 
@@ -150,6 +156,21 @@ Cursors here are horizontal (frequency). The **Hello** demo is this view.
 
 ![Audio Lab Spectrograph with Y axis, Channel, Sharp, and the 10× scrub overview](/assets/images/turntable-audio/howto-controls-sg.png){: .center-image }
 
+#### Analyzer
+
+**Analyzer** is an AES17-style meter with a live spectrum. Pick a **Test**: **THD**, **IMD**, **Crosstalk**, or **Dynamic Range**. The app drives the **default playback** device with the matching stimulus — loop that output into the USB ADC (or the DUT). Measure keeps sticky THD / THD+N / IMD / Xtalk / Dynamic Range rows.
+
+![Audio Lab Analyzer THD / THD+N split view on the 4% THD demo](/assets/images/turntable-audio/howto-analyzer-thd.png){: .center-image }
+
+- **THD** — dual panes: **THD** and **THD+N** from 1 kHz @ −1 dBFS. **Weighting**: Unweighted or A-weighted.
+- **IMD** — **SMPTE** (60 Hz + 7 kHz, 4:1) or **CCIF** (19 + 20 kHz; needs ≥44.1 kHz).
+- **Crosstalk** — 1 kHz on one channel; **Drive** **L→R** or **R→L**; quiet/driven in dB at 1 kHz.
+- **Dynamic Range** — AES17: 1 kHz @ −60 dBFS (nearly silent), notched, A-weighted vs digital FS.
+
+![Audio Lab Analyzer IMD SMPTE on the IMD demo](/assets/images/turntable-audio/howto-analyzer-imd.png){: .center-image }
+
+Built-in **4% THD**, **IMD**, and **Crosstalk** examples open this mode without gear. For vinyl cartridge work the **record** is the stimulus — see [Align cartridge azimuth with crosstalk](#align-cartridge-azimuth-with-crosstalk).
+
 ### Align tape-head azimuth
 
 Use a dual-channel azimuth tone on a reference tape — typically 8, 10, or 15 kHz, recorded on both tracks. Turn on **Phase Aid** — that chord is the setting this check is built around. An FFT / Spectrograph confirm helps too.
@@ -218,6 +239,23 @@ Use a test record with a **tracking / anti-skate** band (a loud 300 Hz tone is c
 4. Turn anti-skate until A and B break up together — or neither does at that level. Too little anti-skate usually dirties **B** (outer / right wall) first; too much dirties **A** (inner / left). If the disc has an inner-groove band, recheck there — skating force is highest toward the label.
 
 A silent groove is a cruder check: the arm should sit still, and Y-T / FFT noise should look similar on A and B. Do not chase a steady midband level offset with anti-skate — that is channel balance.
+
+### Align cartridge azimuth with crosstalk
+
+Stylus azimuth (headshell twist) sets how much of a left-only groove bleeds into the right channel, and the other way around. **Analyzer → Crosstalk** meters that leakage in dB at **1 kHz** — more negative is better separation. Use a test record with **left-only** and **right-only** (or vertical / lateral single-wall) bands. Tracking force and anti-skate should already be set.
+
+Practice first with the built-in **Crosstalk** example (fixed **−40 dB** L→R leak) so you know what the meter looks like.
+
+![Audio Lab Analyzer Crosstalk at −40.0 dB L→R on the Crosstalk demo](/assets/images/turntable-audio/howto-analyzer-xtalk.png){: .center-image }
+
+1. Phono stage into the USB ADC. **Source → Live**, pick that device. Show **A** and **B** (A = left, B = right if the wiring matches).
+2. Switch to **Analyzer**. Set **Test** to **Crosstalk**. For vinyl the **record** is the drive — do not loop the app’s Tools / analyzer tone into the ADC; leave playback unconnected to the inputs (or muted into the room).
+3. Play the **left-only** band. Set **Drive** to **L→R**. The big readout is quiet/driven at 1 kHz (R vs L). Wait until it settles.
+4. Nudge headshell azimuth a fraction at a time. Watch the dB number — aim for the **most negative** reading (e.g. −25 dB is better than −15 dB). Too little twist and the quiet channel climbs; go past the null and it climbs again.
+5. Play the **right-only** band. Set **Drive** to **R→L**. Repeat. A good setup is roughly matched both ways — chasing one side into the weeds usually hurts the other.
+6. Optional confirm: **X-Y** with **Phase Aid** on a lateral / L+R tone should look tight once azimuth is close; crosstalk is the finer meter for single-channel bands.
+
+Cartridge and phono crosstalk floor out somewhere (often the mid −20s to −30s dB on vinyl, better on electronics). Stop when both directions peak and the headshell is snug. Recheck channel balance afterward — azimuth can shift midband levels a little.
 
 ### Check cassette channel balance
 
@@ -294,10 +332,10 @@ The UCA202 / UCA222 often wants **−1**. Do not assume that. Other interfaces a
 Drive Audio Lab from an AI agent (Cursor, Claude Desktop, Claude Code) or any localhost HTTP client. Feature overview is on the [product page]({{ '/projects/audio-lab/#mcp-server' | relative_url }}).
 
 1. Start the desktop app. On **Tools**, turn **MCP → SERVER ON** (listens on `127.0.0.1:18765`).
-2. Point the client at the stdio bridge that ships with the app (`lab_help`, `lab_get`, `lab_measure`, `lab_set`, `lab_tone`, `lab_capture`).
-3. Loop the Tools tone into the ADC (or use a live source) so measures can lock onto frequency.
+2. Point the client at the stdio bridge that ships with the app (`lab_help`, `lab_get`, `lab_measure`, `lab_set`, `lab_source`, `lab_tone`, `lab_capture`).
+3. Loop the Tools tone into the ADC (or use a live / demo source) so measures can lock onto frequency.
 
-Custom tone frequencies are plain Hz strings (`"2000"`, `"2500"`). Presets also work (`1k`, `3k`, `3150`, `10k`, `sweep`, `pink`). Levels: `0`, `-10`, `-20`.
+Custom tone frequencies are plain Hz strings (`"2000"`, `"2500"`). Presets also work (`1k`, `3k`, `3150`, `10k`, `sweep`, `pink`). Levels: `0`, `-10`, `-20`. Analyzer patches: `display_mode: "analyzer"`, `analyzer_test` (`thd` · `imd` · `xtalk` · `dr`), `analyzer_imd` (`smpte` · `ccif`), `analyzer_xtalk` (`ltor` · `rtol`).
 
 #### Example: Spectrograph → Y-T tone check
 

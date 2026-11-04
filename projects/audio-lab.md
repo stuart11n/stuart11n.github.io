@@ -2,7 +2,7 @@
 layout: post
 title: Audio Lab
 description: >-
-  Desktop audio oscilloscope, Lissajous, FFT, spectrograph, and wow & flutter meter for USB line-in — Windows, Linux, and macOS. Triggers, cursors, measures, notch, demos, PNG and WebM export, plus a local MCP server for AI agents and automation.
+  Desktop audio oscilloscope, Lissajous, FFT, spectrograph, wow & flutter meter, and AES17-style Audio Analyzer (THD, IMD, crosstalk, dynamic range) for USB line-in — Windows, Linux, and macOS. Triggers, cursors, measures, notch, demos, PNG and WebM export, plus a local MCP server for AI agents and automation.
 image: /assets/images/turntable-audio/scope-hero.jpg
 permalink: /projects/audio-lab/
 homepage: true
@@ -26,6 +26,13 @@ keywords:
   - DIN wow flutter
   - JIS NAB CCIR
   - THD
+  - THD+N
+  - IMD
+  - SMPTE
+  - CCIF
+  - crosstalk
+  - dynamic range
+  - AES17
   - distortion
   - frequency response
   - signal analyzer
@@ -37,6 +44,7 @@ keywords:
   - analogue
   - turntable
   - head azimuth
+  - cartridge azimuth
   - NAK T100
   - audio lab
   - desktop
@@ -45,13 +53,13 @@ keywords:
   - linux
   - MCP
   - automation
-card_desc: "Desktop oscilloscope, spectrum, spectrograph, W&F, and MCP control for USB audio."
+card_desc: "Desktop oscilloscope, spectrum, W&F, AES17 analyzer, and MCP control for USB audio."
 card_wide: true
 ---
 
 ![s16n Audio Lab — FFT with color grade and notch](/assets/images/turntable-audio/scope-hero.jpg){: .center-image }
 
-A desktop audio tool with advanced features — **Y-T**, **X-Y**, **FFT**, **Spectrograph**, and **W&amp;F**, plus triggers, cursors, measures, notch filtering, plot export, and a local **MCP server** so AI agents and scripts can drive the lab. Audio frequency only (not RF or lab-bandwidth scopes). Plug in a USB ADC, pick the device, and Run — or use the built-in examples. Useful for turntables and tape decks (azimuth, anti-skate, W&amp;F, frequency response), codecs, and other line-level gear.
+A desktop audio tool with advanced features — **Y-T**, **X-Y**, **FFT**, **Spectrograph**, **W&amp;F**, and an AES17-style **Audio Analyzer** (THD / THD+N, IMD, crosstalk, dynamic range), plus triggers, cursors, measures, notch filtering, plot export, and a local **MCP server** so AI agents and scripts can drive the lab. Audio frequency only (not RF or lab-bandwidth scopes). Plug in a USB ADC, pick the device, and Run — or use the built-in examples. Useful for turntables and tape decks (azimuth, anti-skate, W&amp;F, frequency response, cartridge crosstalk), codecs, and other line-level gear.
 
 Licensed desktop unlocks the full feature set. **$25 / year** via PayPal (enter the email you paid with and the license key in the app). Local app, local settings — no account. Windows, Linux, and macOS (Apple Silicon).
 
@@ -72,6 +80,7 @@ Default window ~1280×800 (minimum width 1280).
 - **FFT** — spectrum
 - **Spectrograph** — scrolling waterfall (time × frequency)
 - **W&amp;F** — wow &amp; flutter meter and demod waveform
+- **Analyzer** — AES17-style THD / THD+N, IMD, crosstalk, and dynamic range
 
 ### Input &amp; monitoring
 
@@ -99,11 +108,11 @@ Default window ~1280×800 (minimum width 1280).
 Drive Audio Lab from Cursor, Claude Desktop, Claude Code, or any localhost HTTP client. Off by default — turn on **Tools → MCP → SERVER ON**.
 
 - Localhost only (`127.0.0.1`, default port **18765**)
-- Read live state and measures (including spectrograph peak labels)
-- Change settings remotely (mode, triggers, scales, filters, and more)
-- Start / stop / configure the Tools tone generator
+- Read live state and measures (including spectrograph peak labels and Analyzer readouts)
+- Change settings remotely (mode, triggers, scales, filters, `analyzer_*`, and more)
+- Switch **Source** live / demo; start / stop / configure the Tools tone generator
 - Capture the plot as **PNG**, **CSV**, or **WAV**
-- Stdio MCP bridge ships with the app (`lab_get`, `lab_set`, `lab_measure`, `lab_tone`, `lab_capture`)
+- Stdio MCP bridge ships with the app (`lab_get`, `lab_set`, `lab_measure`, `lab_source`, `lab_tone`, `lab_capture`)
 
 ### Y-T
 
@@ -137,6 +146,19 @@ Drive Audio Lab from Cursor, Claude Desktop, Claude Code, or any localhost HTTP 
 - Peak frequency readout
 
 ![Audio Lab FFT with Magnitude dB, Log X, and Average Off](/assets/images/turntable-audio/howto-controls-fft.png){: .center-image }
+
+### Analyzer
+
+AES17-style meter with a live spectrum and sticky readouts. The app drives the **default playback** device with the matching stimulus — loop that output into the USB ADC (or the DUT under test). Built-in **4% THD**, **IMD**, and **Crosstalk** examples open this mode without gear.
+
+- **THD** — split view: **THD** and **THD+N** from a 1 kHz @ −1 dBFS tone; **Unweighted** or **A-weighted**
+- **IMD** — **SMPTE** (60 Hz + 7 kHz, 4:1) or **CCIF** (19 + 20 kHz); needs ≥44.1 kHz for CCIF
+- **Crosstalk** — 1 kHz on one channel; **L→R** or **R→L** drive; quiet/driven in dB at 1 kHz
+- **Dynamic Range** — AES17: 1 kHz @ −60 dBFS, notched, A-weighted noise vs digital FS
+
+![Audio Lab Analyzer THD / THD+N](/assets/images/turntable-audio/howto-analyzer-thd.png){: .center-image }
+
+![Audio Lab Analyzer Crosstalk L→R](/assets/images/turntable-audio/howto-analyzer-xtalk.png){: .center-image }
 
 ### Spectrograph
 
@@ -173,9 +195,9 @@ Side panels: **Control · Measure · Source · Tools**.
 
 ### Built-in examples
 
-Chirp · 1 kHz · Harmonics · 4% THD · Tape · Sweep · Lissajous · CD eye · Osci · Pink · Turntable · Hello · Aphex · Dial-up
+Chirp · 1 kHz · Harmonics · Comb · 4% THD · IMD · Crosstalk · Tape · Sweep · Lissajous · CD eye · Osci · Pink · Turntable · Hello · Aphex · Dial-up
 
-How-tos for a reference tape or test record are in [How To]({{ '/projects/audio-lab/how-to/' | relative_url }}): input level, Tools tone generator, controls, recommended ADC and input sample trim, tape-head azimuth, tape and turntable W&amp;F, turntable frequency response, anti-skate, and cassette or turntable channel balance.
+How-tos for a reference tape or test record are in [How To]({{ '/projects/audio-lab/how-to/' | relative_url }}): input level, Tools tone generator, controls, recommended ADC and input sample trim, tape-head azimuth, cartridge crosstalk / azimuth, tape and turntable W&amp;F, turntable frequency response, anti-skate, and cassette or turntable channel balance.
 
 ### Example: Lissajous
 
