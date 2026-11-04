@@ -158,7 +158,7 @@ Cursors here are horizontal (frequency). The **Hello** demo is this view.
 
 #### Analyzer
 
-**Analyzer** is an AES17-style meter with a live spectrum. Pick a **Test**: **THD**, **IMD**, **Crosstalk**, or **Dynamic Range**. The app drives the **default playback** device with the matching stimulus — loop that output into the USB ADC (or the DUT). Measure keeps sticky THD / THD+N / IMD / Xtalk / Dynamic Range rows.
+**Analyzer** is an AES17-style meter with a live spectrum. Pick a **Test**: **THD**, **IMD**, **Crosstalk**, or **Dynamic Range**. The tool generates the matching stimulus — loop that output into the USB ADC (or the DUT). Measure keeps sticky THD / THD+N / IMD / Xtalk / Dynamic Range rows.
 
 ![Audio Lab Analyzer THD / THD+N split view on the 4% THD demo](/assets/images/turntable-audio/howto-analyzer-thd.png){: .center-image }
 

@@ -149,7 +149,7 @@ Drive Audio Lab from Cursor, Claude Desktop, Claude Code, or any localhost HTTP 
 
 ### Analyzer
 
-AES17-style meter with a live spectrum and sticky readouts. The app drives the **default playback** device with the matching stimulus — loop that output into the USB ADC (or the DUT under test). Built-in **4% THD**, **IMD**, and **Crosstalk** examples open this mode without gear.
+AES17-style meter with a live spectrum and sticky readouts. The tool generates the matching stimulus — loop that output into the USB ADC (or the DUT under test). Built-in **4% THD**, **IMD**, and **Crosstalk** examples open this mode without gear.
 
 - **THD** — split view: **THD** and **THD+N** from a 1 kHz @ −1 dBFS tone; **Unweighted** or **A-weighted**
 - **IMD** — **SMPTE** (60 Hz + 7 kHz, 4:1) or **CCIF** (19 + 20 kHz); needs ≥44.1 kHz for CCIF
