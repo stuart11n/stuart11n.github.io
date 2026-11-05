@@ -56,7 +56,8 @@ Audio Lab reads a stereo USB (or other system) audio device on the desktop. You 
 - **Behringer U-Phoria UMC202HD** — combo inputs with a LINE pad; set them to line, not instrument or mic.
 - **Behringer UCA202 / UCA222** — cheap RCA line-in, no mic preamp in the way. Fine for a tape deck or a phono stage. Some units need **−1 sample** on **Channel B trim** on the **Source** tab. It can appear and disappear. Confirm with one output from a source into both ADC inputs — **X-Y** should be a perfect line.
 - Any other 2-in USB interface with a LINE pad (**Focusrite Scarlett 2i2** and similar) works if you set the inputs to line.
-- 48 kHz is enough. Max frequency tracks the open device’s Nyquist.
+- 48 kHz is enough for most purposes. Max frequency tracks the open device’s Nyquist.
+- On **Windows**, Playback and Recording for that interface must use the **same shared sample rate** if you run Live input and Tools / Analyzer output together — see [Matched sample rates (Windows)](#matched-sample-rates-windows).
 - A turntable still needs a phono stage in front of the ADC. Do not plug the cartridge into line-in.
 
 ### Set input level
@@ -288,6 +289,19 @@ The **Tools** tab is a tone generator on the **default playback** device — use
 - **Start** / **Stop** — open or close the tone stream on the default output.
 
 Prefer **−10 dB** or **−20 dB** into gear that clips near line level; leave **0 dB** for a full-scale check or the [Calibration](#calibration) steps below.
+
+#### Matched sample rates (Windows)
+
+USB interfaces (UMC202HD and similar) run capture and playback on **one clock**. Windows keeps a separate **shared** format for Recording and for Playback. If those rates disagree — for example Recording at **192 kHz** and Playback at **44.1 kHz** — Live input can open fine, but **Tools → Start** or **Analyzer → Start** fails with a backend error (`0x88890008` / unsupported format). The box cannot do both rates at once.
+
+Set both sides to the **same** rate before loopback, tone into the DUT, or Analyzer stimulus:
+
+1. Right-click the speaker icon → **Open Sound settings** → **Sound Control Panel** (or run `mmsys.cpl`).
+2. **Playback** tab → your interface (e.g. **Speakers (UMC202HD 192k)**) → **Properties** → **Advanced** → choose the sample rate (e.g. **24 bit, 48000 Hz** or **24 bit, 192000 Hz**). Apply / OK.
+3. **Recording** tab → the same interface (e.g. **Microphone (UMC202HD 192k)**) → **Properties** → **Advanced** → the **same** rate and bit depth. Apply / OK.
+4. Restart Audio Lab (or click **Live** again) so it reopens at the new shared format.
+
+48 kHz on both sides is enough for most purposes. Use 96 / 192 kHz only when you need the extra bandwidth — and keep Playback and Recording matched.
 
 ### Calibration
 
