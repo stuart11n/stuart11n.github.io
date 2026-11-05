@@ -57,7 +57,7 @@ card_desc: "Desktop oscilloscope, spectrum, W&F, AES17 analyzer, and MCP control
 card_wide: true
 ---
 
-![s16n Audio Lab — FFT with color grade and notch](/assets/images/turntable-audio/scope-hero.jpg){: .center-image }
+![s16n Audio Lab — FFT color grade on the Comb demo](/assets/images/turntable-audio/scope-hero.jpg){: .center-image }
 
 A desktop audio tool with advanced features — **Y-T**, **X-Y**, **FFT**, **Spectrograph**, **W&amp;F**, and an AES17-style **Audio Analyzer** (THD / THD+N, IMD, crosstalk, dynamic range), plus triggers, cursors, measures, notch filtering, plot export, and a local **MCP server** so AI agents and scripts can drive the lab. Audio frequency only (not RF or lab-bandwidth scopes). Plug in a USB ADC, pick the device, and Run — or use the built-in examples. Useful for turntables and tape decks (azimuth, anti-skate, W&amp;F, frequency response, cartridge crosstalk), codecs, and other line-level gear.
 
