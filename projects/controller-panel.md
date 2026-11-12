@@ -47,10 +47,10 @@ Windows app that draws a live overlay of your **Funky Coder** or **Funky Coder P
 
 ### Automatic labels
 
-Labels are pulled from the **active bind files** for the sim or middleware in focus — not hand-typed on the panel.
+Labels are pulled from the **active bind files** for the sim or middleware in focus — not hand configured.
 
 - Reads MSFS, X-Plane 12, and **SPAD.neXt** bind / profile data
-- SPAD names win when SPAD is providing a label for that button
+- In **SPAD.neXt**, use the **button label** to specify the overlay text; SPAD labels win when present
 - Leader lines point from each control to its bound action (NAV outer/inner, ALT, G1000, transponder, pan, …)
 - Host tag on the panel footer (e.g. **XP+SPAD**, **MSFS**, **SPAD**)
 - HUD color: **green · white · red** (cycle in the app)
@@ -87,7 +87,8 @@ Labels are pulled from the **active bind files** for the sim or middleware in fo
 ### SPAD.neXt
 
 - Watches SPAD bind / profile files for the selected s16n device
-- Labels update when you reassign in SPAD
+- Set each control’s **button label** in SPAD.neXt to the text you want on the panel
+- Labels update when you change binds or labels in SPAD
 - Works alongside XP12 or MSFS (footer shows **XP+SPAD** / **MSFS+SPAD** when both are live)
 
 ### OpenXR HUD (experimental)
