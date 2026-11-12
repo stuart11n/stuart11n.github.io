@@ -4,6 +4,7 @@ title: s16n Controller Panel
 description: >-
   Overlay panel for s16n Funky Coder and Funky Coder Plus — automatic bind labels in X-Plane 12 and MSFS 2024, SPAD.neXt support, and an experimental OpenXR HUD.
 image: /assets/images/controller-panel/hero.jpg
+card_image: /assets/images/controller-panel/card.jpg
 permalink: /projects/controller-panel/
 homepage: true
 homepage_order: 28
