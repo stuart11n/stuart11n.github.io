@@ -39,7 +39,7 @@ Windows app that draws a live overlay of your **Funky Coder** or **Funky Coder P
 
 ### Controllers
 
-- **Funky Coder** and **Funky Coder Plus** (s16n VID `0x4774`)
+- **Funky Coder** and **Funky Coder Plus**
 - Device pictogram + pin map per unit — knobs, pushes, and hats drawn from the hardware layout
 - Live button / encoder activity on the panel
 - Mode chrome when the device has mode pins (**MODE 1**, **MODE 2**, …)
@@ -55,11 +55,21 @@ Labels are pulled from the **active bind files** for the sim or middleware in fo
 - Host tag on the panel footer (e.g. **XP+SPAD**, **MSFS**, **SPAD**)
 - HUD color: **green · white · red** (cycle in the app)
 
-![Automatic labels — green HUD](/assets/images/controller-panel/hud-green.png){: .center-image }
+**Funky Coder Plus**
 
-![Automatic labels — white HUD](/assets/images/controller-panel/hud-white.png){: .center-image }
+![Funky Coder Plus — green HUD](/assets/images/controller-panel/hud-green.png){: .center-image }
 
-![Automatic labels — red HUD](/assets/images/controller-panel/hud-red.png){: .center-image }
+![Funky Coder Plus — white HUD](/assets/images/controller-panel/hud-white.png){: .center-image }
+
+![Funky Coder Plus — red HUD](/assets/images/controller-panel/hud-red.png){: .center-image }
+
+**Funky Coder**
+
+![Funky Coder — green HUD](/assets/images/controller-panel/hud-fc-green.png){: .center-image }
+
+![Funky Coder — white HUD](/assets/images/controller-panel/hud-fc-white.png){: .center-image }
+
+![Funky Coder — red HUD](/assets/images/controller-panel/hud-fc-red.png){: .center-image }
 
 ### X-Plane 12
 
@@ -71,14 +81,13 @@ Labels are pulled from the **active bind files** for the sim or middleware in fo
 ### MSFS 2024
 
 - In-game toolbar panel (**S16N Overlay**) via the Community package
-- Local bridge inside the app (`127.0.0.1`) — MSFS polls the overlay image over XHR
 - Install / remove from the **Install** tab pointing at your Community folder
 - Fully restart MSFS after install
 
 ### SPAD.neXt
 
 - Watches SPAD bind / profile files for the selected s16n device
-- Labels update when you remassign in SPAD
+- Labels update when you reassign in SPAD
 - Works alongside XP12 or MSFS (footer shows **XP+SPAD** / **MSFS+SPAD** when both are live)
 
 ### OpenXR HUD (experimental)
@@ -100,6 +109,6 @@ Labels are pulled from the **active bind files** for the sim or middleware in fo
 ### Requirements
 
 - Windows 10/11 x64
-- An s16n **Funky Coder** or **Funky Coder Plus**
+- An s16n **Funky Coder** or **Funky Coder Plus** revision 2 with PID **FFC1**, **FFC2**
 - X-Plane 12 and/or MSFS 2024 for the in-sim panels; SPAD.neXt optional for bind labels
 - An OpenXR runtime if you use the experimental VR HUD
