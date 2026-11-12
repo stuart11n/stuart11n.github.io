@@ -32,6 +32,8 @@ Windows app that draws a live overlay of your **Funky Coder** or **Funky Coder P
 
 ![s16n Controller Panel overlay in X-Plane 12](/assets/images/controller-panel/hero.jpg){: .center-image }
 
+![s16n Controller Panel overlay in MSFS 2024](/assets/images/controller-panel/msfs.jpg){: .center-image }
+
 <div class="cta-row">
   <a class="btn btn--primary" href="https://github.com/stuart11n/s16n-releases/releases/download/controller-panel-latest/s16n-controller-panel-setup.exe">Download for Windows</a>
   {% include bmc-button.html %}
