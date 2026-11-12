@@ -42,8 +42,8 @@ Windows app that draws a live overlay of your **Funky Coder** or **Funky Coder P
 ### Controllers
 
 - **Funky Coder** and **Funky Coder Plus**
-- Device pictogram + pin map per unit — knobs, pushes, and hats drawn from the hardware layout
-- Live button / encoder activity on the panel
+- Device pictogram of the physical hardware layout
+- Live button / encoder activity on the panel reflecting the mode (if applicable)
 - Mode chrome when the device has mode pins (**MODE 1**, **MODE 2**, …)
 - Selection remembered across launches; hot plug refresh
 
