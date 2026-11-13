@@ -31,7 +31,7 @@ I fly and drive in VR only. I have built several button boxes, but eventually de
 
 Inputs can be mapped in-game as normal HID device buttons.
 
-For an in-sim overlay with automatic bind labels (X-Plane 12, MSFS 2024, SPAD.neXt, experimental OpenXR HUD), see [s16n Controller Panel]({{ '/projects/controller-panel/' | relative_url }}).
+For an in-sim HUD with automatic bind labels (X-Plane 12, MSFS 2024, SPAD.neXt, experimental OpenXR), see [s16n HUD]({{ '/projects/controller-panel/' | relative_url }}).
 
 ## Binding
 

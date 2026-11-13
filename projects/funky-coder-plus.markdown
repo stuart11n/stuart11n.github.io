@@ -28,7 +28,7 @@ Twin dual encoders and a funky switch with 4 modes (layers). For use with aviati
 
 Inputs can be mapped in game as a normal HID device so it's compatible with all games, and tools such as SPAD.next and Axis And Ohs.
 
-For an in-sim overlay with automatic bind labels (X-Plane 12, MSFS 2024, SPAD.neXt, experimental OpenXR HUD), see [s16n Controller Panel]({{ '/projects/controller-panel/' | relative_url }}).
+For an in-sim HUD with automatic bind labels (X-Plane 12, MSFS 2024, SPAD.neXt, experimental OpenXR), see [s16n HUD]({{ '/projects/controller-panel/' | relative_url }}).
 
 ![Funky-coder Plus, front view](/assets/images/fc/fc-plus-front.jpg){: .center-image }
 

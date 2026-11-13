@@ -1,8 +1,8 @@
 ---
 layout: post
-title: s16n Controller Panel
+title: s16n HUD
 description: >-
-  Overlay panel for s16n Funky Coder and Funky Coder Plus — automatic bind labels in X-Plane 12 and MSFS 2024, SPAD.neXt support, and an experimental OpenXR HUD.
+  HUD overlay for s16n Funky Coder and Funky Coder Plus — automatic bind labels in X-Plane 12 and MSFS 2024, SPAD.neXt support, and an experimental OpenXR HUD.
 image: /assets/images/controller-panel/hero.jpg
 card_image: /assets/images/controller-panel/card.jpg
 permalink: /projects/controller-panel/
@@ -13,6 +13,7 @@ tags:
   - software
   - aviasim
 keywords:
+  - HUD
   - controller panel
   - funky coder
   - funky coder plus
@@ -22,20 +23,19 @@ keywords:
   - MSFS 2024
   - SPAD.neXt
   - OpenXR
-  - HUD
   - flight sim
-card_desc: "Automatic bind labels for Funky Coder / Plus — XP12, MSFS 2024, SPAD, OpenXR HUD."
+card_desc: "Automatic bind labels for Funky Coder / Plus — XP12, MSFS 2024, SPAD, OpenXR."
 card_wide: true
 ---
 
-Windows app that draws a live overlay of your **Funky Coder** or **Funky Coder Plus**, with **automatic labels** from the active sim / SPAD.neXt binds. Float it in **X-Plane 12** or **MSFS 2024**, or push an experimental **OpenXR** HUD in VR.
+Windows app that draws a live **HUD** for your **Funky Coder** or **Funky Coder Plus**, with **automatic labels** from the active sim / SPAD.neXt binds. Float it in **X-Plane 12** or **MSFS 2024**, or push an experimental **OpenXR** HUD in VR.
 
-![s16n Controller Panel overlay in X-Plane 12](/assets/images/controller-panel/hero.jpg){: .center-image }
+![s16n HUD in X-Plane 12](/assets/images/controller-panel/hero.jpg){: .center-image }
 
-![s16n Controller Panel overlay in MSFS 2024](/assets/images/controller-panel/msfs.jpg){: .center-image }
+![s16n HUD in MSFS 2024](/assets/images/controller-panel/msfs.jpg){: .center-image }
 
 <div class="cta-row">
-  <a class="btn btn--primary" href="https://github.com/stuart11n/s16n-releases/releases/download/controller-panel-latest/s16n-controller-panel-setup.exe">Download for Windows</a>
+  <a class="btn btn--primary" href="https://github.com/stuart11n/s16n-releases/releases/download/hud-latest/s16n-hud-setup.exe">Download for Windows</a>
   {% include bmc-button.html %}
 </div>
 
@@ -43,7 +43,7 @@ Windows app that draws a live overlay of your **Funky Coder** or **Funky Coder P
 
 - **Funky Coder** and **Funky Coder Plus**
 - Device pictogram of the physical hardware layout
-- Live button / encoder activity on the panel reflecting the mode (if applicable)
+- Live button / encoder activity on the HUD reflecting the mode (if applicable)
 - Mode chrome when the device has mode pins (**MODE 1**, **MODE 2**, …)
 - Selection remembered across launches; hot plug refresh
 
@@ -54,7 +54,7 @@ Labels are pulled from the **active bind files** for the sim or middleware in fo
 - Reads MSFS, X-Plane 12, and **SPAD.neXt** bind / profile data
 - In **SPAD.neXt**, use the **button label** to specify the overlay text; SPAD labels win when present
 - Leader lines point from each control to its bound action (NAV outer/inner, ALT, G1000, transponder, pan, …)
-- Host tag on the panel footer (e.g. **XP+SPAD**, **MSFS**, **SPAD**)
+- Host tag on the HUD footer (e.g. **XP+SPAD**, **MSFS**, **SPAD**)
 - HUD color: **green · white · red** (cycle in the app)
 
 **Funky Coder Plus**
@@ -75,27 +75,27 @@ Labels are pulled from the **active bind files** for the sim or middleware in fo
 
 ### X-Plane 12
 
-- Floating **S16N Overlay Panel** plugin window inside the sim
+- Floating **S16N HUD** plugin window inside the sim
 - Install from the app’s **Install** tab (or the bundled plugin payload)
 - Menu: **Plugins → S16N Overlay → Show Overlay Panel**
 - Same shared-memory image the desktop app and OpenXR path use
 
 ### MSFS 2024
 
-- In-game toolbar panel (**S16N Overlay**) via the Community package
+- In-game toolbar panel (**S16N HUD**) via the Community package
 - Install / remove from the **Install** tab pointing at your Community folder
 - Fully restart MSFS after install
 
 ### SPAD.neXt
 
 - Watches SPAD bind / profile files for the selected s16n device
-- Set each control’s **button label** in SPAD.neXt to the text you want on the panel
+- Set each control’s **button label** in SPAD.neXt to the text you want on the HUD
 - Labels update when you change binds or labels in SPAD
 - Works alongside XP12 or MSFS (footer shows **XP+SPAD** / **MSFS+SPAD** when both are live)
 
-### OpenXR HUD (experimental)
+### OpenXR (experimental)
 
-- Implicit OpenXR API layer composites the same panel as a transparent quad in the headset
+- Implicit OpenXR API layer composites the same HUD as a transparent quad in the headset
 - Optional system-wide (HKLM) registration from the installer or **Install** tab
 - Nudge position / size, VIEW vs LOCAL space, visibility, alpha
 - One-eye capture for debugging (F8)
@@ -107,7 +107,7 @@ Labels are pulled from the **active bind files** for the sim or middleware in fo
 - **Binds** — active bind files for MSFS / XP12 / SPAD.neXt
 - **Install** — OpenXR layer, MSFS Community panel, X-Plane 12 plugin
 - Optional start with Windows (system tray)
-- Windows 10/11 x64 installer (`s16n-controller-panel-setup.exe`)
+- Windows 10/11 x64 installer (`s16n-hud-setup.exe`)
 
 ### Requirements
 
