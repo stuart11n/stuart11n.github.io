@@ -113,6 +113,8 @@ Labels are pulled from the **active bind files** for the sim or middleware in fo
 
 While the app is running it listens on **`http://127.0.0.1:18765`** (localhost only). CORS allows GET / POST / OPTIONS. Query values are URL-decoded; surrounding quotes are stripped. Control calls that succeed return JSON including color, visibility, position, and size.
 
+Can be driven from **SPAD.neXt** (or any localhost HTTP client) — more reliable than sending keystrokes into the app.
+
 #### Status
 
 | Method | Path | Purpose |
