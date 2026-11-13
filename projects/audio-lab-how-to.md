@@ -314,14 +314,12 @@ This gives a very usable **2 dBV** calibration without any extra gear:
 1. Connect the UMC202HD **inputs** to its **outputs** (loopback).
 2. In Windows sound settings, set the **Volume** for the UMC202HD **Speakers** and **Microphone** to **max** (**100**).
 
-![Windows volume at 100 for the interface](/assets/images/turntable-audio/howto-umc-volume.png){: .center-image }
-
+   ![Windows volume at 100 for the interface](/assets/images/turntable-audio/howto-umc-volume.png){: .center-image }
 3. On each of those devices (**Playback** and **Recording** → **Properties** → **Advanced**), set **2 channels, 24 bit, 192000 Hz** (same on both sides — see [Matched sample rates](#matched-sample-rates-windows)).
 
-![Windows shared format 24 bit, 192000 Hz](/assets/images/turntable-audio/howto-umc-format.png){: .center-image }
-
-4. On the UMC202HD hardware: **output** gain to **max**; **input** gain to about **12 o’clock**, just below where it clips.
-5. In **Audio Lab**, under **Tools**, select **1 kHz** in the tone generator and click **Start**.
+   ![Windows shared format 24 bit, 192000 Hz](/assets/images/turntable-audio/howto-umc-format.png){: .center-image }
+4. In **Audio Lab**, under **Tools**, select **1 kHz** in the tone generator and click **Start**.
+5. On the UMC202HD hardware: **output** gain to **max**; **input** gain to about **12 o’clock**, just below where it clips.
 6. In **Audio Lab**, set **Max Input Level** to **2 dBV**, and **Output Level** to **0 dB**.
 
 Leave those gains alone afterward. For everyday stimulus, drop Tools **Level** to **−10 dB** or **−20 dB** so you are not driving gear at full scale. The meter-based steps below are still the gold standard if you have a true-RMS voltmeter.
