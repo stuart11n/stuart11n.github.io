@@ -101,6 +101,25 @@ Labels are pulled from the **active bind files** for the sim or middleware in fo
 - One-eye capture for debugging (F8)
 - Tested against common Windows OpenXR runtimes (e.g. Pimax); treat as experimental
 
+### Per-eye gamma / RGB in VR (experimental)
+
+Balance a headset whose two panels don't quite match — one eye a little darker, warmer, or greener than the other. The OpenXR layer color-grades the **sim's VR world image** independently for each eye, before the runtime shows it.
+
+- **Options** tab → **OpenXR per-eye world color (VR view)**: a **Left eye** and **Right eye** column, each with **Gamma**, **R**, **G**, **B** sliders
+- **Gamma** 0.2–3.0 (default 1.0): above 1 lifts the midtones, below 1 darkens them; blacks and whites stay put
+- **R / G / B** 0–2 (default 1.0): per-channel gain for that eye
+- **Reset left** · **Reset right** · **Reset both** return to neutral
+- Changes apply live in the headset; settings are saved and restored on the next launch
+- Also scriptable from the [Local HTTP API](#local-http-api) (`/overlay/gamma`, `/overlay/rgb`) — e.g. from SPAD.neXt
+
+Good to know:
+
+- **MSFS 2024** (DirectX 12) only for now; X-Plane 12 is not graded yet
+- Only the world is graded — the HUD and the 2D in-sim panels are unchanged
+- An eye left at default costs nothing; each adjusted eye adds one full-resolution pass on the GPU, so usually tweak just the eye that's off
+- Fully restart MSFS after installing or updating the layer
+- **Frame generation:** if you use an OpenXR frame-generation layer, the s16n layer must sit **before** it (closer to the sim), so the frames it generates are built from the graded image. Check or change the order with a layer manager such as [OpenXR API Layers GUI](https://github.com/fredemmott/OpenXR-API-Layers-GUI)
+
 ### Also in the app
 
 - **Devices** — pick the Funky Coder / Plus, refresh HID list
@@ -139,10 +158,10 @@ GET http://127.0.0.1:18765/status/text?value=GEAR%20DOWN
 | GET | `/overlay/size` | `up`, `down` | Scale the OpenXR quad (~1.1× / ÷1.1) |
 | GET | `/overlay/nudge` | `left`, `right`, `up`, `down`, `near`, `far` | Nudge OpenXR pose (~2 cm) |
 | GET | `/overlay/visible` | `0`, `1`, `toggle` (or empty) | Hide / show / toggle the overlay |
-| GET | `/overlay/gamma` | `eye=left\|right\|both`, `value=<float>` | Per-eye OpenXR gamma (≈0.2–3.0; default 1.0) |
-| GET | `/overlay/rgb` | `eye=left\|right\|both`, optional `r` / `g` / `b` floats | Per-eye OpenXR RGB gains (≈0–2; omit a channel to leave it unchanged) |
+| GET | `/overlay/gamma` | `eye=left\|right\|both`, `value=<float>` | Per-eye VR world gamma (0.2–3.0; default 1.0) |
+| GET | `/overlay/rgb` | `eye=left\|right\|both`, optional `r` / `g` / `b` floats | Per-eye VR world RGB gains (0–2; default 1.0; omit a channel to leave it unchanged) |
 
-Successful control calls return JSON including tint, visibility, pose/size, plus `gamma` and `rgb` per eye. Gamma / RGB grade the sim's VR world image independently per eye through the OpenXR layer (currently D3D12 sims such as MSFS 2024). The HUD itself and the 2D MSFS / XP panel are not affected.
+Successful control calls return JSON including tint, visibility, pose/size, plus `gamma` and `rgb` per eye. Gamma / RGB behave like the Options sliders — see [Per-eye gamma / RGB in VR](#per-eye-gamma--rgb-in-vr-experimental).
 
 Examples:
 
