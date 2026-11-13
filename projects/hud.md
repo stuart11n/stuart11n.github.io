@@ -5,7 +5,7 @@ description: >-
   HUD overlay for s16n Funky Coder and Funky Coder Plus — automatic bind labels in X-Plane 12 and MSFS 2024, SPAD.neXt support, and an experimental OpenXR HUD.
 image: /assets/images/controller-panel/hero.jpg
 card_image: /assets/images/controller-panel/card.jpg
-permalink: /projects/controller-panel/
+permalink: /projects/hud/
 homepage: true
 homepage_order: 28
 tags:
@@ -108,6 +108,58 @@ Labels are pulled from the **active bind files** for the sim or middleware in fo
 - **Install** — OpenXR layer, MSFS Community panel, X-Plane 12 plugin
 - Optional start with Windows (system tray)
 - Windows 10/11 x64 installer (`s16n-hud-setup.exe`)
+
+### Local HTTP API
+
+While the app is running it listens on **`http://127.0.0.1:18765`** (localhost only). CORS allows GET / POST / OPTIONS. Query values are URL-decoded; surrounding quotes are stripped. Control calls that succeed return JSON including color, visibility, position, and size.
+
+#### Status
+
+| Method | Path | Purpose |
+|--------|------|---------|
+| GET | `/status` or `/status.json` | Liveness snapshot: `pixelSeq`, `visible`, `width`, `height`, `port` |
+| GET | `/status/1` · `/status/2` · `/status/3` | Set footer status ring. Query: `value=0` or `value=1` |
+| GET | `/status/text` | Set footer text (max 64 chars). Query: `value=...` |
+
+Examples:
+
+```
+GET http://127.0.0.1:18765/status.json
+GET http://127.0.0.1:18765/status/1?value=1
+GET http://127.0.0.1:18765/status/text?value=GEAR%20DOWN
+```
+
+#### HUD controls
+
+| Method | Path | Query `value` | Purpose |
+|--------|------|---------------|---------|
+| GET | `/color` | `next` (or empty), `green`, `white`, `red` | Cycle or set HUD tint |
+| GET | `/overlay/size` | `up`, `down` | Scale the OpenXR quad (~1.1× / ÷1.1) |
+| GET | `/overlay/nudge` | `left`, `right`, `up`, `down`, `near`, `far` | Nudge OpenXR pose (~2 cm) |
+| GET | `/overlay/visible` | `0`, `1`, `toggle` (or empty) | Hide / show / toggle the overlay |
+
+Examples:
+
+```
+GET http://127.0.0.1:18765/color?value=green
+GET http://127.0.0.1:18765/overlay/nudge?value=up
+GET http://127.0.0.1:18765/overlay/visible?value=toggle
+```
+
+#### Panel geometry (MSFS)
+
+| Method | Path | Purpose |
+|--------|------|---------|
+| GET | `/panel_geom` or `/panel_geom.json` | Read saved in-sim panel rect; `{}` if none |
+| GET | `/panel_geom.json?left=&top=&width=&height=` | Save panel rect (preferred) |
+| POST | `/panel_geom.json` | Save panel rect from a JSON body `{"left":…,"top":…,"width":…,"height":…}` |
+
+#### Diagnostics
+
+| Method | Path | Purpose |
+|--------|------|---------|
+| GET | `/log?...` | Append a diagnostic line to the app log (204) |
+| OPTIONS | any | CORS preflight (204) |
 
 ### Requirements
 
