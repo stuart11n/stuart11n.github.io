@@ -139,6 +139,10 @@ GET http://127.0.0.1:18765/status/text?value=GEAR%20DOWN
 | GET | `/overlay/size` | `up`, `down` | Scale the OpenXR quad (~1.1× / ÷1.1) |
 | GET | `/overlay/nudge` | `left`, `right`, `up`, `down`, `near`, `far` | Nudge OpenXR pose (~2 cm) |
 | GET | `/overlay/visible` | `0`, `1`, `toggle` (or empty) | Hide / show / toggle the overlay |
+| GET | `/overlay/gamma` | `eye=left\|right\|both`, `value=<float>` | Per-eye OpenXR gamma (≈0.2–3.0; default 1.0) |
+| GET | `/overlay/rgb` | `eye=left\|right\|both`, optional `r` / `g` / `b` floats | Per-eye OpenXR RGB gains (≈0–2; omit a channel to leave it unchanged) |
+
+Successful control calls return JSON including tint, visibility, pose/size, plus `gamma` and `rgb` per eye. Gamma / RGB grade the sim's VR world image independently per eye through the OpenXR layer (currently D3D12 sims such as MSFS 2024). The HUD itself and the 2D MSFS / XP panel are not affected.
 
 Examples:
 
@@ -146,6 +150,8 @@ Examples:
 GET http://127.0.0.1:18765/color?value=green
 GET http://127.0.0.1:18765/overlay/nudge?value=up
 GET http://127.0.0.1:18765/overlay/visible?value=toggle
+GET http://127.0.0.1:18765/overlay/gamma?eye=left&value=1.2
+GET http://127.0.0.1:18765/overlay/rgb?eye=right&r=1.05&b=0.95
 ```
 
 #### Panel geometry (MSFS)
