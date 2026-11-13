@@ -56,7 +56,7 @@ Audio Lab reads a stereo USB (or other system) audio device on the desktop. You 
 - **Behringer U-Phoria UMC202HD** — combo inputs with a LINE pad; set them to line, not instrument or mic.
 - **Behringer UCA202 / UCA222** — cheap RCA line-in, no mic preamp in the way. Fine for a tape deck or a phono stage. Some units need **−1 sample** on **Channel B trim** on the **Source** tab. It can appear and disappear. Confirm with one output from a source into both ADC inputs — **X-Y** should be a perfect line.
 - Any other 2-in USB interface with a LINE pad (**Focusrite Scarlett 2i2** and similar) works if you set the inputs to line.
-- 48 kHz is enough for most purposes. Max frequency tracks the open device’s Nyquist.
+- 48 kHz is enough. Max frequency tracks the open device’s Nyquist.
 - On **Windows**, Playback and Recording for that interface must use the **same shared sample rate** if you run Live input and Tools / Analyzer output together — see [Matched sample rates (Windows)](#matched-sample-rates-windows).
 - A turntable still needs a phono stage in front of the ADC. Do not plug the cartridge into line-in.
 
@@ -64,7 +64,7 @@ Audio Lab reads a stereo USB (or other system) audio device on the desktop. You 
 
 On **Source**, pick **Max Input Level** for your device (**2 dBV** typical, **1.8 dBV** Pro-class, **+17.8 dBV** UMC202HD, **+19.8 dBV** Scarlett 2i2). That only scales the volt labels — set LINE gain on the interface (or in the Windows mixer) so the signal is healthy without clipping.
 
-Performing a **2 dBV** calibration is recommended but not mandatory for many measurements and adjustments — see [Calibration](#calibration).
+Performing a **2 dBV** calibration is recommended but not mandatory for many measurements and adjustments — see [Calibration](#calibration). On a UMC202HD, start with [Easy UMC202HD Setup](#easy-umc202hd-setup).
 
 ### Controls
 
@@ -301,11 +301,30 @@ Set both sides to the **same** rate before loopback, tone into the DUT, or Analy
 3. **Recording** tab → the same interface (e.g. **Microphone (UMC202HD 192k)**) → **Properties** → **Advanced** → the **same** rate and bit depth. Apply / OK.
 4. Restart Audio Lab (or click **Live** again) so it reopens at the new shared format.
 
-48 kHz on both sides is enough for most purposes. Use 96 / 192 kHz only when you need the extra bandwidth — and keep Playback and Recording matched.
+48 kHz on both sides is enough for almost everything in this how-to. Use 96 / 192 kHz only when you need the extra bandwidth — and keep Playback and Recording matched.
 
 ### Calibration
 
 Performing a **2 dBV** calibration is recommended but not mandatory for many measurements and adjustments. It makes the volt / dBV readouts match a known line level when you are setting gains or calibrating meters.
+
+#### Easy UMC202HD Setup
+
+This gives a very usable **2 dBV** calibration without any extra gear:
+
+1. Connect the UMC202HD **inputs** to its **outputs** (loopback).
+2. In Windows sound settings, set the **Volume** for the UMC202HD **Speakers** and **Microphone** to **max** (**100**).
+
+![Windows volume at 100 for the interface](/assets/images/turntable-audio/howto-umc-volume.png){: .center-image }
+
+3. On each of those devices (**Playback** and **Recording** → **Properties** → **Advanced**), set **2 channels, 24 bit, 192000 Hz** (same on both sides — see [Matched sample rates](#matched-sample-rates-windows)).
+
+![Windows shared format 24 bit, 192000 Hz](/assets/images/turntable-audio/howto-umc-format.png){: .center-image }
+
+4. On the UMC202HD hardware: **output** gain to **max**; **input** gain to about **12 o’clock**, just below where it clips.
+5. In **Audio Lab**, under **Tools**, select **1 kHz** in the tone generator and click **Start**.
+6. In **Audio Lab**, set **Max Input Level** to **2 dBV**, and **Output Level** to **0 dB**.
+
+Leave those gains alone afterward. For everyday stimulus, drop Tools **Level** to **−10 dB** or **−20 dB** so you are not driving gear at full scale. The meter-based steps below are still the gold standard if you have a true-RMS voltmeter.
 
 #### Calibrate output to 2 dBV
 
@@ -327,7 +346,7 @@ Same idea on the capture path: **Max Input Level** is “what dBV is 0 dBFS on t
 3. Loop the output back into the input, and use the **Tools** tab to output **1 kHz** (**Level** **0 dB**, **Start**).
 4. Switch to **Y-T**, open **Measure**, read **RMS**. In the **Windows sound mixer**, open the recording device for that ADC and adjust its **input** level until **RMS** shows about **1.26 V** (and the sine is not flat-topped). At **Max Input Level** **2 dBV**, that readout means the loopback is sitting at digital full scale — input cal matches the output cal.
 
-Keep the LINE pad on; do not use mic gain for this. If you cannot reach 1.26 Vrms without clipping, the interface’s max input is below +2 dBV at that pad — pick a different **Max Input Level** preset to match a measured full-scale, or pad the loopback.
+If you cannot reach 1.26 Vrms without clipping, the interface’s max input is below +2 dBV at that pad — pick a different **Max Input Level** preset to match a measured full-scale, or pad the loopback.
 
 #### Input sample trim
 
