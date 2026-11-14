@@ -108,23 +108,32 @@ Balance a headset whose two panels don't quite match — one eye a little darker
 - **Options** tab → **OpenXR per-eye world color (VR view)**: a **Left eye** and **Right eye** column, each with **Gamma**, **R**, **G**, **B** sliders
 - **Gamma** 0.2–3.0 (default 1.0): above 1 lifts the midtones, below 1 darkens them; blacks and whites stay put
 - **R / G / B** 0–2 (default 1.0): per-channel gain for that eye
-- **Reset left** · **Reset right** · **Reset both** return to neutral
+- **Reset left** · **Reset right** · **Reset both** restore the active preset's factory values
 - Changes apply live in the headset; settings are saved and restored on the next launch
-- Also scriptable from the [Local HTTP API](#local-http-api) (`/overlay/gamma`, `/overlay/rgb`) — e.g. from SPAD.neXt
+- Also scriptable from the [Local HTTP API](#local-http-api) (`/overlay/gamma`, `/overlay/rgb`, `/overlay/color-preset`) — e.g. from SPAD.neXt
+
+**Presets** — **Slots (both eyes)** holds three independent grades; press **P** in the app to cycle them:
+
+- **Preset 1** — neutral
+- **Preset 2** — dark sunglasses (approximates OpenXR Toolkit *Dark*)
+- **Preset 3** — night (approximates OpenXR Toolkit *TruNite*)
+
+Each preset keeps its own left / right values. The sliders, Reset and the HTTP gamma / RGB calls edit only the active preset, and switching never overwrites the others — so you can tune, say, a day and a night look and flip between them.
 
 Good to know:
 
 - **MSFS 2024** (DirectX 12) only for now; X-Plane 12 is not graded yet
 - Only the world is graded — the HUD and the 2D in-sim panels are unchanged
-- An eye left at default costs nothing; each adjusted eye adds one full-resolution pass on the GPU, so usually tweak just the eye that's off
+- An eye left at default costs nothing. Where the sim's eye images allow it, each adjusted eye is graded in place with a single GPU compute pass; otherwise the layer falls back to a separate copy, which costs a little more
 - Fully restart MSFS after installing or updating the layer
-- **Frame generation:** if you use an OpenXR frame-generation layer, the s16n layer must sit **before** it (closer to the sim), so the frames it generates are built from the graded image. Check or change the order with a layer manager such as [OpenXR API Layers GUI](https://github.com/fredemmott/OpenXR-API-Layers-GUI)
+- **Frame generation:** if you use an OpenXR frame-generation layer, the s16n layer (`XR_APILAYER_S16N_HUD`) must sit **before** it (closer to the sim), so the frames it generates are built from the graded image. Check or change the order with a layer manager such as [OpenXR API Layers GUI](https://github.com/fredemmott/OpenXR-API-Layers-GUI)
 
 ### Also in the app
 
 - **Devices** — pick the Funky Coder / Plus, refresh HID list
 - **Binds** — active bind files for MSFS / XP12 / SPAD.neXt
 - **Install** — OpenXR layer, MSFS Community panel, X-Plane 12 plugin
+- Status bar shows the active bind sources and the app version
 - Optional start with Windows (system tray)
 - Windows 10/11 x64 installer (`s16n-hud-setup.exe`)
 
@@ -160,8 +169,9 @@ GET http://127.0.0.1:18765/status/text?value=GEAR%20DOWN
 | GET | `/overlay/visible` | `0`, `1`, `toggle` (or empty) | Hide / show / toggle the overlay |
 | GET | `/overlay/gamma` | `eye=left\|right\|both`, `value=<float>` | Per-eye VR world gamma (0.2–3.0; default 1.0) |
 | GET | `/overlay/rgb` | `eye=left\|right\|both`, optional `r` / `g` / `b` floats | Per-eye VR world RGB gains (0–2; default 1.0; omit a channel to leave it unchanged) |
+| GET | `/overlay/color-preset` | `preset1`, `preset2`, `preset3` (or empty to read) | Select the active eye-color preset |
 
-Successful control calls return JSON including tint, visibility, pose/size, plus `gamma` and `rgb` per eye. Gamma / RGB behave like the Options sliders — see [Per-eye gamma / RGB in VR](#per-eye-gamma--rgb-in-vr-experimental).
+Successful control calls return JSON including tint, visibility, pose/size, plus `eyeColorPreset` and per-eye `gamma` and `rgb`. Gamma / RGB edit the active preset, like the Options sliders — see [Per-eye gamma / RGB in VR](#per-eye-gamma--rgb-in-vr-experimental).
 
 Examples:
 
@@ -171,6 +181,7 @@ GET http://127.0.0.1:18765/overlay/nudge?value=up
 GET http://127.0.0.1:18765/overlay/visible?value=toggle
 GET http://127.0.0.1:18765/overlay/gamma?eye=left&value=1.2
 GET http://127.0.0.1:18765/overlay/rgb?eye=right&r=1.05&b=0.95
+GET http://127.0.0.1:18765/overlay/color-preset?value=preset3
 ```
 
 #### Panel geometry (MSFS)
