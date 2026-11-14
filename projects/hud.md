@@ -103,7 +103,7 @@ Labels are pulled from the **active bind files** for the sim or middleware in fo
 
 ### Per-eye gamma / RGB in VR (experimental)
 
-Balance a headset whose two panels don't quite match — one eye a little darker, warmer, or greener than the other. The OpenXR layer color-grades the **sim's VR world image** independently for each eye, before the runtime shows it.
+Balance a headset whose two panels don't quite match — one eye a little darker, warmer, or greener than the other. The OpenXR layer color-grades the **sim's VR world image** independently for each eye, before the runtime shows it. **DirectX 12 (MSFS 2024) only** — not supported on DirectX 11, including X-Plane 12.
 
 - **Options** tab → **OpenXR per-eye world color (VR view)**: a **Left eye** and **Right eye** column, each with **Gamma**, **R**, **G**, **B** sliders
 - **Gamma** 0.2–3.0 (default 1.0): above 1 lifts the midtones, below 1 darkens them; blacks and whites stay put
@@ -122,7 +122,7 @@ Each preset keeps its own left / right values. The sliders, Reset and the HTTP g
 
 Good to know:
 
-- **MSFS 2024** (DirectX 12) only for now; X-Plane 12 is not graded yet
+- **DirectX 12 only (MSFS 2024).** Grading is not supported on DirectX 11 — that includes **X-Plane 12**. The sliders and presets have no effect there; the HUD itself still works
 - Only the world is graded — the HUD and the 2D in-sim panels are unchanged
 - An eye left at default costs nothing. Where the sim's eye images allow it, each adjusted eye is graded in place with a single GPU compute pass; otherwise the layer falls back to a separate copy, which costs a little more
 - Fully restart MSFS after installing or updating the layer
@@ -171,7 +171,7 @@ GET http://127.0.0.1:18765/status/text?value=GEAR%20DOWN
 | GET | `/overlay/rgb` | `eye=left\|right\|both`, optional `r` / `g` / `b` floats | Per-eye VR world RGB gains (0–2; default 1.0; omit a channel to leave it unchanged) |
 | GET | `/overlay/color-preset` | `preset1`, `preset2`, `preset3` (or empty to read) | Select the active eye-color preset |
 
-Successful control calls return JSON including tint, visibility, pose/size, plus `eyeColorPreset` and per-eye `gamma` and `rgb`. Gamma / RGB edit the active preset, like the Options sliders — see [Per-eye gamma / RGB in VR](#per-eye-gamma--rgb-in-vr-experimental).
+Successful control calls return JSON including tint, visibility, pose/size, plus `eyeColorPreset` and per-eye `gamma` and `rgb`. Gamma / RGB edit the active preset, like the Options sliders, and only take effect in DirectX 12 sims (MSFS 2024) — see [Per-eye gamma / RGB in VR](#per-eye-gamma--rgb-in-vr-experimental).
 
 Examples:
 
