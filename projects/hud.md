@@ -99,7 +99,7 @@ Labels are pulled from the **active bind files** for the sim or middleware in fo
 - Optional system-wide (HKLM) registration from the installer or **Install** tab
 - Nudge position / size, VIEW vs LOCAL space, visibility, alpha
 - One-eye capture for debugging (F8)
-- Tested against common Windows OpenXR runtimes (e.g. Pimax); treat as experimental
+- Only tested with **Pimax** headsets (Pimax OpenXR runtime), in **MSFS 2024** and **X-Plane 12** only; treat as experimental
 
 ### Per-eye gamma / RGB in VR (experimental)
 
@@ -123,6 +123,7 @@ Each preset keeps its own left / right values. The sliders, Reset and the HTTP g
 Good to know:
 
 - **DirectX 12 only (MSFS 2024).** Grading is not supported on DirectX 11 — that includes **X-Plane 12**. The sliders and presets have no effect there; the HUD itself still works
+- Only tested with **Pimax** headsets (Pimax OpenXR runtime) in MSFS 2024
 - Only the world is graded — the HUD and the 2D in-sim panels are unchanged
 - An eye left at default costs nothing. Where the sim's eye images allow it, each adjusted eye is graded in place with a single GPU compute pass; otherwise the layer falls back to a separate copy, which costs a little more
 - Fully restart MSFS after installing or updating the layer
