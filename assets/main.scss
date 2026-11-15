@@ -718,25 +718,31 @@ body:not(.home) .page-content {
   width: min(100%, 420px);
 }
 
-/* Before / after image swipe — drag on the image */
+/* Before / after swipe compare (rauljimenez-style handle + clip) */
 .img-compare {
   --pos: 50%;
   position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
   margin: 1rem auto 1.5rem;
-  max-width: 100%;
   overflow: hidden;
   border-radius: 14px;
+  background: #1a1c1f;
   user-select: none;
   touch-action: none;
   cursor: ew-resize;
 }
 
-.post-content .img-compare img {
+.post-content .img-compare img,
+.img-compare img {
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   margin: 0;
   border-radius: 0;
+  object-fit: cover;
   pointer-events: none;
   max-width: none;
 }
@@ -745,36 +751,51 @@ body:not(.home) .page-content {
   position: absolute;
   inset: 0;
   clip-path: inset(0 calc(100% - var(--pos)) 0 0);
+  z-index: 1;
 }
 
-.img-compare__divider {
+.img-compare__slider {
   position: absolute;
   top: 0;
   bottom: 0;
   left: var(--pos);
+  z-index: 3;
+  width: 44px;
+  margin-left: -22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: ew-resize;
+  outline: none;
+}
+
+.img-compare__slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
   width: 2px;
   margin-left: -1px;
   background: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.45);
   pointer-events: none;
-  z-index: 2;
 }
 
-.img-compare__divider::after {
-  content: "\2194";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 2.4rem;
-  height: 2.4rem;
-  transform: translate(-50%, -50%);
-  display: grid;
-  place-items: center;
+.img-compare__handle {
+  position: relative;
+  z-index: 1;
+  width: 2.25rem;
+  height: 2.25rem;
   border-radius: 50%;
   background: #fff;
   color: var(--ink);
-  font-size: 1.1rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.28);
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+  line-height: 1;
 }
 
 .img-compare__label {
@@ -798,12 +819,16 @@ body:not(.home) .page-content {
   right: 0.75rem;
 }
 
-.img-compare:focus-visible {
+.img-compare__slider:focus-visible .img-compare__handle {
   outline: 3px solid var(--sky);
-  outline-offset: 3px;
+  outline-offset: 2px;
 }
 
 .img-compare.is-dragging {
+  cursor: grabbing;
+}
+
+.img-compare.is-dragging .img-compare__slider {
   cursor: grabbing;
 }
 

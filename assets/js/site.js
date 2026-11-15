@@ -132,49 +132,55 @@
     return Math.min(max, Math.max(min, n));
   }
 
-  Array.prototype.forEach.call(document.querySelectorAll(".img-compare"), function (figure) {
-    var pos = 50;
+  Array.prototype.forEach.call(document.querySelectorAll(".img-compare"), function (root) {
+    var slider = root.querySelector(".img-compare__slider");
+    if (!slider) return;
+    var dragging = false;
+    var pos = Number(slider.getAttribute("aria-valuenow")) || 50;
 
     function setPos(percent) {
       pos = clamp(percent, 0, 100);
-      figure.style.setProperty("--pos", pos + "%");
+      root.style.setProperty("--pos", pos + "%");
+      slider.setAttribute("aria-valuenow", String(Math.round(pos)));
     }
 
     function posFromClientX(clientX) {
-      var rect = figure.getBoundingClientRect();
+      var rect = root.getBoundingClientRect();
       if (!rect.width) return pos;
       return ((clientX - rect.left) / rect.width) * 100;
     }
 
-    setPos(pos);
-
-    figure.addEventListener("pointerdown", function (event) {
+    function startDrag(event) {
       if (event.button != null && event.button !== 0) return;
-      figure.classList.add("is-dragging");
+      dragging = true;
+      root.classList.add("is-dragging");
       try {
-        figure.setPointerCapture(event.pointerId);
+        root.setPointerCapture(event.pointerId);
       } catch (err) {}
       setPos(posFromClientX(event.clientX));
       event.preventDefault();
-    });
-
-    figure.addEventListener("pointermove", function (event) {
-      if (!figure.classList.contains("is-dragging")) return;
-      setPos(posFromClientX(event.clientX));
-    });
-
-    function endDrag(event) {
-      if (!figure.classList.contains("is-dragging")) return;
-      figure.classList.remove("is-dragging");
-      try {
-        figure.releasePointerCapture(event.pointerId);
-      } catch (err) {}
     }
 
-    figure.addEventListener("pointerup", endDrag);
-    figure.addEventListener("pointercancel", endDrag);
+    function onMove(event) {
+      if (!dragging) return;
+      setPos(posFromClientX(event.clientX));
+    }
 
-    figure.addEventListener("keydown", function (event) {
+    function endDrag() {
+      if (!dragging) return;
+      dragging = false;
+      root.classList.remove("is-dragging");
+    }
+
+    setPos(pos);
+
+    // Drag handle or anywhere on the image (same interaction as the reference demo)
+    root.addEventListener("pointerdown", startDrag);
+    root.addEventListener("pointermove", onMove);
+    root.addEventListener("pointerup", endDrag);
+    root.addEventListener("pointercancel", endDrag);
+
+    slider.addEventListener("keydown", function (event) {
       var step = event.shiftKey ? 10 : 5;
       if (event.key === "ArrowLeft") {
         event.preventDefault();

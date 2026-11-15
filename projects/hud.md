@@ -152,43 +152,49 @@ Balance a headset whose two panels don't quite match — one eye a little darker
 - **Nocturnal** — brightens night scenes while holding back bright lights, so dark terrain and cockpits are easier to read
 - Your per-eye gamma / RGB are applied on top of the look
 
-Simulated with the layer's look math on official MSFS 2024 screenshots (© Microsoft / Asobo Studio — [Xbox Wire](https://news.xbox.com/en-us/2024/09/19/microsoft-flight-simulator-2024-preview/), [Microsoft Store](https://www.xbox.com/en-us/games/store/microsoft-flight-simulator-2024-standard-edition/9p2vgctbmm52)). Drag across each image to compare.
+Simulated with the layer's look math on official MSFS 2024 screenshots (© Microsoft / Asobo Studio — [Xbox Wire](https://news.xbox.com/en-us/2024/09/19/microsoft-flight-simulator-2024-preview/), [Microsoft Store](https://www.xbox.com/en-us/games/store/microsoft-flight-simulator-2024-standard-edition/9p2vgctbmm52)). Drag the handle (or click anywhere on the image) to compare.
 
 **Light**
 
-<figure class="img-compare" tabindex="0" role="img" aria-label="Swipe compare: Neutral on the left, Light on the right">
-  <img src="/assets/images/controller-panel/look-day-light.jpg" alt="MSFS 2024, Boeing 747 Global SuperTanker — Light look" width="1280" height="720" loading="lazy">
+<div class="img-compare" style="--pos: 50%">
+  <img class="img-compare__after" src="/assets/images/controller-panel/look-day-light.jpg" alt="MSFS 2024, Boeing 747 Global SuperTanker — Light look" width="1280" height="720" loading="lazy">
   <div class="img-compare__before">
     <img src="/assets/images/controller-panel/look-day-neutral.jpg" alt="" width="1280" height="720" loading="lazy">
   </div>
-  <div class="img-compare__divider" aria-hidden="true"></div>
+  <div class="img-compare__slider" role="slider" tabindex="0" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-label="Compare Neutral and Light">
+    <span class="img-compare__handle" aria-hidden="true">⇆</span>
+  </div>
   <span class="img-compare__label img-compare__label--before">Neutral</span>
   <span class="img-compare__label img-compare__label--after">Light</span>
-</figure>
+</div>
 
 **Dark**
 
-<figure class="img-compare" tabindex="0" role="img" aria-label="Swipe compare: Neutral on the left, Dark on the right">
-  <img src="/assets/images/controller-panel/look-day-dark.jpg" alt="MSFS 2024, Boeing 747 Global SuperTanker — Dark look" width="1280" height="720" loading="lazy">
+<div class="img-compare" style="--pos: 50%">
+  <img class="img-compare__after" src="/assets/images/controller-panel/look-day-dark.jpg" alt="MSFS 2024, Boeing 747 Global SuperTanker — Dark look" width="1280" height="720" loading="lazy">
   <div class="img-compare__before">
     <img src="/assets/images/controller-panel/look-day-neutral.jpg" alt="" width="1280" height="720" loading="lazy">
   </div>
-  <div class="img-compare__divider" aria-hidden="true"></div>
+  <div class="img-compare__slider" role="slider" tabindex="0" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-label="Compare Neutral and Dark">
+    <span class="img-compare__handle" aria-hidden="true">⇆</span>
+  </div>
   <span class="img-compare__label img-compare__label--before">Neutral</span>
   <span class="img-compare__label img-compare__label--after">Dark</span>
-</figure>
+</div>
 
 **Nocturnal**
 
-<figure class="img-compare" tabindex="0" role="img" aria-label="Swipe compare: Neutral on the left, Nocturnal on the right">
-  <img src="/assets/images/controller-panel/look-night-nocturnal.jpg" alt="MSFS 2024, Rio de Janeiro at night — Nocturnal look" width="1280" height="720" loading="lazy">
+<div class="img-compare" style="--pos: 50%">
+  <img class="img-compare__after" src="/assets/images/controller-panel/look-night-nocturnal.jpg" alt="MSFS 2024, Rio de Janeiro at night — Nocturnal look" width="1280" height="720" loading="lazy">
   <div class="img-compare__before">
     <img src="/assets/images/controller-panel/look-night-neutral.jpg" alt="" width="1280" height="720" loading="lazy">
   </div>
-  <div class="img-compare__divider" aria-hidden="true"></div>
+  <div class="img-compare__slider" role="slider" tabindex="0" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-label="Compare Neutral and Nocturnal">
+    <span class="img-compare__handle" aria-hidden="true">⇆</span>
+  </div>
   <span class="img-compare__label img-compare__label--before">Neutral</span>
   <span class="img-compare__label img-compare__label--after">Nocturnal</span>
-</figure>
+</div>
 
 Each look keeps its own left / right values. The sliders, Reset and the HTTP gamma / RGB calls edit only the active look, and switching never overwrites the others — so you can tune, say, a day and a night setup and flip between them.
 
