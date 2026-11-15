@@ -217,6 +217,8 @@ Good to know:
 
 Trim the edges of the VR view you rarely look at, so the GPU renders fewer pixels. **DirectX 12 (MSFS 2024) only.**
 
+![FOV crop — left and right eye with Top, Bottom, outer, and inner edges labelled](/assets/images/controller-panel/fov-crop.jpg){: .center-image }
+
 - **OpenXR** tab → **FOV crop**: six sliders — **Top**, **Bottom**, **Left outer**, **Right outer**, **Left inner**, **Right inner** — each the percentage of that edge kept, 50–100%
 - Pixel density stays the same; the headset shows black outside the cropped area
 - The crop follows the sliders live, but the lower render resolution only kicks in when you **restart VR** in the sim
