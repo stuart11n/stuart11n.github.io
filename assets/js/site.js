@@ -128,14 +128,68 @@
 })();
 
 (function () {
+  function clamp(n, min, max) {
+    return Math.min(max, Math.max(min, n));
+  }
+
   Array.prototype.forEach.call(document.querySelectorAll(".img-compare"), function (figure) {
-    var range = figure.querySelector(".img-compare__range");
-    if (!range) return;
-    function update() {
-      figure.style.setProperty("--pos", range.value + "%");
+    var pos = 50;
+
+    function setPos(percent) {
+      pos = clamp(percent, 0, 100);
+      figure.style.setProperty("--pos", pos + "%");
     }
-    range.addEventListener("input", update);
-    update();
+
+    function posFromClientX(clientX) {
+      var rect = figure.getBoundingClientRect();
+      if (!rect.width) return pos;
+      return ((clientX - rect.left) / rect.width) * 100;
+    }
+
+    setPos(pos);
+
+    figure.addEventListener("pointerdown", function (event) {
+      if (event.button != null && event.button !== 0) return;
+      figure.classList.add("is-dragging");
+      try {
+        figure.setPointerCapture(event.pointerId);
+      } catch (err) {}
+      setPos(posFromClientX(event.clientX));
+      event.preventDefault();
+    });
+
+    figure.addEventListener("pointermove", function (event) {
+      if (!figure.classList.contains("is-dragging")) return;
+      setPos(posFromClientX(event.clientX));
+    });
+
+    function endDrag(event) {
+      if (!figure.classList.contains("is-dragging")) return;
+      figure.classList.remove("is-dragging");
+      try {
+        figure.releasePointerCapture(event.pointerId);
+      } catch (err) {}
+    }
+
+    figure.addEventListener("pointerup", endDrag);
+    figure.addEventListener("pointercancel", endDrag);
+
+    figure.addEventListener("keydown", function (event) {
+      var step = event.shiftKey ? 10 : 5;
+      if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        setPos(pos - step);
+      } else if (event.key === "ArrowRight") {
+        event.preventDefault();
+        setPos(pos + step);
+      } else if (event.key === "Home") {
+        event.preventDefault();
+        setPos(0);
+      } else if (event.key === "End") {
+        event.preventDefault();
+        setPos(100);
+      }
+    });
   });
 
   Array.prototype.forEach.call(document.querySelectorAll(".tabs"), function (tabs) {
@@ -148,13 +202,15 @@
         var active = i === index;
         button.setAttribute("aria-selected", active ? "true" : "false");
         button.tabIndex = active ? 0 : -1;
-        panels[i].hidden = !active;
+        if (active) panels[i].removeAttribute("hidden");
+        else panels[i].setAttribute("hidden", "");
       });
       if (focus) buttons[index].focus();
     }
 
     buttons.forEach(function (button, i) {
-      button.addEventListener("click", function () {
+      button.addEventListener("click", function (event) {
+        event.preventDefault();
         select(i, false);
       });
       button.addEventListener("keydown", function (event) {
@@ -169,7 +225,10 @@
       });
     });
 
-    tabs.classList.add("is-ready");
-    select(0, false);
+    var initial = 0;
+    buttons.forEach(function (button, i) {
+      if (button.getAttribute("aria-selected") === "true") initial = i;
+    });
+    select(initial, false);
   });
 })();

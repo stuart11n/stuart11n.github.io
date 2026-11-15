@@ -59,38 +59,38 @@ Labels are pulled from the **active bind files** for the sim or middleware in fo
 
 **Funky Coder Plus**
 
-<div class="tabs">
+<div class="tabs" data-tabs="hud-fcp">
   <div class="tabs__list" role="tablist" aria-label="Funky Coder Plus HUD color">
-    <button type="button" class="tabs__tab" role="tab" id="hud-fcp-tab-green" aria-controls="hud-fcp-green">Green</button>
-    <button type="button" class="tabs__tab" role="tab" id="hud-fcp-tab-white" aria-controls="hud-fcp-white">White</button>
-    <button type="button" class="tabs__tab" role="tab" id="hud-fcp-tab-red" aria-controls="hud-fcp-red">Red</button>
+    <button type="button" class="tabs__tab" role="tab" id="hud-fcp-tab-green" aria-controls="hud-fcp-green" aria-selected="true">Green</button>
+    <button type="button" class="tabs__tab" role="tab" id="hud-fcp-tab-white" aria-controls="hud-fcp-white" aria-selected="false" tabindex="-1">White</button>
+    <button type="button" class="tabs__tab" role="tab" id="hud-fcp-tab-red" aria-controls="hud-fcp-red" aria-selected="false" tabindex="-1">Red</button>
   </div>
   <div class="tabs__panel" role="tabpanel" id="hud-fcp-green" aria-labelledby="hud-fcp-tab-green">
     <img class="center-image" src="/assets/images/controller-panel/hud-green.png" alt="Funky Coder Plus — green HUD">
   </div>
-  <div class="tabs__panel" role="tabpanel" id="hud-fcp-white" aria-labelledby="hud-fcp-tab-white">
+  <div class="tabs__panel" role="tabpanel" id="hud-fcp-white" aria-labelledby="hud-fcp-tab-white" hidden>
     <img class="center-image" src="/assets/images/controller-panel/hud-white.png" alt="Funky Coder Plus — white HUD" loading="lazy">
   </div>
-  <div class="tabs__panel" role="tabpanel" id="hud-fcp-red" aria-labelledby="hud-fcp-tab-red">
+  <div class="tabs__panel" role="tabpanel" id="hud-fcp-red" aria-labelledby="hud-fcp-tab-red" hidden>
     <img class="center-image" src="/assets/images/controller-panel/hud-red.png" alt="Funky Coder Plus — red HUD" loading="lazy">
   </div>
 </div>
 
 **Funky Coder**
 
-<div class="tabs">
+<div class="tabs" data-tabs="hud-fc">
   <div class="tabs__list" role="tablist" aria-label="Funky Coder HUD color">
-    <button type="button" class="tabs__tab" role="tab" id="hud-fc-tab-green" aria-controls="hud-fc-green">Green</button>
-    <button type="button" class="tabs__tab" role="tab" id="hud-fc-tab-white" aria-controls="hud-fc-white">White</button>
-    <button type="button" class="tabs__tab" role="tab" id="hud-fc-tab-red" aria-controls="hud-fc-red">Red</button>
+    <button type="button" class="tabs__tab" role="tab" id="hud-fc-tab-green" aria-controls="hud-fc-green" aria-selected="true">Green</button>
+    <button type="button" class="tabs__tab" role="tab" id="hud-fc-tab-white" aria-controls="hud-fc-white" aria-selected="false" tabindex="-1">White</button>
+    <button type="button" class="tabs__tab" role="tab" id="hud-fc-tab-red" aria-controls="hud-fc-red" aria-selected="false" tabindex="-1">Red</button>
   </div>
   <div class="tabs__panel" role="tabpanel" id="hud-fc-green" aria-labelledby="hud-fc-tab-green">
     <img class="center-image" src="/assets/images/controller-panel/hud-fc-green.png" alt="Funky Coder — green HUD">
   </div>
-  <div class="tabs__panel" role="tabpanel" id="hud-fc-white" aria-labelledby="hud-fc-tab-white">
+  <div class="tabs__panel" role="tabpanel" id="hud-fc-white" aria-labelledby="hud-fc-tab-white" hidden>
     <img class="center-image" src="/assets/images/controller-panel/hud-fc-white.png" alt="Funky Coder — white HUD" loading="lazy">
   </div>
-  <div class="tabs__panel" role="tabpanel" id="hud-fc-red" aria-labelledby="hud-fc-tab-red">
+  <div class="tabs__panel" role="tabpanel" id="hud-fc-red" aria-labelledby="hud-fc-tab-red" hidden>
     <img class="center-image" src="/assets/images/controller-panel/hud-fc-red.png" alt="Funky Coder — red HUD" loading="lazy">
   </div>
 </div>
@@ -152,45 +152,42 @@ Balance a headset whose two panels don't quite match — one eye a little darker
 - **Nocturnal** — brightens night scenes while holding back bright lights, so dark terrain and cockpits are easier to read
 - Your per-eye gamma / RGB are applied on top of the look
 
-Simulated with the layer's look math on official MSFS 2024 screenshots (© Microsoft / Asobo Studio — [Xbox Wire](https://news.xbox.com/en-us/2024/09/19/microsoft-flight-simulator-2024-preview/), [Microsoft Store](https://www.xbox.com/en-us/games/store/microsoft-flight-simulator-2024-standard-edition/9p2vgctbmm52)). Drag the slider to compare.
+Simulated with the layer's look math on official MSFS 2024 screenshots (© Microsoft / Asobo Studio — [Xbox Wire](https://news.xbox.com/en-us/2024/09/19/microsoft-flight-simulator-2024-preview/), [Microsoft Store](https://www.xbox.com/en-us/games/store/microsoft-flight-simulator-2024-standard-edition/9p2vgctbmm52)). Drag across each image to compare.
 
 **Light**
 
-<figure class="img-compare">
+<figure class="img-compare" tabindex="0" role="img" aria-label="Swipe compare: Neutral on the left, Light on the right">
   <img src="/assets/images/controller-panel/look-day-light.jpg" alt="MSFS 2024, Boeing 747 Global SuperTanker — Light look" width="1280" height="720" loading="lazy">
   <div class="img-compare__before">
-    <img src="/assets/images/controller-panel/look-day-neutral.jpg" alt="MSFS 2024, Boeing 747 Global SuperTanker — Neutral, no look applied" width="1280" height="720" loading="lazy">
+    <img src="/assets/images/controller-panel/look-day-neutral.jpg" alt="" width="1280" height="720" loading="lazy">
   </div>
-  <div class="img-compare__divider"></div>
+  <div class="img-compare__divider" aria-hidden="true"></div>
   <span class="img-compare__label img-compare__label--before">Neutral</span>
   <span class="img-compare__label img-compare__label--after">Light</span>
-  <input class="img-compare__range" type="range" min="0" max="100" value="50" aria-label="Compare Neutral and Light">
 </figure>
 
 **Dark**
 
-<figure class="img-compare">
+<figure class="img-compare" tabindex="0" role="img" aria-label="Swipe compare: Neutral on the left, Dark on the right">
   <img src="/assets/images/controller-panel/look-day-dark.jpg" alt="MSFS 2024, Boeing 747 Global SuperTanker — Dark look" width="1280" height="720" loading="lazy">
   <div class="img-compare__before">
-    <img src="/assets/images/controller-panel/look-day-neutral.jpg" alt="MSFS 2024, Boeing 747 Global SuperTanker — Neutral, no look applied" width="1280" height="720" loading="lazy">
+    <img src="/assets/images/controller-panel/look-day-neutral.jpg" alt="" width="1280" height="720" loading="lazy">
   </div>
-  <div class="img-compare__divider"></div>
+  <div class="img-compare__divider" aria-hidden="true"></div>
   <span class="img-compare__label img-compare__label--before">Neutral</span>
   <span class="img-compare__label img-compare__label--after">Dark</span>
-  <input class="img-compare__range" type="range" min="0" max="100" value="50" aria-label="Compare Neutral and Dark">
 </figure>
 
 **Nocturnal**
 
-<figure class="img-compare">
+<figure class="img-compare" tabindex="0" role="img" aria-label="Swipe compare: Neutral on the left, Nocturnal on the right">
   <img src="/assets/images/controller-panel/look-night-nocturnal.jpg" alt="MSFS 2024, Rio de Janeiro at night — Nocturnal look" width="1280" height="720" loading="lazy">
   <div class="img-compare__before">
-    <img src="/assets/images/controller-panel/look-night-neutral.jpg" alt="MSFS 2024, Rio de Janeiro at night — Neutral, no look applied" width="1280" height="720" loading="lazy">
+    <img src="/assets/images/controller-panel/look-night-neutral.jpg" alt="" width="1280" height="720" loading="lazy">
   </div>
-  <div class="img-compare__divider"></div>
+  <div class="img-compare__divider" aria-hidden="true"></div>
   <span class="img-compare__label img-compare__label--before">Neutral</span>
   <span class="img-compare__label img-compare__label--after">Nocturnal</span>
-  <input class="img-compare__range" type="range" min="0" max="100" value="50" aria-label="Compare Neutral and Nocturnal">
 </figure>
 
 Each look keeps its own left / right values. The sliders, Reset and the HTTP gamma / RGB calls edit only the active look, and switching never overwrites the others — so you can tune, say, a day and a night setup and flip between them.
