@@ -160,12 +160,12 @@ Balance a headset whose two panels don't quite match — one eye a little darker
 - **Nocturnal** — brightens night scenes while holding back bright lights, so dark terrain and cockpits are easier to read
 - Your per-eye gamma / RGB are applied on top of the look
 
-Simulated with the layer's look math on official MSFS 2024 screenshots (© Microsoft / Asobo Studio — [Microsoft Store](https://www.xbox.com/en-us/games/store/microsoft-flight-simulator-2024-standard-edition/9p2vgctbmm52)). Drag the handle (or click anywhere on the image) to compare.
+Simulated with the layer's look math. Drag the handle (or click anywhere on the image) to compare.
 
 **Light**
 
 <div class="img-compare" style="--pos: 50%">
-  <img class="img-compare__after" src="/assets/images/controller-panel/look-day-light.jpg" alt="MSFS 2024 daytime scene — Light look" width="1280" height="720" loading="lazy">
+  <img class="img-compare__after" src="/assets/images/controller-panel/look-day-light.jpg" alt="Daytime scene — Light look" width="1280" height="720" loading="lazy">
   <div class="img-compare__before">
     <img src="/assets/images/controller-panel/look-day-neutral.jpg" alt="" width="1280" height="720" loading="lazy">
   </div>
@@ -179,7 +179,7 @@ Simulated with the layer's look math on official MSFS 2024 screenshots (© Micro
 **Dark**
 
 <div class="img-compare" style="--pos: 50%">
-  <img class="img-compare__after" src="/assets/images/controller-panel/look-day-dark.jpg" alt="MSFS 2024 daytime scene — Dark look" width="1280" height="720" loading="lazy">
+  <img class="img-compare__after" src="/assets/images/controller-panel/look-day-dark.jpg" alt="Daytime scene — Dark look" width="1280" height="720" loading="lazy">
   <div class="img-compare__before">
     <img src="/assets/images/controller-panel/look-day-neutral.jpg" alt="" width="1280" height="720" loading="lazy">
   </div>
@@ -193,7 +193,7 @@ Simulated with the layer's look math on official MSFS 2024 screenshots (© Micro
 **Nocturnal**
 
 <div class="img-compare" style="--pos: 50%">
-  <img class="img-compare__after" src="/assets/images/controller-panel/look-night-nocturnal.jpg" alt="MSFS 2024, Rio de Janeiro at night — Nocturnal look" width="1280" height="720" loading="lazy">
+  <img class="img-compare__after" src="/assets/images/controller-panel/look-night-nocturnal.jpg" alt="Night scene — Nocturnal look" width="1280" height="720" loading="lazy">
   <div class="img-compare__before">
     <img src="/assets/images/controller-panel/look-night-neutral.jpg" alt="" width="1280" height="720" loading="lazy">
   </div>
