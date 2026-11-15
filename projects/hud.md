@@ -98,10 +98,10 @@ Labels are pulled from the **active bind files** for the sim or middleware in fo
 A bundled SPAD.neXt script adds **S16N_*** actions you can bind to any button or encoder in SPAD. They drive the app over the [Local HTTP API](#local-http-api), so the app must be running.
 
 - Install with the installer's **Install SPAD.neXt actions** option (offered when SPAD.neXt is present), or from the **Install** tab's SPAD.neXt card, which also shows when the installed script is out of date. Restart SPAD.neXt afterwards
-- **Looks:** `S16N_Look_Neutral`, `S16N_Look_Light`, `S16N_Look_Dark`, `S16N_Look_TruNite`, and `S16N_Look_Cycle` (button = next; encoder = next / previous)
+- **Looks:** `S16N_Look_Neutral`, `S16N_Look_Light`, `S16N_Look_Dark`, `S16N_Look_Nocturnal`, and `S16N_Look_Cycle` (button = next; encoder = next / previous)
 - **VR HUD:** `S16N_Hud_On`, `S16N_Hud_Off`, `S16N_Hud_Toggle`, `S16N_Hud_Recenter`, `S16N_Hud_NudgeLeft`, `S16N_Hud_NudgeRight`, `S16N_Hud_NudgeUp`, `S16N_Hud_NudgeDown`, `S16N_Hud_NudgeNear`, `S16N_Hud_NudgeFar`, `S16N_Hud_Bigger`, `S16N_Hud_Smaller`, `S16N_Hud_ColorNext`
 - **Encoder versions** (clockwise = right / up / far / bigger): `S16N_Hud_NudgeHorizontal`, `S16N_Hud_NudgeVertical`, `S16N_Hud_NudgeDepth`, `S16N_Hud_Size`
-- Publishes `LOCAL:S16N_ONLINE`, `LOCAL:S16N_VISIBLE` and `LOCAL:S16N_LOOK` (0 Neutral … 3 TruNite) for LEDs and displays
+- Publishes `LOCAL:S16N_ONLINE`, `LOCAL:S16N_VISIBLE` and `LOCAL:S16N_LOOK` (0 Neutral … 3 Nocturnal) for LEDs and displays
 
 ### OpenXR (experimental)
 
@@ -126,7 +126,9 @@ Balance a headset whose two panels don't quite match — one eye a little darker
 **Looks** — **Look (both eyes)** picks one of four; press **P** in the app to cycle them:
 
 - **Neutral** — no look, just your per-eye gamma / RGB
-- **Light** · **Dark** · **TruNite** — an exact port of the [OpenXR Toolkit](https://mbucchia.github.io/OpenXR-Toolkit/) *sunglasses* modes, with your per-eye gamma / RGB applied on top
+- **Light** · **Dark** — progressively darker tone curves for bright daytime scenes
+- **Nocturnal** — brightens night scenes while holding back bright lights, so dark terrain and cockpits are easier to read
+- Your per-eye gamma / RGB are applied on top of the look
 
 Simulated with the layer's look math on official MSFS 2024 screenshots (© Microsoft / Asobo Studio — [Xbox Wire](https://news.xbox.com/en-us/2024/09/19/microsoft-flight-simulator-2024-preview/), [Microsoft Store](https://www.xbox.com/en-us/games/store/microsoft-flight-simulator-2024-standard-edition/9p2vgctbmm52)):
 
@@ -146,9 +148,9 @@ Simulated with the layer's look math on official MSFS 2024 screenshots (© Micro
 
 ![MSFS 2024, Rio de Janeiro at night — Neutral, no look applied](/assets/images/controller-panel/look-night-neutral.jpg){: .center-image }
 
-**TruNite**
+**Nocturnal**
 
-![MSFS 2024, Rio de Janeiro at night — TruNite look](/assets/images/controller-panel/look-night-trunite.jpg){: .center-image }
+![MSFS 2024, Rio de Janeiro at night — Nocturnal look](/assets/images/controller-panel/look-night-nocturnal.jpg){: .center-image }
 
 Each look keeps its own left / right values. The sliders, Reset and the HTTP gamma / RGB calls edit only the active look, and switching never overwrites the others — so you can tune, say, a day and a night setup and flip between them.
 
@@ -163,7 +165,7 @@ Good to know:
 
 ### FOV crop (experimental)
 
-Trim the edges of the VR view you rarely look at, so the GPU renders fewer pixels — the same idea as OpenXR Toolkit's Crop2FOV mod. **DirectX 12 (MSFS 2024) only.**
+Trim the edges of the VR view you rarely look at, so the GPU renders fewer pixels. **DirectX 12 (MSFS 2024) only.**
 
 - **OpenXR** tab → **FOV crop**: six sliders — **Top**, **Bottom**, **Left outer**, **Right outer**, **Left inner**, **Right inner** — each the percentage of that edge kept, 50–100%
 - Pixel density stays the same; the headset shows black outside the cropped area
@@ -215,7 +217,7 @@ GET http://127.0.0.1:18765/status/text?value=GEAR%20DOWN
 | GET | `/overlay/recenter` | — | Re-anchor the world-mode HUD to the current head pose (saved) |
 | GET | `/overlay/gamma` | `eye=left\|right\|both`, `value=<float>` | Per-eye VR world gamma (0.2–3.0; default 1.0) |
 | GET | `/overlay/rgb` | `eye=left\|right\|both`, optional `r` / `g` / `b` floats | Per-eye VR world RGB gains (0–2; default 1.0; omit a channel to leave it unchanged) |
-| GET | `/overlay/color-preset` | `neutral`, `light`, `dark`, `trunite` or `1`–`4` (or empty to read) | Select the active look |
+| GET | `/overlay/color-preset` | `neutral`, `light`, `dark`, `nocturnal` or `1`–`4` (or empty to read) | Select the active look |
 
 Successful control calls return JSON including tint, visibility, pose/size, plus `eyeColorPreset` and per-eye `gamma` and `rgb`. Gamma / RGB edit the active look, like the OpenXR tab sliders, and only take effect in DirectX 12 sims (MSFS 2024) — see [Per-eye gamma / RGB in VR](#per-eye-gamma--rgb-in-vr-experimental).
 
