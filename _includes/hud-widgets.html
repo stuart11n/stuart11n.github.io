@@ -1,0 +1,217 @@
+<style>
+/* HUD page widgets — inlined so they cannot desync from cached main.css / site.js */
+.hud-tabs {
+  margin: 1rem 0 1.5rem;
+}
+.hud-tabs__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid var(--line, rgba(26, 28, 31, 0.12));
+}
+.hud-tabs__tab {
+  position: relative;
+  padding: 0.55rem 1.1rem;
+  margin-bottom: -1px;
+  border-bottom: 2px solid transparent;
+  color: var(--ink-muted, #5b616a);
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.hud-tabs__tab input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  pointer-events: none;
+}
+.hud-tabs__tab:has(input:checked) {
+  color: var(--ink, #1a1c1f);
+  border-bottom-color: var(--ink, #1a1c1f);
+}
+.hud-tabs__panels > .hud-tabs__panel {
+  display: none;
+}
+.hud-tabs:has(.hud-tabs__list > .hud-tabs__tab:nth-child(1) input:checked) .hud-tabs__panels > .hud-tabs__panel:nth-child(1),
+.hud-tabs:has(.hud-tabs__list > .hud-tabs__tab:nth-child(2) input:checked) .hud-tabs__panels > .hud-tabs__panel:nth-child(2),
+.hud-tabs:has(.hud-tabs__list > .hud-tabs__tab:nth-child(3) input:checked) .hud-tabs__panels > .hud-tabs__panel:nth-child(3) {
+  display: block;
+}
+.hud-tabs__panels .hud-tabs__panel img {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 14px;
+}
+
+.img-compare {
+  --pos: 50%;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 1rem auto 1.5rem;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #1a1c1f;
+  user-select: none;
+  touch-action: none;
+  cursor: ew-resize;
+}
+.img-compare img {
+  position: absolute !important;
+  inset: 0;
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  object-fit: cover;
+  pointer-events: none;
+  max-width: none !important;
+}
+.img-compare__before {
+  position: absolute;
+  inset: 0;
+  clip-path: inset(0 calc(100% - var(--pos)) 0 0);
+  z-index: 1;
+}
+.img-compare__slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--pos);
+  z-index: 3;
+  width: 44px;
+  margin-left: -22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: ew-resize;
+  outline: none;
+}
+.img-compare__slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  margin-left: -1px;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+}
+.img-compare__handle {
+  position: relative;
+  z-index: 1;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--ink, #1a1c1f);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.28);
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+  line-height: 1;
+}
+.img-compare__label {
+  position: absolute;
+  top: 0.75rem;
+  z-index: 2;
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+  background: rgba(26, 28, 31, 0.7);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  pointer-events: none;
+}
+.img-compare__label--before { left: 0.75rem; }
+.img-compare__label--after { right: 0.75rem; }
+.img-compare.is-dragging,
+.img-compare.is-dragging .img-compare__slider { cursor: grabbing; }
+.img-compare__slider:focus-visible .img-compare__handle {
+  outline: 3px solid var(--sky, #1f6feb);
+  outline-offset: 2px;
+}
+</style>
+
+<script>
+(function () {
+  function clamp(n, min, max) {
+    return Math.min(max, Math.max(min, n));
+  }
+
+  function bindCompare(root) {
+    if (root.getAttribute("data-bound") === "1") return;
+    var slider = root.querySelector(".img-compare__slider");
+    if (!slider) return;
+    root.setAttribute("data-bound", "1");
+    var dragging = false;
+    var pos = Number(slider.getAttribute("aria-valuenow")) || 50;
+
+    function setPos(percent) {
+      pos = clamp(percent, 0, 100);
+      root.style.setProperty("--pos", pos + "%");
+      slider.setAttribute("aria-valuenow", String(Math.round(pos)));
+    }
+
+    function posFromClientX(clientX) {
+      var rect = root.getBoundingClientRect();
+      if (!rect.width) return pos;
+      return ((clientX - rect.left) / rect.width) * 100;
+    }
+
+    function startDrag(event) {
+      if (event.button != null && event.button !== 0) return;
+      dragging = true;
+      root.classList.add("is-dragging");
+      try { root.setPointerCapture(event.pointerId); } catch (err) {}
+      setPos(posFromClientX(event.clientX));
+      event.preventDefault();
+    }
+
+    function onMove(event) {
+      if (!dragging) return;
+      setPos(posFromClientX(event.clientX));
+    }
+
+    function endDrag() {
+      if (!dragging) return;
+      dragging = false;
+      root.classList.remove("is-dragging");
+    }
+
+    setPos(pos);
+    root.addEventListener("pointerdown", startDrag);
+    root.addEventListener("pointermove", onMove);
+    root.addEventListener("pointerup", endDrag);
+    root.addEventListener("pointercancel", endDrag);
+
+    slider.addEventListener("keydown", function (event) {
+      var step = event.shiftKey ? 10 : 5;
+      if (event.key === "ArrowLeft") { event.preventDefault(); setPos(pos - step); }
+      else if (event.key === "ArrowRight") { event.preventDefault(); setPos(pos + step); }
+      else if (event.key === "Home") { event.preventDefault(); setPos(0); }
+      else if (event.key === "End") { event.preventDefault(); setPos(100); }
+    });
+  }
+
+  function init() {
+    Array.prototype.forEach.call(document.querySelectorAll(".img-compare"), bindCompare);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();
+</script>

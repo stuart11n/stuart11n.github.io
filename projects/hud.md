@@ -28,6 +28,8 @@ card_desc: "Automatic bind labels for Funky Coder / Plus — XP12, MSFS 2024, SP
 card_wide: true
 ---
 
+{% include hud-widgets.html %}
+
 Windows app that draws a live **HUD** for your **Funky Coder** or **Funky Coder Plus**, with **automatic labels** from the active sim / SPAD.neXt binds. Float it in **X-Plane 12** or **MSFS 2024**, or push an experimental **OpenXR** HUD in VR.
 
 ![s16n HUD in X-Plane 12](/assets/images/controller-panel/hero.jpg){: .center-image }
@@ -59,39 +61,43 @@ Labels are pulled from the **active bind files** for the sim or middleware in fo
 
 **Funky Coder Plus**
 
-<div class="tabs" data-tabs="hud-fcp">
-  <div class="tabs__list" role="tablist" aria-label="Funky Coder Plus HUD color">
-    <button type="button" class="tabs__tab" role="tab" id="hud-fcp-tab-green" aria-controls="hud-fcp-green" aria-selected="true">Green</button>
-    <button type="button" class="tabs__tab" role="tab" id="hud-fcp-tab-white" aria-controls="hud-fcp-white" aria-selected="false" tabindex="-1">White</button>
-    <button type="button" class="tabs__tab" role="tab" id="hud-fcp-tab-red" aria-controls="hud-fcp-red" aria-selected="false" tabindex="-1">Red</button>
+<div class="hud-tabs">
+  <div class="hud-tabs__list" role="radiogroup" aria-label="Funky Coder Plus HUD color">
+    <label class="hud-tabs__tab"><input type="radio" name="hud-fcp-color" checked> Green</label>
+    <label class="hud-tabs__tab"><input type="radio" name="hud-fcp-color"> White</label>
+    <label class="hud-tabs__tab"><input type="radio" name="hud-fcp-color"> Red</label>
   </div>
-  <div class="tabs__panel" role="tabpanel" id="hud-fcp-green" aria-labelledby="hud-fcp-tab-green">
-    <img class="center-image" src="/assets/images/controller-panel/hud-green.png" alt="Funky Coder Plus — green HUD">
-  </div>
-  <div class="tabs__panel" role="tabpanel" id="hud-fcp-white" aria-labelledby="hud-fcp-tab-white" hidden>
-    <img class="center-image" src="/assets/images/controller-panel/hud-white.png" alt="Funky Coder Plus — white HUD" loading="lazy">
-  </div>
-  <div class="tabs__panel" role="tabpanel" id="hud-fcp-red" aria-labelledby="hud-fcp-tab-red" hidden>
-    <img class="center-image" src="/assets/images/controller-panel/hud-red.png" alt="Funky Coder Plus — red HUD" loading="lazy">
+  <div class="hud-tabs__panels">
+    <div class="hud-tabs__panel">
+      <img src="/assets/images/controller-panel/hud-green.png" alt="Funky Coder Plus — green HUD" width="512" height="256">
+    </div>
+    <div class="hud-tabs__panel">
+      <img src="/assets/images/controller-panel/hud-white.png" alt="Funky Coder Plus — white HUD" width="512" height="256" loading="lazy">
+    </div>
+    <div class="hud-tabs__panel">
+      <img src="/assets/images/controller-panel/hud-red.png" alt="Funky Coder Plus — red HUD" width="512" height="256" loading="lazy">
+    </div>
   </div>
 </div>
 
 **Funky Coder**
 
-<div class="tabs" data-tabs="hud-fc">
-  <div class="tabs__list" role="tablist" aria-label="Funky Coder HUD color">
-    <button type="button" class="tabs__tab" role="tab" id="hud-fc-tab-green" aria-controls="hud-fc-green" aria-selected="true">Green</button>
-    <button type="button" class="tabs__tab" role="tab" id="hud-fc-tab-white" aria-controls="hud-fc-white" aria-selected="false" tabindex="-1">White</button>
-    <button type="button" class="tabs__tab" role="tab" id="hud-fc-tab-red" aria-controls="hud-fc-red" aria-selected="false" tabindex="-1">Red</button>
+<div class="hud-tabs">
+  <div class="hud-tabs__list" role="radiogroup" aria-label="Funky Coder HUD color">
+    <label class="hud-tabs__tab"><input type="radio" name="hud-fc-color" checked> Green</label>
+    <label class="hud-tabs__tab"><input type="radio" name="hud-fc-color"> White</label>
+    <label class="hud-tabs__tab"><input type="radio" name="hud-fc-color"> Red</label>
   </div>
-  <div class="tabs__panel" role="tabpanel" id="hud-fc-green" aria-labelledby="hud-fc-tab-green">
-    <img class="center-image" src="/assets/images/controller-panel/hud-fc-green.png" alt="Funky Coder — green HUD">
-  </div>
-  <div class="tabs__panel" role="tabpanel" id="hud-fc-white" aria-labelledby="hud-fc-tab-white" hidden>
-    <img class="center-image" src="/assets/images/controller-panel/hud-fc-white.png" alt="Funky Coder — white HUD" loading="lazy">
-  </div>
-  <div class="tabs__panel" role="tabpanel" id="hud-fc-red" aria-labelledby="hud-fc-tab-red" hidden>
-    <img class="center-image" src="/assets/images/controller-panel/hud-fc-red.png" alt="Funky Coder — red HUD" loading="lazy">
+  <div class="hud-tabs__panels">
+    <div class="hud-tabs__panel">
+      <img src="/assets/images/controller-panel/hud-fc-green.png" alt="Funky Coder — green HUD" width="512" height="256">
+    </div>
+    <div class="hud-tabs__panel">
+      <img src="/assets/images/controller-panel/hud-fc-white.png" alt="Funky Coder — white HUD" width="512" height="256" loading="lazy">
+    </div>
+    <div class="hud-tabs__panel">
+      <img src="/assets/images/controller-panel/hud-fc-red.png" alt="Funky Coder — red HUD" width="512" height="256" loading="lazy">
+    </div>
   </div>
 </div>
 
