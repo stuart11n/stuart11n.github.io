@@ -99,7 +99,7 @@ A bundled SPAD.neXt script adds **S16N_*** actions you can bind to any button or
 
 - Install with the installer's **Install SPAD.neXt actions** option (offered when SPAD.neXt is present), or from the **Install** tab's SPAD.neXt card, which also shows when the installed script is out of date. Restart SPAD.neXt afterwards
 - **Looks:** `S16N_Look_Neutral`, `S16N_Look_Light`, `S16N_Look_Dark`, `S16N_Look_TruNite`, and `S16N_Look_Cycle` (button = next; encoder = next / previous)
-- **VR HUD:** `S16N_Hud_On`, `S16N_Hud_Off`, `S16N_Hud_Toggle`, nudge left / right / up / down / near / far, `S16N_Hud_Bigger`, `S16N_Hud_Smaller`, `S16N_Hud_ColorNext`
+- **VR HUD:** `S16N_Hud_On`, `S16N_Hud_Off`, `S16N_Hud_Toggle`, `S16N_Hud_Recenter`, nudge left / right / up / down / near / far, `S16N_Hud_Bigger`, `S16N_Hud_Smaller`, `S16N_Hud_ColorNext`
 - **Encoder versions** (clockwise = right / up / far / bigger): `S16N_Hud_NudgeHorizontal`, `S16N_Hud_NudgeVertical`, `S16N_Hud_NudgeDepth`, `S16N_Hud_Size`
 - Publishes `LOCAL:S16N_ONLINE`, `LOCAL:S16N_VISIBLE` and `LOCAL:S16N_LOOK` (0 Neutral … 3 TruNite) for LEDs and displays
 
@@ -108,6 +108,7 @@ A bundled SPAD.neXt script adds **S16N_*** actions you can bind to any button or
 - Implicit OpenXR API layer composites the same HUD as a transparent quad in the headset
 - Optional system-wide (HKLM) registration from the installer or **Install** tab
 - Nudge position / size, VIEW vs LOCAL space, visibility, alpha
+- **World (LOCAL) mode** places the HUD relative to a saved head position and facing direction (level — yaw only). It's captured the first time the HUD shows in world mode and reused across hide / show and VR sessions; press **W** (or use the HTTP / SPAD recenter) to re-anchor it to where you're looking
 - One-eye capture for debugging (F8)
 - Only tested with **Pimax** headsets (Pimax OpenXR runtime), in **MSFS 2024** and **X-Plane 12** only; treat as experimental
 
@@ -189,6 +190,7 @@ GET http://127.0.0.1:18765/status/text?value=GEAR%20DOWN
 | GET | `/overlay/size` | `up`, `down` | Scale the OpenXR quad (~1.1× / ÷1.1) |
 | GET | `/overlay/nudge` | `left`, `right`, `up`, `down`, `near`, `far` | Nudge OpenXR pose (~2 cm) |
 | GET | `/overlay/visible` | `0`, `1`, `toggle` (or empty) | Hide / show / toggle the overlay |
+| GET | `/overlay/recenter` | — | Re-anchor the world-mode HUD to the current head pose (saved) |
 | GET | `/overlay/gamma` | `eye=left\|right\|both`, `value=<float>` | Per-eye VR world gamma (0.2–3.0; default 1.0) |
 | GET | `/overlay/rgb` | `eye=left\|right\|both`, optional `r` / `g` / `b` floats | Per-eye VR world RGB gains (0–2; default 1.0; omit a channel to leave it unchanged) |
 | GET | `/overlay/color-preset` | `neutral`, `light`, `dark`, `trunite` or `1`–`4` (or empty to read) | Select the active look |
@@ -201,6 +203,7 @@ Examples:
 GET http://127.0.0.1:18765/color?value=green
 GET http://127.0.0.1:18765/overlay/nudge?value=up
 GET http://127.0.0.1:18765/overlay/visible?value=toggle
+GET http://127.0.0.1:18765/overlay/recenter
 GET http://127.0.0.1:18765/overlay/gamma?eye=left&value=1.2
 GET http://127.0.0.1:18765/overlay/rgb?eye=right&r=1.05&b=0.95
 GET http://127.0.0.1:18765/overlay/color-preset?value=dark
