@@ -93,6 +93,16 @@ Labels are pulled from the **active bind files** for the sim or middleware in fo
 - Labels update when you change binds or labels in SPAD
 - Works alongside XP12 or MSFS (footer shows **XP+SPAD** / **MSFS+SPAD** when both are live)
 
+#### SPAD.neXt actions
+
+A bundled SPAD.neXt script adds **S16N_*** actions you can bind to any button or encoder in SPAD. They drive the app over the [Local HTTP API](#local-http-api), so the app must be running.
+
+- Install with the installer's **Install SPAD.neXt actions** option (offered when SPAD.neXt is present), or from the **Install** tab's SPAD.neXt card, which also shows when the installed script is out of date. Restart SPAD.neXt afterwards
+- **Looks:** `S16N_Look_Neutral`, `S16N_Look_Light`, `S16N_Look_Dark`, `S16N_Look_TruNite`, and `S16N_Look_Cycle` (button = next; encoder = next / previous)
+- **VR HUD:** `S16N_Hud_On`, `S16N_Hud_Off`, `S16N_Hud_Toggle`, nudge left / right / up / down / near / far, `S16N_Hud_Bigger`, `S16N_Hud_Smaller`, `S16N_Hud_ColorNext`
+- **Encoder versions** (clockwise = right / up / far / bigger): `S16N_Hud_NudgeHorizontal`, `S16N_Hud_NudgeVertical`, `S16N_Hud_NudgeDepth`, `S16N_Hud_Size`
+- Publishes `LOCAL:S16N_ONLINE`, `LOCAL:S16N_VISIBLE` and `LOCAL:S16N_LOOK` (0 Neutral … 3 TruNite) for LEDs and displays
+
 ### OpenXR (experimental)
 
 - Implicit OpenXR API layer composites the same HUD as a transparent quad in the headset
@@ -105,35 +115,46 @@ Labels are pulled from the **active bind files** for the sim or middleware in fo
 
 Balance a headset whose two panels don't quite match — one eye a little darker, warmer, or greener than the other. The OpenXR layer color-grades the **sim's VR world image** independently for each eye, before the runtime shows it. **DirectX 12 (MSFS 2024) only** — not supported on DirectX 11, including X-Plane 12.
 
-- **Options** tab → **OpenXR per-eye world color (VR view)**: a **Left eye** and **Right eye** column, each with **Gamma**, **R**, **G**, **B** sliders
+- **OpenXR** tab → **OpenXR per-eye world color (VR view)**: a **Left eye** and **Right eye** column, each with **Gamma**, **R**, **G**, **B** sliders
 - **Gamma** 0.2–3.0 (default 1.0): above 1 lifts the midtones, below 1 darkens them; blacks and whites stay put
 - **R / G / B** 0–2 (default 1.0): per-channel gain for that eye
-- **Reset left** · **Reset right** · **Reset both** restore the active preset's factory values
+- **Reset left** · **Reset right** · **Reset both** restore the active look's defaults
 - Changes apply live in the headset; settings are saved and restored on the next launch
-- Also scriptable from the [Local HTTP API](#local-http-api) (`/overlay/gamma`, `/overlay/rgb`, `/overlay/color-preset`) — e.g. from SPAD.neXt
+- Also scriptable from the [Local HTTP API](#local-http-api) (`/overlay/gamma`, `/overlay/rgb`, `/overlay/color-preset`) and from [SPAD.neXt actions](#spadnext-actions)
 
-**Presets** — **Slots (both eyes)** holds three independent grades; press **P** in the app to cycle them:
+**Looks** — **Look (both eyes)** picks one of four; press **P** in the app to cycle them:
 
-- **Preset 1** — neutral
-- **Preset 2** — dark sunglasses (approximates OpenXR Toolkit *Dark*)
-- **Preset 3** — night (approximates OpenXR Toolkit *TruNite*)
+- **Neutral** — no look, just your per-eye gamma / RGB
+- **Light** · **Dark** · **TruNite** — an exact port of the [OpenXR Toolkit](https://mbucchia.github.io/OpenXR-Toolkit/) *sunglasses* modes, with your per-eye gamma / RGB applied on top
 
-Each preset keeps its own left / right values. The sliders, Reset and the HTTP gamma / RGB calls edit only the active preset, and switching never overwrites the others — so you can tune, say, a day and a night look and flip between them.
+Each look keeps its own left / right values. The sliders, Reset and the HTTP gamma / RGB calls edit only the active look, and switching never overwrites the others — so you can tune, say, a day and a night setup and flip between them.
 
 Good to know:
 
-- **DirectX 12 only (MSFS 2024).** Grading is not supported on DirectX 11 — that includes **X-Plane 12**. The sliders and presets have no effect there; the HUD itself still works
+- **DirectX 12 only (MSFS 2024).** Grading is not supported on DirectX 11 — that includes **X-Plane 12**. The sliders and looks have no effect there; the HUD itself still works
 - Only tested with **Pimax** headsets (Pimax OpenXR runtime) in MSFS 2024
 - Only the world is graded — the HUD and the 2D in-sim panels are unchanged
 - An eye left at default costs nothing. Where the sim's eye images allow it, each adjusted eye is graded in place with a single GPU compute pass; otherwise the layer falls back to a separate copy, which costs a little more
 - Fully restart MSFS after installing or updating the layer
 - **Frame generation:** if you use an OpenXR frame-generation layer, the s16n layer (`XR_APILAYER_S16N_HUD`) must sit **before** it (closer to the sim), so the frames it generates are built from the graded image. Check or change the order with a layer manager such as [OpenXR API Layers GUI](https://github.com/fredemmott/OpenXR-API-Layers-GUI)
 
+### FOV crop (experimental)
+
+Trim the edges of the VR view you rarely look at, so the GPU renders fewer pixels — the same idea as OpenXR Toolkit's Crop2FOV mod. **DirectX 12 (MSFS 2024) only.**
+
+- **OpenXR** tab → **FOV crop**: six sliders — **Top**, **Bottom**, **Left outer**, **Right outer**, **Left inner**, **Right inner** — each the percentage of that edge kept, 50–100%
+- Pixel density stays the same; the headset shows black outside the cropped area
+- The crop follows the sliders live, but the lower render resolution only kicks in when you **restart VR** in the sim
+- The panel shows the resulting per-eye render size (after one VR session; before that it's an estimate)
+- **Reset FOV** returns all edges to 100%; settings are saved with the app's options
+- Only tested with **Pimax** headsets in MSFS 2024
+
 ### Also in the app
 
 - **Devices** — pick the Funky Coder / Plus, refresh HID list
 - **Binds** — active bind files for MSFS / XP12 / SPAD.neXt
-- **Install** — OpenXR layer, MSFS Community panel, X-Plane 12 plugin
+- **OpenXR** — per-eye gamma / RGB, looks, FOV crop
+- **Install** — OpenXR layer, MSFS Community panel, X-Plane 12 plugin, SPAD.neXt actions
 - Status bar shows the active bind sources and the app version
 - Optional start with Windows (system tray)
 - Windows 10/11 x64 installer (`s16n-hud-setup.exe`)
@@ -170,9 +191,9 @@ GET http://127.0.0.1:18765/status/text?value=GEAR%20DOWN
 | GET | `/overlay/visible` | `0`, `1`, `toggle` (or empty) | Hide / show / toggle the overlay |
 | GET | `/overlay/gamma` | `eye=left\|right\|both`, `value=<float>` | Per-eye VR world gamma (0.2–3.0; default 1.0) |
 | GET | `/overlay/rgb` | `eye=left\|right\|both`, optional `r` / `g` / `b` floats | Per-eye VR world RGB gains (0–2; default 1.0; omit a channel to leave it unchanged) |
-| GET | `/overlay/color-preset` | `preset1`, `preset2`, `preset3` (or empty to read) | Select the active eye-color preset |
+| GET | `/overlay/color-preset` | `neutral`, `light`, `dark`, `trunite` or `1`–`4` (or empty to read) | Select the active look |
 
-Successful control calls return JSON including tint, visibility, pose/size, plus `eyeColorPreset` and per-eye `gamma` and `rgb`. Gamma / RGB edit the active preset, like the Options sliders, and only take effect in DirectX 12 sims (MSFS 2024) — see [Per-eye gamma / RGB in VR](#per-eye-gamma--rgb-in-vr-experimental).
+Successful control calls return JSON including tint, visibility, pose/size, plus `eyeColorPreset` and per-eye `gamma` and `rgb`. Gamma / RGB edit the active look, like the OpenXR tab sliders, and only take effect in DirectX 12 sims (MSFS 2024) — see [Per-eye gamma / RGB in VR](#per-eye-gamma--rgb-in-vr-experimental).
 
 Examples:
 
@@ -182,7 +203,7 @@ GET http://127.0.0.1:18765/overlay/nudge?value=up
 GET http://127.0.0.1:18765/overlay/visible?value=toggle
 GET http://127.0.0.1:18765/overlay/gamma?eye=left&value=1.2
 GET http://127.0.0.1:18765/overlay/rgb?eye=right&r=1.05&b=0.95
-GET http://127.0.0.1:18765/overlay/color-preset?value=preset3
+GET http://127.0.0.1:18765/overlay/color-preset?value=dark
 ```
 
 #### Panel geometry (MSFS)
