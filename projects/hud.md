@@ -157,7 +157,7 @@ Balance a headset whose two panels don't quite match — one eye a little darker
 
 - **Neutral** — no look, just your per-eye gamma / RGB
 - **Light** · **Dark** — progressively darker tone curves for bright daytime scenes
-- **Nocturnal** — brightens night scenes while holding back bright lights, so dark terrain and cockpits are easier to read
+- **Nocturnal** — brightens night scenes while holding back bright lights, so dark terrain and cockpits are easier to read. Especially useful on **LCD** HMDs that can't reach the deep blacks of OLED
 - Your per-eye gamma / RGB are applied on top of the look
 
 Simulated with the layer's look math. Drag the handle (or click anywhere on the image) to compare.
