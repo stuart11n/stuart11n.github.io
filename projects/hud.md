@@ -135,14 +135,16 @@ A bundled SPAD.neXt script adds **S16N_*** actions you can bind to any button or
 
 - Implicit OpenXR API layer composites the same HUD as a transparent quad in the headset
 - Optional system-wide (HKLM) registration from the installer or **Install** tab
-- Nudge position / size, VIEW vs LOCAL space, visibility, alpha
-- **World (LOCAL) mode** places the HUD relative to a saved head position and facing direction (level — yaw only). It's captured the first time the HUD shows in world mode and reused across hide / show and VR sessions; press **W** (or use the HTTP / SPAD recenter) to re-anchor it to where you're looking
+- Nudge position / size, show / hide, alpha
+- **HUD placement** — press **V** to toggle:
+  - **View** — the HUD stays in front of you and moves with your head (OpenXR VIEW space)
+  - **World** — the HUD is fixed in the cockpit / scene relative to a saved anchor (OpenXR LOCAL space). The first time you show it in World mode, the layer stores where you're looking (level — yaw only). That anchor is reused when you hide / show the HUD and across VR sessions. Press **W** (or HTTP / SPAD recenter) to park it again where you're looking now
 - One-eye capture for debugging (F8)
 - Only tested with **Pimax** headsets (Pimax OpenXR runtime), in **MSFS 2024** and **X-Plane 12** only; treat as experimental
 
 ### Per-eye gamma / RGB in VR (experimental)
 
-Balance a headset whose two panels don't quite match — one eye a little darker, warmer, or greener than the other. The OpenXR layer color-grades the **sim's VR world image** independently for each eye, before the runtime shows it. **DirectX 12 (MSFS 2024) only** — not supported on DirectX 11, including X-Plane 12.
+Balance a headset whose two panels don't quite match — one eye a little darker, warmer, or greener than the other. This is separate from HUD placement above: the layer color-grades the **sim scene** in each eye (not the HUD quad), before the runtime shows it. **DirectX 12 (MSFS 2024) only** — not supported on DirectX 11, including X-Plane 12.
 
 - **OpenXR** tab → **OpenXR per-eye world color (VR view)**: a **Left eye** and **Right eye** column, each with **Gamma**, **R**, **G**, **B** sliders
 - **Gamma** 0.2–3.0 (default 1.0): above 1 lifts the midtones, below 1 darkens them; blacks and whites stay put
@@ -266,7 +268,7 @@ GET http://127.0.0.1:18765/status/text?value=GEAR%20DOWN
 | GET | `/overlay/size` | `up`, `down` | Scale the OpenXR quad (~1.1× / ÷1.1) |
 | GET | `/overlay/nudge` | `left`, `right`, `up`, `down`, `near`, `far` | Nudge OpenXR pose (~2 cm) |
 | GET | `/overlay/visible` | `0`, `1`, `toggle` (or empty) | Hide / show / toggle the overlay |
-| GET | `/overlay/recenter` | — | Re-anchor the world-mode HUD to the current head pose (saved) |
+| GET | `/overlay/recenter` | — | Re-park the World-placement HUD at the current head pose (saved) |
 | GET | `/overlay/gamma` | `eye=left\|right\|both`, `value=<float>` | Per-eye VR world gamma (0.2–3.0; default 1.0) |
 | GET | `/overlay/rgb` | `eye=left\|right\|both`, optional `r` / `g` / `b` floats | Per-eye VR world RGB gains (0–2; default 1.0; omit a channel to leave it unchanged) |
 | GET | `/overlay/color-preset` | `neutral`, `light`, `dark`, `nocturnal` or `1`–`4` (or empty to read) | Select the active look |
