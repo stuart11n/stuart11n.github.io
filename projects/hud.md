@@ -99,7 +99,7 @@ A bundled SPAD.neXt script adds **S16N_*** actions you can bind to any button or
 
 - Install with the installer's **Install SPAD.neXt actions** option (offered when SPAD.neXt is present), or from the **Install** tab's SPAD.neXt card, which also shows when the installed script is out of date. Restart SPAD.neXt afterwards
 - **Looks:** `S16N_Look_Neutral`, `S16N_Look_Light`, `S16N_Look_Dark`, `S16N_Look_TruNite`, and `S16N_Look_Cycle` (button = next; encoder = next / previous)
-- **VR HUD:** `S16N_Hud_On`, `S16N_Hud_Off`, `S16N_Hud_Toggle`, `S16N_Hud_Recenter`, nudge left / right / up / down / near / far, `S16N_Hud_Bigger`, `S16N_Hud_Smaller`, `S16N_Hud_ColorNext`
+- **VR HUD:** `S16N_Hud_On`, `S16N_Hud_Off`, `S16N_Hud_Toggle`, `S16N_Hud_Recenter`, `S16N_Hud_NudgeLeft`, `S16N_Hud_NudgeRight`, `S16N_Hud_NudgeUp`, `S16N_Hud_NudgeDown`, `S16N_Hud_NudgeNear`, `S16N_Hud_NudgeFar`, `S16N_Hud_Bigger`, `S16N_Hud_Smaller`, `S16N_Hud_ColorNext`
 - **Encoder versions** (clockwise = right / up / far / bigger): `S16N_Hud_NudgeHorizontal`, `S16N_Hud_NudgeVertical`, `S16N_Hud_NudgeDepth`, `S16N_Hud_Size`
 - Publishes `LOCAL:S16N_ONLINE`, `LOCAL:S16N_VISIBLE` and `LOCAL:S16N_LOOK` (0 Neutral … 3 TruNite) for LEDs and displays
 
@@ -127,6 +127,28 @@ Balance a headset whose two panels don't quite match — one eye a little darker
 
 - **Neutral** — no look, just your per-eye gamma / RGB
 - **Light** · **Dark** · **TruNite** — an exact port of the [OpenXR Toolkit](https://mbucchia.github.io/OpenXR-Toolkit/) *sunglasses* modes, with your per-eye gamma / RGB applied on top
+
+Simulated with the layer's look math on official MSFS 2024 screenshots (© Microsoft / Asobo Studio — [Xbox Wire](https://news.xbox.com/en-us/2024/09/19/microsoft-flight-simulator-2024-preview/), [Microsoft Store](https://www.xbox.com/en-us/games/store/microsoft-flight-simulator-2024-standard-edition/9p2vgctbmm52)):
+
+**Neutral** (before)
+
+![MSFS 2024, Boeing 747 Global SuperTanker — Neutral, no look applied](/assets/images/controller-panel/look-day-neutral.jpg){: .center-image }
+
+**Light**
+
+![MSFS 2024 — Light look](/assets/images/controller-panel/look-day-light.jpg){: .center-image }
+
+**Dark**
+
+![MSFS 2024 — Dark look](/assets/images/controller-panel/look-day-dark.jpg){: .center-image }
+
+**Neutral** at night (before)
+
+![MSFS 2024, Rio de Janeiro at night — Neutral, no look applied](/assets/images/controller-panel/look-night-neutral.jpg){: .center-image }
+
+**TruNite**
+
+![MSFS 2024, Rio de Janeiro at night — TruNite look](/assets/images/controller-panel/look-night-trunite.jpg){: .center-image }
 
 Each look keeps its own left / right values. The sliders, Reset and the HTTP gamma / RGB calls edit only the active look, and switching never overwrites the others — so you can tune, say, a day and a night setup and flip between them.
 
