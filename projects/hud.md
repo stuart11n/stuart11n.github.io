@@ -217,7 +217,7 @@ Good to know:
 
 ### FOV crop (experimental)
 
-Trim the edges of the VR view you rarely look at, so the GPU renders fewer pixels. **DirectX 12 (MSFS 2024) only.**
+Trim the edges of the VR view beyond peripheral vision, so the GPU renders fewer pixels. **DirectX 12 (MSFS 2024) only.**
 
 ![FOV crop — left and right eye with Top, Bottom, outer, and inner edges labelled](/assets/images/controller-panel/fov-crop.jpg){: .center-image }
 
