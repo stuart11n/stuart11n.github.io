@@ -38,7 +38,6 @@ Windows app that draws a live **HUD** for your **Funky Coder** or **Funky Coder 
 
 <div class="cta-row">
   <a class="btn btn--primary" href="https://github.com/stuart11n/s16n-releases/releases/download/hud-latest/s16n-hud-setup.exe">Download for Windows</a>
-  {% include bmc-button.html %}
 </div>
 
 ### Controllers
