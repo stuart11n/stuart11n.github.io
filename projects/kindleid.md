@@ -66,3 +66,5 @@ When nothing is playing for a while, the same pipeline draws an **idle** screen 
 - Web **`/settings`**: thresholds, provider, location, screen size, frontlight
 
 Deploy from a filled-in `config.local.json` with `deploy/pi/deploy.ps1` (cross-builds `GOARM=6`, installs systemd + env, optionally syncs the extension when the Kindle is USB-mounted).
+
+![Kindle taped to a wooden frame with a 3D-printed stand](/assets/images/kindleid/mount.jpg){: .center-image }
