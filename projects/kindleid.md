@@ -43,7 +43,9 @@ The Kindle never listens. It’s just a Wi‑Fi picture frame that polls a tiny 
 4. **Render** — The Pi builds a grayscale PNG sized for the Paperwhite (cover + type; soft-rotated if the Kindle sits on its side).
 5. **Show** — A KUAL extension on the Kindle polls `http://<pi>:8080/version`. When the hash changes it downloads `/screen.png` and updates the panel with **FBInk**. Frontlight and screensaver are driven over `lipc`.
 
-When nothing is playing for a while, the same pipeline draws an **idle** screen (Open-Meteo weather, optional radar, optional SolarEdge Modbus stats) instead of a frozen last track.
+When nothing is playing for a while, the same pipeline draws an **idle** screen (Open-Meteo weather, optional radar, optional SolarEdge Modbus stats) instead of a frozen last track:
+
+![KindleID idle screen — weather, solar flow, and forecast](/assets/images/kindleid/idle.jpg){: .center-image }
 
 ### Hardware
 
