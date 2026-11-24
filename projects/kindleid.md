@@ -31,6 +31,10 @@ card_wide: true
 
 The Kindle never listens. It’s just a Wi‑Fi picture frame that polls a tiny Go server and paints grayscale PNGs with FBInk.
 
+<div class="cta-row">
+  <a class="btn btn--primary" href="https://github.com/stuart11n/kindleID" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+</div>
+
 ![KindleID on the shelf next to the vinyl](/assets/images/kindleid/shelf.jpg){: .center-image }
 
 ![Listening setup — turntables and the framed Kindle](/assets/images/kindleid/setup.jpg){: .center-image }
